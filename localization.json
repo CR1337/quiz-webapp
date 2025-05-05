@@ -1,0 +1,51 @@
+{
+    "start_quiz": {
+      "de": "Quiz starten",
+      "en": "Start quiz"
+    },
+    "quiz": {
+      "de": "Quiz",
+      "en": "Quiz"
+    },
+    "submit_guess": {
+      "de": "Schätzung abgeben",
+      "en": "Submit guess"
+    },
+    "score_announcement": {
+      "de": "Sie haben {score} von {max_points} Punkten erreicht.",
+      "en": "You scored {score} out of {max_points} points."
+    },
+    "back_to_home": {
+      "de": "Zurück zur Startseite",
+      "en": "Back to startpage"
+    },
+    "your_score": {
+      "de": "Ihr Punktestand",
+      "en": "Your score"
+    },
+    "question": {
+      "de": "Frage",
+      "en": "Question"
+    },
+    "show_image": {
+      "de": "Bild anzeigen",
+      "en": "Show image"
+    },
+    "your_answer": {
+      "de": "Ihre Antwort",
+      "en": "Your answer"
+    },
+    "correct_answer": {
+      "de": "Richtige Antwort",
+      "en": "Correct answer"
+    },
+    "explanation": {
+      "de": "Erklärung",
+      "en": "Explanation"
+    },
+    "next": {
+        "de": "Weiter",
+        "en": "Next"
+    }
+  }
+  
