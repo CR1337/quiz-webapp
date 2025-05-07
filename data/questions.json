@@ -37,7 +37,7 @@
     {
         "type": "guess",
         "text": {
-            "de": "Wie hoch war die durchschnittliche Lebenserwartung von neugeborenen Mädchen in Deutschland im Jahr 2022 (in Jahren)?",
+            "de": "Wie hoch war die durchschnittliche Lebenserwartung von neugeborenen M\u00e4dchen in Deutschland im Jahr 2022 (in Jahren)?",
             "en": "What was the average life expectancy of newborn girls in Germany in 2022 (in years)?"
         },
         "answer": 83.2,
@@ -46,7 +46,7 @@
         "step": 0.1,
         "max_points": 10,
         "explanation": {
-            "de": "Laut Destatis betrug die durchschnittliche Lebenserwartung von neugeborenen Mädchen im Jahr 2022 etwa 83,2 Jahre.",
+            "de": "Laut Destatis betrug die durchschnittliche Lebenserwartung von neugeborenen M\u00e4dchen im Jahr 2022 etwa 83,2 Jahre.",
             "en": "According to Destatis, the average life expectancy of newborn girls in 2022 was about 83.2 years."
         },
         "image": {
@@ -56,12 +56,13 @@
         "image_caption": {
             "de": "Testbild",
             "en": "test image"
-        }
+        },
+        "initial_guess": 82.5
     },
     {
         "type": "multiple_choice",
         "text": {
-            "de": "Welches Bundesland hatte 2023 die höchste Bevölkerungsdichte?",
+            "de": "Welches Bundesland hatte 2023 die h\u00f6chste Bev\u00f6lkerungsdichte?",
             "en": "Which federal state had the highest population density in 2023?"
         },
         "answers": {
@@ -81,8 +82,8 @@
         "right_answer_index": 3,
         "score": 10,
         "explanation": {
-            "de": "Hamburg hatte 2023 mit rund 2.500 Einwohner:innen pro km² die höchste Bevölkerungsdichte.",
-            "en": "In 2023, Hamburg had the highest population density with around 2,500 inhabitants per km²."
+            "de": "Hamburg hatte 2023 mit rund 2.500 Einwohner:innen pro km\u00b2 die h\u00f6chste Bev\u00f6lkerungsdichte.",
+            "en": "In 2023, Hamburg had the highest population density with around 2,500 inhabitants per km\u00b2."
         },
         "image": {
             "de": "test_de.jpg",
@@ -115,7 +116,8 @@
         "image_caption": {
             "de": "Testbild",
             "en": "test image"
-        }
+        },
+        "initial_guess": 750.0
     },
     {
         "type": "multiple_choice",
@@ -126,8 +128,8 @@
         "answers": {
             "de": [
                 "Steuererhebung",
-                "Durchführung von Wahlen",
-                "Erhebung und Veröffentlichung amtlicher Statistiken",
+                "Durchf\u00fchrung von Wahlen",
+                "Erhebung und Ver\u00f6ffentlichung amtlicher Statistiken",
                 "Gesetzgebung zur Wirtschaft"
             ],
             "en": [
@@ -140,7 +142,7 @@
         "right_answer_index": 2,
         "score": 10,
         "explanation": {
-            "de": "Das Statistische Bundesamt ist zuständig für die Erhebung, Aufbereitung und Veröffentlichung amtlicher Statistiken.",
+            "de": "Das Statistische Bundesamt ist zust\u00e4ndig f\u00fcr die Erhebung, Aufbereitung und Ver\u00f6ffentlichung amtlicher Statistiken.",
             "en": "The Federal Statistical Office is responsible for collecting, processing, and publishing official statistics."
         },
         "image": {
@@ -155,7 +157,7 @@
     {
         "type": "guess",
         "text": {
-            "de": "Wie viele Menschen in Deutschland waren 2022 65 Jahre oder älter (in Millionen)?",
+            "de": "Wie viele Menschen in Deutschland waren 2022 65 Jahre oder \u00e4lter (in Millionen)?",
             "en": "How many people in Germany were aged 65 or older in 2022 (in millions)?"
         },
         "answer": 18.6,
@@ -164,8 +166,8 @@
         "step": 0.1,
         "max_points": 10,
         "explanation": {
-            "de": "2022 waren etwa 18,6 Millionen Menschen in Deutschland 65 Jahre oder älter – das entspricht rund 22 % der Bevölkerung.",
-            "en": "In 2022, about 18.6 million people in Germany were aged 65 or older – around 22% of the population."
+            "de": "2022 waren etwa 18,6 Millionen Menschen in Deutschland 65 Jahre oder \u00e4lter \u2013 das entspricht rund 22 % der Bev\u00f6lkerung.",
+            "en": "In 2022, about 18.6 million people in Germany were aged 65 or older \u2013 around 22% of the population."
         },
         "image": {
             "de": "test_de.jpg",
@@ -174,7 +176,8 @@
         "image_caption": {
             "de": "Testbild",
             "en": "test image"
-        }
+        },
+        "initial_guess": 17.5
     },
     {
         "type": "multiple_choice",
@@ -184,9 +187,9 @@
         },
         "answers": {
             "de": [
-                "Geburten und Sterbefälle",
+                "Geburten und Sterbef\u00e4lle",
                 "Bildung und Forschung",
-                "Gefühle und Zufriedenheit",
+                "Gef\u00fchle und Zufriedenheit",
                 "Einkommen und Konsum"
             ],
             "en": [
@@ -199,8 +202,8 @@
         "right_answer_index": 2,
         "score": 10,
         "explanation": {
-            "de": "Gefühle und Zufriedenheit sind keine Themen amtlicher Statistik – diese werden ggf. von Meinungsforschungsinstituten untersucht.",
-            "en": "Emotions and satisfaction are not covered by official statistics – such topics are usually explored by opinion research institutes."
+            "de": "Gef\u00fchle und Zufriedenheit sind keine Themen amtlicher Statistik \u2013 diese werden ggf. von Meinungsforschungsinstituten untersucht.",
+            "en": "Emotions and satisfaction are not covered by official statistics \u2013 such topics are usually explored by opinion research institutes."
         },
         "image": {
             "de": "test_de.jpg",
@@ -214,7 +217,7 @@
     {
         "type": "guess",
         "text": {
-            "de": "Wie viele Erwerbstätige gab es in Deutschland im Jahr 2023 (in Millionen)?",
+            "de": "Wie viele Erwerbst\u00e4tige gab es in Deutschland im Jahr 2023 (in Millionen)?",
             "en": "How many employed people were there in Germany in 2023 (in millions)?"
         },
         "answer": 45.9,
@@ -223,7 +226,7 @@
         "step": 0.1,
         "max_points": 10,
         "explanation": {
-            "de": "2023 gab es rund 45,9 Millionen Erwerbstätige in Deutschland.",
+            "de": "2023 gab es rund 45,9 Millionen Erwerbst\u00e4tige in Deutschland.",
             "en": "In 2023, there were around 45.9 million employed people in Germany."
         },
         "image": {
@@ -233,20 +236,21 @@
         "image_caption": {
             "de": "Testbild",
             "en": "test image"
-        }
+        },
+        "initial_guess": 45.0
     },
     {
         "type": "multiple_choice",
         "text": {
-            "de": "Wie oft führt das Statistische Bundesamt den Zensus durch?",
+            "de": "Wie oft f\u00fchrt das Statistische Bundesamt den Zensus durch?",
             "en": "How often does the Federal Statistical Office conduct the census?"
         },
         "answers": {
             "de": [
-                "Jährlich",
+                "J\u00e4hrlich",
                 "Alle 5 Jahre",
                 "Alle 10 Jahre",
-                "Unregelmäßig, je nach politischer Lage"
+                "Unregelm\u00e4\u00dfig, je nach politischer Lage"
             ],
             "en": [
                 "Annually",
@@ -258,7 +262,7 @@
         "right_answer_index": 2,
         "score": 10,
         "explanation": {
-            "de": "Der Zensus wird in der EU alle 10 Jahre durchgeführt, zuletzt 2022 (nach Verschiebung durch die Corona-Pandemie).",
+            "de": "Der Zensus wird in der EU alle 10 Jahre durchgef\u00fchrt, zuletzt 2022 (nach Verschiebung durch die Corona-Pandemie).",
             "en": "The census is conducted every 10 years in the EU, most recently in 2022 (postponed due to the COVID-19 pandemic)."
         },
         "image": {
@@ -282,8 +286,8 @@
         "step": 0.1,
         "max_points": 10,
         "explanation": {
-            "de": "Die durchschnittliche Inflationsrate betrug 2022 in Deutschland 6,9 % – der höchste Wert seit über 40 Jahren.",
-            "en": "The average inflation rate in Germany in 2022 was 6.9% – the highest value in over 40 years."
+            "de": "Die durchschnittliche Inflationsrate betrug 2022 in Deutschland 6,9 % \u2013 der h\u00f6chste Wert seit \u00fcber 40 Jahren.",
+            "en": "The average inflation rate in Germany in 2022 was 6.9% \u2013 the highest value in over 40 years."
         },
         "image": {
             "de": "test_de.jpg",
@@ -292,6 +296,7 @@
         "image_caption": {
             "de": "Testbild",
             "en": "test image"
-        }
+        },
+        "initial_guess": 6.0
     }
 ]

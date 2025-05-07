@@ -26,6 +26,7 @@ class Question(ABC):
 
         if question_type == 'guess':
             parameters |= {'answer': question_dict['answer']}
+            parameters |= {'initial_guess': question_dict['initial_guess']}
             parameters |= {'min_guess': question_dict['min_guess']}
             parameters |= {'max_guess': question_dict['max_guess']}
             parameters |= {'step': question_dict['step']}
@@ -100,6 +101,7 @@ class GuessQuestion(Question):
     
     _answer: Number
     _score_function: ScoreFunction
+    _initial_guess: Number
     _min_guess: Number
     _max_guess: Number
     _step: Number
@@ -110,6 +112,7 @@ class GuessQuestion(Question):
         self, 
         text: Dict[str, str], 
         answer: Number, 
+        initial_guess: Number,
         min_guess: Number,
         max_guess: Number,
         step: Number,
@@ -121,6 +124,7 @@ class GuessQuestion(Question):
         image_caption: Dict[str, str] | None = None
     ):
         self._answer = answer
+        self._initial_guess = initial_guess
         self._min_guess = min_guess
         self._max_guess = max_guess
         self._step = step
@@ -161,6 +165,10 @@ class GuessQuestion(Question):
     @property
     def answer(self) -> Number:
         return self._answer
+    
+    @property
+    def initial_guess(self) -> Number:
+        return self._initial_guess
     
     @property
     def max_guess(self) -> Number:

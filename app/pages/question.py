@@ -29,7 +29,7 @@ def render_question(current_question: Question):
             " ", 
             min_value=float(current_question.min_guess), 
             max_value=float(current_question.max_guess), 
-            value=(current_question.max_guess + current_question.min_guess) / 2,
+            value=float(current_question.initial_guess),
             step=float(current_question.step),
             format=current_question.format,
             label_visibility='hidden'
