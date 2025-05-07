@@ -1,7 +1,8 @@
 import streamlit as st
-from model.question import Question, GuessQuestion, MultipleChoiceQuestion
-from app.shared import render_score, render_question_image
+from app.question_model import Question, GuessQuestion, MultipleChoiceQuestion
+from app.pages.shared import render_score, render_question_image, scroll_to_top
 from app.localization import Localization
+from app.state import QuizState
 
 
 def render_solution(current_question: Question):
@@ -30,7 +31,8 @@ def render_solution(current_question: Question):
         st.session_state['question_index'] += 1
         if st.session_state['question_index'] >= len(st.session_state['questions']):
             st.session_state['question_index'] -= 1
-            st.session_state['state'] = "result"
+            st.session_state['state'] = QuizState.RESULT
         else:
-            st.session_state['state'] = "question"
+            st.session_state['state'] = QuizState.QUESTION
+        scroll_to_top()
         st.rerun()

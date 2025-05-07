@@ -1,25 +1,27 @@
 import streamlit as st
-from app.main import render_main
-from app.init import render_init
-from app.question import render_question
-from app.solution import render_solution
-from app.result import render_result
-from app.shared import render_back_to_home_button
+from app.pages.main import render_main
+from app.pages.init import render_init
+from app.pages.question import render_question
+from app.pages.solution import render_solution
+from app.pages.result import render_result
+from app.pages.shared import render_back_to_home_button
+from app.state import QuizState
 
 
 current_question = render_main()
 
-if st.session_state['state'] == 'init':
-    render_init()
+if current_question is not None:
+    if st.session_state['state'] == QuizState.INIT:
+        render_init()
 
-elif st.session_state['state'] == 'question': 
-    render_question(current_question)
-    
-elif st.session_state['state'] == 'solution':
-    render_solution(current_question)
+    elif st.session_state['state'] == QuizState.QUESTION: 
+        render_question(current_question)
+        
+    elif st.session_state['state'] == QuizState.SOLUTION:
+        render_solution(current_question)
 
-elif st.session_state['state'] == 'result':
-    render_result()
+    elif st.session_state['state'] == QuizState.RESULT:
+        render_result()
 
-if st.session_state['state'] != 'init':
-    render_back_to_home_button()
+    if st.session_state['state'] != QuizState.INIT:
+        render_back_to_home_button()

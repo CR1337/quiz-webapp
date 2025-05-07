@@ -2,15 +2,16 @@
 import streamlit as st
 from numbers import Number
 from itertools import cycle
-from model.question import Question, GuessQuestion, MultipleChoiceQuestion
-from app.shared import render_score, render_question_image
+from app.question_model import Question, GuessQuestion, MultipleChoiceQuestion
+from app.pages.shared import render_score, render_question_image, scroll_to_top
 from app.localization import Localization
+from app.state import QuizState
 
 
 def check_answer(current_question: Question, answer: Number):
     score = current_question.check(answer)
     st.session_state['score'] += score
-    st.session_state['state'] = "solution"
+    st.session_state['state'] = QuizState.SOLUTION
     st.session_state['last_score'] = score
     st.rerun()
 
@@ -25,14 +26,17 @@ def render_question(current_question: Question):
 
     if isinstance(current_question, GuessQuestion):
         guess = st.slider(
-            "", 
+            " ", 
             min_value=float(current_question.min_guess), 
             max_value=float(current_question.max_guess), 
+            value=(current_question.max_guess + current_question.min_guess) / 2,
             step=float(current_question.step),
-            format=current_question.format
+            format=current_question.format,
+            label_visibility='hidden'
         )
         if st.button(Localization.get('submit_guess'), use_container_width=True):
             st.session_state['answer'] = guess
+            scroll_to_top()
             check_answer(current_question, guess)
 
     elif isinstance(current_question, MultipleChoiceQuestion):
@@ -41,4 +45,5 @@ def render_question(current_question: Question):
             with column:
                 if st.button(answer, use_container_width=True):
                     st.session_state['answer'] = answer_index
+                    scroll_to_top()
                     check_answer(current_question, answer_index)

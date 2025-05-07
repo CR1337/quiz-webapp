@@ -1,10 +1,13 @@
+import os
 import json
 import streamlit as st
 
 
 class Localization:
 
-    with open("localization.json", 'r', encoding='utf-8') as file:
+    LOCALIZATION_FILENAME: str = os.path.join("data", "localization.json")
+
+    with open(LOCALIZATION_FILENAME, 'r', encoding='utf-8') as file:
         _localization = json.load(file)
 
     @classmethod

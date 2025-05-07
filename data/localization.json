@@ -46,6 +46,18 @@
     "next": {
         "de": "Weiter",
         "en": "Next"
+    },
+    "really_stop": {
+        "de": "Wollen Sie das Quiz wirklich abbrechen?",
+        "en": "Do you really want to stop the Quiz?"
+    },
+    "yes": {
+        "de": "Ja",
+        "en": "Yes"
+    },
+    "no": {
+        "de": "Nein",
+        "en": "No"
     }
   }
   

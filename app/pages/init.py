@@ -1,6 +1,7 @@
 import streamlit as st
-from app.shared import render_image
+from app.pages.shared import render_image, scroll_to_top
 from app.localization import Localization
+from app.state import QuizState
 
 
 def render_init():
@@ -9,7 +10,8 @@ def render_init():
 
     with left_column:
         if st.button(Localization.get('start_quiz'), use_container_width=True):
-            st.session_state['state'] = "question"
+            st.session_state['state'] = QuizState.QUESTION
+            scroll_to_top()
             st.rerun()
 
     with right_column:

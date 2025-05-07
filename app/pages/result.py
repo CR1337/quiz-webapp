@@ -1,5 +1,4 @@
 import streamlit as st
-from app.shared import render_back_to_home_button
 from app.localization import Localization
 
 
