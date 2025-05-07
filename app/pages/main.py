@@ -66,15 +66,17 @@ def render_main() -> Question | None:
         with open(os.path.join("data", "config.json"), 'r', encoding='utf-8') as file:
             config = json.load(file)
 
-        method = config['question_selection_methods'][config['question_selection_method']]
         match config['question_selection_method']:
             case "all":
                 pass
             case "list":
+                method = config['question_selection_methods'][config['question_selection_method']]
                 question_list = [question_list[i] for i in method['question_indices']]
             case "random":
+                method = config['question_selection_methods'][config['question_selection_method']]
                 question_list = sample(question_list, method['question_amount'])
             case "random_block":
+                method = config['question_selection_methods'][config['question_selection_method']]
                 block_size = method['block_size']
                 block_amount = len(question_list) // block_size
                 block_index = choice(list(range(block_amount)))
@@ -82,6 +84,7 @@ def render_main() -> Question | None:
                 question_list = question_list[question_index:question_index+block_size]
             case _:
                 st.header(f"Invalid question selection method: {config['question_selection_method']}")        
+                return None
         
         st.session_state['question_index'] = 0
         st.session_state['questions'] = Question.many_from_dict(question_list)
