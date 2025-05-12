@@ -33,12 +33,16 @@ class Question(ABC):
             if 'max_points' in question_dict:
                 parameters |= {'max_points': question_dict['max_points']}
             if 'score_function' in question_dict:
-                parameters |= {'score_function': eval(question_dict['score_function'])}
+                parameters |= {
+                    'score_function': eval(question_dict['score_function'])
+                }
             return GuessQuestion(**parameters)
         
         elif question_type == 'multiple_choice':
             parameters |= {'answers': question_dict['answers']}
-            parameters |= {'right_answer_index': question_dict['right_answer_index']}
+            parameters |= {
+                'right_answer_index': question_dict['right_answer_index']
+            }
             if 'score' in question_dict:
                 parameters |= {'score': question_dict['score']}
             return MultipleChoiceQuestion(**parameters)
@@ -47,7 +51,10 @@ class Question(ABC):
             raise ValueError(f"Unkown question type: {question_type}")
 
     @classmethod
-    def many_from_dict(cls, question_list: List[Dict[str, Any]]) -> List[Question]:
+    def many_from_dict(
+        cls, 
+        question_list: List[Dict[str, Any]]
+    ) -> List[Question]:
         return [cls.from_dict(d) for d in question_list]
     
     @classmethod

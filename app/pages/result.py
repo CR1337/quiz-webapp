@@ -9,4 +9,6 @@ def render_result():
         st.balloons()
     else:
         st.snow()
-    st.header(Localization.get('score_announcement').format(score=score, max_points=max_points))
+    st.header(Localization.get('score_announcement').format(
+        score=score, max_points=max_points)
+    )

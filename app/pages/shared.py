@@ -8,7 +8,7 @@ from app.state import QuizState
 def render_score(display_delta: bool = False):
     st.metric(
         label=Localization.get('your_score'),
-        value=f"{st.session_state['score']} / {st.session_state['max_points']}",
+        value=f"{st.session_state['score']}/{st.session_state['max_points']}",
         delta=f"{st.session_state['last_score']}" if display_delta else None,
         delta_color=(
             ("normal" if st.session_state['last_score'] > 0 else "inverse") 
@@ -28,7 +28,11 @@ def render_score(display_delta: bool = False):
     )
 
 
-def render_image(image: str, caption: str | None = None, directory: str = "images"):
+def render_image(
+    image: str, 
+    caption: str | None = None, 
+    directory: str = "images"
+):
     st.image(os.path.join(directory, image), caption)
 
 
@@ -62,9 +66,13 @@ def render_back_to_home_button():
     @st.dialog(Localization.get('really_stop'))
     def back_to_home_dialog():
         left_column, right_column = st.columns(2)
-        if left_column.button(Localization.get('no'), use_container_width=True):
+        if left_column.button(
+            Localization.get('no'), use_container_width=True
+        ):
             st.rerun()
-        elif right_column.button(Localization.get('yes'), use_container_width=True):
+        elif right_column.button(
+            Localization.get('yes'), use_container_width=True
+        ):
             reset()
 
     st.divider()

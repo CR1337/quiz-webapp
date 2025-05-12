@@ -63,37 +63,49 @@ def render_main() -> Question | None:
         with open(question_filename, 'r') as file:
             question_list = json.load(file)
 
-        with open(os.path.join("data", "config.json"), 'r', encoding='utf-8') as file:
+        with open(os.path.join("data", "config.json"), 'r') as file:
             config = json.load(file)
 
-        match config['question_selection_method']:
+        method = config['question_selection_method']
+        match method:
             case "all":
                 pass
             case "list":
-                method = config['question_selection_methods'][config['question_selection_method']]
-                question_list = [question_list[i] for i in method['question_indices']]
+                method = config['question_selection_methods'][method]
+                question_list = [
+                    question_list[i] for i in method['question_indices']
+                ]
             case "random":
-                method = config['question_selection_methods'][config['question_selection_method']]
-                question_list = sample(question_list, method['question_amount'])
+                method = config['question_selection_methods'][method]
+                question_list = sample(
+                    question_list, 
+                    method['question_amount']
+                )
             case "random_block":
-                method = config['question_selection_methods'][config['question_selection_method']]
+                method = config['question_selection_methods'][method]
                 block_size = method['block_size']
                 block_amount = len(question_list) // block_size
                 block_index = choice(list(range(block_amount)))
                 question_index = block_index * block_size
-                question_list = question_list[question_index:question_index+block_size]
+                question_list = question_list[
+                    question_index:question_index+block_size
+                ]
             case _:
-                st.header(f"Invalid question selection method: {config['question_selection_method']}")        
+                st.header(f"Invalid question selection method: {method}")        
                 return None
         
         st.session_state['question_index'] = 0
         st.session_state['questions'] = Question.many_from_dict(question_list)
-        st.session_state['max_points'] = Question.get_max_points(st.session_state['questions'])
+        st.session_state['max_points'] = Question.get_max_points(
+            st.session_state['questions']
+        )
         st.session_state['score'] = 0
         st.session_state['state'] = QuizState.INIT
         st.session_state['answer'] = None
         st.session_state['last_score'] = None
 
-    current_question = st.session_state['questions'][st.session_state['question_index']]
+    current_question = st.session_state['questions'][
+        st.session_state['question_index']
+    ]
 
     return current_question

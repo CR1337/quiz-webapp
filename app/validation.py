@@ -42,29 +42,69 @@ class QuestionValidator(JsonValidator):
             data = json.load(file)
 
         for idx, question in enumerate(data):
-            if not os.path.exists(os.path.join("images", "questions", question['image']['de'])):
-                return False, f"German image for question #{idx} does not exist."
+            if not os.path.exists(
+                os.path.join("images", "questions", question['image']['de'])
+            ):
+                return (
+                    False, 
+                    f"German image for question #{idx} does not exist."
+                )
             
-            if not os.path.exists(os.path.join("images", "questions", question['image']['en'])):
-                return False, f"English image for question #{idx} does not exist."
+            if not os.path.exists(
+                os.path.join("images", "questions", question['image']['en'])
+            ):
+                return (
+                    False, 
+                    f"English image for question #{idx} does not exist."
+                )
 
             if question['type'] == "multiple_choice":
 
-                if len(question['answers']['de']) != len(question['answers']['en']):
-                    return False, f"There are different amounts of answers for question #{idx} for both languages."
+                if (
+                    len(question['answers']['de']) 
+                    != len(question['answers']['en'])
+                ):
+                    return (
+                        False, 
+                        f"There are different amounts of answers for "
+                        f"question #{idx} for both languages."
+                    )
 
                 if not isinstance(question['right_answer_index'], int):
-                    return False, f"The right_answer_index for question #{idx} has to be an integer."
+                    return (
+                        False, 
+                        f"The right_answer_index for question #{idx} "
+                        f"has to be an integer."
+                    )
 
                 if question['right_answer_index'] < 0:
-                    return False, f"The right_answer_index for question #{idx} has to be greater of equal to zero."
+                    return (
+                        False, 
+                        f"The right_answer_index for question #{idx} "
+                        f"has to be greater of equal to zero."
+                    )
 
-                if question['right_answer_index'] > len(question['answers']['de']):
-                    return False, f"The right_answer_index for question #{idx} has to be less than the amount."
+                if (
+                    question['right_answer_index'] 
+                    > len(question['answers']['de'])
+                ):
+                    return (
+                        False, 
+                        f"The right_answer_index for question #{idx} has "
+                        f"to be less than the amount."
+                    )
                 
             elif question['type'] == "guess":
 
-                if not (question['min_guess'] <= question['answer'] <= question['max_guess']):
-                    return False, f"The asnwer for question #{idx} has to lie between min_guess and max_guess."
+                if not (
+                    question['min_guess'] 
+                    <= question['answer'] 
+                    <= question['max_guess']
+                ):
+                    return (
+                        False, 
+                        f"The asnwer for question #{idx} has to lie "
+                        f"between min_guess and max_guess."
+                    )
         
         return True, "ok"

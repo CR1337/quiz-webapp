@@ -34,14 +34,20 @@ def render_question(current_question: Question):
             format=current_question.format,
             label_visibility='hidden'
         )
-        if st.button(Localization.get('submit_guess'), use_container_width=True):
+        if st.button(
+            Localization.get('submit_guess'), 
+            use_container_width=True
+        ):
             st.session_state['answer'] = guess
             scroll_to_top()
             check_answer(current_question, guess)
 
     elif isinstance(current_question, MultipleChoiceQuestion):
         columns = st.columns(2)
-        for answer_index, (answer, column) in enumerate(zip(current_question.answers[Localization.language()], cycle(columns))):
+        for answer_index, (answer, column) in enumerate(zip(
+            current_question.answers[Localization.language()], 
+            cycle(columns)
+        )):
             with column:
                 if st.button(answer, use_container_width=True):
                     st.session_state['answer'] = answer_index
