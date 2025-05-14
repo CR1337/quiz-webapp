@@ -71,18 +71,6 @@
         "answer": {
           "type": "number"
         },
-        "initial_guess": {
-          "type": "number"
-        },
-        "min_guess": {
-          "type": "number"
-        },
-        "max_guess": {
-          "type": "number"
-        },
-        "step": {
-          "type": "number"
-        },
         "max_points": {
           "type": "integer",
           "minimum": 0
@@ -98,7 +86,7 @@
         {
           "if": { "properties": { "type": { "const": "guess" } } },
           "then": {
-            "required": ["answer", "initial_guess", "min_guess", "max_guess", "step", "max_points"]
+            "required": ["answer", "max_points"]
           }
         }
       ],

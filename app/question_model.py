@@ -1,7 +1,8 @@
 from __future__ import annotations
 from abc import ABC, abstractmethod
-from typing import Any, Callable, Dict, List
+from typing import Any, Callable, Dict, List, Tuple
 from numbers import Number
+import random
 
 
 class Question(ABC):
@@ -26,10 +27,6 @@ class Question(ABC):
 
         if question_type == 'guess':
             parameters |= {'answer': question_dict['answer']}
-            parameters |= {'initial_guess': question_dict['initial_guess']}
-            parameters |= {'min_guess': question_dict['min_guess']}
-            parameters |= {'max_guess': question_dict['max_guess']}
-            parameters |= {'step': question_dict['step']}
             if 'max_points' in question_dict:
                 parameters |= {'max_points': question_dict['max_points']}
             if 'score_function' in question_dict:
@@ -105,6 +102,9 @@ ScoreFunction = Callable[[int | float, int | float], int]
 
 
 class GuessQuestion(Question):
+
+    SLIDER_STEP_COUNT: int = 200
+    SLIDER_SCALE_FACTOR: float = 5.0
     
     _answer: Number
     _score_function: ScoreFunction
@@ -114,15 +114,12 @@ class GuessQuestion(Question):
     _step: Number
     _format: str
     _max_points: int
+    _decimal_places: int
 
     def __init__(
         self, 
         text: Dict[str, str], 
-        answer: Number, 
-        initial_guess: Number,
-        min_guess: Number,
-        max_guess: Number,
-        step: Number,
+        answer: Number,
         *,
         max_points: int  = 10,
         score_function: ScoreFunction | None = None,
@@ -131,11 +128,11 @@ class GuessQuestion(Question):
         image_caption: Dict[str, str] | None = None
     ):
         self._answer = answer
-        self._initial_guess = initial_guess
-        self._min_guess = min_guess
-        self._max_guess = max_guess
-        self._step = step
-        self._format=f"%0.{self._get_decimal_places(step)}f"
+        self._min_guess, self._max_guess = self._compute_slider_range(answer)
+        self._initial_guess = (self._max_guess + self._min_guess) / 2
+        self._decimal_places = self._get_decimal_places(self._answer)
+        self._step = (self._max_guess - self._min_guess) / self.SLIDER_STEP_COUNT
+        self._format=f"%0.{self._decimal_places}f"
 
         self._score_function = score_function or self._default_scoring_function
         self._max_points = max_points
@@ -146,22 +143,23 @@ class GuessQuestion(Question):
             image_caption=image_caption
         )
 
+    def _compute_slider_range(self, answer: Number) -> Tuple[Number, Number]:
+        range_half = answer / self.SLIDER_SCALE_FACTOR
+        offset = random.uniform(-1, 1) * range_half
+        midpoint = answer + offset
+        min_val = midpoint - range_half
+        max_val = midpoint + range_half
+        return min_val, max_val
+
     def _default_scoring_function(self, true: Number, guess: Number) -> int:
-        range_below = true - self._min_guess
-        range_above = self._max_guess - true
+        distance = abs(guess - true)
+        max_distance = max(abs(true - self._min_guess), abs(true - self._max_guess))
+        normalized = distance / max_distance if max_distance != 0 else 0
+        score = self._max_points * (1 - normalized) #** k
+        return round(score)
 
-        if guess < true:
-            relative_error = (true - guess) / range_below
-        else:
-            relative_error = (guess - true) / range_above
-
-        relative_error = min(max(relative_error, 0), 1)
-
-        score = round(self._max_points * (1 - relative_error))
-        return score
-
-    def _get_decimal_places(self, step):
-        step_str = f"{step:.16f}".rstrip('0')
+    def _get_decimal_places(self, answer):
+        step_str = f"{answer:.4f}".rstrip('0')
         if '.' in step_str:
             return len(step_str.split('.')[-1])
         return 0
@@ -196,6 +194,10 @@ class GuessQuestion(Question):
     @property
     def max_points(self) -> int:
         return self._max_points
+    
+    @property
+    def decimal_places(self) -> int:
+        return self._decimal_places
 
 
 class MultipleChoiceQuestion(Question):
@@ -215,8 +217,10 @@ class MultipleChoiceQuestion(Question):
         image: Dict[str, str] | None = None,
         image_caption: Dict[str, str] | None = None
     ):
-        self._answers = answers
-        self._right_answer_index = right_answer_index
+        self._answers, self._right_answer_index = self._shuffle_answers(
+            answers, right_answer_index
+        )
+
         self._score = score
         super().__init__(
             text, 
@@ -224,6 +228,23 @@ class MultipleChoiceQuestion(Question):
             image=image, 
             image_caption=image_caption
         )
+
+    def _shuffle_answers(
+        self, 
+        answers: Dict[str, List[str]], 
+        right_answer_index: int
+    ) -> Tuple[Dict[str, List[str]], int]:
+        first_key = list(answers.keys())[0]
+        permutation = list(range(len(answers[first_key])))
+        random.shuffle(permutation)
+
+        shuffled_answers = {}
+        for language in answers.keys():
+            shuffled_answers |= {
+                language: [answers[language][i] for i in permutation]
+            }
+
+        return shuffled_answers, permutation[right_answer_index]
 
     def check(self, answer: int) -> int:
         if answer == self._right_answer_index:

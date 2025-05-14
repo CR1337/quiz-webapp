@@ -16,7 +16,7 @@ def render_solution(current_question: Question):
     if isinstance(current_question, GuessQuestion):
         right_answer = st.session_state['answer'] == current_question.answer
         st.caption(
-            f"{Localization.get('your_answer')}: {st.session_state['answer']}"
+            f"{Localization.get('your_answer')}: {st.session_state['answer']:.{current_question.decimal_places}f}"
         )
         st.caption(
             f"{Localization.get('correct_answer')}: {current_question.answer}"
