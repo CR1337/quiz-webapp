@@ -95,16 +95,6 @@ class QuestionValidator(JsonValidator):
                     )
                 
             elif question['type'] == "guess":
-
-                if not (
-                    question['min_guess'] 
-                    <= question['answer'] 
-                    <= question['max_guess']
-                ):
-                    return (
-                        False, 
-                        f"The asnwer for question #{idx} has to lie "
-                        f"between min_guess and max_guess."
-                    )
+                pass
         
         return True, "ok"

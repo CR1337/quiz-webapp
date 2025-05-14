@@ -70,10 +70,6 @@ Depending on the `type` each JSON object has to have a different set of fields. 
 |`right_answer_index`|`"multiple_choice"`|The index of the right answer in the list.                                                                                   |no       |
 |`score`             |`"multiple_choice"`|The score the player gets when they answer the question correctly.                                                           |no       |
 |`answer`            |`"guess"`          |The correct answer.                                                                                                          |no       |
-|`initial_guess`     |`"guess"`          |The initial guess selected by the slider in the beginning.                                                                   |no       |
-|`min_guess`         |`"guess"`          |The smallest possible guess.                                                                                                 |no       |
-|`max_guess`         |`"guess"`          |The largest possible guess.                                                                                                  |no       |
-|`step`              |`"guess"`          |The smallest change one can select using the slider.                                                                         |no       |
 |`max_points`        |`"guess"`          |The maximum number of points the player gets when they hit the correct answer.                                               |no       |
 
 The fields `text`, `explanation`, `image`, `image_caption` and `answers` are localized. That means they contain a German and an English version of the value. 
