@@ -244,7 +244,7 @@ class MultipleChoiceQuestion(Question):
                 language: [answers[language][i] for i in permutation]
             }
 
-        return shuffled_answers, permutation[right_answer_index]
+        return shuffled_answers, permutation.index(right_answer_index)
 
     def check(self, answer: int) -> int:
         if answer == self._right_answer_index:
