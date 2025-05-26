@@ -152,10 +152,11 @@ class GuessQuestion(Question):
         return min_val, max_val
 
     def _default_scoring_function(self, true: Number, guess: Number) -> int:
+        K = 3.5
         distance = abs(guess - true)
         max_distance = max(abs(true - self._min_guess), abs(true - self._max_guess))
         normalized = distance / max_distance if max_distance != 0 else 0
-        score = self._max_points * (1 - normalized) #** k
+        score = self._max_points * (1 - normalized) ** K
         return round(score)
 
     def _get_decimal_places(self, answer):

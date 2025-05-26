@@ -15,13 +15,21 @@
       "de": "Sie haben {score} von {max_points} Punkten erreicht.",
       "en": "You scored {score} out of {max_points} points."
     },
+    "score_delta": {
+      "de": "Punkte für Frage",
+      "en": "Score for question"
+    },
     "back_to_home": {
       "de": "Zurück zur Startseite",
       "en": "Back to startpage"
     },
     "your_score": {
-      "de": "Ihr Punktestand",
-      "en": "Your score"
+      "de": "Ihr Punktestand bisher",
+      "en": "Your score so far"
+    },
+    "score_for_question": {
+      "de": "Punkte für Frage",
+      "en": "Score for Question"
     },
     "question": {
       "de": "Frage",

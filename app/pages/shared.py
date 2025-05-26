@@ -6,18 +6,18 @@ from app.state import QuizState
 
 
 def render_score(display_delta: bool = False):
-    st.metric(
-        label=Localization.get('your_score'),
-        value=f"{st.session_state['score']}/{st.session_state['max_points']}",
-        delta=f"{st.session_state['last_score']}" if display_delta else None,
-        delta_color=(
-            ("normal" if st.session_state['last_score'] > 0 else "inverse") 
-            if display_delta 
-            else "normal"
-        )
-    )
     index = st.session_state['question_index']
     question_amount = len(st.session_state['questions'])
+
+    st.metric(
+        label=Localization.get('your_score'),
+        value=f"{st.session_state['score']}/{st.session_state['max_points']}"
+    )
+
+    if display_delta:
+        color = "green" if st.session_state['last_score'] > 0 else "red"
+        st.subheader(f":{color}[{Localization.get('score_delta')} {index + 1}: {st.session_state['last_score']}/{question_amount}]")
+
     if st.session_state['state'] == QuizState.SOLUTION:
         progress_index = index + 1
     else:

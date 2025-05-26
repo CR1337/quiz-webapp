@@ -8,17 +8,14 @@ from app.state import QuizState
 def render_solution(current_question: Question):
     render_score(True)
     
-    st.subheader(current_question.text[Localization.language()])
-
-    if current_question.image:
-        render_question_image(current_question)
+    st.write(current_question.text[Localization.language()])
 
     if isinstance(current_question, GuessQuestion):
         right_answer = st.session_state['answer'] == current_question.answer
-        st.caption(
+        st.subheader(
             f"{Localization.get('your_answer')}: {st.session_state['answer']:.{current_question.decimal_places}f}"
         )
-        st.caption(
+        st.subheader(
             f"{Localization.get('correct_answer')}: {current_question.answer}"
         )
 
@@ -30,17 +27,17 @@ def render_solution(current_question: Question):
             [Localization.language()][current_question.right_answer_index]
         )
         color = "green" if right_answer else "red"
-        st.caption(
+        st.subheader(
             f":{color}[{Localization.get('your_answer')}: "
             f"{current_question.answers[Localization.language()][st.session_state['answer']]}]"
         )
-        st.caption(
+        st.subheader(
             f"{Localization.get('correct_answer')}: "
             f"{current_question.answers[Localization.language()][current_question.right_answer_index]}"
         )
 
     with st.expander(Localization.get('explanation'), expanded=True):
-        st.write(current_question.explanation[Localization.language()])
+        st.caption(current_question.explanation[Localization.language()])
 
     if st.button(Localization.get('next'), use_container_width=True):
         st.session_state['question_index'] += 1
