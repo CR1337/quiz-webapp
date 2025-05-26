@@ -18,14 +18,15 @@ def render_score(display_delta: bool = False):
         color = "green" if st.session_state['last_score'] > 0 else "red"
         st.subheader(f":{color}[{Localization.get('score_delta')} {index + 1}: {st.session_state['last_score']}/{question_amount}]")
 
-    if st.session_state['state'] == QuizState.SOLUTION:
-        progress_index = index + 1
-    else:
-        progress_index = index
-    st.progress(
-        progress_index / question_amount, 
-        f"{Localization.get('question')} {index + 1}/{question_amount}"
-    )
+    # if st.session_state['state'] == QuizState.SOLUTION:
+    #     progress_index = index + 1
+    # else:
+    #     progress_index = index
+    if st.session_state['state'] == QuizState.QUESTION:
+        st.progress(
+            index / question_amount, 
+            f"{Localization.get('question')} {index + 1}/{question_amount}"
+        )
 
 
 def render_image(
