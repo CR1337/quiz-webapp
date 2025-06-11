@@ -1,79 +1,79 @@
 {
     "start_quiz": {
-      "de": "Quiz starten",
-      "en": "Start quiz"
+        "de": "Quiz starten",
+        "en": "Start quiz"
     },
     "quiz": {
-      "de": "Quiz",
-      "en": "Quiz"
+        "de": "Quiz",
+        "en": "Quiz"
     },
     "submit_guess": {
-      "de": "Schätzung abgeben",
-      "en": "Submit guess"
+        "de": "Schätzung abgeben",
+        "en": "Submit guess"
     },
     "thank_you": {
-      "de": "Danke für die Teilnahme am Quiz.",
-      "en": "Thank you for participating in the quiz."
+        "de": "Danke für die Teilnahme am Quiz.",
+        "en": "Thank you for participating in the quiz."
     },
     "score_announcement": {
-      "de": "Sie haben {score} von {max_points} Punkte erreicht – das ist {predicate}. Wenn Sie mehr Daten suchen, besuchen Sie uns auf {url}.",
-      "en": "You scored {score} out of {max_points} points – that's {predicate}. If you're looking for more data, visit us at {url}."
+        "de": "Sie haben {score} von {max_points} Punkte erreicht – das ist {predicate}. Wenn Sie mehr Daten suchen, besuchen Sie uns auf {url}.",
+        "en": "You scored {score} out of {max_points} points – that's {predicate}. If you're looking for more data, visit us at {url}."
     },
     "predicates": {
-      "de": [
-        "ein Anfang, auf dem man aufbauen kann",
-        "ein solider Versuch",
-        "eine solide Leistung",
-        "ein starkes Ergebnis",
-        "ein ausgezeichnetes Ergebnis"
-      ],
-      "en": [
-        "a start to build on",
-        "a solid try",
-        "a solid achievement",
-        "a strong result",
-        "an excellent result"
-      ]
+        "de": [
+            "ein Anfang, auf dem man aufbauen kann",
+            "ein solider Versuch",
+            "eine solide Leistung",
+            "ein starkes Ergebnis",
+            "ein ausgezeichnetes Ergebnis"
+        ],
+        "en": [
+            "a start to build on",
+            "a solid try",
+            "a solid achievement",
+            "a strong result",
+            "an excellent result"
+        ]
     },
     "score_delta": {
-      "de": "Punkte für Frage",
-      "en": "Score for question"
+        "de": "Punkte für Frage",
+        "en": "Score for question"
     },
     "back_to_home": {
-      "de": "Zurück zur Startseite",
-      "en": "Back to startpage"
+        "de": "Zurück zur Startseite",
+        "en": "Back to startpage"
     },
     "your_score": {
-      "de": "Ihr Punktestand bisher",
-      "en": "Your score so far"
+        "de": "Ihr Punktestand bisher",
+        "en": "Your score so far"
     },
     "your_new_score": {
-      "de": "Neuer Punktestand",
-      "en": "Your new score"
+        "de": "Neuer Punktestand",
+        "en": "Your new score"
     },
     "score_for_question": {
-      "de": "Punkte für Frage",
-      "en": "Score for Question"
+        "de": "Punkte für Frage",
+        "en": "Score for Question"
     },
     "question": {
-      "de": "Frage",
-      "en": "Question"
+        "de": "Frage",
+        "en": "Question"
     },
     "show_image": {
-      "de": "Bild anzeigen",
-      "en": "Show image"
+        "de": "Bild anzeigen",
+        "en": "Show image"
     },
     "your_answer": {
-      "de": "Ihre Antwort",
-      "en": "Your answer"
+        "de": "Ihre Antwort",
+        "en": "Your answer"
     },
     "correct_answer": {
-      "de": "Richtige Antwort",
-      "en": "Correct answer"
+        "de": "Richtige Antwort",
+        "en": "Correct answer"
     },
     "explanation": {
-      "de": "Erklärung",
-      "en": "Explanation"
+        "de": "Erklärung",
+        "en": "Explanation"
     },
     "next": {
         "de": "Weiter",
@@ -91,5 +91,4 @@
         "de": "Nein",
         "en": "No"
     }
-  }
-  
+}

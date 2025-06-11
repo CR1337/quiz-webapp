@@ -11,17 +11,17 @@ from app.state import QuizState
 current_question = render_main()
 
 if current_question is not None:
-    if st.session_state['state'] == QuizState.INIT:
+    if st.session_state["state"] == QuizState.INIT:
         render_init()
 
-    elif st.session_state['state'] == QuizState.QUESTION: 
+    elif st.session_state["state"] == QuizState.QUESTION:
         render_question(current_question)
-        
-    elif st.session_state['state'] == QuizState.SOLUTION:
+
+    elif st.session_state["state"] == QuizState.SOLUTION:
         render_solution(current_question)
 
-    elif st.session_state['state'] == QuizState.RESULT:
+    elif st.session_state["state"] == QuizState.RESULT:
         render_result()
 
-    if st.session_state['state'] != QuizState.INIT:
+    if st.session_state["state"] != QuizState.INIT:
         render_back_to_home_button()

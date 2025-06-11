@@ -6,4 +6,3 @@ class QuizState(Enum):
     QUESTION = 1
     SOLUTION = 2
     RESULT = 3
-    

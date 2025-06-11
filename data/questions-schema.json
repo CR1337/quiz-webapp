@@ -2,95 +2,157 @@
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "type": "array",
     "items": {
-      "type": "object",
-      "required": ["type", "text", "explanation", "image", "image_caption"],
-      "properties": {
-        "type": {
-          "type": "string",
-          "enum": ["multiple_choice", "guess"]
-        },
-        "text": {
-          "type": "object",
-          "required": ["de", "en"],
-          "properties": {
-            "de": { "type": "string" },
-            "en": { "type": "string" }
-          },
-          "additionalProperties": false
-        },
-        "explanation": {
-          "type": "object",
-          "required": ["de", "en"],
-          "properties": {
-            "de": { "type": "string" },
-            "en": { "type": "string" }
-          },
-          "additionalProperties": false
-        },
-        "image": {
-          "type": "object",
-          "required": ["de", "en"],
-          "properties": {
-            "de": { "type": "string" },
-            "en": { "type": "string" }
-          },
-          "additionalProperties": false
-        },
-        "image_caption": {
-          "type": "object",
-          "required": ["de", "en"],
-          "properties": {
-            "de": { "type": "string" },
-            "en": { "type": "string" }
-          },
-          "additionalProperties": false
-        },
-        "answers": {
-          "type": "object",
-          "required": ["de", "en"],
-          "properties": {
-            "de": {
-              "type": "array",
-              "items": { "type": "string" }
+        "type": "object",
+        "required": [
+            "type",
+            "text",
+            "explanation",
+            "image",
+            "image_caption"
+        ],
+        "properties": {
+            "type": {
+                "type": "string",
+                "enum": [
+                    "multiple_choice",
+                    "guess"
+                ]
             },
-            "en": {
-              "type": "array",
-              "items": { "type": "string" }
+            "text": {
+                "type": "object",
+                "required": [
+                    "de",
+                    "en"
+                ],
+                "properties": {
+                    "de": {
+                        "type": "string"
+                    },
+                    "en": {
+                        "type": "string"
+                    }
+                },
+                "additionalProperties": false
+            },
+            "explanation": {
+                "type": "object",
+                "required": [
+                    "de",
+                    "en"
+                ],
+                "properties": {
+                    "de": {
+                        "type": "string"
+                    },
+                    "en": {
+                        "type": "string"
+                    }
+                },
+                "additionalProperties": false
+            },
+            "image": {
+                "type": "object",
+                "required": [
+                    "de",
+                    "en"
+                ],
+                "properties": {
+                    "de": {
+                        "type": "string"
+                    },
+                    "en": {
+                        "type": "string"
+                    }
+                },
+                "additionalProperties": false
+            },
+            "image_caption": {
+                "type": "object",
+                "required": [
+                    "de",
+                    "en"
+                ],
+                "properties": {
+                    "de": {
+                        "type": "string"
+                    },
+                    "en": {
+                        "type": "string"
+                    }
+                },
+                "additionalProperties": false
+            },
+            "answers": {
+                "type": "object",
+                "required": [
+                    "de",
+                    "en"
+                ],
+                "properties": {
+                    "de": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "en": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "additionalProperties": false
+            },
+            "right_answer_index": {
+                "type": "integer",
+                "minimum": 0
+            },
+            "score": {
+                "type": "integer",
+                "minimum": 0
+            },
+            "answer": {
+                "type": "number"
+            },
+            "max_points": {
+                "type": "integer",
+                "minimum": 0
             }
-          },
-          "additionalProperties": false
         },
-        "right_answer_index": {
-          "type": "integer",
-          "minimum": 0
-        },
-        "score": {
-          "type": "integer",
-          "minimum": 0
-        },
-        "answer": {
-          "type": "number"
-        },
-        "max_points": {
-          "type": "integer",
-          "minimum": 0
-        }
-      },
-      "allOf": [
-        {
-          "if": { "properties": { "type": { "const": "multiple_choice" } } },
-          "then": {
-            "required": ["answers", "right_answer_index", "score"]
-          }
-        },
-        {
-          "if": { "properties": { "type": { "const": "guess" } } },
-          "then": {
-            "required": ["answer", "max_points"]
-          }
-        }
-      ],
-      "additionalProperties": false
+        "allOf": [
+            {
+                "if": {
+                    "properties": {
+                        "type": {
+                            "const": "multiple_choice"
+                        }
+                    }
+                },
+                "then": {
+                    "required": [
+                        "answers",
+                        "right_answer_index",
+                        "score"
+                    ]
+                }
+            },
+            {
+                "if": {
+                    "properties": {
+                        "type": {
+                            "const": "guess"
+                        }
+                    }
+                },
+                "then": {
+                    "required": [
+                        "answer",
+                        "max_points"
+                    ]
+                }
+            }
+        ],
+        "additionalProperties": false
     }
-  }
-  
+}
