@@ -39,7 +39,7 @@ def render_solution(current_question: Question):
     with st.expander(Localization.get('explanation'), expanded=True):
         st.caption(current_question.explanation[Localization.language()])
 
-    if st.button(Localization.get('next'), use_container_width=True):
+    if st.button(Localization.get('next'), use_container_width=True, type='primary'):
         st.session_state['question_index'] += 1
         if (
             st.session_state['question_index'] 

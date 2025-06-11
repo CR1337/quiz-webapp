@@ -77,7 +77,7 @@ def render_back_to_home_button():
             reset()
 
     st.divider()
-    if st.button(Localization.get('back_to_home'), use_container_width=True):
+    if st.button(Localization.get('back_to_home'), use_container_width=True, type='primary' if st.session_state['state'] == QuizState.RESULT else 'secondary'):
         if st.session_state['state'] == QuizState.RESULT:
             reset()
         else:

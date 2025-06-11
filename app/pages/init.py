@@ -9,7 +9,7 @@ def render_init():
     left_column, right_column = st.columns(spec=[0.9, 0.1])
 
     with left_column:
-        if st.button(Localization.get('start_quiz'), use_container_width=True):
+        if st.button(Localization.get('start_quiz'), use_container_width=True, type='primary'):
             st.session_state['state'] = QuizState.QUESTION
             scroll_to_top()
             st.rerun()

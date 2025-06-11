@@ -36,7 +36,8 @@ def render_question(current_question: Question):
         )
         if st.button(
             Localization.get('submit_guess'), 
-            use_container_width=True
+            use_container_width=True,
+            type='primary'
         ):
             st.session_state['answer'] = guess
             scroll_to_top()
@@ -49,7 +50,7 @@ def render_question(current_question: Question):
             cycle(columns)
         )):
             with column:
-                if st.button(answer, use_container_width=True):
+                if st.button(answer, use_container_width=True, type='primary'):
                     st.session_state['answer'] = answer_index
                     scroll_to_top()
                     check_answer(current_question, answer_index)
