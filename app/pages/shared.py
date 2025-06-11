@@ -7,7 +7,7 @@ from app.colors import Color, BLUE, GRAY, GREEN
 from streamlit.delta_generator import DeltaGenerator
 
 
-BADGE_HTML_FILENAME: str = os.path.join("app", "html", "badge.html")
+BADGE_HTML_FILENAME: str = os.path.join("app", "html", "badge.html.template")
 
 
 @st.cache_data(show_spinner=False)
