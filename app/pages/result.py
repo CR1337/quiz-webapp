@@ -11,9 +11,9 @@ def render_result():
     max_points = st.session_state["max_points"]
     predicate_index = min(int((score / max_points) * N_PREDICATES), N_PREDICATES - 1)
     if predicate_index < N_PREDICATES // 2:
-        st.balloons()
-    else:
         st.snow()
+    else:
+        st.balloons()
     st.header(Localization.get("thank_you"))
     st.subheader(
         Localization.get("score_announcement").format(

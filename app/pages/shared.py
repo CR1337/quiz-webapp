@@ -28,7 +28,7 @@ def render_score(display_delta: bool = False):
 
         left_column.metric(
             label=f"{Localization.get('score_delta')} {index + 1}",
-            value=f"{st.session_state['last_score']}/{question.score}",
+            value=f"{st.session_state['last_score']}/{question.max_points}",
         )
 
         right_column.metric(

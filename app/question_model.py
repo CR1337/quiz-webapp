@@ -244,3 +244,7 @@ class MultipleChoiceQuestion(Question):
     @property
     def score(self) -> int:
         return self._score
+    
+    @property
+    def max_points(self) -> int:
+        return self._score
