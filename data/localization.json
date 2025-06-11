@@ -16,7 +16,7 @@
       "en": "Thank you for participating in the quiz."
     },
     "score_announcement": {
-      "de": "Du hast {score} von {max_points} Punkte erreicht – das ist {predicate}. Wenn du mehr Daten suchst, besuche uns auf {url}.",
+      "de": "Sie haben {score} von {max_points} Punkte erreicht – das ist {predicate}. Wenn Sie mehr Daten suchen, besuchen Sie uns auf {url}.",
       "en": "You scored {score} out of {max_points} points – that's {predicate}. If you're looking for more data, visit us at {url}."
     },
     "predicates": {
@@ -46,6 +46,10 @@
     "your_score": {
       "de": "Ihr Punktestand bisher",
       "en": "Your score so far"
+    },
+    "your_new_score": {
+      "de": "Neuer Punktestand",
+      "en": "Your new score"
     },
     "score_for_question": {
       "de": "Punkte für Frage",

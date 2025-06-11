@@ -19,15 +19,26 @@ badge_html_template = load_badge_html()
 
 def render_score(display_delta: bool = False):
     index = st.session_state['question_index']
-    question_amount = len(st.session_state['questions'])
-
-    st.metric(
-        label=Localization.get('your_score'),
-        value=f"{st.session_state['score']}/{st.session_state['max_points']}"
-    )
+    question = st.session_state['questions'][index]
 
     if display_delta:
-        st.subheader(f":primary[{Localization.get('score_delta')} {index + 1}: {st.session_state['last_score']}/{question_amount}]")
+        left_column, right_column = st.columns(2)
+
+        left_column.metric(
+            label=f"{Localization.get('score_delta')} {index + 1}",
+            value=f"{st.session_state['last_score']}/{question.score}"
+        )
+
+        right_column.metric(
+            label=Localization.get('your_new_score'),
+            value=f"{st.session_state['score']}/{st.session_state['max_points']}"
+        )
+        
+    else:
+        st.metric(
+            label=Localization.get('your_score'),
+            value=f"{st.session_state['score']}/{st.session_state['max_points']}"
+        )
 
 
 def custom_badge(parent: DeltaGenerator, text: str, icon: str, color: Color):

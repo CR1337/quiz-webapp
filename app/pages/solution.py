@@ -1,15 +1,14 @@
 import streamlit as st
 from app.question_model import Question, GuessQuestion, MultipleChoiceQuestion
-from app.pages.shared import render_score, render_progress, render_question_image, scroll_to_top
+from app.pages.shared import render_score, render_progress, scroll_to_top
 from app.localization import Localization
 from app.state import QuizState
 
 
 def render_solution(current_question: Question):
-    render_score(True)
     render_progress()
-    
-    st.write(current_question.text[Localization.language()])
+
+    st.header(current_question.text[Localization.language()])
 
     if isinstance(current_question, GuessQuestion):
         right_answer = st.session_state['answer'] == current_question.answer
@@ -21,29 +20,21 @@ def render_solution(current_question: Question):
         )
 
     elif isinstance(current_question, MultipleChoiceQuestion):
-        right_answer = (
-            current_question.answers
-            [Localization.language()][st.session_state['answer']] 
-            == current_question.answers
-            [Localization.language()][current_question.right_answer_index]
+        st.subheader(
+            f":primary[{Localization.get('your_answer')}: "
+            f"{current_question.answers[Localization.language()][st.session_state['answer']]}]"
         )
-        if right_answer:
-            st.subheader(
-                f":primary[{Localization.get('your_answer')}: "
-                f"{current_question.answers[Localization.language()][st.session_state['answer']]}]"
-            )
-        else:
-            st.subheader(
-                f"{Localization.get('your_answer')}: "
-                f"{current_question.answers[Localization.language()][st.session_state['answer']]}"
-            )
         st.subheader(
             f"{Localization.get('correct_answer')}: "
             f"{current_question.answers[Localization.language()][current_question.right_answer_index]}"
         )
 
-    with st.expander(Localization.get('explanation'), expanded=True):
-        st.markdown(f":primary[**{current_question.explanation[Localization.language()]}**]")
+    st.header(Localization.get('explanation'))
+    st.markdown(f":primary[**{current_question.explanation[Localization.language()]}**]")
+
+    st.divider()
+    
+    render_score(True)
 
     if st.button(Localization.get('next'), use_container_width=True, type='primary'):
         st.session_state['question_index'] += 1
@@ -56,8 +47,4 @@ def render_solution(current_question: Question):
         else:
             st.session_state['state'] = QuizState.QUESTION
         scroll_to_top()
-        st.rerun()
-
-    if st.button("ENDE"):
-        st.session_state['state'] = QuizState.RESULT
         st.rerun()
