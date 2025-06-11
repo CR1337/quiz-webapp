@@ -15,8 +15,7 @@ def render_score(display_delta: bool = False):
     )
 
     if display_delta:
-        color = "green" if st.session_state['last_score'] > 0 else "red"
-        st.subheader(f":{color}[{Localization.get('score_delta')} {index + 1}: {st.session_state['last_score']}/{question_amount}]")
+        st.subheader(f":primary[{Localization.get('score_delta')} {index + 1}: {st.session_state['last_score']}/{question_amount}]")
 
     # if st.session_state['state'] == QuizState.SOLUTION:
     #     progress_index = index + 1

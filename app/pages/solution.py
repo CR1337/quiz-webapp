@@ -26,11 +26,16 @@ def render_solution(current_question: Question):
             == current_question.answers
             [Localization.language()][current_question.right_answer_index]
         )
-        color = "green" if right_answer else "red"
-        st.subheader(
-            f":{color}[{Localization.get('your_answer')}: "
-            f"{current_question.answers[Localization.language()][st.session_state['answer']]}]"
-        )
+        if right_answer:
+            st.subheader(
+                f":primary[{Localization.get('your_answer')}: "
+                f"{current_question.answers[Localization.language()][st.session_state['answer']]}]"
+            )
+        else:
+            st.subheader(
+                f"{Localization.get('your_answer')}: "
+                f"{current_question.answers[Localization.language()][st.session_state['answer']]}"
+            )
         st.subheader(
             f"{Localization.get('correct_answer')}: "
             f"{current_question.answers[Localization.language()][current_question.right_answer_index]}"
