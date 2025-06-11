@@ -11,7 +11,6 @@ def render_solution(current_question: Question):
     st.header(current_question.text[Localization.language()])
 
     if isinstance(current_question, GuessQuestion):
-        right_answer = st.session_state['answer'] == current_question.answer
         st.subheader(
             f"{Localization.get('your_answer')}: {st.session_state['answer']:.{current_question.decimal_places}f}"
         )
@@ -28,6 +27,8 @@ def render_solution(current_question: Question):
             f"{Localization.get('correct_answer')}: "
             f"{current_question.answers[Localization.language()][current_question.right_answer_index]}"
         )
+
+    st.divider()
 
     st.header(Localization.get('explanation'))
     st.markdown(f":primary[**{current_question.explanation[Localization.language()]}**]")
