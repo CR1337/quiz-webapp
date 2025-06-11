@@ -11,9 +11,29 @@
       "de": "Schätzung abgeben",
       "en": "Submit guess"
     },
+    "thank_you": {
+      "de": "Danke für die Teilnahme am Quiz.",
+      "en": "Thank you for participating in the quiz."
+    },
     "score_announcement": {
-      "de": "Sie haben {score} von {max_points} Punkten erreicht.",
-      "en": "You scored {score} out of {max_points} points."
+      "de": "Du hast {score} von {max_points} Punkte erreicht – das ist {predicate}. Wenn du mehr Daten suchst, besuche uns auf {url}.",
+      "en": "You scored {score} out of {max_points} points – that's {predicate}. If you're looking for more data, visit us at {url}."
+    },
+    "predicates": {
+      "de": [
+        "ein Anfang, auf dem man aufbauen kann",
+        "ein solider Versuch",
+        "eine solide Leistung",
+        "ein starkes Ergebnis",
+        "ein ausgezeichnetes Ergebnis"
+      ],
+      "en": [
+        "a start to build on",
+        "a solid try",
+        "a solid achievement",
+        "a strong result",
+        "an excellent result"
+      ]
     },
     "score_delta": {
       "de": "Punkte für Frage",

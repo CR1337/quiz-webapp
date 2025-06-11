@@ -56,3 +56,7 @@ def render_solution(current_question: Question):
             st.session_state['state'] = QuizState.QUESTION
         scroll_to_top()
         st.rerun()
+
+    if st.button("ENDE"):
+        st.session_state['state'] = QuizState.RESULT
+        st.rerun()

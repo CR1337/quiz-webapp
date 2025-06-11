@@ -9,4 +9,4 @@
 - [x] Erklärung größer (evtl. in grün)
 - [x] Alle Farben in Destatis-Farben
 - [x] Falsche Antworten nicht in rot
-- [] Ende mehr ausschmücken
+- [x] Ende mehr ausschmücken
