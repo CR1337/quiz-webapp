@@ -1,12 +1,13 @@
 import streamlit as st
 from app.question_model import Question, GuessQuestion, MultipleChoiceQuestion
-from app.pages.shared import render_score, render_question_image, scroll_to_top
+from app.pages.shared import render_score, render_progress, render_question_image, scroll_to_top
 from app.localization import Localization
 from app.state import QuizState
 
 
 def render_solution(current_question: Question):
     render_score(True)
+    render_progress()
     
     st.write(current_question.text[Localization.language()])
 

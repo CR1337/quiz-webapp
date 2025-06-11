@@ -3,6 +3,18 @@ import streamlit as st
 from app.question_model import Question
 from app.localization import Localization
 from app.state import QuizState
+from app.colors import Color, BLUE, GRAY, GREEN
+from streamlit.delta_generator import DeltaGenerator
+
+
+BADGE_HTML_FILENAME: str = os.path.join("app", "html", "badge.html")
+
+@st.cache_data(show_spinner=False)
+def load_badge_html():
+    with open(BADGE_HTML_FILENAME, 'r') as file:
+        return file.read()
+
+badge_html_template = load_badge_html()
 
 
 def render_score(display_delta: bool = False):
@@ -17,15 +29,32 @@ def render_score(display_delta: bool = False):
     if display_delta:
         st.subheader(f":primary[{Localization.get('score_delta')} {index + 1}: {st.session_state['last_score']}/{question_amount}]")
 
-    # if st.session_state['state'] == QuizState.SOLUTION:
-    #     progress_index = index + 1
-    # else:
-    #     progress_index = index
-    if st.session_state['state'] == QuizState.QUESTION:
-        st.progress(
-            index / question_amount, 
-            f"{Localization.get('question')} {index + 1}/{question_amount}"
-        )
+
+def custom_badge(parent: DeltaGenerator, text: str, icon: str, color: Color):
+    r, g, b = color
+    parent.html(badge_html_template.format(text=text, icon=icon, r=r, g=g, b=b))
+
+
+def render_progress():
+    index = st.session_state['question_index']
+    question_amount = len(st.session_state['questions'])
+
+    columns = st.columns(question_amount)
+    for idx, column in enumerate(columns):
+        if idx < index:
+            icon = "check"
+            color = GREEN
+        elif idx == index and st.session_state['state'] == QuizState.QUESTION:
+            icon = "arrow_downward"
+            color = BLUE
+        elif idx == index and st.session_state['state'] == QuizState.SOLUTION:
+            icon = "check"
+            color = GREEN
+        else:
+            icon = "question_mark"
+            color = GRAY
+
+        custom_badge(column, f"{idx + 1}", icon=icon, color=color)
 
 
 def render_image(

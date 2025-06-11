@@ -3,7 +3,7 @@ import streamlit as st
 from numbers import Number
 from itertools import cycle
 from app.question_model import Question, GuessQuestion, MultipleChoiceQuestion
-from app.pages.shared import render_score, render_question_image, scroll_to_top
+from app.pages.shared import render_score, render_progress, render_question_image, scroll_to_top
 from app.localization import Localization
 from app.state import QuizState
 
@@ -18,6 +18,7 @@ def check_answer(current_question: Question, answer: Number):
 
 def render_question(current_question: Question):
     render_score()
+    render_progress()
 
     st.subheader(current_question.text[Localization.language()])
 

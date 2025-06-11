@@ -1,7 +1,7 @@
 # TODOs
 
 - [x] Logo Zukunftskongress einbauen
-- [] Progress durch eingefärbte Zahlen darstellen
+- [x] Progress durch eingefärbte Zahlen darstellen
 - [] Anna Bilder einbauen
 - [x] weniger streng bewerten
 - [] "Ihre Antwort", "Richtige Antwort" über Punktestand

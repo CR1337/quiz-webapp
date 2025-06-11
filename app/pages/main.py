@@ -3,6 +3,7 @@ import os
 import json
 from random import sample, choice
 import streamlit as st
+import streamlit.components.v1 as components
 from streamlit_scroll_to_top import scroll_to_here
 from app.question_model import Question
 from app.localization import Localization
@@ -44,9 +45,45 @@ def render_main() -> Question | None:
         span[data-testid="stHeaderActionElements"] {
             display: none !important;
         }
+        span:has(> span[aria-label="check icon"]) {
+            color: yellow;
+            font-weight: bold;
+        }
         </style>
         """, unsafe_allow_html=True
     )
+
+    html_code = """
+<script>
+  let attempts = 0;
+  const maxAttempts = 20;
+
+  const interval = setInterval(() => {
+    const spans = document.querySelectorAll('span[aria-label="check icon"]');
+    console.log("TRY", attempts, spans.length);
+
+    if (spans.length > 0 || attempts >= maxAttempts) {
+      spans.forEach((child, i) => {
+        const parent = child.closest('span'); // this is the outer span
+        console.log("FOUND:", child, "PARENT:", parent);
+        if (parent) {
+          parent.style.backgroundColor = 'yellow';
+          parent.style.color = 'black';
+          parent.style.border = '2px solid red';
+        }
+      });
+
+      clearInterval(interval);
+    }
+
+    attempts++;
+  }, 300);
+</script>
+
+    """
+
+    # Inject HTML and JavaScript into the Streamlit app
+    components.html(html_code, height=0)
 
     question_filename: str = (
         st.query_params.get('question_filename') 
