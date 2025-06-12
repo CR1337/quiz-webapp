@@ -19,8 +19,7 @@ def render_result():
         Localization.get("score_announcement").format(
             score=score,
             max_points=max_points,
-            predicate=Localization.get("predicates")[predicate_index],
-            url="[www.destatis.de](https://destatis.de)",
+            predicate=Localization.get("predicates")[predicate_index]
         )
     )
     render_image(f"result_{Localization.language()}.jpg")
