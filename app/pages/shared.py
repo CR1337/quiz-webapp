@@ -1,5 +1,6 @@
 import os
 import streamlit as st
+import streamlit.components.v1 as components
 from app.question_model import Question
 from app.localization import Localization
 from app.state import QuizState
@@ -40,33 +41,102 @@ def render_score(display_delta: bool = False):
         )
 
 
-def custom_badge(parent: DeltaGenerator, text: str, icon: str, color: Color):
-    badge_html_template = load_badge_html()
-    r, g, b = color
-    parent.html(badge_html_template.format(text=text, icon=icon, r=r, g=g, b=b))
+# def custom_badge(parent: DeltaGenerator, text: str, icon: str, color: Color):
+#     badge_html_template = load_badge_html()
+#     r, g, b = color
+#     parent.html(badge_html_template.format(text=text, icon=icon, r=r, g=g, b=b))
+
+
+# def render_progress():
+#     index = st.session_state["question_index"]
+#     question_amount = len(st.session_state["questions"])
+
+#     columns = st.columns(question_amount)
+#     for idx, column in enumerate(columns):
+#         if idx < index:
+#             icon = "check"
+#             color = GREEN
+#         elif idx == index and st.session_state["state"] == QuizState.QUESTION:
+#             icon = "arrow_downward"
+#             color = BLUE
+#         elif idx == index and st.session_state["state"] == QuizState.SOLUTION:
+#             icon = "check"
+#             color = GREEN
+#         else:
+#             icon = "question_mark"
+#             color = GRAY
+
+#         custom_badge(column, f"{idx + 1}", icon=icon, color=color)
 
 
 def render_progress():
     index = st.session_state["question_index"]
     question_amount = len(st.session_state["questions"])
+    badge_html_template = load_badge_html()
 
-    columns = st.columns(question_amount)
-    for idx, column in enumerate(columns):
+    # Build badges HTML (unchanged)
+    badges_html = ""
+    for idx in range(question_amount):
         if idx < index:
-            icon = "check"
-            color = GREEN
+            icon, color = "check", GREEN
         elif idx == index and st.session_state["state"] == QuizState.QUESTION:
-            icon = "arrow_downward"
-            color = BLUE
+            icon, color = "arrow_downward", BLUE
         elif idx == index and st.session_state["state"] == QuizState.SOLUTION:
-            icon = "check"
-            color = GREEN
+            icon, color = "check", GREEN
         else:
-            icon = "question_mark"
-            color = GRAY
+            icon, color = "question_mark", GRAY
+        r, g, b = color
 
-        custom_badge(column, f"{idx + 1}", icon=icon, color=color)
+        badges_html += f"""
+          <div class="badge-wrapper">
+            {badge_html_template.format(text=idx+1, icon=icon, r=r, g=g, b=b)}
+          </div>
+        """
 
+    # Full HTML + CSS + font load
+    full_html = f"""
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet"/>
+
+    <style>
+      .progress-row, .progress-row * {{
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                     "Helvetica Neue", Arial, sans-serif !important;
+      }}
+      .progress-row {{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 12px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding: 0.5rem 0;
+      }}
+      .progress-row .badge-wrapper {{
+        flex: 0 0 auto;
+      }}
+
+      /* ↓ HERE: reduced padding to 20% of previous (0.75→0.15, 1.25→0.25) */
+      .is-badge {{
+        display: inline-flex !important;
+        align-items: center !important;
+        gap: 0.5em;
+        padding: 0.2rem 0.3rem;    /* was 0.75rem 1.25rem */
+        border-radius: 12px !important;
+      }}
+
+      /* ↓ HERE: reduced icon bump to 20% (1.25→1.05) */
+      .is-badge [role="img"] {{
+        font-family: 'Material Symbols Rounded' !important;
+        font-size: 1.05em;          /* was 1.25em */
+      }}
+    </style>
+
+    <div class="progress-row">
+      {badges_html}
+    </div>
+    """
+
+    components.html(full_html, height=100, scrolling=True)
 
 def render_image(image: str, caption: str | None = None, directory: str = "images"):
     st.image(os.path.join(directory, image), caption)
