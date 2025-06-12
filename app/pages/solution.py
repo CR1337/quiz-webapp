@@ -28,7 +28,6 @@ def render_solution(current_question: Question):
 
     st.divider()
 
-    st.header(Localization.get("explanation"))
     st.markdown(
         f":primary[**{current_question.explanation[Localization.language()]}**]"
     )
