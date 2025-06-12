@@ -1,8 +1,9 @@
 [
     {
+        "index": 0,
         "type": "guess",
         "text": {
-            "de": "Umviel Prozent hat sich die Fläche der Bundesrepublik mit der Deutschen Einheit 1990 vergrößert?",
+            "de": "Um wieviel Prozent hat sich die Fläche der Bundesrepublik mit der Deutschen Einheit 1990 vergrößert?",
             "en": "By what percentage did the area of the Federal Republic increase with German reunification in 1990?"
         },
         "answer": 44,
@@ -11,7 +12,7 @@
         "max_points": 10,
         "explanation": {
             "de": "Die Fläche der Bundesrepublik vergrößerte sich 1990 um 44%. ([Quelle](https://www.statistikportal.de/de/bevoelkerung/flaeche-und-bevoelkerung))",
-            "en": "The area of the Federal Republic increased by 44% in 1990. ([Source](https://www.statistikportal.de/de/bevoelkerung/flaeche-und-bevoelkerung))"
+            "en": "The area of the Federal Republic of Germany increased by 44% in 1990. ([Source](https://www.statistikportal.de/de/bevoelkerung/flaeche-und-bevoelkerung))"
         },
         "image": {
             "de": "placeholder_de.jpg",
@@ -20,9 +21,11 @@
         "image_caption": {
             "de": null,
             "en": null
-        }
+        },
+        "coupled_question_indices": []
     },
     {
+        "index": 1,
         "type": "guess",
         "text": {
             "de": "Wie viele Kinder bekommen Frauen in Deutschland im Durchschnitt?",
@@ -43,9 +46,11 @@
         "image_caption": {
             "de": null,
             "en": null
-        }
+        },
+        "coupled_question_indices": []
     },
     {
+        "index": 2,
         "type": "guess",
         "text": {
             "de": "Wie alt sind Frauen im Durchschnitt bei ihrer ersten Heirat?",
@@ -66,9 +71,13 @@
         "image_caption": {
             "de": null,
             "en": null
-        }
+        },
+        "coupled_question_indices": [
+            3
+        ]
     },
     {
+        "index": 3,
         "type": "guess",
         "text": {
             "de": "Wie alt sind Männer im Durchschnitt bei ihrer ersten Heirat?",
@@ -89,9 +98,13 @@
         "image_caption": {
             "de": null,
             "en": null
-        }
+        },
+        "coupled_question_indices": [
+            2
+        ]
     },
     {
+        "index": 4,
         "type": "multiple_choice",
         "text": {
             "de": "In welchem Bundesland arbeiten die meisten landwirtschaftlichen Betriebe nach ökologischen Standards?",
@@ -124,9 +137,11 @@
         "image_caption": {
             "de": null,
             "en": null
-        }
+        },
+        "coupled_question_indices": []
     },
     {
+        "index": 5,
         "type": "guess",
         "text": {
             "de": "In welchem Alter verlassen junge Menschen im Durchschnitt ihr Elternhaus?",
@@ -147,9 +162,11 @@
         "image_caption": {
             "de": null,
             "en": null
-        }
+        },
+        "coupled_question_indices": []
     },
     {
+        "index": 6,
         "type": "guess",
         "text": {
             "de": "Wie hat sich die Bevölkerungszahl Deutschlands seit der Jahrtausendwende entwickelt?",
@@ -170,9 +187,11 @@
         "image_caption": {
             "de": null,
             "en": null
-        }
+        },
+        "coupled_question_indices": []
     },
     {
+        "index": 7,
         "type": "guess",
         "text": {
             "de": "Wie hoch ist der tägliche Wasserverbrauch pro Kopf in Deutschland?",
@@ -193,9 +212,11 @@
         "image_caption": {
             "de": null,
             "en": null
-        }
+        },
+        "coupled_question_indices": []
     },
     {
+        "index": 8,
         "type": "multiple_choice",
         "text": {
             "de": "Welches Land hat weltweit den höchsten Frauenanteil im Parlament?",
@@ -228,9 +249,13 @@
         "image_caption": {
             "de": null,
             "en": null
-        }
+        },
+        "coupled_question_indices": [
+            9
+        ]
     },
     {
+        "index": 9,
         "type": "guess",
         "text": {
             "de": "Wie hoch ist der aktuelle Frauenanteil unter den Abgeordneten des Deutschen Bundestages?",
@@ -251,9 +276,13 @@
         "image_caption": {
             "de": null,
             "en": null
-        }
+        },
+        "coupled_question_indices": [
+            8
+        ]
     },
     {
+        "index": 10,
         "type": "guess",
         "text": {
             "de": "Wie groß war das Wirtschaftswachstum 2024?",
@@ -274,9 +303,11 @@
         "image_caption": {
             "de": null,
             "en": null
-        }
+        },
+        "coupled_question_indices": []
     },
     {
+        "index": 11,
         "type": "guess",
         "text": {
             "de": "Wie hoch war das Staatsdefizit im Jahr 2024?",
@@ -297,9 +328,11 @@
         "image_caption": {
             "de": null,
             "en": null
-        }
+        },
+        "coupled_question_indices": []
     },
     {
+        "index": 12,
         "type": "guess",
         "text": {
             "de": "Wie hoch war die Inflationsrate im Jahr 2024?",
@@ -320,9 +353,11 @@
         "image_caption": {
             "de": null,
             "en": null
-        }
+        },
+        "coupled_question_indices": []
     },
     {
+        "index": 13,
         "type": "multiple_choice",
         "text": {
             "de": "Welcher Dienstleistungsbereich verzeichnete 2024 den größten Umsatzzuwachs gegenüber dem Vorjahr?",
@@ -355,9 +390,11 @@
         "image_caption": {
             "de": null,
             "en": null
-        }
+        },
+        "coupled_question_indices": []
     },
     {
+        "index": 14,
         "type": "guess",
         "text": {
             "de": "Wie viele Unternehmen gibt es in Deutschland?",
@@ -378,9 +415,11 @@
         "image_caption": {
             "de": null,
             "en": null
-        }
+        },
+        "coupled_question_indices": []
     },
     {
+        "index": 15,
         "type": "multiple_choice",
         "text": {
             "de": "Wer ist Deutschlands wichtigster Handelspartner?",
@@ -411,9 +450,11 @@
         "image_caption": {
             "de": null,
             "en": null
-        }
+        },
+        "coupled_question_indices": []
     },
     {
+        "index": 16,
         "type": "multiple_choice",
         "text": {
             "de": "Was ist das wichtigste deutsche Exportgut?",
@@ -446,9 +487,11 @@
         "image_caption": {
             "de": null,
             "en": null
-        }
+        },
+        "coupled_question_indices": []
     },
     {
+        "index": 171,
         "type": "guess",
         "text": {
             "de": "Aus wie vielen Personen besteht eine Durchschnittsfamilie in Deutschland?",
@@ -469,9 +512,11 @@
         "image_caption": {
             "de": null,
             "en": null
-        }
+        },
+        "coupled_question_indices": []
     },
     {
+        "index": 18,
         "type": "guess",
         "text": {
             "de": "Wie hoch war 2023 der Anteil der Windkraft an der Stromerzeugung?",
@@ -492,9 +537,11 @@
         "image_caption": {
             "de": null,
             "en": null
-        }
+        },
+        "coupled_question_indices": []
     },
     {
+        "index": 19,
         "type": "guess",
         "text": {
             "de": "Wie viel Zeit verbringen 10- bis 17-Jährige durchschnittlich am Tag mit Computer- und Videospielen?",
@@ -515,9 +562,11 @@
         "image_caption": {
             "de": null,
             "en": null
-        }
+        },
+        "coupled_question_indices": []
     },
     {
+        "index": 20,
         "type": "guess",
         "text": {
             "de": "Wie hoch lag die Erwerbslosenquote im März 2025 in Deutschland?",
@@ -538,9 +587,11 @@
         "image_caption": {
             "de": null,
             "en": null
-        }
+        },
+        "coupled_question_indices": []
     },
     {
+        "index": 21,
         "type": "guess",
         "text": {
             "de": "Wie viel Liter zuckerhaltige Erfrischungsgetränke wurden 2023 pro Kopf in Deutschland produziert?",
@@ -561,9 +612,11 @@
         "image_caption": {
             "de": null,
             "en": null
-        }
+        },
+        "coupled_question_indices": []
     },
     {
+        "index": 22,
         "type": "guess",
         "text": {
             "de": "Wie viel Kilogramm Fleisch werden pro Kopf im Jahr in Deutschland gegessen?",
@@ -584,9 +637,11 @@
         "image_caption": {
             "de": null,
             "en": null
-        }
+        },
+        "coupled_question_indices": []
     },
     {
+        "index": 23,
         "type": "guess",
         "text": {
             "de": "Wie viel Stunden Freizeit haben Menschen in Deutschland im Durchschnitt pro Tag?",
@@ -607,9 +662,11 @@
         "image_caption": {
             "de": null,
             "en": null
-        }
+        },
+        "coupled_question_indices": []
     },
     {
+        "index": 24,
         "type": "multiple_choice",
         "text": {
             "de": "Was ist die häufigste gesprochene Zweitsprache in privaten Haushalten in Deutschland?",
@@ -642,9 +699,11 @@
         "image_caption": {
             "de": null,
             "en": null
-        }
+        },
+        "coupled_question_indices": []
     },
     {
+        "index": 25,
         "type": "guess",
         "text": {
             "de": "Gemessen am Gehalt der Männer: wie viel Prozent weniger verdienen Frauen pro Stunde?",
@@ -665,9 +724,11 @@
         "image_caption": {
             "de": null,
             "en": null
-        }
+        },
+        "coupled_question_indices": []
     },
     {
+        "index": 26,
         "type": "guess",
         "text": {
             "de": "Wie viel Prozent der Bevölkerung haben (Fach-)Abitur?",
@@ -688,9 +749,11 @@
         "image_caption": {
             "de": null,
             "en": null
-        }
+        },
+        "coupled_question_indices": []
     },
     {
+        "index": 27,
         "type": "guess",
         "text": {
             "de": "Wie hoch ist die Lebenserwartung von Frauen in Deutschland?",
@@ -711,9 +774,13 @@
         "image_caption": {
             "de": null,
             "en": null
-        }
+        },
+        "coupled_question_indices": [
+            28
+        ]
     },
     {
+        "index": 28,
         "type": "guess",
         "text": {
             "de": "Wie hoch ist die Lebenserwartung von Männern in Deutschland?",
@@ -734,9 +801,13 @@
         "image_caption": {
             "de": null,
             "en": null
-        }
+        },
+        "coupled_question_indices": [
+            27
+        ]
     },
     {
+        "index": 29,
         "type": "guess",
         "text": {
             "de": "Wie viele Personen mit Einwanderungsgeschichte leben in Deutschland?",
@@ -757,9 +828,11 @@
         "image_caption": {
             "de": null,
             "en": null
-        }
+        },
+        "coupled_question_indices": []
     },
     {
+        "index": 30,
         "type": "guess",
         "text": {
             "de": "Wie viel Prozent weniger Alterseinkünfte beziehen Frauen im Vergleich zu Männern?",
@@ -780,9 +853,11 @@
         "image_caption": {
             "de": null,
             "en": null
-        }
+        },
+        "coupled_question_indices": []
     },
     {
+        "index": 31,
         "type": "guess",
         "text": {
             "de": "Wie viele Fluggäste wurden 2024 an deutschen Flughäfen gezählt?",
@@ -803,9 +878,11 @@
         "image_caption": {
             "de": null,
             "en": null
-        }
+        },
+        "coupled_question_indices": []
     },
     {
+        "index": 32,
         "type": "guess",
         "text": {
             "de": "Wie viel Prozent der Wege im Personenverkehr werden mit dem Auto zurückgelegt?",
@@ -826,9 +903,11 @@
         "image_caption": {
             "de": null,
             "en": null
-        }
+        },
+        "coupled_question_indices": []
     },
     {
+        "index": 33,
         "type": "guess",
         "text": {
             "de": "Wie viel Prozent der Erwerbstätigen arbeiten Teilzeit?",
@@ -849,9 +928,11 @@
         "image_caption": {
             "de": null,
             "en": null
-        }
+        },
+        "coupled_question_indices": []
     },
     {
+        "index": 34,
         "type": "guess",
         "text": {
             "de": "Wie viel Prozent der Haushalte in Deutschland besitzen mindestens ein Auto?",
@@ -872,6 +953,7 @@
         "image_caption": {
             "de": null,
             "en": null
-        }
+        },
+        "coupled_question_indices": []
     }
 ]

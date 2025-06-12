@@ -4,13 +4,18 @@
     "items": {
         "type": "object",
         "required": [
+            "index",
             "type",
             "text",
             "explanation",
             "image",
-            "image_caption"
+            "image_caption",
+            "coupled_question_indices"
         ],
         "properties": {
+            "index": {
+                "type": "integer"
+            },
             "type": {
                 "type": "string",
                 "enum": [
@@ -74,10 +79,16 @@
                 ],
                 "properties": {
                     "de": {
-                        "type": ["string", "null"]
+                        "type": [
+                            "string",
+                            "null"
+                        ]
                     },
                     "en": {
-                        "type": ["string", "null"]
+                        "type": [
+                            "string",
+                            "null"
+                        ]
                     }
                 },
                 "additionalProperties": false
@@ -124,6 +135,12 @@
             },
             "max_guess": {
                 "type": "number"
+            },
+            "coupled_question_indices": {
+                "type": "array",
+                "items": {
+                    "type": "integer"
+                }
             }
         },
         "allOf": [

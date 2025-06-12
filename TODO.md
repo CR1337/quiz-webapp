@@ -13,4 +13,4 @@
 
 - [x] slider range explizit angeben
 - [x] Fragen einbauen
-- [] Doppelfragen
+- [x] Doppelfragen

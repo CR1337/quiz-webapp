@@ -1,12 +1,12 @@
 import os
 import json
-from random import sample, choice
 import streamlit as st
 from streamlit_scroll_to_top import scroll_to_here
 from app.question_model import Question
 from app.localization import Localization
 from app.validation import QuestionValidator
 from app.state import QuizState
+from app.question_selection import QuestionSelector
 
 
 def render_main() -> Question | None:
@@ -66,28 +66,7 @@ def render_main() -> Question | None:
         with open(os.path.join("data", "config.json"), "r") as file:
             config = json.load(file)
 
-        method = config["question_selection_method"]
-        match method:
-            case "all":
-                pass
-            case "list":
-                method = config["question_selection_methods"][method]
-                question_list = [question_list[i] for i in method["question_indices"]]
-            case "random":
-                method = config["question_selection_methods"][method]
-                question_list = sample(question_list, method["question_amount"])
-            case "random_block":
-                method = config["question_selection_methods"][method]
-                block_size = method["block_size"]
-                block_amount = len(question_list) // block_size
-                block_index = choice(list(range(block_amount)))
-                question_index = block_index * block_size
-                question_list = question_list[
-                    question_index : question_index + block_size
-                ]
-            case _:
-                st.header(f"Invalid question selection method: {method}")
-                return None
+        question_list = QuestionSelector.select_questions(question_list, config)
 
         st.session_state["question_index"] = 0
         st.session_state["questions"] = Question.many_from_dict(question_list)

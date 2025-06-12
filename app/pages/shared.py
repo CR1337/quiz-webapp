@@ -89,7 +89,7 @@ def render_question_image(question: Question):
 
 def render_back_to_home_button():
     def reset():
-        st.session_state["question_index"] = 0
+        st.session_state["question_index"] = None
         st.session_state.score = 0
         st.session_state["state"] = QuizState.INIT
         st.session_state["answer"] = None

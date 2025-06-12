@@ -10,11 +10,15 @@ class Question(ABC):
     _explanation: Dict[str, str] | None
     _image: Dict[str, str] | None
     _image_caption: Dict[str, str] | None
+    _coupled_question_indices: List[int]
 
     @classmethod
     def from_dict(cls, question_dict: Dict[str, Any]) -> Question:
         question_type = question_dict["type"]
         parameters = {"text": question_dict["text"]}
+
+        parameters |= {"coupled_question_indices": question_dict["coupled_question_indices"]}
+
         if "explanation" in question_dict:
             parameters |= {"explanation": question_dict["explanation"]}
 
@@ -63,6 +67,7 @@ class Question(ABC):
     def __init__(
         self,
         text: str,
+        coupled_question_indices: List[int],
         *,
         explanation: Dict[str, str] | None = None,
         image: Dict[str, str] | None = None,
@@ -72,6 +77,7 @@ class Question(ABC):
         self._explanation = explanation
         self._image = image
         self._image_caption = image_caption
+        self._coupled_question_indices = coupled_question_indices
 
     @abstractmethod
     def check(self, guess: Any) -> int:
@@ -92,6 +98,10 @@ class Question(ABC):
     @property
     def image_caption(self) -> Dict[str, str] | None:
         return self._image_caption
+    
+    @property
+    def coupled_question_indices(self) -> List[int]:
+        return self._coupled_question_indices
 
 
 ScoreFunction = Callable[[int | float, int | float], int]
@@ -116,6 +126,7 @@ class GuessQuestion(Question):
         self,
         text: Dict[str, str],
         answer: Number,
+        coupled_question_indices: List[int],
         *,
         max_points: int = 10,
         min_guess: float | None = None,
@@ -139,7 +150,7 @@ class GuessQuestion(Question):
         self._score_function = score_function or self._default_scoring_function
         self._max_points = max_points
         super().__init__(
-            text, explanation=explanation, image=image, image_caption=image_caption
+            text, explanation=explanation, image=image, image_caption=image_caption, coupled_question_indices=coupled_question_indices
         )
 
     def _compute_slider_range(self, answer: Number) -> Tuple[Number, Number]:
@@ -209,6 +220,7 @@ class MultipleChoiceQuestion(Question):
         text: Dict[str, str],
         answers: Dict[str, List[str]],
         right_answer_index: int,
+        coupled_question_indices: List[int],
         *,
         score: int = 10,
         explanation: Dict[str, str] | None = None,
@@ -221,7 +233,7 @@ class MultipleChoiceQuestion(Question):
 
         self._score = score
         super().__init__(
-            text, explanation=explanation, image=image, image_caption=image_caption
+            text, explanation=explanation, image=image, image_caption=image_caption, coupled_question_indices=coupled_question_indices
         )
 
     def _shuffle_answers(
