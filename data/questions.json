@@ -1,292 +1,877 @@
 [
     {
+        "type": "guess",
+        "text": {
+            "de": "Umviel Prozent hat sich die Fläche der Bundesrepublik mit der Deutschen Einheit 1990 vergrößert?",
+            "en": "By what percentage did the area of the Federal Republic increase with German reunification in 1990?"
+        },
+        "answer": 44,
+        "min_guess": 0,
+        "max_guess": 100,
+        "max_points": 10,
+        "explanation": {
+            "de": "Die Fläche der Bundesrepublik vergrößerte sich 1990 um 44%. ([Quelle](https://www.statistikportal.de/de/bevoelkerung/flaeche-und-bevoelkerung))",
+            "en": "The area of the Federal Republic increased by 44% in 1990. ([Source](https://www.statistikportal.de/de/bevoelkerung/flaeche-und-bevoelkerung))"
+        },
+        "image": {
+            "de": "placeholder_de.jpg",
+            "en": "placeholder_en.jpg"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        }
+    },
+    {
+        "type": "guess",
+        "text": {
+            "de": "Wie viele Kinder bekommen Frauen in Deutschland im Durchschnitt?",
+            "en": "How many children do women in Germany have on average?"
+        },
+        "answer": 1.35,
+        "min_guess": 0.5,
+        "max_guess": 4.0,
+        "max_points": 10,
+        "explanation": {
+            "de": "2023 bekamen Frauen in Deutschland im Durchschnitt 1,35 Kinder. ([Quelle](https://www.destatis.de/DE/Presse/Pressemitteilungen/2024/07/PD24_274_12.html))",
+            "en": "In 2023, women in Germany had an average of 1.35 children. ([Source](https://www.destatis.de/DE/Presse/Pressemitteilungen/2024/07/PD24_274_12.html))"
+        },
+        "image": {
+            "de": "placeholder_de.jpg",
+            "en": "placeholder_en.jpg"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        }
+    },
+    {
+        "type": "guess",
+        "text": {
+            "de": "Wie alt sind Frauen im Durchschnitt bei ihrer ersten Heirat?",
+            "en": "How old are women on average at their first marriage?"
+        },
+        "answer": 32.8,
+        "min_guess": 18,
+        "max_guess": 40,
+        "max_points": 10,
+        "explanation": {
+            "de": "Im Jahr 2023 waren Frauen bei ihrer ersten Heirat im Schnitt 32,8 Jahre alt. ([Quelle](https://www.destatis.de/DE/Themen/Querschnitt/Demografischer-Wandel/Hintergruende-Auswirkungen/demografie-ehen.html))",
+            "en": "In 2023, women were on average 32.8 years old at their first marriage. ([Source](https://www.destatis.de/DE/Themen/Querschnitt/Demografischer-Wandel/Hintergruende-Auswirkungen/demografie-ehen.html))"
+        },
+        "image": {
+            "de": "placeholder_de.jpg",
+            "en": "placeholder_en.jpg"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        }
+    },
+    {
+        "type": "guess",
+        "text": {
+            "de": "Wie alt sind Männer im Durchschnitt bei ihrer ersten Heirat?",
+            "en": "How old are men on average at their first marriage?"
+        },
+        "answer": 35.3,
+        "min_guess": 18,
+        "max_guess": 40,
+        "max_points": 10,
+        "explanation": {
+            "de": "Im Jahr 2023 waren Männer bei ihrer ersten Heirat im Schnitt 35,3 Jahre alt. ([Quelle](https://www.destatis.de/DE/Themen/Querschnitt/Demografischer-Wandel/Hintergruende-Auswirkungen/demografie-ehen.html))",
+            "en": "In 2023, men were on average 35.3 years old at their first marriage. ([Source](https://www.destatis.de/DE/Themen/Querschnitt/Demografischer-Wandel/Hintergruende-Auswirkungen/demografie-ehen.html))"
+        },
+        "image": {
+            "de": "placeholder_de.jpg",
+            "en": "placeholder_en.jpg"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        }
+    },
+    {
         "type": "multiple_choice",
         "text": {
-            "de": "Wie viele Menschen lebten Ende 2023 etwa in Deutschland?",
-            "en": "Approximately how many people lived in Germany at the end of 2023?"
+            "de": "In welchem Bundesland arbeiten die meisten landwirtschaftlichen Betriebe nach ökologischen Standards?",
+            "en": "In which federal state do the most agricultural businesses operate according to organic standards?"
         },
         "answers": {
             "de": [
-                "ca. 78 Millionen",
-                "ca. 84 Millionen",
-                "ca. 90 Millionen",
-                "ca. 96 Millionen"
+                "Mecklenburg-Vorpommern",
+                "Brandenburg",
+                "Nordrhein-Westfalen",
+                "Bayern"
             ],
             "en": [
-                "approx. 78 million",
-                "approx. 84 million",
-                "approx. 90 million",
-                "approx. 96 million"
+                "Mecklenburg-Vorpommern",
+                "Brandenburg",
+                "North Rhine-Westphalia",
+                "Bavaria"
+            ]
+        },
+        "right_answer_index": 0,
+        "score": 10,
+        "explanation": {
+            "de": "In Mecklenburg-Vorpommern arbeiteten 2023 rund 24% der 4750 landwirtschaftlichen Betriebe nach ökologischen Standards. ([Quelle](https://www.destatis.de/DE/Themen/Branchen-Unternehmen/Landwirtschaft-Forstwirtschaft-Fischerei/Landwirtschaftliche-Betriebe/Tabellen/oekologischer-landbau-bundeslaender.html))",
+            "en": "In Mecklenburg-Vorpommern, around 24% of the 4750 agricultural businesses operated according to organic standards in 2023. ([Source](https://www.destatis.de/DE/Themen/Branchen-Unternehmen/Landwirtschaft-Forstwirtschaft-Fischerei/Landwirtschaftliche-Betriebe/Tabellen/oekologischer-landbau-bundeslaender.htm)l)"
+        },
+        "image": {
+            "de": "placeholder_de.jpg",
+            "en": "placeholder_en.jpg"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        }
+    },
+    {
+        "type": "guess",
+        "text": {
+            "de": "In welchem Alter verlassen junge Menschen im Durchschnitt ihr Elternhaus?",
+            "en": "At what age do young people leave their parental home on average?"
+        },
+        "answer": 23.9,
+        "min_guess": 18,
+        "max_guess": 30,
+        "max_points": 10,
+        "explanation": {
+            "de": "2023 lag das durchschnittliche Auszugsalter in Deutschland bei 23,9 Jahren. ([Quelle](https://www.destatis.de/DE/Presse/Pressemitteilungen/2024/06/PD24_N028_12.html))",
+            "en": "In 2023, the average age at which young people left their parental home in Germany was 23.9 years. ([Source](https://www.destatis.de/DE/Presse/Pressemitteilungen/2024/)06/PD24_N028_12.html)"
+        },
+        "image": {
+            "de": "placeholder_de.jpg",
+            "en": "placeholder_en.jpg"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        }
+    },
+    {
+        "type": "guess",
+        "text": {
+            "de": "Wie hat sich die Bevölkerungszahl Deutschlands seit der Jahrtausendwende entwickelt?",
+            "en": "How has Germany's population developed since the turn of the millennium?"
+        },
+        "answer": 1.5,
+        "min_guess": -15,
+        "max_guess": 15,
+        "max_points": 10,
+        "explanation": {
+            "de": "Die Gesamtbevölkerung Deutschlands ist zwischen dem Jahr 2000 und 2023 um 1,5% gestiegen. ([Quelle](https://www-genesis.destatis.de/datenbank/online/statistic/12411/table/12411-0001))",
+            "en": "Germany's total population increased by 1.5% between the year 2000 and 2023. ([Source](https://www-genesis.destatis.de/datenbank/online/statistic/12411/table/12411-0001))"
+        },
+        "image": {
+            "de": "placeholder_de.jpg",
+            "en": "placeholder_en.jpg"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        }
+    },
+    {
+        "type": "guess",
+        "text": {
+            "de": "Wie hoch ist der tägliche Wasserverbrauch pro Kopf in Deutschland?",
+            "en": "What is the daily water consumption per capita in Germany?"
+        },
+        "answer": 126,
+        "min_guess": 0,
+        "max_guess": 300,
+        "max_points": 10,
+        "explanation": {
+            "de": "2022 lag der tägliche Wasserverbrauch pro Kopf bei 126 Litern. ([Quelle](https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Umwelt/Wasserwirtschaft/Tabellen/ww-01-wasserabgabe1991-2022.html))",
+            "en": "In 2022, the daily water consumption per capita was 126 liters. ([Source](https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Umwelt/Wasserwirtschaft/Tabellen/ww-01-wasserabgabe1991-2022.html))"
+        },
+        "image": {
+            "de": "placeholder_de.jpg",
+            "en": "placeholder_en.jpg"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        }
+    },
+    {
+        "type": "multiple_choice",
+        "text": {
+            "de": "Welches Land hat weltweit den höchsten Frauenanteil im Parlament?",
+            "en": "Which country has the highest proportion of women in parliament worldwide?"
+        },
+        "answers": {
+            "de": [
+                "Kuba",
+                "Ruanda",
+                "Spanien",
+                "China"
+            ],
+            "en": [
+                "Cuba",
+                "Rwanda",
+                "Spain",
+                "China"
             ]
         },
         "right_answer_index": 1,
         "score": 10,
         "explanation": {
-            "de": "Ende 2023 lebten etwa 84,4 Millionen Menschen in Deutschland laut Statistischem Bundesamt.",
-            "en": "At the end of 2023, approximately 84.4 million people lived in Germany, according to the Federal Statistical Office."
+            "de": "Ruanda hat mit 63,8 % den höchsten Frauenanteil im Parlament. ([Quelle](https://www.destatis.de/DE/Themen/Laender-Regionen/Internationales/Thema/allgemeines-regionales/frauenanteil-parlamente.html))",
+            "en": "Rwanda has the highest proportion of women in parliament at 63.8%. ([Source](https://www.destatis.de/DE/Themen/Laender-Regionen/Internationales/Thema/allgemeines-regionales/frauenanteil-parlamente.ht)ml)"
         },
         "image": {
-            "de": "test_de.jpg",
-            "en": "test_en.jpg"
+            "de": "placeholder_de.jpg",
+            "en": "placeholder_en.jpg"
         },
         "image_caption": {
-            "de": "Testbild",
-            "en": "test image"
+            "de": null,
+            "en": null
         }
     },
     {
         "type": "guess",
         "text": {
-            "de": "Wie hoch war die durchschnittliche Lebenserwartung von neugeborenen M\u00e4dchen in Deutschland im Jahr 2022 (in Jahren)?",
-            "en": "What was the average life expectancy of newborn girls in Germany in 2022 (in years)?"
+            "de": "Wie hoch ist der aktuelle Frauenanteil unter den Abgeordneten des Deutschen Bundestages?",
+            "en": "What is the current proportion of women among the members of the German Bundestag?"
         },
-        "answer": 83.2,
+        "answer": 32.4,
         "min_guess": 0,
-        "max_guess": 1000,
+        "max_guess": 50,
         "max_points": 10,
         "explanation": {
-            "de": "Laut Destatis betrug die durchschnittliche Lebenserwartung von neugeborenen M\u00e4dchen im Jahr 2022 etwa 83,2 Jahre.",
-            "en": "According to Destatis, the average life expectancy of newborn girls in 2022 was about 83.2 years."
+            "de": "Der Frauenanteil unter den Abgeordneten im Deutschen Bundestag beträgt aktuell 32,4 %. ([Quelle](https://www.destatis.de/DE/Themen/Laender-Regionen/Internationales/Thema/allgemeines-regionales/frauenanteil-parlamente.html))",
+            "en": "The proportion of women among the members of the German Bundestag is currently 32.4%. ([Source](https://www.destatis.de/DE/Themen/Laender-Regionen/Internationales/Thema/allgemeines-regionales/frauenanteil-parlamente.html))"
         },
         "image": {
-            "de": "test_de.jpg",
-            "en": "test_en.jpg"
+            "de": "placeholder_de.jpg",
+            "en": "placeholder_en.jpg"
         },
         "image_caption": {
-            "de": "Testbild",
-            "en": "test image"
+            "de": null,
+            "en": null
+        }
+    },
+    {
+        "type": "guess",
+        "text": {
+            "de": "Wie groß war das Wirtschaftswachstum 2024?",
+            "en": "What was the economic growth in 2024?"
+        },
+        "answer": -0.2,
+        "min_guess": -10,
+        "max_guess": 10,
+        "max_points": 10,
+        "explanation": {
+            "de": "2024 ging die Wirtschaftsleistung in Deutschland um 0,2 % zurück. ([Quelle](https://www.destatis.de/DE/Themen/Wirtschaft/Volkswirtschaftliche-Gesamtrechnungen-Inlandsprodukt/Tabellen/bip-bubbles.html))",
+            "en": "In 2024, the economic output in Germany decreased by 0.2%. ([Source](https://www.destatis.de/DE/Themen/Wirtschaft/Volkswirtschaftliche-Gesamtrechnungen-Inlandsprodukt/Tabellen/bip-bubbles.html))"
+        },
+        "image": {
+            "de": "placeholder_de.jpg",
+            "en": "placeholder_en.jpg"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        }
+    },
+    {
+        "type": "guess",
+        "text": {
+            "de": "Wie hoch war das Staatsdefizit im Jahr 2024?",
+            "en": "What was the government deficit in 2024?"
+        },
+        "answer": 119,
+        "min_guess": 0,
+        "max_guess": 500,
+        "max_points": 10,
+        "explanation": {
+            "de": "Das Finanzierungsdefizit des Staates lag 2024 nach vorläufigen Berechnungen bei rund 119 Milliarden Euro. ([Quelle](https://www.destatis.de/DE/Presse/Pressemitteilungen/2025/02/PD25_070_813.html))",
+            "en": "The government's financing deficit in 2024 was approximately 119 billion euros according to preliminary calculations. ([Source](https://www.destatis.de/DE/Presse/Pressemitteilungen/2025/02/PD25_070)_813.html)"
+        },
+        "image": {
+            "de": "placeholder_de.jpg",
+            "en": "placeholder_en.jpg"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        }
+    },
+    {
+        "type": "guess",
+        "text": {
+            "de": "Wie hoch war die Inflationsrate im Jahr 2024?",
+            "en": "What was the inflation rate in 2024?"
+        },
+        "answer": 2.2,
+        "min_guess": 0,
+        "max_guess": 20,
+        "max_points": 10,
+        "explanation": {
+            "de": "Die Inflationsrate lag 2024 bei durchschnittlich 2,2 %. ([Quelle](https://www.destatis.de/DE/Themen/Wirtschaft/Preise/Verbraucherpreisindex/_inhalt.html#sprg229224))",
+            "en": "The inflation rate in 2024 was an average of 2.2%. ([Source](https://www.destatis.de/DE/Themen/Wirtschaft/Preise/Verbraucherpreisindex/_inhalt.html#sprg229224))"
+        },
+        "image": {
+            "de": "placeholder_de.jpg",
+            "en": "placeholder_en.jpg"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
         }
     },
     {
         "type": "multiple_choice",
         "text": {
-            "de": "Welches Bundesland hatte 2023 die h\u00f6chste Bev\u00f6lkerungsdichte?",
-            "en": "Which federal state had the highest population density in 2023?"
+            "de": "Welcher Dienstleistungsbereich verzeichnete 2024 den größten Umsatzzuwachs gegenüber dem Vorjahr?",
+            "en": "Which service sector recorded the largest increase in turnover compared to the previous year in 2024?"
         },
         "answers": {
             "de": [
-                "Nordrhein-Westfalen",
-                "Berlin",
-                "Bayern",
-                "Hamburg"
+                "Information und Kommunikation",
+                "Grundstücks- und Wohnungswesen",
+                "Personenbeförderung",
+                "Gastgewerbe"
             ],
             "en": [
-                "North Rhine-Westphalia",
-                "Berlin",
-                "Bavaria",
-                "Hamburg"
+                "Information and Communication",
+                "Real Estate",
+                "Passenger Transportation",
+                "Hospitality"
             ]
         },
-        "right_answer_index": 3,
+        "right_answer_index": 0,
         "score": 10,
         "explanation": {
-            "de": "Hamburg hatte 2023 mit rund 2.500 Einwohner:innen pro km\u00b2 die h\u00f6chste Bev\u00f6lkerungsdichte.",
-            "en": "In 2023, Hamburg had the highest population density with around 2,500 inhabitants per km\u00b2."
+            "de": "Den größten realen Umsatzzuwachs im Jahr 2024 gegenüber dem Vorjahr verzeichnete der Bereich Information und Kommunikation mit einem Anstieg von +2,7 %. ([Quelle](https://www.destatis.de/DE/Presse/Pressemitteilungen/2025/03/PD25_082_474.html))",
+            "en": "The largest real increase in turnover in 2024 compared to the previous year was recorded in the Information and Communication sector with an increase of +2.7%. ([Source](https://www.destatis.de/DE/Presse/Pressemitteilungen/2025/03/PD25_082_474.)html)"
         },
         "image": {
-            "de": "test_de.jpg",
-            "en": "test_en.jpg"
+            "de": "placeholder_de.jpg",
+            "en": "placeholder_en.jpg"
         },
         "image_caption": {
-            "de": "Testbild",
-            "en": "test image"
+            "de": null,
+            "en": null
         }
     },
     {
         "type": "guess",
         "text": {
-            "de": "Wie viele Kinder wurden im Jahr 2022 in Deutschland geboren (in Tausend)?",
-            "en": "How many children were born in Germany in 2022 (in thousands)?"
+            "de": "Wie viele Unternehmen gibt es in Deutschland?",
+            "en": "How many companies are there in Germany?"
         },
-        "answer": 738,
-        "min_guess": 0,
-        "max_guess": 1000,
+        "answer": 3.2,
+        "min_guess": 1,
+        "max_guess": 15,
         "max_points": 10,
         "explanation": {
-            "de": "Im Jahr 2022 wurden laut Statistischem Bundesamt rund 738.000 Kinder geboren.",
-            "en": "According to the Federal Statistical Office, around 738,000 children were born in Germany in 2022."
+            "de": "2022 gab es in Deutschland 3,2 Millionen Unternehmen. ([Quelle](https://www.destatis.de/DE/Themen/Branchen-Unternehmen/Unternehmen/Unternehmensdemografie/Tabellen/unternehmen-wirtschaftsabschnitte.html))",
+            "en": "In 2022, there were 3.2 million companies in Germany. ([Source](https://www.destatis.de/DE/Themen/Branchen-Unternehmen/Unternehmen/Unternehmensdemografie/Tabellen/unternehmen-wirtschaftsabschnitte.html))"
         },
         "image": {
-            "de": "test_de.jpg",
-            "en": "test_en.jpg"
+            "de": "placeholder_de.jpg",
+            "en": "placeholder_en.jpg"
         },
         "image_caption": {
-            "de": "Testbild",
-            "en": "test image"
+            "de": null,
+            "en": null
         }
     },
     {
         "type": "multiple_choice",
         "text": {
-            "de": "Was ist die Hauptaufgabe des Statistischen Bundesamtes?",
-            "en": "What is the main task of the Federal Statistical Office?"
+            "de": "Wer ist Deutschlands wichtigster Handelspartner?",
+            "en": "Who is Germany's most important trading partner?"
         },
         "answers": {
             "de": [
-                "Steuererhebung",
-                "Durchf\u00fchrung von Wahlen",
-                "Erhebung und Ver\u00f6ffentlichung amtlicher Statistiken",
-                "Gesetzgebung zur Wirtschaft"
+                "Vereinigte Staaten",
+                "Volksrepublik China",
+                "Niederlande"
             ],
             "en": [
-                "Tax collection",
-                "Conducting elections",
-                "Collecting and publishing official statistics",
-                "Legislation on economics"
+                "United States",
+                "People's Republic of China",
+                "Netherlands"
+            ]
+        },
+        "right_answer_index": 0,
+        "score": 10,
+        "explanation": {
+            "de": "Im Jahr 2024 waren die Vereinigten Staaten Deutschlands wichtigster Handelspartner. ([Quelle](https://www.destatis.de/DE/Themen/Wirtschaft/Aussenhandel/handelspartner-jahr.html))",
+            "en": "In 2024, the United States was Germany's most important trading partner. ([Source](https://www.destatis.de/DE/Themen/Wirtschaft/Aussenhandel/handelspartner-jahr.html))"
+        },
+        "image": {
+            "de": "placeholder_de.jpg",
+            "en": "placeholder_en.jpg"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        }
+    },
+    {
+        "type": "multiple_choice",
+        "text": {
+            "de": "Was ist das wichtigste deutsche Exportgut?",
+            "en": "What is the most important German export good?"
+        },
+        "answers": {
+            "de": [
+                "Kraftwagen/-teile",
+                "Maschinen",
+                "Chemische Erzeugnisse",
+                "Pharmazeutische Produkte"
+            ],
+            "en": [
+                "Motor vehicles/parts",
+                "Machinery",
+                "Chemical products",
+                "Pharmaceutical products"
+            ]
+        },
+        "right_answer_index": 0,
+        "score": 10,
+        "explanation": {
+            "de": "Kraftwagen und Kraftwagenteile waren im Jahr 2024 mit 262,6 Milliarden Euro Deutschlands wichtigstes Exportgut. ([Quelle](https://www.destatis.de/DE/Themen/Wirtschaft/Aussenhandel/handelswaren-jahr.html))",
+            "en": "Motor vehicles and motor vehicle parts were Germany's most important export goods in 2024, with 262.6 billion euros. ([Source](https://www.destatis.de/DE/Themen/Wirtschaft/Aussenhandel/handelswaren-jahr.ht)ml)"
+        },
+        "image": {
+            "de": "placeholder_de.jpg",
+            "en": "placeholder_en.jpg"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        }
+    },
+    {
+        "type": "guess",
+        "text": {
+            "de": "Aus wie vielen Personen besteht eine Durchschnittsfamilie in Deutschland?",
+            "en": "How many people make up an average family in Germany?"
+        },
+        "answer": 3.4,
+        "min_guess": 0,
+        "max_guess": 5,
+        "max_points": 10,
+        "explanation": {
+            "de": "Die Durchschnittsfamilie in Deutschland bestand 2022 rechnerisch aus 3,4 Personen. ([Quelle](https://www.destatis.de/DE/Presse/Pressemitteilungen/2023/12/PD23_N065_12.html))",
+            "en": "In 2022, the average family in Germany consisted of 3.4 people. ([Source](https://www.destatis.de/DE/Presse/Pressemitteilungen/2023/12/PD23_N065_12.html))"
+        },
+        "image": {
+            "de": "placeholder_de.jpg",
+            "en": "placeholder_en.jpg"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        }
+    },
+    {
+        "type": "guess",
+        "text": {
+            "de": "Wie hoch war 2023 der Anteil der Windkraft an der Stromerzeugung?",
+            "en": "What was the share of wind power in electricity generation in 2023?"
+        },
+        "answer": 31.5,
+        "min_guess": 5,
+        "max_guess": 40,
+        "max_points": 10,
+        "explanation": {
+            "de": "Der Anteil der Windkraft an der Stromerzeugung lag 2023 in Deutschland bei 31,5%. ([Quelle](https://www.destatis.de/DE/Presse/Pressemitteilungen/2025/03/PD25_091_43312.html))",
+            "en": "The share of wind power in electricity generation in Germany in 2023 was 31.5%. ([Source](https://www.destatis.de/DE/Presse/Pressemitteilungen/2025/03/PD25_091_43312.html))"
+        },
+        "image": {
+            "de": "placeholder_de.jpg",
+            "en": "placeholder_en.jpg"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        }
+    },
+    {
+        "type": "guess",
+        "text": {
+            "de": "Wie viel Zeit verbringen 10- bis 17-Jährige durchschnittlich am Tag mit Computer- und Videospielen?",
+            "en": "How much time do 10- to 17-year-olds spend on average per day on computer and video games?"
+        },
+        "answer": 67,
+        "min_guess": 0,
+        "max_guess": 240,
+        "max_points": 10,
+        "explanation": {
+            "de": "Jugendliche in Deutschland verbrachten 2022 durchschnittlich 67 Minuten pro Tag mit Computer- und Videospielen. ([Quelle](https://www.destatis.de/DE/Presse/Pressemitteilungen/Zahl-der-Woche/2024/PD24_34_p002.html))",
+            "en": "In 2022, young people in Germany spent an average of 67 minutes per day on computer and video games. ([Source](https://www.destatis.de/DE/Presse/Pressemitteilungen/Zahl-der-Woche/2024/PD24_34_p002.html))"
+        },
+        "image": {
+            "de": "placeholder_de.jpg",
+            "en": "placeholder_en.jpg"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        }
+    },
+    {
+        "type": "guess",
+        "text": {
+            "de": "Wie hoch lag die Erwerbslosenquote im März 2025 in Deutschland?",
+            "en": "What was the unemployment rate in March 2025 in Germany?"
+        },
+        "answer": 3.7,
+        "min_guess": 0,
+        "max_guess": 15,
+        "max_points": 10,
+        "explanation": {
+            "de": "Die Erwerbslosenquote lag im März 2025 bei 3,7%. ([Quelle](https://www.destatis.de/DE/Themen/Arbeit/Arbeitsmarkt/Erwerbslosigkeit/Tabellen/erwerbslose.html#129240))",
+            "en": "The unemployment rate in March 2025 was 3.7%. ([Source](https://www.destatis.de/DE/Themen/Arbeit/Arbeitsmarkt/Erwerbslosigkeit/Tabellen/erwerbslose.html#129240))"
+        },
+        "image": {
+            "de": "placeholder_de.jpg",
+            "en": "placeholder_en.jpg"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        }
+    },
+    {
+        "type": "guess",
+        "text": {
+            "de": "Wie viel Liter zuckerhaltige Erfrischungsgetränke wurden 2023 pro Kopf in Deutschland produziert?",
+            "en": "How many liters of sugary soft drinks were produced per capita in Germany in 2023?"
+        },
+        "answer": 93,
+        "min_guess": 0,
+        "max_guess": 100,
+        "max_points": 10,
+        "explanation": {
+            "de": "Rund 93 Liter Erfrischungsgetränke wurden 2023 pro Kopf in Deutschland produziert. ([Quelle](https://www.destatis.de/DE/Presse/Pressemitteilungen/Zahl-der-Woche/2024/PD24_28_p002.html))",
+            "en": "Around 93 liters of soft drinks were produced per capita in Germany in 2023. ([Source](https://www.destatis.de/DE/Presse/Pressemitteilungen/Zahl-der-Woche/2024/PD24_28_p002.html))"
+        },
+        "image": {
+            "de": "placeholder_de.jpg",
+            "en": "placeholder_en.jpg"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        }
+    },
+    {
+        "type": "guess",
+        "text": {
+            "de": "Wie viel Kilogramm Fleisch werden pro Kopf im Jahr in Deutschland gegessen?",
+            "en": "How many kilograms of meat are eaten per capita per year in Germany?"
+        },
+        "answer": 51.6,
+        "min_guess": 0,
+        "max_guess": 200,
+        "max_points": 10,
+        "explanation": {
+            "de": "Der jährliche Fleischverbrauch pro Kopf lag 2023 bei 51,6 Kilogramm. ([Quelle](https://www.destatis.de/DE/Presse/Pressemitteilungen/2024/05/PD24_N018_42.html))",
+            "en": "The annual meat consumption per capita in 2023 was 51.6 kilograms. ([Source](https://www.destatis.de/DE/Presse/Pressemitteilungen/2024/05/PD24_N018_42.html))"
+        },
+        "image": {
+            "de": "placeholder_de.jpg",
+            "en": "placeholder_en.jpg"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        }
+    },
+    {
+        "type": "guess",
+        "text": {
+            "de": "Wie viel Stunden Freizeit haben Menschen in Deutschland im Durchschnitt pro Tag?",
+            "en": "How many hours of leisure time do people in Germany have on average per day?"
+        },
+        "answer": 6.2,
+        "min_guess": 0,
+        "max_guess": 10,
+        "max_points": 10,
+        "explanation": {
+            "de": "Im Schnitt haben die Menschen in Deutschland 6,2 Stunden Freizeit am Tag. ([Quelle](https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Einkommen-Konsum-Lebensbedingungen/Zeitverwendung/Tabellen/freizeitaktivitaeten-geschlecht-zve.html))",
+            "en": "On average, people in Germany have 6.2 hours of leisure time per day. ([Source](https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Einkommen-Konsum-Lebensbedingungen/Zeitverwendung/Tabellen/freizeitaktivitaeten-geschlecht-zve.html))"
+        },
+        "image": {
+            "de": "placeholder_de.jpg",
+            "en": "placeholder_en.jpg"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        }
+    },
+    {
+        "type": "multiple_choice",
+        "text": {
+            "de": "Was ist die häufigste gesprochene Zweitsprache in privaten Haushalten in Deutschland?",
+            "en": "What is the most commonly spoken second language in private households in Germany?"
+        },
+        "answers": {
+            "de": [
+                "Russisch",
+                "Englisch",
+                "Türkisch",
+                "Chinesisch"
+            ],
+            "en": [
+                "Russian",
+                "English",
+                "Turkish",
+                "Chinese"
             ]
         },
         "right_answer_index": 2,
         "score": 10,
         "explanation": {
-            "de": "Das Statistische Bundesamt ist zust\u00e4ndig f\u00fcr die Erhebung, Aufbereitung und Ver\u00f6ffentlichung amtlicher Statistiken.",
-            "en": "The Federal Statistical Office is responsible for collecting, processing, and publishing official statistics."
+            "de": "Unter den 15,6 Millionen Menschen, die sich zu Hause vorwiegend oder ausschließlich in einer anderen Sprache als Deutsch verständigten, war Türkisch mit einem Anteil von 14 % die am häufigsten gesprochene Sprache. ([Quelle](https://www.destatis.de/DE/Presse/Pressemitteilungen/Zahl-der-Woche/2025/PD25_08_p002.html))",
+            "en": "Among the 15.6 million people who mainly or exclusively communicated in a language other than German at home, Turkish was the most commonly spoken language with a share of 14%. ([Source](https://www.destatis.de/DE/Presse/Pressemitteilungen/Zahl-der-Woche/2025/PD25_08_p002.html))"
         },
         "image": {
-            "de": "test_de.jpg",
-            "en": "test_en.jpg"
+            "de": "placeholder_de.jpg",
+            "en": "placeholder_en.jpg"
         },
         "image_caption": {
-            "de": "Testbild",
-            "en": "test image"
+            "de": null,
+            "en": null
         }
     },
     {
         "type": "guess",
         "text": {
-            "de": "Wie viele Menschen in Deutschland waren 2022 65 Jahre oder \u00e4lter (in Millionen)?",
-            "en": "How many people in Germany were aged 65 or older in 2022 (in millions)?"
+            "de": "Gemessen am Gehalt der Männer: wie viel Prozent weniger verdienen Frauen pro Stunde?",
+            "en": "Measured by men's salaries: how much percent less do women earn per hour?"
         },
-        "answer": 18.6,
+        "answer": 16,
         "min_guess": 0,
-        "max_guess": 1000,
+        "max_guess": 30,
         "max_points": 10,
         "explanation": {
-            "de": "2022 waren etwa 18,6 Millionen Menschen in Deutschland 65 Jahre oder \u00e4lter \u2013 das entspricht rund 22 % der Bev\u00f6lkerung.",
-            "en": "In 2022, about 18.6 million people in Germany were aged 65 or older \u2013 around 22% of the population."
+            "de": "Frauen haben im Jahr 2024 in Deutschland pro Stunde durchschnittlich 16 % weniger verdient als Männer (unbereinigter Gender Pay Gap). ([Quelle](https://www.destatis.de/DE/Themen/Querschnitt/Gleichstellungsindikatoren/_inhalt.html#643266))",
+            "en": "In 2024, women in Germany earned on average 16% less per hour than men (unadjusted gender pay gap). ([Source](https://www.destatis.de/DE/Themen/Querschnitt/Gleichstellungsindikatoren/_inhalt.html#643266))"
         },
         "image": {
-            "de": "test_de.jpg",
-            "en": "test_en.jpg"
+            "de": "placeholder_de.jpg",
+            "en": "placeholder_en.jpg"
         },
         "image_caption": {
-            "de": "Testbild",
-            "en": "test image"
-        }
-    },
-    {
-        "type": "multiple_choice",
-        "text": {
-            "de": "In welchem Bereich gibt es KEINE amtliche Statistik vom Statistischen Bundesamt?",
-            "en": "In which area is there NO official statistic from the Federal Statistical Office?"
-        },
-        "answers": {
-            "de": [
-                "Geburten und Sterbef\u00e4lle",
-                "Bildung und Forschung",
-                "Gef\u00fchle und Zufriedenheit",
-                "Einkommen und Konsum"
-            ],
-            "en": [
-                "Births and deaths",
-                "Education and research",
-                "Emotions and satisfaction",
-                "Income and consumption"
-            ]
-        },
-        "right_answer_index": 2,
-        "score": 10,
-        "explanation": {
-            "de": "Gef\u00fchle und Zufriedenheit sind keine Themen amtlicher Statistik \u2013 diese werden ggf. von Meinungsforschungsinstituten untersucht.",
-            "en": "Emotions and satisfaction are not covered by official statistics \u2013 such topics are usually explored by opinion research institutes."
-        },
-        "image": {
-            "de": "test_de.jpg",
-            "en": "test_en.jpg"
-        },
-        "image_caption": {
-            "de": "Testbild",
-            "en": "test image"
+            "de": null,
+            "en": null
         }
     },
     {
         "type": "guess",
         "text": {
-            "de": "Wie viele Erwerbst\u00e4tige gab es in Deutschland im Jahr 2023 (in Millionen)?",
-            "en": "How many employed people were there in Germany in 2023 (in millions)?"
+            "de": "Wie viel Prozent der Bevölkerung haben (Fach-)Abitur?",
+            "en": "What percentage of the population has a (specialized) high school diploma?"
         },
-        "answer": 45.9,
+        "answer": 33.5,
         "min_guess": 0,
-        "max_guess": 1000,
+        "max_guess": 100,
         "max_points": 10,
         "explanation": {
-            "de": "2023 gab es rund 45,9 Millionen Erwerbst\u00e4tige in Deutschland.",
-            "en": "In 2023, there were around 45.9 million employed people in Germany."
+            "de": "2019 hatten in Deutschland 33,5% der Bevölkerung ab 15 Jahren (Fach-)Abitur. ([Quelle](https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bildung-Forschung-Kultur/Bildungsstand/Tabellen/bildungsabschluss.html))",
+            "en": "In 2019, 33.5% of the population aged 15 and over in Germany had a (specialized) high school diploma. ([Source](https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bildung-Forschung-Kultur/Bildungsstand/Tabellen/)bildungsabschluss.html)"
         },
         "image": {
-            "de": "test_de.jpg",
-            "en": "test_en.jpg"
+            "de": "placeholder_de.jpg",
+            "en": "placeholder_en.jpg"
         },
         "image_caption": {
-            "de": "Testbild",
-            "en": "test image"
-        }
-    },
-    {
-        "type": "multiple_choice",
-        "text": {
-            "de": "Wie oft f\u00fchrt das Statistische Bundesamt den Zensus durch?",
-            "en": "How often does the Federal Statistical Office conduct the census?"
-        },
-        "answers": {
-            "de": [
-                "J\u00e4hrlich",
-                "Alle 5 Jahre",
-                "Alle 10 Jahre",
-                "Unregelm\u00e4\u00dfig, je nach politischer Lage"
-            ],
-            "en": [
-                "Annually",
-                "Every 5 years",
-                "Every 10 years",
-                "Irregularly, depending on the political situation"
-            ]
-        },
-        "right_answer_index": 2,
-        "score": 10,
-        "explanation": {
-            "de": "Der Zensus wird in der EU alle 10 Jahre durchgef\u00fchrt, zuletzt 2022 (nach Verschiebung durch die Corona-Pandemie).",
-            "en": "The census is conducted every 10 years in the EU, most recently in 2022 (postponed due to the COVID-19 pandemic)."
-        },
-        "image": {
-            "de": "test_de.jpg",
-            "en": "test_en.jpg"
-        },
-        "image_caption": {
-            "de": "Testbild",
-            "en": "test image"
+            "de": null,
+            "en": null
         }
     },
     {
         "type": "guess",
         "text": {
-            "de": "Wie hoch war die Inflationsrate in Deutschland im Jahr 2022 (in Prozent)?",
-            "en": "What was the inflation rate in Germany in 2022 (in percent)?"
+            "de": "Wie hoch ist die Lebenserwartung von Frauen in Deutschland?",
+            "en": "What is the life expectancy of women in Germany?"
         },
-        "answer": 6.9,
-        "min_guess": 0,
-        "max_guess": 1000,
+        "answer": 83.0,
+        "min_guess": 60,
+        "max_guess": 100,
         "max_points": 10,
         "explanation": {
-            "de": "Die durchschnittliche Inflationsrate betrug 2022 in Deutschland 6,9 % \u2013 der h\u00f6chste Wert seit \u00fcber 40 Jahren.",
-            "en": "The average inflation rate in Germany in 2022 was 6.9% \u2013 the highest value in over 40 years."
+            "de": "Die Lebenserwartung von Frauen lag 2021/2023 bei durchschnittlich 83,0 Jahren. ([Quelle](https://www.destatis.de/DE/Themen/Querschnitt/Gleichstellungsindikatoren/_inhalt.html#649298))",
+            "en": "The life expectancy of women in 2021/2023 was an average of 83.0 years. ([Source](https://www.destatis.de/DE/Themen/Querschnitt/Gleichstellungsindikatoren/_inhalt.html#649298))"
         },
         "image": {
-            "de": "test_de.jpg",
-            "en": "test_en.jpg"
+            "de": "placeholder_de.jpg",
+            "en": "placeholder_en.jpg"
         },
         "image_caption": {
-            "de": "Testbild",
-            "en": "test image"
+            "de": null,
+            "en": null
+        }
+    },
+    {
+        "type": "guess",
+        "text": {
+            "de": "Wie hoch ist die Lebenserwartung von Männern in Deutschland?",
+            "en": "What is the life expectancy of men in Germany?"
+        },
+        "answer": 78.2,
+        "min_guess": 60,
+        "max_guess": 100,
+        "max_points": 10,
+        "explanation": {
+            "de": "Die Lebenserwartung von Männern lag 2021/2023 durchschnittlich bei 78,2 Jahren. ([Quelle](https://www.destatis.de/DE/Themen/Querschnitt/Gleichstellungsindikatoren/_inhalt.html#649298))",
+            "en": "The life expectancy of men in 2021/2023 was an average of 78.2 years. ([Source](https://www.destatis.de/DE/Themen/Querschnitt/Gleichstellungsindikatoren/_inhalt.html#649298))"
+        },
+        "image": {
+            "de": "placeholder_de.jpg",
+            "en": "placeholder_en.jpg"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        }
+    },
+    {
+        "type": "guess",
+        "text": {
+            "de": "Wie viele Personen mit Einwanderungsgeschichte leben in Deutschland?",
+            "en": "How many people with an immigration background live in Germany?"
+        },
+        "answer": 21.2,
+        "min_guess": 0,
+        "max_guess": 50,
+        "max_points": 10,
+        "explanation": {
+            "de": "Im Jahr 2023 lebten 21,2 Millionen Personen mit Einwanderungsgeschichte in Deutschland. ([Quelle](https://www.dashboard-integration.de/integration/bevoelkerung/0001021))",
+            "en": "In 2023, 21.2 million people with an immigration background lived in Germany. ([Source](https://www.dashboard-integration.de/integration/bevoelkerung/0001021))"
+        },
+        "image": {
+            "de": "placeholder_de.jpg",
+            "en": "placeholder_en.jpg"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        }
+    },
+    {
+        "type": "guess",
+        "text": {
+            "de": "Wie viel Prozent weniger Alterseinkünfte beziehen Frauen im Vergleich zu Männern?",
+            "en": "How much less retirement income do women receive compared to men?"
+        },
+        "answer": 27,
+        "min_guess": 0,
+        "max_guess": 60,
+        "max_points": 10,
+        "explanation": {
+            "de": "Frauen erzielten 2023 durchschnittlich 27% weniger Alterseinkünfte als Männer. ([Quelle](https://www.destatis.de/DE/Themen/Querschnitt/Gleichstellungsindikatoren/_inhalt.html#643272))",
+            "en": "In 2023, women received on average 27% less retirement income than men. ([Source](https://www.destatis.de/DE/Themen/Querschnitt/Gleichstellungsindikatoren/_inhalt.html#643272))"
+        },
+        "image": {
+            "de": "placeholder_de.jpg",
+            "en": "placeholder_en.jpg"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        }
+    },
+    {
+        "type": "guess",
+        "text": {
+            "de": "Wie viele Fluggäste wurden 2024 an deutschen Flughäfen gezählt?",
+            "en": "How many passengers were counted at German airports in 2024?"
+        },
+        "answer": 199.5,
+        "min_guess": 0,
+        "max_guess": 500,
+        "max_points": 10,
+        "explanation": {
+            "de": "Im Jahr 2024 zählten die 22 deutschen Hauptverkehrsflughäfen rund 199,5 Millionen Fluggäste. ([Quelle](https://www.destatis.de/DE/Presse/Pressemitteilungen/2025/01/PD25_042_464.html))",
+            "en": "In 2024, the 22 main German airports counted around 199.5 million passengers. ([Source](https://www.destatis.de/DE/Presse/Pressemitteilungen/2025/01/PD25_042_464.html))"
+        },
+        "image": {
+            "de": "placeholder_de.jpg",
+            "en": "placeholder_en.jpg"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        }
+    },
+    {
+        "type": "guess",
+        "text": {
+            "de": "Wie viel Prozent der Wege im Personenverkehr werden mit dem Auto zurückgelegt?",
+            "en": "What percentage of trips in passenger transport are made by car?"
+        },
+        "answer": 85,
+        "min_guess": 0,
+        "max_guess": 100,
+        "max_points": 10,
+        "explanation": {
+            "de": "2022 wurden 85% der Wege im Personenverkehr in Deutschland mit dem Auto zurückgelegt. ([Quelle](https://www.destatis.de/Europa/DE/Thema/Verkehr/Auto.html))",
+            "en": "In 2022, 85% of trips in passenger transport in Germany were made by car. ([Source](https://www.destatis.de/Europa/DE/Thema/Verkehr/Auto.html))"
+        },
+        "image": {
+            "de": "placeholder_de.jpg",
+            "en": "placeholder_en.jpg"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        }
+    },
+    {
+        "type": "guess",
+        "text": {
+            "de": "Wie viel Prozent der Erwerbstätigen arbeiten Teilzeit?",
+            "en": "What percentage of the employed work part-time?"
+        },
+        "answer": 29,
+        "min_guess": 0,
+        "max_guess": 50,
+        "max_points": 10,
+        "explanation": {
+            "de": "2024 arbeiteten 29% der Erwerbstätigen Teilzeit. ([Quelle](https://www.destatis.de/DE/Presse/Pressemitteilungen/2025/05/PD25_175_13.html))",
+            "en": "In 2024, 29% of the employed worked part-time. ([Source](https://www.destatis.de/DE/Presse/Pressemitteilungen/2025/05/PD25_175_13.html))"
+        },
+        "image": {
+            "de": "placeholder_de.jpg",
+            "en": "placeholder_en.jpg"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        }
+    },
+    {
+        "type": "guess",
+        "text": {
+            "de": "Wie viel Prozent der Haushalte in Deutschland besitzen mindestens ein Auto?",
+            "en": "What percentage of households in Germany own at least one car?"
+        },
+        "answer": 78,
+        "min_guess": 10,
+        "max_guess": 100,
+        "max_points": 10,
+        "explanation": {
+            "de": "2022 besaßen 78% der Haushalte in Deutschland ein Auto. ([Quelle](https://www.destatis.de/DE/Presse/Pressemitteilungen/2023/09/PD23_N048_46.html))",
+            "en": "In 2022, 78% of households in Germany owned a car. ([Source](https://www.destatis.de/DE/Presse/Pressemitteilungen/2023/09/PD23_N048_46.html))"
+        },
+        "image": {
+            "de": "placeholder_de.jpg",
+            "en": "placeholder_en.jpg"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
         }
     }
 ]

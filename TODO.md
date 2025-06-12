@@ -12,5 +12,5 @@
 - [x] Ende mehr ausschmücken
 
 - [x] slider range explizit angeben
-- [] Fragen einbauen
+- [x] Fragen einbauen
 - [] Doppelfragen

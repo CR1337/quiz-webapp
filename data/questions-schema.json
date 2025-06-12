@@ -74,10 +74,10 @@
                 ],
                 "properties": {
                     "de": {
-                        "type": "string"
+                        "type": ["string", "null"]
                     },
                     "en": {
-                        "type": "string"
+                        "type": ["string", "null"]
                     }
                 },
                 "additionalProperties": false
@@ -120,12 +120,10 @@
                 "minimum": 0
             },
             "min_guess": {
-                "type": "integer",
-                "minimum": 0
+                "type": "number"
             },
             "max_guess": {
-                "type": "integer",
-                "minimum": 0
+                "type": "number"
             }
         },
         "allOf": [

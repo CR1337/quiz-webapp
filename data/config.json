@@ -1,5 +1,5 @@
 {
-    "question_selection_method": "all",
+    "question_selection_method": "random",
     "question_selection_methods": {
         "all": {},
         "list": {
@@ -12,7 +12,7 @@
             ]
         },
         "random": {
-            "question_amount": 5
+            "question_amount": 10
         },
         "random_block": {
             "block_size": 2

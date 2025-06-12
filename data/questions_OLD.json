@@ -1,0 +1,292 @@
+[
+    {
+        "type": "multiple_choice",
+        "text": {
+            "de": "Wie viele Menschen lebten Ende 2023 etwa in Deutschland?",
+            "en": "Approximately how many people lived in Germany at the end of 2023?"
+        },
+        "answers": {
+            "de": [
+                "ca. 78 Millionen",
+                "ca. 84 Millionen",
+                "ca. 90 Millionen",
+                "ca. 96 Millionen"
+            ],
+            "en": [
+                "approx. 78 million",
+                "approx. 84 million",
+                "approx. 90 million",
+                "approx. 96 million"
+            ]
+        },
+        "right_answer_index": 1,
+        "score": 10,
+        "explanation": {
+            "de": "Ende 2023 lebten etwa 84,4 Millionen Menschen in Deutschland laut Statistischem Bundesamt.",
+            "en": "At the end of 2023, approximately 84.4 million people lived in Germany, according to the Federal Statistical Office."
+        },
+        "image": {
+            "de": "test_de.jpg",
+            "en": "test_en.jpg"
+        },
+        "image_caption": {
+            "de": "Testbild",
+            "en": "test image"
+        }
+    },
+    {
+        "type": "guess",
+        "text": {
+            "de": "Wie hoch war die durchschnittliche Lebenserwartung von neugeborenen M\u00e4dchen in Deutschland im Jahr 2022 (in Jahren)?",
+            "en": "What was the average life expectancy of newborn girls in Germany in 2022 (in years)?"
+        },
+        "answer": 83.2,
+        "min_guess": 0,
+        "max_guess": 1000,
+        "max_points": 10,
+        "explanation": {
+            "de": "Laut Destatis betrug die durchschnittliche Lebenserwartung von neugeborenen M\u00e4dchen im Jahr 2022 etwa 83,2 Jahre.",
+            "en": "According to Destatis, the average life expectancy of newborn girls in 2022 was about 83.2 years."
+        },
+        "image": {
+            "de": "test_de.jpg",
+            "en": "test_en.jpg"
+        },
+        "image_caption": {
+            "de": "Testbild",
+            "en": "test image"
+        }
+    },
+    {
+        "type": "multiple_choice",
+        "text": {
+            "de": "Welches Bundesland hatte 2023 die h\u00f6chste Bev\u00f6lkerungsdichte?",
+            "en": "Which federal state had the highest population density in 2023?"
+        },
+        "answers": {
+            "de": [
+                "Nordrhein-Westfalen",
+                "Berlin",
+                "Bayern",
+                "Hamburg"
+            ],
+            "en": [
+                "North Rhine-Westphalia",
+                "Berlin",
+                "Bavaria",
+                "Hamburg"
+            ]
+        },
+        "right_answer_index": 3,
+        "score": 10,
+        "explanation": {
+            "de": "Hamburg hatte 2023 mit rund 2.500 Einwohner:innen pro km\u00b2 die h\u00f6chste Bev\u00f6lkerungsdichte.",
+            "en": "In 2023, Hamburg had the highest population density with around 2,500 inhabitants per km\u00b2."
+        },
+        "image": {
+            "de": "test_de.jpg",
+            "en": "test_en.jpg"
+        },
+        "image_caption": {
+            "de": "Testbild",
+            "en": "test image"
+        }
+    },
+    {
+        "type": "guess",
+        "text": {
+            "de": "Wie viele Kinder wurden im Jahr 2022 in Deutschland geboren (in Tausend)?",
+            "en": "How many children were born in Germany in 2022 (in thousands)?"
+        },
+        "answer": 738,
+        "min_guess": 0,
+        "max_guess": 1000,
+        "max_points": 10,
+        "explanation": {
+            "de": "Im Jahr 2022 wurden laut Statistischem Bundesamt rund 738.000 Kinder geboren.",
+            "en": "According to the Federal Statistical Office, around 738,000 children were born in Germany in 2022."
+        },
+        "image": {
+            "de": "test_de.jpg",
+            "en": "test_en.jpg"
+        },
+        "image_caption": {
+            "de": "Testbild",
+            "en": "test image"
+        }
+    },
+    {
+        "type": "multiple_choice",
+        "text": {
+            "de": "Was ist die Hauptaufgabe des Statistischen Bundesamtes?",
+            "en": "What is the main task of the Federal Statistical Office?"
+        },
+        "answers": {
+            "de": [
+                "Steuererhebung",
+                "Durchf\u00fchrung von Wahlen",
+                "Erhebung und Ver\u00f6ffentlichung amtlicher Statistiken",
+                "Gesetzgebung zur Wirtschaft"
+            ],
+            "en": [
+                "Tax collection",
+                "Conducting elections",
+                "Collecting and publishing official statistics",
+                "Legislation on economics"
+            ]
+        },
+        "right_answer_index": 2,
+        "score": 10,
+        "explanation": {
+            "de": "Das Statistische Bundesamt ist zust\u00e4ndig f\u00fcr die Erhebung, Aufbereitung und Ver\u00f6ffentlichung amtlicher Statistiken.",
+            "en": "The Federal Statistical Office is responsible for collecting, processing, and publishing official statistics."
+        },
+        "image": {
+            "de": "test_de.jpg",
+            "en": "test_en.jpg"
+        },
+        "image_caption": {
+            "de": "Testbild",
+            "en": "test image"
+        }
+    },
+    {
+        "type": "guess",
+        "text": {
+            "de": "Wie viele Menschen in Deutschland waren 2022 65 Jahre oder \u00e4lter (in Millionen)?",
+            "en": "How many people in Germany were aged 65 or older in 2022 (in millions)?"
+        },
+        "answer": 18.6,
+        "min_guess": 0,
+        "max_guess": 1000,
+        "max_points": 10,
+        "explanation": {
+            "de": "2022 waren etwa 18,6 Millionen Menschen in Deutschland 65 Jahre oder \u00e4lter \u2013 das entspricht rund 22 % der Bev\u00f6lkerung.",
+            "en": "In 2022, about 18.6 million people in Germany were aged 65 or older \u2013 around 22% of the population."
+        },
+        "image": {
+            "de": "test_de.jpg",
+            "en": "test_en.jpg"
+        },
+        "image_caption": {
+            "de": "Testbild",
+            "en": "test image"
+        }
+    },
+    {
+        "type": "multiple_choice",
+        "text": {
+            "de": "In welchem Bereich gibt es KEINE amtliche Statistik vom Statistischen Bundesamt?",
+            "en": "In which area is there NO official statistic from the Federal Statistical Office?"
+        },
+        "answers": {
+            "de": [
+                "Geburten und Sterbef\u00e4lle",
+                "Bildung und Forschung",
+                "Gef\u00fchle und Zufriedenheit",
+                "Einkommen und Konsum"
+            ],
+            "en": [
+                "Births and deaths",
+                "Education and research",
+                "Emotions and satisfaction",
+                "Income and consumption"
+            ]
+        },
+        "right_answer_index": 2,
+        "score": 10,
+        "explanation": {
+            "de": "Gef\u00fchle und Zufriedenheit sind keine Themen amtlicher Statistik \u2013 diese werden ggf. von Meinungsforschungsinstituten untersucht.",
+            "en": "Emotions and satisfaction are not covered by official statistics \u2013 such topics are usually explored by opinion research institutes."
+        },
+        "image": {
+            "de": "test_de.jpg",
+            "en": "test_en.jpg"
+        },
+        "image_caption": {
+            "de": "Testbild",
+            "en": "test image"
+        }
+    },
+    {
+        "type": "guess",
+        "text": {
+            "de": "Wie viele Erwerbst\u00e4tige gab es in Deutschland im Jahr 2023 (in Millionen)?",
+            "en": "How many employed people were there in Germany in 2023 (in millions)?"
+        },
+        "answer": 45.9,
+        "min_guess": 0,
+        "max_guess": 1000,
+        "max_points": 10,
+        "explanation": {
+            "de": "2023 gab es rund 45,9 Millionen Erwerbst\u00e4tige in Deutschland.",
+            "en": "In 2023, there were around 45.9 million employed people in Germany."
+        },
+        "image": {
+            "de": "test_de.jpg",
+            "en": "test_en.jpg"
+        },
+        "image_caption": {
+            "de": "Testbild",
+            "en": "test image"
+        }
+    },
+    {
+        "type": "multiple_choice",
+        "text": {
+            "de": "Wie oft f\u00fchrt das Statistische Bundesamt den Zensus durch?",
+            "en": "How often does the Federal Statistical Office conduct the census?"
+        },
+        "answers": {
+            "de": [
+                "J\u00e4hrlich",
+                "Alle 5 Jahre",
+                "Alle 10 Jahre",
+                "Unregelm\u00e4\u00dfig, je nach politischer Lage"
+            ],
+            "en": [
+                "Annually",
+                "Every 5 years",
+                "Every 10 years",
+                "Irregularly, depending on the political situation"
+            ]
+        },
+        "right_answer_index": 2,
+        "score": 10,
+        "explanation": {
+            "de": "Der Zensus wird in der EU alle 10 Jahre durchgef\u00fchrt, zuletzt 2022 (nach Verschiebung durch die Corona-Pandemie).",
+            "en": "The census is conducted every 10 years in the EU, most recently in 2022 (postponed due to the COVID-19 pandemic)."
+        },
+        "image": {
+            "de": "test_de.jpg",
+            "en": "test_en.jpg"
+        },
+        "image_caption": {
+            "de": "Testbild",
+            "en": "test image"
+        }
+    },
+    {
+        "type": "guess",
+        "text": {
+            "de": "Wie hoch war die Inflationsrate in Deutschland im Jahr 2022 (in Prozent)?",
+            "en": "What was the inflation rate in Germany in 2022 (in percent)?"
+        },
+        "answer": 6.9,
+        "min_guess": 0,
+        "max_guess": 1000,
+        "max_points": 10,
+        "explanation": {
+            "de": "Die durchschnittliche Inflationsrate betrug 2022 in Deutschland 6,9 % \u2013 der h\u00f6chste Wert seit \u00fcber 40 Jahren.",
+            "en": "The average inflation rate in Germany in 2022 was 6.9% \u2013 the highest value in over 40 years."
+        },
+        "image": {
+            "de": "test_de.jpg",
+            "en": "test_en.jpg"
+        },
+        "image_caption": {
+            "de": "Testbild",
+            "en": "test image"
+        }
+    }
+]
