@@ -2,6 +2,8 @@
 
 A small web application for a quiz containing multiple choice and number guessing question based on streamlit.
 
+You can test it out [here](https://destatis-b14-quiz.streamlit.app/).
+
 ## Installation
 
 ### Linux
@@ -59,18 +61,22 @@ Edit `data/questions.json` in order the define a list of questions. It has to be
 
 Depending on the `type` each JSON object has to have a different set of fields. All the fields are described in the following table:
 
-|Field               |Required for       |Description                                                                                                                  |Localized|
-|--------------------|-------------------|-----------------------------------------------------------------------------------------------------------------------------|---------|
-|`type`              |both               |The type of the question. Either `"multiple_choice"` or `"guess"`. The latter is a question where you have to guess a number.|no       |
-|`text`              |both               |The question itself.                                                                                                         |yes      |
-|`explanation`       |both               |An explanation of the answer.                                                                                                |yes      |
-|`image`             |both               |A path to an image file displayed below the question in the directory `images/questions/<image-file>`.                       |yes      |
-|`image_caption`     |both               |A caption for the image.                                                                                                     |yes      |
-|`answers`           |`"multiple_choice"`|A list of possible answers.                                                                                                  |yes      |
-|`right_answer_index`|`"multiple_choice"`|The index of the right answer in the list.                                                                                   |no       |
-|`score`             |`"multiple_choice"`|The score the player gets when they answer the question correctly.                                                           |no       |
-|`answer`            |`"guess"`          |The correct answer.                                                                                                          |no       |
-|`max_points`        |`"guess"`          |The maximum number of points the player gets when they hit the correct answer.                                               |no       |
+|Field                      |Required for       |Description                                                                                                                  |Localized|
+|--------------------       |-------------------|-----------------------------------------------------------------------------------------------------------------------------|---------|
+|`index`                    |both               |The unique index of this question.                                                                                           |no       |
+|`coupled_question_indices` |both               |A list of ther questions indices that belong to this question.                                                               |no       |
+|`type`                     |both               |The type of the question. Either `"multiple_choice"` or `"guess"`. The latter is a question where you have to guess a number.|no       |
+|`text`                     |both               |The question itself.                                                                                                         |yes      |
+|`explanation`              |both               |An explanation of the answer.                                                                                                |yes      |
+|`image`                    |both               |A path to an image file displayed below the question in the directory `images/questions/<image-file>`.                       |yes      |
+|`image_caption`            |both               |A caption for the image.                                                                                                     |yes      |
+|`answers`                  |`"multiple_choice"`|A list of possible answers.                                                                                                  |yes      |
+|`right_answer_index`       |`"multiple_choice"`|The index of the right answer in the list.                                                                                   |no       |
+|`score`                    |`"multiple_choice"`|The score the player gets when they answer the question correctly.                                                           |no       |
+|`answer`                   |`"guess"`          |The correct answer.                                                                                                          |no       |
+|`max_points`               |`"guess"`          |The maximum number of points the player gets when they hit the correct answer.                                               |no       |
+|`min_guess`                |`"guess"`          |The minimal possible value to guess.                                                                                         |no       |
+|`max_guess`                |`"guess"`          |The maximal possible value to guess.                                                                                         |no       |
 
 The fields `text`, `explanation`, `image`, `image_caption` and `answers` are localized. That means they contain a German and an English version of the value. 
 
@@ -106,12 +112,13 @@ You can change what questions are used by editing the file `data/config.json`. Y
 |`"all"`         |Use all questions.                                       |no parameter      |                                                                                                                                                                                                       |
 |`"list"`        |Use a fix set of questions.                              |`question_indices`|A list of indices into the list of questions.                                                                                                                                                          |                                                                    
 |`"random"`      |Use a random set of questions.                           |`question_amount` |The amount of questions to randomly select.                                                                                                                                                            |
-|`"random_block"`|Use a random set of questions out of a fixed set of sets.|`block_size`      |The size of a set of questions. The list of questions will be chunked into sets of this size and one will be randomly selected. If the last set is smaller that `block_size` it will never be selected.|
 
 Here is an example:
 ```json
 {
     "question_selection_method": "all",
+    "group_coupled_questions": true,
+    "shuffle_questions": true,
     "question_selection_methods": {
         "all": {},
         "list": {
@@ -119,13 +126,12 @@ Here is an example:
         },
         "random": {
             "question_amount": 5
-        },
-        "random_block": {
-            "block_size": 2
         }
     }
 }
 ```
+
+If you set `group_coupled_questions` to `true`, coupled question will always be selected together. When setting `shuffle_questions` to `true`, the list of selected questions will be shuffled.
 
 When you have configured your questions you can run the app like this under Linux:
 ```bash
