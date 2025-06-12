@@ -17,7 +17,9 @@ class Question(ABC):
         question_type = question_dict["type"]
         parameters = {"text": question_dict["text"]}
 
-        parameters |= {"coupled_question_indices": question_dict["coupled_question_indices"]}
+        parameters |= {
+            "coupled_question_indices": question_dict["coupled_question_indices"]
+        }
 
         if "explanation" in question_dict:
             parameters |= {"explanation": question_dict["explanation"]}
@@ -98,7 +100,7 @@ class Question(ABC):
     @property
     def image_caption(self) -> Dict[str, str] | None:
         return self._image_caption
-    
+
     @property
     def coupled_question_indices(self) -> List[int]:
         return self._coupled_question_indices
@@ -150,7 +152,11 @@ class GuessQuestion(Question):
         self._score_function = score_function or self._default_scoring_function
         self._max_points = max_points
         super().__init__(
-            text, explanation=explanation, image=image, image_caption=image_caption, coupled_question_indices=coupled_question_indices
+            text,
+            explanation=explanation,
+            image=image,
+            image_caption=image_caption,
+            coupled_question_indices=coupled_question_indices,
         )
 
     def _compute_slider_range(self, answer: Number) -> Tuple[Number, Number]:
@@ -233,7 +239,11 @@ class MultipleChoiceQuestion(Question):
 
         self._score = score
         super().__init__(
-            text, explanation=explanation, image=image, image_caption=image_caption, coupled_question_indices=coupled_question_indices
+            text,
+            explanation=explanation,
+            image=image,
+            image_caption=image_caption,
+            coupled_question_indices=coupled_question_indices,
         )
 
     def _shuffle_answers(
@@ -266,7 +276,7 @@ class MultipleChoiceQuestion(Question):
     @property
     def score(self) -> int:
         return self._score
-    
+
     @property
     def max_points(self) -> int:
         return self._score
