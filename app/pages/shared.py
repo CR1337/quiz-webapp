@@ -16,9 +16,6 @@ def load_badge_html():
         return file.read()
 
 
-badge_html_template = load_badge_html()
-
-
 def render_score(display_delta: bool = False):
     index = st.session_state["question_index"]
     question = st.session_state["questions"][index]
@@ -44,6 +41,7 @@ def render_score(display_delta: bool = False):
 
 
 def custom_badge(parent: DeltaGenerator, text: str, icon: str, color: Color):
+    badge_html_template = load_badge_html()
     r, g, b = color
     parent.html(badge_html_template.format(text=text, icon=icon, r=r, g=g, b=b))
 
