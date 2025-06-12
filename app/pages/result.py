@@ -23,4 +23,4 @@ def render_result():
             url="[www.destatis.de](https://destatis.de)",
         )
     )
-    render_image("destatis.jpg")
+    render_image(f"result_{Localization.language()}.jpg")
