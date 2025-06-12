@@ -75,16 +75,11 @@ def render_image(image: str, caption: str | None = None, directory: str = "image
 
 
 def render_question_image(question: Question):
-    if st.session_state["state"] == QuizState.QUESTION:
-        expander_args = {"label": "", "expanded": True}
-    else:
-        expander_args = {"label": Localization.get("show_image"), "expanded": False}
-    with st.expander(**expander_args):
-        render_image(
-            question.image[Localization.language()],
-            question.image_caption[Localization.language()],
-            os.path.join("images", "questions"),
-        )
+    render_image(
+        question.image[Localization.language()],
+        question.image_caption[Localization.language()],
+        os.path.join("images", "questions"),
+    )
 
 
 def render_back_to_home_button():
