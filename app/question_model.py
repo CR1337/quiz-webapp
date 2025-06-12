@@ -28,6 +28,10 @@ class Question(ABC):
             parameters |= {"answer": question_dict["answer"]}
             if "max_points" in question_dict:
                 parameters |= {"max_points": question_dict["max_points"]}
+            if "min_guess" in question_dict:
+                parameters |= {"min_guess": question_dict["min_guess"]}
+            if "max_guess" in question_dict:
+                parameters |= {"max_guess": question_dict["max_guess"]}
             if "score_function" in question_dict:
                 parameters |= {"score_function": eval(question_dict["score_function"])}
             return GuessQuestion(**parameters)
@@ -114,6 +118,8 @@ class GuessQuestion(Question):
         answer: Number,
         *,
         max_points: int = 10,
+        min_guess: float | None = None,
+        max_guess: float | None = None,
         score_function: ScoreFunction | None = None,
         explanation: Dict[str, str] | None = None,
         image: Dict[str, str] | None = None,
@@ -121,6 +127,10 @@ class GuessQuestion(Question):
     ):
         self._answer = answer
         self._min_guess, self._max_guess = self._compute_slider_range(answer)
+        if min_guess is not None:
+            self._min_guess = min_guess
+        if max_guess is not None:
+            self._max_guess = max_guess
         self._initial_guess = (self._max_guess + self._min_guess) / 2
         self._decimal_places = self._get_decimal_places(self._answer)
         self._step = (self._max_guess - self._min_guess) / self.SLIDER_STEP_COUNT

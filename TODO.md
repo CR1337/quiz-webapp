@@ -10,3 +10,7 @@
 - [x] Alle Farben in Destatis-Farben
 - [x] Falsche Antworten nicht in rot
 - [x] Ende mehr ausschmücken
+
+- [x] slider range explizit angeben
+- [] Fragen einbauen
+- [] Doppelfragen

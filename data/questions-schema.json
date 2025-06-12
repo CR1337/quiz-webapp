@@ -118,6 +118,14 @@
             "max_points": {
                 "type": "integer",
                 "minimum": 0
+            },
+            "min_guess": {
+                "type": "integer",
+                "minimum": 0
+            },
+            "max_guess": {
+                "type": "integer",
+                "minimum": 0
             }
         },
         "allOf": [
