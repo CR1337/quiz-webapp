@@ -1,0 +1,179 @@
+[
+    {
+        "index": 0,
+        "type": "multiple_choice",
+        "text": {
+            "de": "Was ist das Basisregister?",
+            "en": "What is the Basisregister?"
+        },
+        "answers": {
+            "de": [
+                "Ein digitales Telefonbuch",
+                "Ein neues Steuerregister",
+                "Ein zentrales Register für Unternehmensstammdaten",
+                "Ein Firmenverzeichnis für Start-ups"
+            ],
+            "en": [
+                "A digital phonebook",
+                "A new tax register",
+                "A central register for company master data",
+                "A company directory for start-ups"
+            ]
+        },
+        "right_answer_index": 2,
+        "score": 10,
+        "explanation": {
+            "de": "Das Basisregister ist ein zentrales Register, das Stammdaten von Unternehmen bündelt.",
+            "en": "The Basisregister is a central register that consolidates master data of companies."
+        },
+        "image": {
+            "de": "Wirtschaft_Unternehmen.png",
+            "en": "Wirtschaft_Unternehmen.png"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        },
+        "coupled_question_indices": []
+    },
+    {
+        "index": 1,
+        "type": "multiple_choice",
+        "text": {
+            "de": "Was bekommen Unternehmen durch das Basisregister?",
+            "en": "What do companies receive through the Basisregister?"
+        },
+        "answers": {
+            "de": [
+                "Eine Handelsnummer",
+                "Eine bundeseinheitliche Wirtschaftsnummer",
+                "Einen Förderbescheid",
+                "Einen Business-Pass"
+            ],
+            "en": [
+                "A trade number",
+                "A nationwide uniform business number",
+                "A grant approval",
+                "A business pass"
+            ]
+        },
+        "right_answer_index": 1,
+        "score": 10,
+        "explanation": {
+            "de": "Das Basisregister vergibt eine bundeseinheitliche Wirtschaftsnummer an Unternehmen.",
+            "en": "The Basisregister issues a nationwide uniform business number to companies."
+        },
+        "image": {
+            "de": "Wirtschaft_Unternehmen.png",
+            "en": "Wirtschaft_Unternehmen.png"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        },
+        "coupled_question_indices": []
+    },
+    {
+        "index": 2,
+        "type": "multiple_choice",
+        "text": {
+            "de": "Was ist das Hauptziel des Basisregisters für Unternehmen?",
+            "en": "What is the main goal of the Basisregister for companies?"
+        },
+        "answers": {
+            "de": [
+                "Kontrolle von Unternehmen",
+                "Einheitliche Datenbasis für Bürokratieabbau",
+                "Erhebung der Unternehmenssteuern",
+                "Exportförderung"
+            ],
+            "en": [
+                "Control of companies",
+                "Uniform data basis for reducing bureaucracy",
+                "Collection of corporate taxes",
+                "Export promotion"
+            ]
+        },
+        "right_answer_index": 1,
+        "score": 10,
+        "explanation": {
+            "de": "Das Basisregister soll eine einheitliche Datenbasis schaffen, um Bürokratie abzubauen.",
+            "en": "The Basisregister aims to create a uniform data basis to reduce bureaucracy."
+        },
+        "image": {
+            "de": "Wirtschaft_Unternehmen.png",
+            "en": "Wirtschaft_Unternehmen.png"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        },
+        "coupled_question_indices": []
+    },
+    {
+        "index": 3,
+        "type": "multiple_choice",
+        "text": {
+            "de": "Welche Art von Daten werden im Basisregister gespeichert?",
+            "en": "What type of data is stored in the Basisregister?"
+        },
+        "answers": {
+            "de": [
+                "Telefonnummern der Geschäftsführung",
+                "Urkunden und Verträge",
+                "Stammdaten und Identifikationsnummern",
+                "Produktkataloge"
+            ],
+            "en": [
+                "Phone numbers of management",
+                "Certificates and contracts",
+                "Master data and identification numbers",
+                "Product catalogs"
+            ]
+        },
+        "right_answer_index": 2,
+        "score": 10,
+        "explanation": {
+            "de": "Im Basisregister werden Stammdaten und Identifikationsnummern von Unternehmen gespeichert.",
+            "en": "The Basisregister stores master data and identification numbers of companies."
+        },
+        "image": {
+            "de": "Wirtschaft_Unternehmen.png",
+            "en": "Wirtschaft_Unternehmen.png"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        },
+        "coupled_question_indices": []
+    },
+    {
+        "index": 4,
+        "unit": {
+            "de": null,
+            "en": null
+        },
+        "type": "guess",
+        "text": {
+            "de": "Wie viele Registrierstellen in Deutschland können perspektivisch vom Basisregister profitieren und vernetzt werden?",
+            "en": "How many registration offices in Germany could potentially benefit from and be networked through the Basisregister?"
+        },
+        "answer": 120,
+        "min_guess": 10,
+        "max_guess": 200,
+        "max_points": 10,
+        "explanation": {
+            "de": "Es wird geschätzt, dass ca. 120 Registrierstellen vom Basisregister profitieren können.",
+            "en": "It is estimated that about 120 registration offices could benefit from the Basisregister."
+        },
+        "image": {
+            "de": "Wirtschaft_Unternehmen.png",
+            "en": "Wirtschaft_Unternehmen.png"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        },
+        "coupled_question_indices": []
+    }
+]
