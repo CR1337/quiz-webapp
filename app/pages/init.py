@@ -5,6 +5,8 @@ from app.state import QuizState
 
 
 def render_init():
+    st.header(Localization.get('intro').format(number=len(st.session_state['questions'])))
+
     render_image(f"title_{Localization.language()}.jpg")
     left_column, right_column = st.columns(spec=[0.9, 0.1])
 

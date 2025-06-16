@@ -90,5 +90,9 @@
     "no": {
         "de": "Nein",
         "en": "No"
+    },
+    "intro": {
+        "de": "Quiz - {number} Fragen zur Statistik",
+        "en": "Quiz - {number} questions about statistics"
     }
 }
