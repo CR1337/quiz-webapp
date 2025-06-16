@@ -54,12 +54,12 @@ def render_progress():
         elif idx == index and st.session_state["state"] == QuizState.SOLUTION:
             icon, color = "check", GREEN
         else:
-            icon, color = "question_mark", GRAY
+            icon, color = "more_horiz", GRAY
         r, g, b = color
 
         badges_html += f"""
           <div class="badge-wrapper">
-            {badge_html_template.format(text=idx+1, icon=icon, r=r, g=g, b=b)}
+            {badge_html_template.format(text="", number=idx + 1, icon=icon, r=r, g=g, b=b)}
           </div>
         """
 
