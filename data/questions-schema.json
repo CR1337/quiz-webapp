@@ -16,6 +16,28 @@
             "index": {
                 "type": "integer"
             },
+            "unit": {
+                "type": "object",
+                "required": [
+                    "de",
+                    "en"
+                ],
+                "properties": {
+                    "de": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "en": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    }
+                },
+                "additionalProperties": false
+            },
             "type": {
                 "type": "string",
                 "enum": [
@@ -171,7 +193,8 @@
                 "then": {
                     "required": [
                         "answer",
-                        "max_points"
+                        "max_points",
+                        "unit"
                     ]
                 }
             }

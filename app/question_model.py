@@ -4,6 +4,8 @@ from typing import Any, Callable, Dict, List, Tuple
 from numbers import Number
 import random
 
+from app.localization import Localization
+
 
 class Question(ABC):
     _text: Dict[str, str]
@@ -40,6 +42,8 @@ class Question(ABC):
                 parameters |= {"max_guess": question_dict["max_guess"]}
             if "score_function" in question_dict:
                 parameters |= {"score_function": eval(question_dict["score_function"])}
+            if "unit" in question_dict:
+                parameters |= {"unit": question_dict["unit"]}
             return GuessQuestion(**parameters)
 
         elif question_type == "multiple_choice":
@@ -123,6 +127,7 @@ class GuessQuestion(Question):
     _format: str
     _max_points: int
     _decimal_places: int
+    _unit: Dict[str, str | None]
 
     def __init__(
         self,
@@ -130,6 +135,7 @@ class GuessQuestion(Question):
         answer: Number,
         coupled_question_indices: List[int],
         *,
+        unit: Dict[str, str | None] = None,
         max_points: int = 10,
         min_guess: float | None = None,
         max_guess: float | None = None,
@@ -147,7 +153,11 @@ class GuessQuestion(Question):
         self._initial_guess = (self._max_guess + self._min_guess) / 2
         self._decimal_places = self._get_decimal_places(self._answer)
         self._step = (self._max_guess - self._min_guess) / self.SLIDER_STEP_COUNT
-        self._format = f"%0.{self._decimal_places}f"
+        if unit[Localization.language()] is not None:
+            safe_unit = unit[Localization.language()].replace("%", "%%")
+            self._format = f"%0.{self._decimal_places}f {safe_unit}"
+        else:
+            self._format = f"%0.{self._decimal_places}f"
 
         self._score_function = score_function or self._default_scoring_function
         self._max_points = max_points
@@ -158,6 +168,7 @@ class GuessQuestion(Question):
             image_caption=image_caption,
             coupled_question_indices=coupled_question_indices,
         )
+        self._unit = unit
 
     def _compute_slider_range(self, answer: Number) -> Tuple[Number, Number]:
         range_half = answer / self.SLIDER_SCALE_FACTOR
@@ -214,6 +225,10 @@ class GuessQuestion(Question):
     @property
     def decimal_places(self) -> int:
         return self._decimal_places
+    
+    @property
+    def unit(self) -> Dict[str, str | None]:
+        return self._unit
 
 
 class MultipleChoiceQuestion(Question):
