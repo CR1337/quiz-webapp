@@ -77,6 +77,7 @@ Depending on the `type` each JSON object has to have a different set of fields. 
 |`max_points`               |`"guess"`          |The maximum number of points the player gets when they hit the correct answer.                                               |no       |
 |`min_guess`                |`"guess"`          |The minimal possible value to guess.                                                                                         |no       |
 |`max_guess`                |`"guess"`          |The maximal possible value to guess.                                                                                         |no       |
+|`unit`                     |`"guess"`          |The unit to display.                                                                                                         |yes      |
 
 The fields `text`, `explanation`, `image`, `image_caption` and `answers` are localized. That means they contain a German and an English version of the value. 
 
