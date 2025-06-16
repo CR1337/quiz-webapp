@@ -440,8 +440,8 @@
     {
         "index": 14,
         "unit": {
-            "de": null,
-            "en": null
+            "de": "Mio.",
+            "en": "millions"
         },
         "type": "guess",
         "text": {
@@ -477,12 +477,14 @@
             "de": [
                 "Vereinigte Staaten",
                 "Volksrepublik China",
-                "Niederlande"
+                "Niederlande",
+                "Frankreich"
             ],
             "en": [
                 "United States",
                 "People's Republic of China",
-                "Netherlands"
+                "Netherlands",
+                "France"
             ]
         },
         "right_answer_index": 0,
@@ -541,8 +543,8 @@
     {
         "index": 171,
         "unit": {
-            "de": null,
-            "en": null
+            "de": "Personen",
+            "en": "persons"
         },
         "type": "guess",
         "text": {
@@ -959,8 +961,8 @@
     {
         "index": 31,
         "unit": {
-            "de": null,
-            "en": null
+            "de": "Mio.",
+            "en": "millions"
         },
         "type": "guess",
         "text": {
