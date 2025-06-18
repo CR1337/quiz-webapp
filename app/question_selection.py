@@ -1,5 +1,5 @@
 from random import choice, sample, shuffle
-from typing import Any, Dict, List, Set
+from typing import Any, Dict, List
 
 
 class QuestionSelector:

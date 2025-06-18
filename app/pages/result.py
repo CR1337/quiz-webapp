@@ -5,8 +5,8 @@ from app.localization import Localization
 
 
 N_PREDICATES: int = min(
-    len(Localization.get_for_language('predicates', 'de')),
-    len(Localization.get_for_language('predicates', 'en'))
+    len(Localization.get_for_language("predicates", "de")),
+    len(Localization.get_for_language("predicates", "en")),
 )
 
 
@@ -23,7 +23,7 @@ def render_result():
         Localization.get("score_announcement").format(
             score=score,
             max_points=max_points,
-            predicate=Localization.get("predicates")[predicate_index]
+            predicate=Localization.get("predicates")[predicate_index],
         )
     )
     png_filename = f"result_{Localization.language()}.png"
@@ -31,4 +31,4 @@ def render_result():
     if os.path.exists(os.path.join("images", png_filename)):
         render_image(png_filename)
     else:
-        render_image(jpg_filename)    
+        render_image(jpg_filename)
