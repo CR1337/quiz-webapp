@@ -1,6 +1,7 @@
 import os
 import json
 import streamlit as st
+from typing import Any
 
 
 class Localization:
@@ -10,9 +11,13 @@ class Localization:
         _localization = json.load(file)
 
     @classmethod
-    def get(cls, key: str):
-        language = st.session_state["language"]
+    def get_for_language(cls, key: str, language: str) -> Any:
         return cls._localization[key][language]
+
+    @classmethod
+    def get(cls, key: str) -> Any:
+        language = st.session_state["language"]
+        return cls.get_for_language(key, language)
 
     @classmethod
     def language(cls) -> str:
