@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 from app.pages.shared import render_image
 from app.localization import Localization
@@ -22,4 +23,9 @@ def render_result():
             predicate=Localization.get("predicates")[predicate_index]
         )
     )
-    render_image(f"result_{Localization.language()}.jpg")
+    png_filename = f"result_{Localization.language()}.png"
+    jpg_filename = f"result_{Localization.language()}.jpg"
+    if os.path.exists(os.path.join("images", png_filename)):
+        render_image(png_filename)
+    else:
+        render_image(jpg_filename)    
