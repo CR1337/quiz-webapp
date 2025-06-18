@@ -7,7 +7,9 @@ from app.state import QuizState
 
 
 def render_init():
-    st.header(Localization.get('intro').format(number=len(st.session_state['questions'])))
+    st.header(
+        Localization.get("intro").format(number=len(st.session_state["questions"]))
+    )
     st.divider()
     for i in count():
         png_filename = f"title{i}_{Localization.language()}.png"

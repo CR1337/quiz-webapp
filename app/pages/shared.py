@@ -4,8 +4,7 @@ import streamlit.components.v1 as components
 from app.question_model import Question
 from app.localization import Localization
 from app.state import QuizState
-from app.colors import Color, BLUE, GRAY, GREEN
-from streamlit.delta_generator import DeltaGenerator
+from app.colors import BLUE, GRAY, GREEN
 
 
 BADGE_HTML_FILENAME: str = os.path.join("app", "html", "badge.html.template")
@@ -39,6 +38,7 @@ def render_score(display_delta: bool = False):
             label=Localization.get("your_score"),
             value=f"{st.session_state['score']}/{st.session_state['max_points']}",
         )
+
 
 def render_progress():
     index = st.session_state["question_index"]
@@ -104,6 +104,7 @@ def render_progress():
     """
 
     components.html(full_html, height=100, scrolling=True)
+
 
 def render_image(image: str, caption: str | None = None, directory: str = "images"):
     st.image(os.path.join(directory, image), caption)

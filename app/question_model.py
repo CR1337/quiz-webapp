@@ -225,7 +225,7 @@ class GuessQuestion(Question):
     @property
     def decimal_places(self) -> int:
         return self._decimal_places
-    
+
     @property
     def unit(self) -> Dict[str, str | None]:
         return self._unit
