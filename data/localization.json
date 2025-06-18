@@ -16,8 +16,8 @@
         "en": "Thank you for participating in the quiz."
     },
     "score_announcement": {
-        "de": "Sie haben {score} von {max_points} Punkte erreicht – das ist {predicate}. Wenn Sie mehr Daten suchen, besuchen Sie uns auf [www.destatis.de](https://www.destatis.de/DE/Home/_inhalt.html).",
-        "en": "You scored {score} out of {max_points} points – that's {predicate}. If you're looking for more data, visit us at [www.destatis.de](https://www.destatis.de/EN/Home/_node.html)."
+        "de": "Sie haben {score} von {max_points} Punkte erreicht – das ist {predicate}. Wenn Sie mehr erfahren wollen, besuchen Sie uns auf [www.destatis.de/basisregister](https://www.destatis.de/Verwaltungsregister/DE/Basisregister/_inhalt.html).",
+        "en": "You scored {score} out of {max_points} points – that's {predicate}. If you want to learn more, visit us at [www.destatis.de](https://www.destatis.de/Verwaltungsregister/DE/Basisregister/_inhalt.html)."
     },
     "predicates": {
         "de": [
@@ -92,7 +92,7 @@
         "en": "No"
     },
     "intro": {
-        "de": "Quiz - {number} Fragen zur Statistik",
-        "en": "Quiz - {number} questions about statistics"
+        "de": "Quiz - {number} Fragen zum Basisregister",
+        "en": "Quiz - {number} questions about the Basisregister"
     }
 }
