@@ -1,4 +1,5 @@
 import os
+import glob
 import json
 import streamlit as st
 from streamlit_scroll_to_top import scroll_to_here
@@ -13,9 +14,13 @@ def render_main() -> Question | None:
     if st.session_state.get("language", None) is None:
         st.session_state["language"] = "de"
 
+    favicon_files = glob.glob(os.path.join("images", "favicon.*"))
+
+    favicon_path = favicon_files[0] if favicon_files else None
+
     st.set_page_config(
         page_title=Localization.get("quiz"),
-        page_icon=os.path.join("images", "favicon.ico"),
+        page_icon=favicon_path,
         layout="centered",
     )
 
