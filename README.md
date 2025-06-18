@@ -2,6 +2,8 @@
 
 A small web application for a quiz containing multiple choice and number guessing question based on streamlit.
 
+You can test it out [here](https://quiz-webapp.streamlit.app/).
+
 ## Installation
 
 ### Linux
