@@ -1,7 +1,7 @@
 {
     "question_selection_method": "all",
     "group_coupled_questions": true,
-    "shuffle_questions": true,
+    "shuffle_questions": false,
     "question_selection_methods": {
         "all": {},
         "list": {
