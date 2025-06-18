@@ -2,7 +2,7 @@
 
 A small web application for a quiz containing multiple choice and number guessing question based on streamlit.
 
-You can test it out [here](https://destatis-b14-quiz.streamlit.app/).
+You can test it out [here](https://destatis-quiz-basisregister-2025.streamlit.app/).
 
 ## Installation
 
