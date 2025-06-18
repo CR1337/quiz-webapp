@@ -42,19 +42,19 @@ class QuestionSelector:
         if not group_coupled_questions:
             return question_list
 
-        question_set: Set = set(question_list)
+        question_list_copy: List = question_list[:]
         new_question_list = []
 
-        while len(question_set) > 0:
-            question = question_set.pop()
+        while len(question_list_copy) > 0:
+            question = question_list_copy.pop()
             new_question_list.append(question)
             for i in question["coupled_question_indices"]:
                 coupled_question = next(
-                    (q for q in question_set if q["index"] == i), None
+                    (q for q in question_list_copy if q["index"] == i), None
                 )
                 if not coupled_question:
                     continue
-                question_set.remove(coupled_question)
+                question_list_copy.remove(coupled_question)
                 new_question_list.append(coupled_question)
 
         return new_question_list
