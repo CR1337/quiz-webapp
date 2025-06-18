@@ -32,6 +32,8 @@ class QuestionSelector:
 
         if shuffle_questions:
             shuffle(question_list)
+        else:
+            question_list = sorted(question_list, key=lambda q: q['index'])
 
         return question_list
 
