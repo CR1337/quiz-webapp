@@ -1,5 +1,5 @@
 {
-    "question_selection_method": "random",
+    "question_selection_method": "all",
     "group_coupled_questions": true,
     "shuffle_questions": true,
     "question_selection_methods": {
@@ -14,7 +14,7 @@
             ]
         },
         "random": {
-            "question_amount": 10
+            "question_amount": 5
         }
     }
 }
