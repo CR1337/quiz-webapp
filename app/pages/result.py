@@ -4,7 +4,10 @@ from app.pages.shared import render_image
 from app.localization import Localization
 
 
-N_PREDICATES: int = 5
+N_PREDICATES: int = min(
+    len(Localization.get_for_language('predicates', 'de')),
+    len(Localization.get_for_language('predicates', 'en'))
+)
 
 
 def render_result():
