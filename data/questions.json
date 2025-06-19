@@ -527,8 +527,8 @@
         "right_answer_index": 0,
         "score": 10,
         "explanation": {
-            "de": "Kraftwagen und Kraftwagenteile waren im Jahr 2024 mit 262,6 Milliarden Euro Deutschlands wichtigstes Exportgut. ([Quelle](https://www.destatis.de/DE/Themen/Wirtschaft/Aussenhandel/handelswaren-jahr.html))",
-            "en": "Motor vehicles and motor vehicle parts were Germany's most important export goods in 2024, with 262.6 billion euros. ([Source](https://www.destatis.de/DE/Themen/Wirtschaft/Aussenhandel/handelswaren-jahr.ht)ml)"
+            "de": "Kraftwagen/-teile waren im Jahr 2024 mit 262,8 Milliarden Euro Deutschlands wichtigstes Exportgut. ([Quelle](https://www.destatis.de/DE/Themen/Wirtschaft/Aussenhandel/handelswaren-jahr.html))",
+            "en": "Motor vehicles and motor vehicle parts were Germany's most important export goods in 2024, with 262.8 billion euros. ([Source](https://www.destatis.de/DE/Themen/Wirtschaft/Aussenhandel/handelswaren-jahr.ht)ml)"
         },
         "image": {
             "de": "Wirtschaft_Unternehmen.png",
@@ -577,16 +577,16 @@
         },
         "type": "guess",
         "text": {
-            "de": "Wie hoch war 2023 der Anteil der Windkraft an der Stromerzeugung?",
-            "en": "What was the share of wind power in electricity generation in 2023?"
+            "de": "Wie hoch war 2024 der Anteil der Windkraft an der Stromerzeugung?",
+            "en": "What was the share of wind power in electricity generation in 2024?"
         },
         "answer": 31.5,
         "min_guess": 5,
         "max_guess": 40,
         "max_points": 10,
         "explanation": {
-            "de": "Der Anteil der Windkraft an der Stromerzeugung lag 2023 in Deutschland bei 31,5%. ([Quelle](https://www.destatis.de/DE/Presse/Pressemitteilungen/2025/03/PD25_091_43312.html))",
-            "en": "The share of wind power in electricity generation in Germany in 2023 was 31.5%. ([Source](https://www.destatis.de/DE/Presse/Pressemitteilungen/2025/03/PD25_091_43312.html))"
+            "de": "Der Anteil der Windkraft an der Stromerzeugung lag 2024 in Deutschland bei 31,5%. ([Quelle](https://www.destatis.de/DE/Presse/Pressemitteilungen/2025/03/PD25_091_43312.html))",
+            "en": "The share of wind power in electricity generation in Germany in 2024 was 31.5%. ([Source](https://www.destatis.de/DE/Presse/Pressemitteilungen/2025/03/PD25_091_43312.html))"
         },
         "image": {
             "de": "Umwelt_Energie.png",
@@ -635,16 +635,16 @@
         },
         "type": "guess",
         "text": {
-            "de": "Wie hoch lag die Erwerbslosenquote im März 2025 in Deutschland?",
-            "en": "What was the unemployment rate in March 2025 in Germany?"
+            "de": "Wie hoch lag die Erwerbslosenquote im April 2025 in Deutschland?",
+            "en": "What was the unemployment rate in April 2025 in Germany?"
         },
-        "answer": 3.7,
+        "answer": 3.6,
         "min_guess": 0,
         "max_guess": 15,
         "max_points": 10,
         "explanation": {
-            "de": "Die Erwerbslosenquote lag im März 2025 bei 3,7%. ([Quelle](https://www.destatis.de/DE/Themen/Arbeit/Arbeitsmarkt/Erwerbslosigkeit/Tabellen/erwerbslose.html#129240))",
-            "en": "The unemployment rate in March 2025 was 3.7%. ([Source](https://www.destatis.de/DE/Themen/Arbeit/Arbeitsmarkt/Erwerbslosigkeit/Tabellen/erwerbslose.html#129240))"
+            "de": "Die Erwerbslosenquote lag im April 2025 bei 3,6%. ([Quelle](https://www.destatis.de/DE/Themen/Arbeit/Arbeitsmarkt/Erwerbslosigkeit/Tabellen/erwerbslose.html#129240))",
+            "en": "The unemployment rate in April 2025 was 3.6%. ([Source](https://www.destatis.de/DE/Themen/Arbeit/Arbeitsmarkt/Erwerbslosigkeit/Tabellen/erwerbslose.html#129240))"
         },
         "image": {
             "de": "Büro_Arbeit_Allgemeines.png",
@@ -730,8 +730,8 @@
         "max_guess": 10,
         "max_points": 10,
         "explanation": {
-            "de": "Im Schnitt haben die Menschen in Deutschland 6,2 Stunden Freizeit am Tag. ([Quelle](https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Einkommen-Konsum-Lebensbedingungen/Zeitverwendung/Tabellen/freizeitaktivitaeten-geschlecht-zve.html))",
-            "en": "On average, people in Germany have 6.2 hours of leisure time per day. ([Source](https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Einkommen-Konsum-Lebensbedingungen/Zeitverwendung/Tabellen/freizeitaktivitaeten-geschlecht-zve.html))"
+            "de": "Im Schnitt haben die Menschen 2022 in Deutschland 6,2 Stunden Freizeit am Tag. ([Quelle](https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Einkommen-Konsum-Lebensbedingungen/Zeitverwendung/Tabellen/freizeitaktivitaeten-geschlecht-zve.html))",
+            "en": "In 2022, people in Germany had an average of 6.2 hours of leisure time per day. ([Source](https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Einkommen-Konsum-Lebensbedingungen/Zeitverwendung/Tabellen/freizeitaktivitaeten-geschlecht-zve.html))"
         },
         "image": {
             "de": "Freizeit_Sport_Flughafen.png",
@@ -767,8 +767,8 @@
         "right_answer_index": 2,
         "score": 10,
         "explanation": {
-            "de": "Unter den 15,6 Millionen Menschen, die sich zu Hause vorwiegend oder ausschließlich in einer anderen Sprache als Deutsch verständigten, war Türkisch mit einem Anteil von 14 % die am häufigsten gesprochene Sprache. ([Quelle](https://www.destatis.de/DE/Presse/Pressemitteilungen/Zahl-der-Woche/2025/PD25_08_p002.html))",
-            "en": "Among the 15.6 million people who mainly or exclusively communicated in a language other than German at home, Turkish was the most commonly spoken language with a share of 14%. ([Source](https://www.destatis.de/DE/Presse/Pressemitteilungen/Zahl-der-Woche/2025/PD25_08_p002.html))"
+            "de": "Unter den 15,6 Millionen Menschen, die sich 2023 zu Hause vorwiegend oder ausschließlich in einer anderen Sprache als Deutsch verständigten, war Türkisch mit einem Anteil von 14 % die am häufigsten gesprochene Sprache. ([Quelle](https://www.destatis.de/DE/Presse/Pressemitteilungen/Zahl-der-Woche/2025/PD25_08_p002.html))",
+            "en": "Among the 15.6 million people who mainly or exclusively communicated in a language other than German at home in 2023, Turkish was the most commonly spoken language with a share of 14%. ([Source](https://www.destatis.de/DE/Presse/Pressemitteilungen/Zahl-der-Woche/2025/PD25_08_p002.html))"
         },
         "image": {
             "de": "Zuhause_Privates_Büro_Gaming.png",
@@ -916,8 +916,8 @@
         "max_guess": 50,
         "max_points": 10,
         "explanation": {
-            "de": "Im Jahr 2023 lebten 21,2 Millionen Personen mit Einwanderungsgeschichte in Deutschland. ([Quelle](https://www.dashboard-integration.de/integration/bevoelkerung/0001021))",
-            "en": "In 2023, 21.2 million people with an immigration background lived in Germany. ([Source](https://www.dashboard-integration.de/integration/bevoelkerung/0001021))"
+            "de": "Im Jahr 2024 lebten 21,2 Millionen Personen mit Einwanderungsgeschichte in Deutschland. ([Quelle](https://www.dashboard-integration.de/integration/bevoelkerung/0001021))",
+            "en": "In 2024, 21.2 million people with an immigration background lived in Germany. ([Source](https://www.dashboard-integration.de/integration/bevoelkerung/0001021))"
         },
         "image": {
             "de": "Büro_Arbeit_Allgemeines.png",
