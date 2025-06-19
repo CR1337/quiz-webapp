@@ -4,7 +4,7 @@ import streamlit.components.v1 as components
 from app.question_model import Question
 from app.localization import Localization
 from app.state import QuizState
-from app.colors import BLUE, GRAY, GREEN
+from app.colors import Colors
 
 
 BADGE_HTML_FILENAME: str = os.path.join("app", "html", "badge.html.template")
@@ -48,13 +48,13 @@ def render_progress():
     badges_html = ""
     for idx in range(question_amount):
         if idx < index:
-            icon, color = "check", GREEN
+            icon, color = "check", Colors.get('green')
         elif idx == index and st.session_state["state"] == QuizState.QUESTION:
-            icon, color = "arrow_downward", BLUE
+            icon, color = "arrow_downward", Colors.get('blue')
         elif idx == index and st.session_state["state"] == QuizState.SOLUTION:
-            icon, color = "check", GREEN
+            icon, color = "check", Colors.get('green')
         else:
-            icon, color = "more_horiz", GRAY
+            icon, color = "more_horiz", Colors.get('gray')
         r, g, b = color
 
         badges_html += f"""
