@@ -1,10 +1,15 @@
-from typing import Tuple
+import os
+import json
+from typing import Dict, Tuple
 
 Color = Tuple[int, int, int]
 
-GREEN: Color = (0, 178, 136)
-BLUE: Color = (0, 98, 152)
-GRAY: Color = (153, 153, 153)
-WHITE: Color = (255, 255, 255)
-RED: Color = (236, 78, 96)
-BLACK: Color = (30, 30, 30)
+class Colors:
+    COLORS_FILENAME: str = os.path.join("data", "colors.json")
+    with open(COLORS_FILENAME, "r") as file:
+        _colors: Dict[str, Color] = {k: tuple(c) for k, c in json.load(file).items()}
+
+    @classmethod
+    def get(cls, key: str) -> Color:
+        return cls._colors[key]
+
