@@ -106,8 +106,13 @@ def render_progress():
     components.html(full_html, height=100, scrolling=True)
 
 
-def render_image(image: str, caption: str | None = None, directory: str = "images"):
-    st.image(os.path.join(directory, image), caption)
+def render_image(image: str, caption: str | None = None, directory: str = "images", center: bool = False):
+    if center:
+        _0, col, _1 = st.columns([1, 2, 1])
+        with col:
+            st.image(os.path.join(directory, image), caption, use_container_width=True)
+    else:
+        st.image(os.path.join(directory, image), caption)
 
 
 def render_question_image(question: Question):

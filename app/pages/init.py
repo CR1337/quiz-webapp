@@ -15,9 +15,9 @@ def render_init():
         png_filename = f"title{i}_{Localization.language()}.png"
         jpg_filename = f"title{i}_{Localization.language()}.jpg"
         if os.path.exists(os.path.join("images", png_filename)):
-            render_image(png_filename)
+            render_image(png_filename, center=i == 0)
         elif os.path.exists(os.path.join("images", jpg_filename)):
-            render_image(jpg_filename)
+            render_image(jpg_filename, center=i == 0)
         else:
             break
     st.divider()
