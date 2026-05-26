@@ -14,7 +14,7 @@
             ]
         },
         "random": {
-            "question_amount": 10
+            "question_amount": 15
         }
     }
 }

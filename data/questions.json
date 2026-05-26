@@ -2,25 +2,25 @@
     {
         "index": 0,
         "unit": {
-            "de": "Meter",
-            "en": "meters"
+            "de": "EU-Staaten",
+            "en": "EU countries"
         },
         "type": "guess",
         "text": {
-            "de": "Wie hoch ist der Eiffelturm (einschließlich Antennen)?",
-            "en": "How tall is the Eiffel Tower (including antennas)?"
+            "de": "In wie vielen EU-Staaten wurde – schätzen Sie – der Zensus bei der letzten Zensusrunde 2021/22 ohne Befragung, also nur auf Basis von Registern, durchgeführt?",
+            "en": "In how many EU countries was the census conducted in the 2021/22 round without surveys, using only register-based data?"
         },
-        "answer": 330,
-        "min_guess": 200,
-        "max_guess": 500,
+        "answer": 10,
+        "min_guess": 3,
+        "max_guess": 20,
         "max_points": 10,
         "explanation": {
-            "de": "Der Eiffelturm ist 330 Meter hoch, einschließlich der Antennen. Ohne Antennen misst er 300 Meter.",
-            "en": "The Eiffel Tower is 330 meters tall, including antennas. Without antennas, it measures 300 meters."
+            "de": "In zehn EU-Staaten wurde der Zensus bei der letzten Zensusrunde 2021/22 ohne Befragung, also nur auf Basis von Registern, durchgeführt.",
+            "en": "In ten EU countries, the census during the 2021/22 round was conducted without surveys, using only register-based data."
         },
         "image": {
-            "de": "test.png",
-            "en": "test.png"
+            "de": "Büro_Arbeit_Allgemeines.png",
+            "en": "Büro_Arbeit_Allgemeines.png"
         },
         "image_caption": {
             "de": null,
@@ -30,34 +30,26 @@
     },
     {
         "index": 1,
-        "type": "multiple_choice",
+        "unit": {
+            "de": "Interviewende",
+            "en": "Interviewers"
+        },
+        "type": "guess",
         "text": {
-            "de": "Welches ist das größte Organ des menschlichen Körpers?",
-            "en": "What is the largest organ of the human body?"
+            "de": "Wie viele Interviewende wurden ungefähr bei der Zensusrunde 2022 eingesetzt?",
+            "en": "Approximately how many interviewers were deployed during the 2022 census round?"
         },
-        "answers": {
-            "de": [
-                "Leber",
-                "Haut",
-                "Lunge",
-                "Herz"
-            ],
-            "en": [
-                "Liver",
-                "Skin",
-                "Lungs",
-                "Heart"
-            ]
-        },
-        "right_answer_index": 1,
-        "score": 10,
+        "answer": 100000,
+        "min_guess": 10000,
+        "max_guess": 200000,
+        "max_points": 10,
         "explanation": {
-            "de": "Die Haut ist das größte Organ des menschlichen Körpers und macht etwa 16% des Körpergewichts aus.",
-            "en": "The skin is the largest organ of the human body and accounts for about 16% of body weight."
+            "de": "Ungefähr 100.000 Interviewende wurden bei der Zensusrunde 2022 eingesetzt.",
+            "en": "Approximately 100,000 interviewers were deployed during the 2022 census round."
         },
         "image": {
-            "de": "test.png",
-            "en": "test.png"
+            "de": "Bildung_Schule.png",
+            "en": "Bildung_Schule.png"
         },
         "image_caption": {
             "de": null,
@@ -68,25 +60,25 @@
     {
         "index": 2,
         "unit": {
-            "de": "km/h",
-            "en": "km/h"
+            "de": "Prozent",
+            "en": "Percent"
         },
         "type": "guess",
         "text": {
-            "de": "Wie schnell kann ein Gepard maximal laufen?",
-            "en": "What is the maximum speed a cheetah can run?"
+            "de": "Schätzen Sie, wie viel Prozent der Fragebögen der Gebäude- und Wohnungszählung online übermittelt wurden?",
+            "en": "Estimate what percentage of the building and housing census questionnaires were submitted online."
         },
-        "answer": 120,
-        "min_guess": 50,
-        "max_guess": 150,
+        "answer": 82,
+        "min_guess": 0,
+        "max_guess": 100,
         "max_points": 10,
         "explanation": {
-            "de": "Ein Gepard kann Geschwindigkeiten von bis zu 120 km/h erreichen und ist damit das schnellste Landtier der Welt.",
-            "en": "A cheetah can reach speeds of up to 120 km/h, making it the fastest land animal in the world."
+            "de": "82 Prozent der Fragebögen der Gebäude- und Wohnungszählung wurden online übermittelt.",
+            "en": "82 percent of the building and housing census questionnaires were submitted online."
         },
         "image": {
-            "de": "test.png",
-            "en": "test.png"
+            "de": "Zuhause_Privates_Büro_Gaming.png",
+            "en": "Zuhause_Privates_Büro_Gaming.png"
         },
         "image_caption": {
             "de": null,
@@ -96,34 +88,26 @@
     },
     {
         "index": 3,
-        "type": "multiple_choice",
+        "unit": {
+            "de": "Millionen Einwohner",
+            "en": "Million inhabitants"
+        },
+        "type": "guess",
         "text": {
-            "de": "Wer komponierte die 'Kleine Nachtmusik'?",
-            "en": "Who composed 'Eine kleine Nachtmusik'?"
+            "de": "Wie viele mehr Einwohnerinnen und Einwohner lebten laut dem Zensus 2022 in Deutschland im Vergleich zum Zensus 2011?",
+            "en": "By how many inhabitants did Germany's population increase according to the 2022 census compared to the 2011 census?"
         },
-        "answers": {
-            "de": [
-                "Ludwig van Beethoven",
-                "Wolfgang Amadeus Mozart",
-                "Johann Sebastian Bach",
-                "Franz Schubert"
-            ],
-            "en": [
-                "Ludwig van Beethoven",
-                "Wolfgang Amadeus Mozart",
-                "Johann Sebastian Bach",
-                "Franz Schubert"
-            ]
-        },
-        "right_answer_index": 1,
-        "score": 10,
+        "answer": 2.5,
+        "min_guess": 0,
+        "max_guess": 10,
+        "max_points": 10,
         "explanation": {
-            "de": "Wolfgang Amadeus Mozart komponierte 'Eine kleine Nachtmusik' im Jahr 1787. Es ist eines seiner bekanntesten Werke.",
-            "en": "Wolfgang Amadeus Mozart composed 'Eine kleine Nachtmusik' in 1787. It is one of his most famous works."
+            "de": "Laut Zensus 2022 lebten 2,5 Millionen mehr Einwohnerinnen und Einwohner in Deutschland als zum Zensus 2011.",
+            "en": "According to the 2022 census, Germany's population increased by 2.5 million inhabitants compared to the 2011 census."
         },
         "image": {
-            "de": "test.png",
-            "en": "test.png"
+            "de": "Park_Umwelt_Soziales.png",
+            "en": "Park_Umwelt_Soziales.png"
         },
         "image_caption": {
             "de": null,
@@ -134,25 +118,25 @@
     {
         "index": 4,
         "unit": {
-            "de": "Grad Celsius",
-            "en": "degrees Celsius"
+            "de": "m²",
+            "en": "m²"
         },
         "type": "guess",
         "text": {
-            "de": "Bei welcher Temperatur kocht Wasser auf Meereshöhe?",
-            "en": "At what temperature does water boil at sea level?"
+            "de": "Wie groß ist die durchschnittliche Größe von Wohnungen in Deutschland laut der Gebäude- und Wohnungszählung?",
+            "en": "What is the average size of apartments in Germany according to the building and housing census?"
         },
-        "answer": 100,
-        "min_guess": 80,
-        "max_guess": 120,
+        "answer": 94.4,
+        "min_guess": 30,
+        "max_guess": 150,
         "max_points": 10,
         "explanation": {
-            "de": "Wasser siedet bei normalem Luftdruck auf Meereshöhe bei 100 Grad Celsius (212 Grad Fahrenheit).",
-            "en": "Water boils at normal atmospheric pressure at sea level at 100 degrees Celsius (212 degrees Fahrenheit)."
+            "de": "Die durchschnittliche Größe von Wohnungen in Deutschland beträgt laut der Gebäude- und Wohnungszählung 94,4 m².",
+            "en": "According to the building and housing census, the average apartment size in Germany is 94.4 m²."
         },
         "image": {
-            "de": "test.png",
-            "en": "test.png"
+            "de": "Zuhause_Privates_Büro_Gaming.png",
+            "en": "Zuhause_Privates_Büro_Gaming.png"
         },
         "image_caption": {
             "de": null,
@@ -162,34 +146,26 @@
     },
     {
         "index": 5,
-        "type": "multiple_choice",
+        "unit": {
+            "de": "Prozent",
+            "en": "Percent"
+        },
+        "type": "guess",
         "text": {
-            "de": "Welcher Planet ist der Sonne am nächsten?",
-            "en": "Which planet is closest to the Sun?"
+            "de": "Wie hoch ist die im Zensus 2022 ermittelte Erwerbstätigenquote in Deutschland?",
+            "en": "What is the employment rate in Germany as determined by the 2022 census?"
         },
-        "answers": {
-            "de": [
-                "Venus",
-                "Merkur",
-                "Mars",
-                "Erde"
-            ],
-            "en": [
-                "Venus",
-                "Mercury",
-                "Mars",
-                "Earth"
-            ]
-        },
-        "right_answer_index": 1,
-        "score": 10,
+        "answer": 75.7,
+        "min_guess": 0,
+        "max_guess": 100,
+        "max_points": 10,
         "explanation": {
-            "de": "Merkur ist der sonnennächste Planet in unserem Sonnensystem mit einer durchschnittlichen Entfernung von etwa 58 Millionen Kilometern.",
-            "en": "Mercury is the closest planet to the Sun in our solar system with an average distance of about 58 million kilometers."
+            "de": "Die im Zensus 2022 ermittelte Erwerbstätigenquote in Deutschland beträgt 75,7%.",
+            "en": "The employment rate in Germany as determined by the 2022 census is 75.7%."
         },
         "image": {
-            "de": "test.png",
-            "en": "test.png"
+            "de": "Wirtschaft_Unternehmen.png",
+            "en": "Wirtschaft_Unternehmen.png"
         },
         "image_caption": {
             "de": null,
@@ -200,25 +176,25 @@
     {
         "index": 6,
         "unit": {
-            "de": "Knochen",
-            "en": "bones"
+            "de": "Prozent",
+            "en": "Percent"
         },
         "type": "guess",
         "text": {
-            "de": "Wie viele Knochen hat ein erwachsener Mensch?",
-            "en": "How many bones does an adult human have?"
+            "de": "Wie viel Prozent der Menschen im Rentenalter sind noch erwerbstätig?",
+            "en": "What percentage of people at retirement age are still employed?"
         },
-        "answer": 206,
-        "min_guess": 150,
-        "max_guess": 300,
+        "answer": 10.1,
+        "min_guess": 0,
+        "max_guess": 100,
         "max_points": 10,
         "explanation": {
-            "de": "Ein erwachsener Mensch hat 206 Knochen. Babys werden mit etwa 270 Knochen geboren, aber viele verwachsen während des Wachstums.",
-            "en": "An adult human has 206 bones. Babies are born with about 270 bones, but many fuse together during growth."
+            "de": "10,1% der Menschen im Rentenalter sind noch erwerbstätig.",
+            "en": "10.1% of people at retirement age are still employed."
         },
         "image": {
-            "de": "test.png",
-            "en": "test.png"
+            "de": "Wirtschaft_Unternehmen.png",
+            "en": "Wirtschaft_Unternehmen.png"
         },
         "image_caption": {
             "de": null,
@@ -230,32 +206,22 @@
         "index": 7,
         "type": "multiple_choice",
         "text": {
-            "de": "Welche Farbe entsteht, wenn man Rot und Gelb mischt?",
-            "en": "What color is created when you mix red and yellow?"
+            "de": "Was ist der meistgenutzte Energieträger für die Heizung von Wohnungen in Deutschland?",
+            "en": "What is the most commonly used energy source for heating apartments in Germany?"
         },
         "answers": {
-            "de": [
-                "Lila",
-                "Orange",
-                "Grün",
-                "Braun"
-            ],
-            "en": [
-                "Purple",
-                "Orange",
-                "Green",
-                "Brown"
-            ]
+            "de": ["Gas", "Heizöl", "Fernwärme", "Holz/Holzpellets"],
+            "en": ["Natural gas", "Heating oil", "District heating", "Wood/wood pellets"]
         },
-        "right_answer_index": 1,
+        "right_answer_index": 0,
         "score": 10,
         "explanation": {
-            "de": "Wenn man die Primärfarben Rot und Gelb mischt, entsteht die Sekundärfarbe Orange.",
-            "en": "When you mix the primary colors red and yellow, you get the secondary color orange."
+            "de": "Gas ist der meistgenutzte Energieträger für die Heizung von Wohnungen in Deutschland, gefolgt von Heizöl, Fernwärme und Holz/Holzpellets.",
+            "en": "Natural gas is the most commonly used energy source for heating apartments in Germany, followed by heating oil, district heating, and wood/wood pellets."
         },
         "image": {
-            "de": "test.png",
-            "en": "test.png"
+            "de": "Umwelt_Energie.png",
+            "en": "Umwelt_Energie.png"
         },
         "image_caption": {
             "de": null,
@@ -266,25 +232,25 @@
     {
         "index": 8,
         "unit": {
-            "de": "Tage",
-            "en": "days"
+            "de": "Prozent",
+            "en": "Percent"
         },
         "type": "guess",
         "text": {
-            "de": "Wie lange dauert es, bis die Erde einmal um die Sonne kreist?",
-            "en": "How long does it take for the Earth to orbit the Sun once?"
+            "de": "Schätzen Sie, wie hoch der Anteil der Wohnungen mit Gasheizung in Deutschland ist?",
+            "en": "Estimate the percentage of apartments in Germany that use gas heating."
         },
-        "answer": 365.25,
-        "min_guess": 350,
-        "max_guess": 380,
+        "answer": 55.9,
+        "min_guess": 0,
+        "max_guess": 100,
         "max_points": 10,
         "explanation": {
-            "de": "Die Erde braucht etwa 365,25 Tage für eine vollständige Umkreisung der Sonne. Der zusätzliche Vierteltag führt zu Schaltjahren.",
-            "en": "The Earth takes about 365.25 days to complete one orbit around the Sun. The extra quarter day leads to leap years."
+            "de": "Der Anteil der Wohnungen mit Gasheizung in Deutschland beträgt 55,9%.",
+            "en": "55.9% of apartments in Germany use gas heating."
         },
         "image": {
-            "de": "test.png",
-            "en": "test.png"
+            "de": "Umwelt_Energie.png",
+            "en": "Umwelt_Energie.png"
         },
         "image_caption": {
             "de": null,
@@ -296,32 +262,167 @@
         "index": 9,
         "type": "multiple_choice",
         "text": {
-            "de": "Welches Gas macht den größten Teil der Erdatmosphäre aus?",
-            "en": "Which gas makes up the largest part of Earth's atmosphere?"
+            "de": "In welcher deutschen Großstadt ist die durchschnittliche Nettokaltmiete pro m² am niedrigsten?",
+            "en": "In which German major city is the average net cold rent per m² the lowest?"
         },
         "answers": {
-            "de": [
-                "Sauerstoff",
-                "Stickstoff",
-                "Kohlendioxid",
-                "Argon"
-            ],
-            "en": [
-                "Oxygen",
-                "Nitrogen",
-                "Carbon dioxide",
-                "Argon"
-            ]
+            "de": ["Chemnitz", "Hagen", "Bochum", "Gelsenkirchen"],
+            "en": ["Chemnitz", "Hagen", "Bochum", "Gelsenkirchen"]
         },
-        "right_answer_index": 1,
+        "right_answer_index": 0,
         "score": 10,
         "explanation": {
-            "de": "Stickstoff macht etwa 78% der Erdatmosphäre aus, gefolgt von Sauerstoff mit etwa 21%.",
-            "en": "Nitrogen makes up about 78% of Earth's atmosphere, followed by oxygen at about 21%."
+            "de": "In Chemnitz ist die durchschnittliche Nettokaltmiete pro m² am niedrigsten.",
+            "en": "Chemnitz has the lowest average net cold rent per m² among German major cities."
         },
         "image": {
-            "de": "test.png",
-            "en": "test.png"
+            "de": "Zuhause_Privates_Büro_Gaming.png",
+            "en": "Zuhause_Privates_Büro_Gaming.png"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        },
+        "coupled_question_indices": []
+    },
+    {
+        "index": 10,
+        "unit": {
+            "de": "€/m²",
+            "en": "€/m²"
+        },
+        "type": "guess",
+        "text": {
+            "de": "Wie hoch ist die durchschnittliche Nettokaltmiete pro m² in Deutschland?",
+            "en": "What is the average net cold rent per m² in Germany?"
+        },
+        "answer": 7.28,
+        "min_guess": 5,
+        "max_guess": 20,
+        "max_points": 10,
+        "explanation": {
+            "de": "Die durchschnittliche Nettokaltmiete pro m² in Deutschland beträgt 7,28 €.",
+            "en": "The average net cold rent per m² in Germany is €7.28."
+        },
+        "image": {
+            "de": "Zuhause_Privates_Büro_Gaming.png",
+            "en": "Zuhause_Privates_Büro_Gaming.png"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        },
+        "coupled_question_indices": []
+    },
+    {
+        "index": 11,
+        "unit": {
+            "de": "Millionen Personen",
+            "en": "Million people"
+        },
+        "type": "guess",
+        "text": {
+            "de": "Wie viele Menschen waren im Zensus 2022 auskunftspflichtig?",
+            "en": "How many people were required to provide information in the 2022 census?"
+        },
+        "answer": 34,
+        "min_guess": 10,
+        "max_guess": 100,
+        "max_points": 10,
+        "explanation": {
+            "de": "Im Zensus 2022 waren 34 Millionen Menschen auskunftspflichtig.",
+            "en": "In the 2022 census, 34 million people were required to provide information."
+        },
+        "image": {
+            "de": "Wirtschaft_Inflation.png",
+            "en": "Wirtschaft_Inflation.png"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        },
+        "coupled_question_indices": []
+    },
+    {
+        "index": 12,
+        "unit": {
+            "de": "Prozent",
+            "en": "Percent"
+        },
+        "type": "guess",
+        "text": {
+            "de": "Wie viel Prozent der Meldungen zu den Zusatzmerkmalen Bildung und Erwerbstätigkeit bei der Haushaltebefragung und der Befragung an Wohnheimen wurden über die Online-Fragebögen übermittelt?",
+            "en": "What percentage of responses on the additional characteristics of education and employment in the household survey and the survey of communal establishments were submitted via online questionnaires?"
+        },
+        "answer": 73,
+        "min_guess": 0,
+        "max_guess": 100,
+        "max_points": 10,
+        "explanation": {
+            "de": "73% der Meldungen zu den Zusatzmerkmalen Bildung und Erwerbstätigkeit wurden über die Online-Fragebögen übermittelt.",
+            "en": "73% of reports on additional characteristics such as education and employment were submitted via online forms."
+        },
+        "image": {
+            "de": "Zuhause_Privates_Büro_Gaming.png",
+            "en": "Zuhause_Privates_Büro_Gaming.png"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        },
+        "coupled_question_indices": []
+    },
+    {
+        "index": 13,
+        "unit": {
+            "de": "Prozent",
+            "en": "Percent"
+        },
+        "type": "guess",
+        "text": {
+            "de": "Wie viel Prozent der Erwerbstätigen haben einen akademischen Abschluss?",
+            "en": "What percentage of employed people have an academic degree?"
+        },
+        "answer": 25,
+        "min_guess": 0,
+        "max_guess": 100,
+        "max_points": 10,
+        "explanation": {
+            "de": "25% der Erwerbstätigen haben einen akademischen Abschluss.",
+            "en": "25% of employed people have an academic degree."
+        },
+        "image": {
+            "de": "Bildung_Schule.png",
+            "en": "Bildung_Schule.png"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        },
+        "coupled_question_indices": []
+    },
+    {
+        "index": 14,
+        "unit": {
+            "de": "Millionen Personen",
+            "en": "Million people"
+        },
+        "type": "guess",
+        "text": {
+            "de": "Wie viele Personen mit Einwanderungsgeschichte lebten 2022 in Deutschland?",
+            "en": "How many people with an migration background lived in Germany in 2022?"
+        },
+        "answer": 18.1,
+        "min_guess": 5,
+        "max_guess": 50,
+        "max_points": 10,
+        "explanation": {
+            "de": "2022 lebten 18,1 Millionen Personen mit Einwanderungsgeschichte in Deutschland.",
+            "en": "In 2022, 18.1 million people with an migration background lived in Germany."
+        },
+        "image": {
+            "de": "Wirtschaft_Inflation.png",
+            "en": "Wirtschaft_Inflation.png"
         },
         "image_caption": {
             "de": null,
