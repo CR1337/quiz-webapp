@@ -22,6 +22,11 @@ def render_init():
             break
     st.divider()
 
+    intro_explanation = Localization.get("intro_explanation")
+    if len(intro_explanation) > 0:
+        st.text(intro_explanation)
+        st.divider()
+
     left_column, right_column = st.columns(spec=[0.9, 0.1])
 
     with left_column:
