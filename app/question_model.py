@@ -1,6 +1,6 @@
 from __future__ import annotations
 from abc import ABC, abstractmethod
-from typing import Any, Callable, Dict, List, Tuple
+from typing import Any, Callable, Dict, List, Tuple, Optional
 from numbers import Number
 import random
 
@@ -50,7 +50,10 @@ class Question(ABC):
             parameters |= {"answers": question_dict["answers"]}
             parameters |= {"right_answer_index": question_dict["right_answer_index"]}
             if "score" in question_dict:
-                parameters |= {"score": question_dict["score"]}
+                parameters |= {
+                    "score": question_dict["score"],
+                    "scores": question_dict.get("scores"),
+                }
             return MultipleChoiceQuestion(**parameters)
 
         else:
@@ -235,6 +238,7 @@ class MultipleChoiceQuestion(Question):
     _answers: Dict[str, List[str]]
     _right_answer_index: int
     _score: int
+    _scores: Optional[List[int]]
 
     def __init__(
         self,
@@ -244,6 +248,7 @@ class MultipleChoiceQuestion(Question):
         coupled_question_indices: List[int],
         *,
         score: int = 10,
+        scores: Optional[List[int]],
         explanation: Dict[str, str] | None = None,
         image: Dict[str, str] | None = None,
         image_caption: Dict[str, str] | None = None,
@@ -253,6 +258,7 @@ class MultipleChoiceQuestion(Question):
         )
 
         self._score = score
+        self._scores = scores
         super().__init__(
             text,
             explanation=explanation,
@@ -275,7 +281,9 @@ class MultipleChoiceQuestion(Question):
         return shuffled_answers, permutation.index(right_answer_index)
 
     def check(self, answer: int) -> int:
-        if answer == self._right_answer_index:
+        if self._scores:
+            return self._scores[answer]
+        elif answer == self._right_answer_index:
             return self._score
         else:
             return 0
