@@ -141,10 +141,6 @@
                 "type": "integer",
                 "minimum": 0
             },
-            "score": {
-                "type": "integer",
-                "minimum": 0
-            },
             "answer": {
                 "type": "number"
             },
@@ -177,8 +173,7 @@
                 "then": {
                     "required": [
                         "answers",
-                        "right_answer_index",
-                        "score"
+                        "right_answer_index"
                     ]
                 }
             },
@@ -199,6 +194,6 @@
                 }
             }
         ],
-        "additionalProperties": false
+        "additionalProperties": true
     }
 }

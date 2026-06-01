@@ -7,16 +7,16 @@
         },
         "type": "guess",
         "text": {
-            "de": "In wie vielen EU-Staaten wurde – schätzen Sie – der Zensus bei der letzten Zensusrunde 2021/22 ohne Befragung, also nur auf Basis von Registern, durchgeführt?",
-            "en": "In how many EU countries was the census conducted in the 2021/22 round without surveys, using only register-based data?"
+            "de": "In wie vielen EU-Staaten lief der Zensus bei der letzen Zensusrund 2021/2022 ohne Befragung, also nur auf Basis von Registern?",
+            "en": "In how many EU countries was the 2021/2022 census conducted without interviews—that is, based solely on official records?"
         },
         "answer": 10,
-        "min_guess": 3,
-        "max_guess": 20,
+        "min_guess": 0,
+        "max_guess": 27,
         "max_points": 10,
         "explanation": {
             "de": "In zehn EU-Staaten wurde der Zensus bei der letzten Zensusrunde 2021/22 ohne Befragung, also nur auf Basis von Registern, durchgeführt.",
-            "en": "In ten EU countries, the census during the 2021/22 round was conducted without surveys, using only register-based data."
+            "en": "In ten EU countries, the census during the 2021/22 round was conducted without surveys, using only official records."
         },
         "image": {
             "de": "Büro_Arbeit_Allgemeines.png",
@@ -36,16 +36,16 @@
         },
         "type": "guess",
         "text": {
-            "de": "Wie viele Interviewende wurden ungefähr bei der Zensusrunde 2022 eingesetzt?",
-            "en": "Approximately how many interviewers were deployed during the 2022 census round?"
+            "de": "Wie viele Interviewende wurden ungefähr beim Zensus 2022 eingesetzt?",
+            "en": "Approximately how many interviewers were deployed for the 2022 census?"
         },
         "answer": 100000,
         "min_guess": 10000,
         "max_guess": 200000,
         "max_points": 10,
         "explanation": {
-            "de": "Ungefähr 100.000 Interviewende wurden bei der Zensusrunde 2022 eingesetzt.",
-            "en": "Approximately 100,000 interviewers were deployed during the 2022 census round."
+            "de": "Ungefähr 100.000 Interviewende wurden bei beim Zensus 2022 eingesetzt.",
+            "en": "Approximately 100,000 interviewers were deployed during the 2022 census."
         },
         "image": {
             "de": "Bildung_Schule.png",
@@ -65,8 +65,8 @@
         },
         "type": "guess",
         "text": {
-            "de": "Schätzen Sie, wie viel Prozent der Fragebögen der Gebäude- und Wohnungszählung online übermittelt wurden?",
-            "en": "Estimate what percentage of the building and housing census questionnaires were submitted online."
+            "de": "Beim Zensus 2022 mussten alle Eigentümer/innen Angaben zur Gebäude- und Wohnungszählung machen. Welcher Anteil der Eigentümer/innen meldete die Daten online?",
+            "en": "For the 2022 census, all property owners were required to provide information for the building and housing census. What percentage of property owners submitted their data online?"
         },
         "answer": 82,
         "min_guess": 0,
@@ -89,17 +89,17 @@
     {
         "index": 3,
         "unit": {
-            "de": "Millionen Einwohner",
+            "de": "Millionen Personen",
             "en": "Million inhabitants"
         },
         "type": "guess",
         "text": {
-            "de": "Wie viele mehr Einwohnerinnen und Einwohner lebten laut dem Zensus 2022 in Deutschland im Vergleich zum Zensus 2011?",
-            "en": "By how many inhabitants did Germany's population increase according to the 2022 census compared to the 2011 census?"
+            "de": "Wie hat sich die Bevölkerungszahl vom Zensus 2011 bis zum Zensus 2022 entwickelt?",
+            "en": "How has the population changed between the 2011 census and the 2022 census?"
         },
         "answer": 2.5,
-        "min_guess": 0,
-        "max_guess": 10,
+        "min_guess": -8,
+        "max_guess": 8,
         "max_points": 10,
         "explanation": {
             "de": "Laut Zensus 2022 lebten 2,5 Millionen mehr Einwohnerinnen und Einwohner in Deutschland als zum Zensus 2011.",
@@ -123,16 +123,16 @@
         },
         "type": "guess",
         "text": {
-            "de": "Wie groß ist die durchschnittliche Größe von Wohnungen in Deutschland laut der Gebäude- und Wohnungszählung?",
-            "en": "What is the average size of apartments in Germany according to the building and housing census?"
+            "de": "Wie groß war die durchschnittliche Wohnung in Deutschland laut Zensus im Jahr 2022?",
+            "en": "According to the 2022 census, what was the average size of an apartment in Germany?"
         },
         "answer": 94.4,
         "min_guess": 30,
         "max_guess": 150,
         "max_points": 10,
         "explanation": {
-            "de": "Die durchschnittliche Größe von Wohnungen in Deutschland beträgt laut der Gebäude- und Wohnungszählung 94,4 m².",
-            "en": "According to the building and housing census, the average apartment size in Germany is 94.4 m²."
+            "de": "Die durchschnittliche Größe von Wohnungen in Deutschland betrug laut dem Zensus 2022 94,4 m².",
+            "en": "According to the 2022 census, the average size of apartments in Germany was 94.4 square meters."
         },
         "image": {
             "de": "Zuhause_Privates_Büro_Gaming.png",
@@ -152,7 +152,7 @@
         },
         "type": "guess",
         "text": {
-            "de": "Wie hoch ist die im Zensus 2022 ermittelte Erwerbstätigenquote in Deutschland?",
+            "de": "Wie hoch ist die beim Zensus 2022 ermittelte Erwerbstätigenquote in Deutschland?",
             "en": "What is the employment rate in Germany as determined by the 2022 census?"
         },
         "answer": 75.7,
@@ -160,7 +160,7 @@
         "max_guess": 100,
         "max_points": 10,
         "explanation": {
-            "de": "Die im Zensus 2022 ermittelte Erwerbstätigenquote in Deutschland beträgt 75,7%.",
+            "de": "Die beim Zensus 2022 ermittelte Erwerbstätigenquote in Deutschland beträgt 75,7%.",
             "en": "The employment rate in Germany as determined by the 2022 census is 75.7%."
         },
         "image": {
@@ -181,16 +181,16 @@
         },
         "type": "guess",
         "text": {
-            "de": "Wie viel Prozent der Menschen im Rentenalter sind noch erwerbstätig?",
-            "en": "What percentage of people at retirement age are still employed?"
+            "de": "Welcher Anteil an Menschen im Rentenalter war laut Zensus 2022 noch erwerbstätig?",
+            "en": "According to the 2022 census, what percentage of people of retirement age were still employed?"
         },
         "answer": 10.1,
         "min_guess": 0,
-        "max_guess": 100,
+        "max_guess": 40,
         "max_points": 10,
         "explanation": {
-            "de": "10,1% der Menschen im Rentenalter sind noch erwerbstätig.",
-            "en": "10.1% of people at retirement age are still employed."
+            "de": "10,1 % der Menschen im Rentenalter waren noch erwerbstätig.",
+            "en": "10.1 % of people at retirement age were still employed."
         },
         "image": {
             "de": "Wirtschaft_Unternehmen.png",
@@ -214,10 +214,10 @@
             "en": ["Natural gas", "Heating oil", "District heating", "Wood/wood pellets"]
         },
         "right_answer_index": 0,
-        "score": 10,
+        "scores": [10, 2, 3, 1],
         "explanation": {
-            "de": "Gas ist der meistgenutzte Energieträger für die Heizung von Wohnungen in Deutschland, gefolgt von Heizöl, Fernwärme und Holz/Holzpellets.",
-            "en": "Natural gas is the most commonly used energy source for heating apartments in Germany, followed by heating oil, district heating, and wood/wood pellets."
+            "de": "Gas ist der meistgenutzte Energieträger für die Heizung von Wohnungen in Deutschland (56 %), gefolgt von Heizöl (19 %), Fernwärme (15 %) und Holz/Holzpellets (4 %).",
+            "en": "Natural gas is the most commonly used energy source for heating apartments in Germany (56 %), followed by heating oil (19 %), district heating (15 %), and wood/wood pellets (4 %)."
         },
         "image": {
             "de": "Umwelt_Energie.png",
@@ -237,8 +237,8 @@
         },
         "type": "guess",
         "text": {
-            "de": "Schätzen Sie, wie hoch der Anteil der Wohnungen mit Gasheizung in Deutschland ist?",
-            "en": "Estimate the percentage of apartments in Germany that use gas heating."
+            "de": "Wie hoch war laut Zensus 2022 der Anteil der Wohnungen mit Gasheizung in Deutschland?",
+            "en": "According to the 2022 census, what percentage of apartments in Germany had gas heating?"
         },
         "answer": 55.9,
         "min_guess": 0,
@@ -266,13 +266,13 @@
             "en": "In which German major city is the average net cold rent per m² the lowest?"
         },
         "answers": {
-            "de": ["Chemnitz", "Hagen", "Bochum", "Gelsenkirchen"],
-            "en": ["Chemnitz", "Hagen", "Bochum", "Gelsenkirchen"]
+            "de": ["Chemnitz", "Gelsenkirchen", "Hagen", "Bremerhaven"],
+            "en": ["Chemnitz", "Gelsenkirchen", "Hagen", "Bremerhaven"]
         },
         "right_answer_index": 0,
-        "score": 10,
+        "scores": [10, 3, 5, 1],
         "explanation": {
-            "de": "In Chemnitz ist die durchschnittliche Nettokaltmiete pro m² am niedrigsten.",
+            "de": "In Chemnitz ist die durchschnittliche Nettokaltmiete mit 5,26 €/m² am niedrigsten. In Hagen liegt der Wert bei 5,39 €/m², Gelsenkirchen bei 5,47 €/m² und in Bremerhaven bei 5,58 €/m².",
             "en": "Chemnitz has the lowest average net cold rent per m² among German major cities."
         },
         "image": {
@@ -293,16 +293,16 @@
         },
         "type": "guess",
         "text": {
-            "de": "Wie hoch ist die durchschnittliche Nettokaltmiete pro m² in Deutschland?",
-            "en": "What is the average net cold rent per m² in Germany?"
+            "de": "Wie hoch war die Nettokaltmiete pro m² in Deutschland laut Zensus im Jahr 2022?",
+            "en": "According to the census, what was the net rent per square meter in Germany in 2022?"
         },
         "answer": 7.28,
         "min_guess": 5,
         "max_guess": 20,
         "max_points": 10,
         "explanation": {
-            "de": "Die durchschnittliche Nettokaltmiete pro m² in Deutschland beträgt 7,28 €.",
-            "en": "The average net cold rent per m² in Germany is €7.28."
+            "de": "Die durchschnittliche Nettokaltmiete pro m² in Deutschland betrug laut Zensus im Jahr 2022 7,28 €.",
+            "en": "According to the census, the average net rent per square meter in Germany was €7.28 in 2022."
         },
         "image": {
             "de": "Zuhause_Privates_Büro_Gaming.png",
@@ -322,7 +322,7 @@
         },
         "type": "guess",
         "text": {
-            "de": "Wie viele Menschen waren im Zensus 2022 auskunftspflichtig?",
+            "de": "Wie viele Menschen waren beim Zensus 2022 auskunftspflichtig?",
             "en": "How many people were required to provide information in the 2022 census?"
         },
         "answer": 34,
@@ -330,8 +330,8 @@
         "max_guess": 100,
         "max_points": 10,
         "explanation": {
-            "de": "Im Zensus 2022 waren 34 Millionen Menschen auskunftspflichtig.",
-            "en": "In the 2022 census, 34 million people were required to provide information."
+            "de": "Insgesamt waren rund 34 Millionen Personen auskunftspflichtig - darunter gut 23 Millionen Personen, die als Eigentümer bzw. Eigentümerin an der Gebäude- und Wohnungszählung teilehmen mussten und mehr als 10 Millionen Personen, die zur Haushaltebefragung Auskünfte erteilt haben.",
+            "en": "In total, approximately 34 million people were required to provide information—including more than 23 million property owners who were required to participate in the building and housing census, and more than 10 million people who provided information for the household survey."
         },
         "image": {
             "de": "Wirtschaft_Inflation.png",
@@ -351,16 +351,16 @@
         },
         "type": "guess",
         "text": {
-            "de": "Wie viel Prozent der Meldungen zu den Zusatzmerkmalen Bildung und Erwerbstätigkeit bei der Haushaltebefragung und der Befragung an Wohnheimen wurden über die Online-Fragebögen übermittelt?",
-            "en": "What percentage of responses on the additional characteristics of education and employment in the household survey and the survey of communal establishments were submitted via online questionnaires?"
+            "de": "Beim Zensus 2022 konnte man Angaben zu Bildung und Erwerbstätigkeit auch online abgeben. Welcher Anteil der Haushalte hat online zurückgemeldet.",
+            "en": "For the 2022 Census, people could also submit information about their education and employment online. What percentage of households responded online?"
         },
         "answer": 73,
         "min_guess": 0,
         "max_guess": 100,
         "max_points": 10,
         "explanation": {
-            "de": "73% der Meldungen zu den Zusatzmerkmalen Bildung und Erwerbstätigkeit wurden über die Online-Fragebögen übermittelt.",
-            "en": "73% of reports on additional characteristics such as education and employment were submitted via online forms."
+            "de": "73% der Meldungen zu Bildung und Erwerbstätigkeit wurden über die Online-Fragebögen übermittelt.",
+            "en": "73% of reports on education and employment were submitted via online forms."
         },
         "image": {
             "de": "Zuhause_Privates_Büro_Gaming.png",
@@ -380,16 +380,16 @@
         },
         "type": "guess",
         "text": {
-            "de": "Wie viel Prozent der Erwerbstätigen haben einen akademischen Abschluss?",
-            "en": "What percentage of employed people have an academic degree?"
+            "de": "Wie hoch war laut Zensus 2022 der Anteil der Erwerbstätigen mit einem Hochschulabschluss?",
+            "en": "According to the 2022 census, what percentage of the workforce held a college degree?"
         },
         "answer": 25,
         "min_guess": 0,
         "max_guess": 100,
         "max_points": 10,
         "explanation": {
-            "de": "25% der Erwerbstätigen haben einen akademischen Abschluss.",
-            "en": "25% of employed people have an academic degree."
+            "de": "25% der Erwerbstätigen hatten einen Hochschulabschluss.",
+            "en": "25% of employed people held a college degree."
         },
         "image": {
             "de": "Bildung_Schule.png",
