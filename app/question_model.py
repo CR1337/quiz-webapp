@@ -49,9 +49,9 @@ class Question(ABC):
         elif question_type == "multiple_choice":
             parameters |= {"answers": question_dict["answers"]}
             parameters |= {"right_answer_index": question_dict["right_answer_index"]}
-            if "score" in question_dict:
+            if "score" in question_dict or "scores" in question_dict:
                 parameters |= {
-                    "score": question_dict["score"],
+                    "score": question_dict.get("score"),
                     "scores": question_dict.get("scores"),
                 }
             return MultipleChoiceQuestion(**parameters)
@@ -70,7 +70,10 @@ class Question(ABC):
             if isinstance(q, GuessQuestion):
                 score += q.max_points
             elif isinstance(q, MultipleChoiceQuestion):
-                score += q.score
+                if q.score is None:
+                    score += max(q.scores)
+                else:
+                    score += q.score
         return score
 
     def __init__(
@@ -301,5 +304,12 @@ class MultipleChoiceQuestion(Question):
         return self._score
 
     @property
+    def scores(self) -> List[int]:
+        assert self._scores
+        return self._scores
+
+    @property
     def max_points(self) -> int:
+        if self._score is None:
+            return max(self.scores)
         return self._score
