@@ -1,22 +1,30 @@
 [
     {
         "index": 0,
-        "unit": {
-            "de": "Meter",
-            "en": "meters"
-        },
-        "type": "guess",
+        "type": "multiple_choice",
         "text": {
-            "de": "Wie hoch ist der Eiffelturm (einschließlich Antennen)?",
-            "en": "How tall is the Eiffel Tower (including antennas)?"
+            "de": "In welchem Bundesland lag bei der letzten Wahl der Frauenanteil an den Mandaten im Landesparlament am höchsten?",
+            "en": "In which federal state was the share of women in the mandates of the state parliament highest in the last election?"
         },
-        "answer": 330,
-        "min_guess": 200,
-        "max_guess": 500,
-        "max_points": 10,
+        "answers": {
+            "de": [
+                "Hamburg",
+                "Berlin",
+                "Bayern",
+                "Hessen"
+            ],
+            "en": [
+                "Hamburg",
+                "Berlin",
+                "Bavaria",
+                "Hesse"
+            ]
+        },
+        "right_answer_index": 0,
+        "score": 10,
         "explanation": {
-            "de": "Der Eiffelturm ist 330 Meter hoch, einschließlich der Antennen. Ohne Antennen misst er 300 Meter.",
-            "en": "The Eiffel Tower is 330 meters tall, including antennas. Without antennas, it measures 300 meters."
+            "de": "In Hamburg lag bei der letzten Wahl der Frauenanteil mit 48,8 % an den Mandaten im Landesparlament am höchsten.",
+            "en": "In Hamburg, the share of women in the mandates of the state parliament was highest at 48.8% in the last election."
         },
         "image": {
             "de": "test.png",
@@ -30,30 +38,22 @@
     },
     {
         "index": 1,
-        "type": "multiple_choice",
+        "unit": {
+            "de": "%",
+            "en": "%"
+        },
+        "type": "guess",
         "text": {
-            "de": "Welches ist das größte Organ des menschlichen Körpers?",
-            "en": "What is the largest organ of the human body?"
+            "de": "Wie hoch war 2024 in Deutschland beim Schulabschluss Abitur der Frauenanteil?",
+            "en": "What was the percentage of women who graduated from high school in Germany in 2024?"
         },
-        "answers": {
-            "de": [
-                "Leber",
-                "Haut",
-                "Lunge",
-                "Herz"
-            ],
-            "en": [
-                "Liver",
-                "Skin",
-                "Lungs",
-                "Heart"
-            ]
-        },
-        "right_answer_index": 1,
-        "score": 10,
+        "answer": 54.9,
+        "min_guess": 20,
+        "max_guess": 70,
+        "max_points": 10,
         "explanation": {
-            "de": "Die Haut ist das größte Organ des menschlichen Körpers und macht etwa 16% des Körpergewichts aus.",
-            "en": "The skin is the largest organ of the human body and accounts for about 16% of body weight."
+            "de": "2024 lag in Deutschland beim Schulabschluss Abitur der Frauenanteil bei 54,9 %.",
+            "en": "In 2024, 54.9% of high school graduates in Germany were women."
         },
         "image": {
             "de": "test.png",
@@ -68,21 +68,21 @@
     {
         "index": 2,
         "unit": {
-            "de": "km/h",
-            "en": "km/h"
+            "de": "%",
+            "en": "%"
         },
         "type": "guess",
         "text": {
-            "de": "Wie schnell kann ein Gepard maximal laufen?",
-            "en": "What is the maximum speed a cheetah can run?"
+            "de": "Wie hoch war der Frauenanteil 2024 in den MINT-Ausbildungsberufen (Mathematik, Informatik, Naturwissenschaften und Technik)?",
+            "en": "What was the share of women in MINT vocational training professions (Mathematics, Informatics, Natural Sciences and Technology) in 2024?"
         },
-        "answer": 120,
-        "min_guess": 50,
-        "max_guess": 150,
+        "answer": 11.4,
+        "min_guess": 5,
+        "max_guess": 60,
         "max_points": 10,
         "explanation": {
-            "de": "Ein Gepard kann Geschwindigkeiten von bis zu 120 km/h erreichen und ist damit das schnellste Landtier der Welt.",
-            "en": "A cheetah can reach speeds of up to 120 km/h, making it the fastest land animal in the world."
+            "de": "2024 lag der Frauenanteil in den MINT-Ausbildungsberufen (Mathematik, Informatik, Naturwissenschaften und Technik) bei 11,4 %.",
+            "en": "In 2024, the share of women in MINT vocational training professions (Mathematics, Informatics, Natural Sciences and Technology) was 11.4%."
         },
         "image": {
             "de": "test.png",
@@ -96,30 +96,22 @@
     },
     {
         "index": 3,
-        "type": "multiple_choice",
+        "unit": {
+            "de": "%",
+            "en": "%"
+        },
+        "type": "guess",
         "text": {
-            "de": "Wer komponierte die 'Kleine Nachtmusik'?",
-            "en": "Who composed 'Eine kleine Nachtmusik'?"
+            "de": "Wie viel verdienten Frauen im Jahr 2025 durchschnittlich pro Stunde (unbeachtet der Qualifikations-, Tätigkeits- oder Erwerbsbiografie) weniger als Männer?",
+            "en": "How much less did women earn on average per hour in 2025 compared to men (regardless of qualifications, activities or career history)?"
         },
-        "answers": {
-            "de": [
-                "Ludwig van Beethoven",
-                "Wolfgang Amadeus Mozart",
-                "Johann Sebastian Bach",
-                "Franz Schubert"
-            ],
-            "en": [
-                "Ludwig van Beethoven",
-                "Wolfgang Amadeus Mozart",
-                "Johann Sebastian Bach",
-                "Franz Schubert"
-            ]
-        },
-        "right_answer_index": 1,
-        "score": 10,
+        "answer": 16,
+        "min_guess": 3,
+        "max_guess": 25,
+        "max_points": 10,
         "explanation": {
-            "de": "Wolfgang Amadeus Mozart komponierte 'Eine kleine Nachtmusik' im Jahr 1787. Es ist eines seiner bekanntesten Werke.",
-            "en": "Wolfgang Amadeus Mozart composed 'Eine kleine Nachtmusik' in 1787. It is one of his most famous works."
+            "de": "Frauen verdienten im Jahr 2025 durchschnittlich pro Stunde (unbeachtet der Qualifikations-, Tätigkeits- oder Erwerbsbiografie)  16 % weniger als Männer.",
+            "en": "In 2025, women earned on average per hour (regardless of qualifications, activities or career history) 16% less than men."
         },
         "image": {
             "de": "test.png",
@@ -134,21 +126,21 @@
     {
         "index": 4,
         "unit": {
-            "de": "Grad Celsius",
-            "en": "degrees Celsius"
+            "de": "%",
+            "en": "%"
         },
         "type": "guess",
         "text": {
-            "de": "Bei welcher Temperatur kocht Wasser auf Meereshöhe?",
-            "en": "At what temperature does water boil at sea level?"
+            "de": "Wie viel Prozent leisteten Frauen 2022 mehr unbezahlte Arbeit (z. B. Haushaltsführung, Einkaufen, Kinderbetreuung, Pflege von Angehörigen, ehrenamtliches Engagement, etc.) als Männer?",
+            "en": "By what percentage did women perform more unpaid work (e.g. household management, shopping, childcare, care for relatives, voluntary work, etc.) compared to men in 2022?"
         },
-        "answer": 100,
-        "min_guess": 80,
-        "max_guess": 120,
+        "answer": 43.4,
+        "min_guess": 5,
+        "max_guess": 55,
         "max_points": 10,
         "explanation": {
-            "de": "Wasser siedet bei normalem Luftdruck auf Meereshöhe bei 100 Grad Celsius (212 Grad Fahrenheit).",
-            "en": "Water boils at normal atmospheric pressure at sea level at 100 degrees Celsius (212 degrees Fahrenheit)."
+            "de": "Frauen leisteten 2022 43,4 % mehr unbezahlte Arbeit (z. B. Haushaltsführung, Einkaufen, Kinderbetreuung, Pflege von Angehörigen, ehrenamtliches Engagement, etc.) als Männer.",
+            "en": "In 2022, women performed 43.4% more unpaid work (e.g. household management, shopping, childcare, care for relatives, voluntary work, etc.) compared to men."
         },
         "image": {
             "de": "test.png",
@@ -162,30 +154,22 @@
     },
     {
         "index": 5,
-        "type": "multiple_choice",
+        "unit": {
+            "de": "%",
+            "en": "%"
+        },
+        "type": "guess",
         "text": {
-            "de": "Welcher Planet ist der Sonne am nächsten?",
-            "en": "Which planet is closest to the Sun?"
+            "de": "Wie hoch lag 2024 der Frauenanteil an den aktiv versicherten Pflegepersonen in der privaten häuslichen Pflege in Deutschland?",
+            "en": "What was the share of women among actively insured care providers in private home care in Germany in 2024?"
         },
-        "answers": {
-            "de": [
-                "Venus",
-                "Merkur",
-                "Mars",
-                "Erde"
-            ],
-            "en": [
-                "Venus",
-                "Mercury",
-                "Mars",
-                "Earth"
-            ]
-        },
-        "right_answer_index": 1,
-        "score": 10,
+        "answer": 85.4,
+        "min_guess": 40,
+        "max_guess": 90,
+        "max_points": 10,
         "explanation": {
-            "de": "Merkur ist der sonnennächste Planet in unserem Sonnensystem mit einer durchschnittlichen Entfernung von etwa 58 Millionen Kilometern.",
-            "en": "Mercury is the closest planet to the Sun in our solar system with an average distance of about 58 million kilometers."
+            "de": "2024 lag der Frauenanteil an den aktiv versicherten Pflegepersonen in der privaten häuslichen Pflege in Deutschland bei 85,4 %.",
+            "en": "In 2024, the share of women among actively insured care providers in private home care in Germany was 85.4%."
         },
         "image": {
             "de": "test.png",
@@ -199,125 +183,30 @@
     },
     {
         "index": 6,
-        "unit": {
-            "de": "Knochen",
-            "en": "bones"
-        },
-        "type": "guess",
-        "text": {
-            "de": "Wie viele Knochen hat ein erwachsener Mensch?",
-            "en": "How many bones does an adult human have?"
-        },
-        "answer": 206,
-        "min_guess": 150,
-        "max_guess": 300,
-        "max_points": 10,
-        "explanation": {
-            "de": "Ein erwachsener Mensch hat 206 Knochen. Babys werden mit etwa 270 Knochen geboren, aber viele verwachsen während des Wachstums.",
-            "en": "An adult human has 206 bones. Babies are born with about 270 bones, but many fuse together during growth."
-        },
-        "image": {
-            "de": "test.png",
-            "en": "test.png"
-        },
-        "image_caption": {
-            "de": null,
-            "en": null
-        },
-        "coupled_question_indices": []
-    },
-    {
-        "index": 7,
         "type": "multiple_choice",
         "text": {
-            "de": "Welche Farbe entsteht, wenn man Rot und Gelb mischt?",
-            "en": "What color is created when you mix red and yellow?"
+            "de": "Haben in Deutschland Frauen oder Männer durchschnittlich eine längere Lebenserwartung?",
+            "en": "Do women or men in Germany have a higher average life expectancy?"
         },
         "answers": {
             "de": [
-                "Lila",
-                "Orange",
-                "Grün",
-                "Braun"
+                "Kein großer Unterschied",
+                "Lebenserwartung von Männern deutlich kürzer",
+                "Lebenserwartung von Frauen deutlich kürzer",
+                "Lebenserwartung von Frauen nur knapp kürzer"
             ],
             "en": [
-                "Purple",
-                "Orange",
-                "Green",
-                "Brown"
+                "No major difference",
+                "Life expectancy of men significantly shorter",
+                "Life expectancy of women significantly shorter",
+                "Life expectancy of women only slightly shorter"
             ]
         },
-        "right_answer_index": 1,
+        "right_answer_index": 2,
         "score": 10,
         "explanation": {
-            "de": "Wenn man die Primärfarben Rot und Gelb mischt, entsteht die Sekundärfarbe Orange.",
-            "en": "When you mix the primary colors red and yellow, you get the secondary color orange."
-        },
-        "image": {
-            "de": "test.png",
-            "en": "test.png"
-        },
-        "image_caption": {
-            "de": null,
-            "en": null
-        },
-        "coupled_question_indices": []
-    },
-    {
-        "index": 8,
-        "unit": {
-            "de": "Tage",
-            "en": "days"
-        },
-        "type": "guess",
-        "text": {
-            "de": "Wie lange dauert es, bis die Erde einmal um die Sonne kreist?",
-            "en": "How long does it take for the Earth to orbit the Sun once?"
-        },
-        "answer": 365.25,
-        "min_guess": 350,
-        "max_guess": 380,
-        "max_points": 10,
-        "explanation": {
-            "de": "Die Erde braucht etwa 365,25 Tage für eine vollständige Umkreisung der Sonne. Der zusätzliche Vierteltag führt zu Schaltjahren.",
-            "en": "The Earth takes about 365.25 days to complete one orbit around the Sun. The extra quarter day leads to leap years."
-        },
-        "image": {
-            "de": "test.png",
-            "en": "test.png"
-        },
-        "image_caption": {
-            "de": null,
-            "en": null
-        },
-        "coupled_question_indices": []
-    },
-    {
-        "index": 9,
-        "type": "multiple_choice",
-        "text": {
-            "de": "Welches Gas macht den größten Teil der Erdatmosphäre aus?",
-            "en": "Which gas makes up the largest part of Earth's atmosphere?"
-        },
-        "answers": {
-            "de": [
-                "Sauerstoff",
-                "Stickstoff",
-                "Kohlendioxid",
-                "Argon"
-            ],
-            "en": [
-                "Oxygen",
-                "Nitrogen",
-                "Carbon dioxide",
-                "Argon"
-            ]
-        },
-        "right_answer_index": 1,
-        "score": 10,
-        "explanation": {
-            "de": "Stickstoff macht etwa 78% der Erdatmosphäre aus, gefolgt von Sauerstoff mit etwa 21%.",
-            "en": "Nitrogen makes up about 78% of Earth's atmosphere, followed by oxygen at about 21%."
+            "de": "Die durchschnittliche Lebenserwartung liegt bei Frauen mit 83,2 Jahren deutlich über der von Männern mit 78,5 Jahren.",
+            "en": "The average life expectancy for women is 83.2 years, significantly higher than for men at 78.5 years."
         },
         "image": {
             "de": "test.png",

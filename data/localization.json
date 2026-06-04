@@ -92,11 +92,11 @@
         "en": "No"
     },
     "intro": {
-        "de": "Quiz - {number} Fragen",
-        "en": "Quiz - {number} questions"
+        "de": "Teste dein Gleichstellungswissen - {number} Fragen",
+        "en": "Test your knowledge of gender equality - {number} questions"
     },
     "intro_explanation": {
-        "de": "Weitere Erklärung",
-        "en": "Further explanation"
+        "de": "Statistikquiz zum Digitalen Gleichstellungsatlas",
+        "en": "Statistics Quiz on the Digital Gender Equality Atlas"
     }
 }
