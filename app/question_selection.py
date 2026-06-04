@@ -16,7 +16,9 @@ class QuestionSelector:
                     question_list, group_coupled_questions
                 )
             case "list":
-                question_indices = method["question_indices"]
+                question_indices = config["question_selection_methods"][method][
+                    "question_indices"
+                ]
                 question_list = cls._select_list_questions(
                     question_list, question_indices, group_coupled_questions
                 )
@@ -33,7 +35,7 @@ class QuestionSelector:
         if shuffle_questions:
             shuffle(question_list)
         else:
-            question_list = sorted(question_list, key=lambda q: q['index'])
+            question_list = sorted(question_list, key=lambda q: q["index"])
 
         return question_list
 
