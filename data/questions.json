@@ -73,8 +73,8 @@
         "max_guess": 100,
         "max_points": 10,
         "explanation": {
-            "de": "82 Prozent der Fragebögen der Gebäude- und Wohnungszählung wurden online übermittelt.",
-            "en": "82 percent of the building and housing census questionnaires were submitted online."
+            "de": "Laut Zensus 2022 wurden 82 Prozent der Fragebögen der Gebäude- und Wohnungszählung online übermittelt.",
+            "en": "According to the 2022 census, 82 percent of the building and housing census questionnaires were submitted online."
         },
         "image": {
             "de": "Zuhause_Privates_Büro_Gaming.png",
@@ -95,7 +95,7 @@
         "type": "guess",
         "text": {
             "de": "Wie hat sich die Bevölkerungszahl vom Zensus 2011 bis zum Zensus 2022 entwickelt?",
-            "en": "How has the population changed between the 2011 census and the 2022 census?"
+            "en": "How did the population change between the 2011 census and the 2022 census?"
         },
         "answer": 2.5,
         "min_guess": -8,
@@ -152,16 +152,16 @@
         },
         "type": "guess",
         "text": {
-            "de": "Wie hoch ist die beim Zensus 2022 ermittelte Erwerbstätigenquote in Deutschland?",
-            "en": "What is the employment rate in Germany as determined by the 2022 census?"
+            "de": "Wie hoch war die beim Zensus 2022 ermittelte Erwerbstätigenquote in Deutschland?",
+            "en": "What was the employment rate in Germany as determined by the 2022 census?"
         },
         "answer": 75.7,
         "min_guess": 0,
         "max_guess": 100,
         "max_points": 10,
         "explanation": {
-            "de": "Die beim Zensus 2022 ermittelte Erwerbstätigenquote in Deutschland beträgt 75,7%.",
-            "en": "The employment rate in Germany as determined by the 2022 census is 75.7%."
+            "de": "Die beim Zensus 2022 ermittelte Erwerbstätigenquote in Deutschland betrug 75,7%.",
+            "en": "The employment rate in Germany as determined by the 2022 census was 75.7%."
         },
         "image": {
             "de": "Wirtschaft_Unternehmen.png",
@@ -189,8 +189,8 @@
         "max_guess": 40,
         "max_points": 10,
         "explanation": {
-            "de": "10,1 % der Menschen im Rentenalter waren noch erwerbstätig.",
-            "en": "10.1 % of people at retirement age were still employed."
+            "de": "Laut Zensus 2022 waren 10,1 % der Menschen im Rentenalter noch erwerbstätig.",
+            "en": "According to the 2022 census, 10.1 % of people at retirement age were still employed."
         },
         "image": {
             "de": "Älter.png",
@@ -206,8 +206,8 @@
         "index": 7,
         "type": "multiple_choice",
         "text": {
-            "de": "Was ist der meistgenutzte Energieträger für die Heizung von Wohnungen in Deutschland?",
-            "en": "What is the most commonly used energy source for heating apartments in Germany?"
+            "de": "Was ist der meistgenutzte Energieträger für die Heizung von Wohnungen in Deutschland laut Zensus 2022?",
+            "en": "What was the most commonly used energy source for heating apartments in Germany according to the census 2022?"
         },
         "answers": {
             "de": ["Gas", "Heizöl", "Fernwärme", "Holz/Holzpellets"],
@@ -216,8 +216,8 @@
         "right_answer_index": 0,
         "scores": [10, 2, 3, 1],
         "explanation": {
-            "de": "Gas ist der meistgenutzte Energieträger für die Heizung von Wohnungen in Deutschland (56 %), gefolgt von Heizöl (19 %), Fernwärme (15 %) und Holz/Holzpellets (4 %).",
-            "en": "Natural gas is the most commonly used energy source for heating apartments in Germany (56 %), followed by heating oil (19 %), district heating (15 %), and wood/wood pellets (4 %)."
+            "de": "Laut Zensus 2022 war Gas der meistgenutzte Energieträger für die Heizung von Wohnungen in Deutschland (56 %), gefolgt von Heizöl (19 %), Fernwärme (15 %) und Holz/Holzpellets (4 %).",
+            "en": "According to the 2022 census, natural gas was the most commonly used energy source for heating apartments in Germany (56 %), followed by heating oil (19 %), district heating (15 %), and wood/wood pellets (4 %)."
         },
         "image": {
             "de": "Wohnung_Heizkörper.png",
@@ -245,8 +245,8 @@
         "max_guess": 100,
         "max_points": 10,
         "explanation": {
-            "de": "Der Anteil der Wohnungen mit Gasheizung in Deutschland beträgt 55,9%.",
-            "en": "55.9% of apartments in Germany use gas heating."
+            "de": "Laut Zensus 2022 betrug der Anteil der Wohnungen mit Gasheizung in Deutschland 55,9%.",
+            "en": "According to the 2022 census, 55.9% of apartments in Germany used gas heating."
         },
         "image": {
             "de": "Wohnung_Heizkörper.png",
@@ -262,8 +262,8 @@
         "index": 9,
         "type": "multiple_choice",
         "text": {
-            "de": "In welcher deutschen Großstadt ist die durchschnittliche Nettokaltmiete pro m² am niedrigsten?",
-            "en": "In which German major city is the average net cold rent per m² the lowest?"
+            "de": "In welcher deutschen Großstadt war laut Zensus 2022 die durchschnittliche Nettokaltmiete pro m² am niedrigsten?",
+            "en": "In which German major city was the average net cold rent per m² the lowest, according to census 2022?"
         },
         "answers": {
             "de": ["Chemnitz", "Gelsenkirchen", "Hagen", "Bremerhaven"],
@@ -272,8 +272,8 @@
         "right_answer_index": 0,
         "scores": [10, 3, 5, 1],
         "explanation": {
-            "de": "In Chemnitz ist die durchschnittliche Nettokaltmiete mit 5,26 €/m² am niedrigsten. In Hagen liegt der Wert bei 5,39 €/m², Gelsenkirchen bei 5,47 €/m² und in Bremerhaven bei 5,58 €/m².",
-            "en": "Chemnitz has the lowest average net cold rent per m² among German major cities."
+            "de": "Laut Zensus 2022 war in Chemnitz die durchschnittliche Nettokaltmiete mit 5,26 €/m² am niedrigsten. In Hagen lag der Wert bei 5,39 €/m², Gelsenkirchen bei 5,47 €/m² und in Bremerhaven bei 5,58 €/m².",
+            "en": "According to the 2022 census, Chemnitz had the lowest average net cold rent per m² among German major cities. In Hagen, the figure was €5.39 per square meter, in Gelsenkirchen it was €5.47 per square meter, and in Bremerhaven it was €5.58 per square meter."
         },
         "image": {
             "de": "Zuhause_Privates_Büro_Gaming.png",
@@ -330,8 +330,8 @@
         "max_guess": 100,
         "max_points": 10,
         "explanation": {
-            "de": "Insgesamt waren rund 34 Millionen Personen auskunftspflichtig - darunter gut 23 Millionen Personen, die als Eigentümer bzw. Eigentümerin an der Gebäude- und Wohnungszählung teilehmen mussten und mehr als 10 Millionen Personen, die zur Haushaltebefragung Auskünfte erteilt haben.",
-            "en": "In total, approximately 34 million people were required to provide information—including more than 23 million property owners who were required to participate in the building and housing census, and more than 10 million people who provided information for the household survey."
+            "de": "Laut Zensus 2022 waren insgesamt rund 34 Millionen Personen auskunftspflichtig - darunter gut 23 Millionen Personen, die als Eigentümer bzw. Eigentümerin an der Gebäude- und Wohnungszählung teilehmen mussten und mehr als 10 Millionen Personen, die zur Haushaltebefragung Auskünfte erteilt haben.",
+            "en": "According to the 2022 census, approximately 34 million people were required to provide information—including more than 23 million property owners who were required to participate in the building and housing census, and more than 10 million people who provided information for the household survey."
         },
         "image": {
             "de": "Wirtschaft_Inflation.png",
@@ -359,8 +359,8 @@
         "max_guess": 100,
         "max_points": 10,
         "explanation": {
-            "de": "73% der Meldungen zu Bildung und Erwerbstätigkeit wurden über die Online-Fragebögen übermittelt.",
-            "en": "73% of reports on education and employment were submitted via online forms."
+            "de": "Laut Zensus 2022 wurden 73% der Meldungen zu Bildung und Erwerbstätigkeit über die Online-Fragebögen übermittelt.",
+            "en": "According to the 2022 census, 73% of reports on education and employment were submitted via online forms."
         },
         "image": {
             "de": "Zuhause_Privates_Büro_Gaming.png",
@@ -388,8 +388,8 @@
         "max_guess": 100,
         "max_points": 10,
         "explanation": {
-            "de": "25% der Erwerbstätigen hatten einen Hochschulabschluss.",
-            "en": "25% of employed people held a college degree."
+            "de": "Laut Zensus 2022 hatten 25% der Erwerbstätigen einen Hochschulabschluss.",
+            "en": "According to the 2022 census, 25% of employed people held a college degree."
         },
         "image": {
             "de": "Doktormütze.png",
@@ -417,8 +417,8 @@
         "max_guess": 50,
         "max_points": 10,
         "explanation": {
-            "de": "2022 lebten 18,1 Millionen Personen mit Einwanderungsgeschichte in Deutschland.",
-            "en": "In 2022, 18.1 million people with an migration background lived in Germany."
+            "de": "2022 lebten laut Zensus 18,1 Millionen Personen mit Einwanderungsgeschichte in Deutschland.",
+            "en": "According to the 2022 census, 18.1 million people with a migration background lived in Germany."
         },
         "image": {
             "de": "Wirtschaft_Inflation.png",
