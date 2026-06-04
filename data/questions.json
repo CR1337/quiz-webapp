@@ -31,17 +31,17 @@
     {
         "index": 1,
         "unit": {
-            "de": "Interviewende",
-            "en": "Interviewers"
+            "de": "Tausend Interviewende",
+            "en": "Thousand Interviewers"
         },
         "type": "guess",
         "text": {
             "de": "Wie viele Interviewende wurden ungefähr beim Zensus 2022 eingesetzt?",
             "en": "Approximately how many interviewers were deployed for the 2022 census?"
         },
-        "answer": 100000,
-        "min_guess": 10000,
-        "max_guess": 200000,
+        "answer": 100,
+        "min_guess": 10,
+        "max_guess": 200,
         "max_points": 10,
         "explanation": {
             "de": "Ungefähr 100.000 Interviewende wurden bei beim Zensus 2022 eingesetzt.",
