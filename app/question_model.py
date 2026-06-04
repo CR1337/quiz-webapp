@@ -256,12 +256,12 @@ class MultipleChoiceQuestion(Question):
         image: Dict[str, str] | None = None,
         image_caption: Dict[str, str] | None = None,
     ):
-        self._answers, self._right_answer_index = self._shuffle_answers(
-            answers, right_answer_index
+        self._answers, self._right_answer_index, self._scores = self._shuffle_answers(
+            answers, right_answer_index, scores
         )
 
         self._score = score
-        self._scores = scores
+
         super().__init__(
             text,
             explanation=explanation,
@@ -271,8 +271,11 @@ class MultipleChoiceQuestion(Question):
         )
 
     def _shuffle_answers(
-        self, answers: Dict[str, List[str]], right_answer_index: int
-    ) -> Tuple[Dict[str, List[str]], int]:
+        self,
+        answers: Dict[str, List[str]],
+        right_answer_index: int,
+        scores: Optional[List[int]],
+    ) -> Tuple[Dict[str, List[str]], int, Optional[List[int]]]:
         first_key = list(answers.keys())[0]
         permutation = list(range(len(answers[first_key])))
         random.shuffle(permutation)
@@ -281,7 +284,11 @@ class MultipleChoiceQuestion(Question):
         for language in answers.keys():
             shuffled_answers |= {language: [answers[language][i] for i in permutation]}
 
-        return shuffled_answers, permutation.index(right_answer_index)
+        shuffled_scores = None
+        if scores is not None:
+            shuffled_scores = [scores[i] for i in permutation]
+
+        return shuffled_answers, permutation.index(right_answer_index), shuffled_scores
 
     def check(self, answer: int) -> int:
         if self._scores:
