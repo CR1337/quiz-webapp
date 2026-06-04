@@ -65,7 +65,7 @@
         },
         "type": "guess",
         "text": {
-            "de": "Beim Zensus 2022 mussten alle Eigentümer/innen Angaben zur Gebäude- und Wohnungszählung machen. Welcher Anteil der Eigentümer/innen meldete die Daten online?",
+            "de": "Beim Zensus 2022 mussten alle Eigentümer/-innen Angaben zur Gebäude- und Wohnungszählung machen. Welcher Anteil der Eigentümer/-innen meldete die Daten online?",
             "en": "For the 2022 census, all property owners were required to provide information for the building and housing census. What percentage of property owners submitted their data online?"
         },
         "answer": 82,
@@ -351,7 +351,7 @@
         },
         "type": "guess",
         "text": {
-            "de": "Beim Zensus 2022 konnte man Angaben zu Bildung und Erwerbstätigkeit auch online abgeben. Welcher Anteil der Haushalte hat online zurückgemeldet.",
+            "de": "Beim Zensus 2022 konnte man Angaben zu Bildung und Erwerbstätigkeit auch online abgeben. Welcher Anteil der Haushalte hat online zurückgemeldet?",
             "en": "For the 2022 Census, people could also submit information about their education and employment online. What percentage of households responded online?"
         },
         "answer": 73,
