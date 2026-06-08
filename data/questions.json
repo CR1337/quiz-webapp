@@ -15,8 +15,8 @@
         "max_guess": 27,
         "max_points": 10,
         "explanation": {
-            "de": "In zehn EU-Staaten wurde der Zensus bei der letzten Zensusrunde 2021/22 ohne Befragung, also nur auf Basis von Registern, durchgeführt.",
-            "en": "In ten EU countries, the census during the 2021/22 round was conducted without surveys, using only official records."
+            "de": "In 10 EU-Staaten wurde der Zensus bei der letzten Zensusrunde 2021/22 ohne Befragung, also nur auf Basis von Registern, durchgeführt.",
+            "en": "In 10 EU countries, the census during the 2021/22 round was conducted without surveys, using only official records."
         },
         "image": {
             "de": "EU_Sterne.png",
@@ -73,8 +73,8 @@
         "max_guess": 100,
         "max_points": 10,
         "explanation": {
-            "de": "Laut Zensus 2022 wurden 82 Prozent der Fragebögen der Gebäude- und Wohnungszählung online übermittelt.",
-            "en": "According to the 2022 census, 82 percent of the building and housing census questionnaires were submitted online."
+            "de": "Im Zensus 2022 wurden 82 Prozent der Fragebögen der Gebäude- und Wohnungszählung online übermittelt.",
+            "en": "In the 2022 census, 82 percent of the building and housing census questionnaires were submitted online."
         },
         "image": {
             "de": "Zuhause_Privates_Büro_Gaming.png",
@@ -206,8 +206,8 @@
         "index": 7,
         "type": "multiple_choice",
         "text": {
-            "de": "Was ist der meistgenutzte Energieträger für die Heizung von Wohnungen in Deutschland laut Zensus 2022?",
-            "en": "What was the most commonly used energy source for heating apartments in Germany according to the census 2022?"
+            "de": "Welcher Energieträger wurde laut Zensus 2022 in Deutschland am häufigsten zur Beheizung von Wohnungen genutzt?",
+            "en": "According to the 2022 census, which energy source was most commonly used for heating homes in Germany?"
         },
         "answers": {
             "de": ["Gas", "Heizöl", "Fernwärme", "Holz/Holzpellets"],
@@ -240,13 +240,13 @@
             "de": "Wie hoch war laut Zensus 2022 der Anteil der Wohnungen mit Gasheizung in Deutschland?",
             "en": "According to the 2022 census, what percentage of apartments in Germany had gas heating?"
         },
-        "answer": 55.9,
+        "answer": 56,
         "min_guess": 0,
         "max_guess": 100,
         "max_points": 10,
         "explanation": {
-            "de": "Laut Zensus 2022 betrug der Anteil der Wohnungen mit Gasheizung in Deutschland 55,9%.",
-            "en": "According to the 2022 census, 55.9% of apartments in Germany used gas heating."
+            "de": "Laut Zensus 2022 betrug der Anteil der Wohnungen mit Gasheizung in Deutschland 56%.",
+            "en": "According to the 2022 census, 56% of apartments in Germany used gas heating."
         },
         "image": {
             "de": "Wohnung_Heizkörper.png",
@@ -330,7 +330,7 @@
         "max_guess": 100,
         "max_points": 10,
         "explanation": {
-            "de": "Laut Zensus 2022 waren insgesamt rund 34 Millionen Personen auskunftspflichtig - darunter gut 23 Millionen Personen, die als Eigentümer bzw. Eigentümerin an der Gebäude- und Wohnungszählung teilehmen mussten und mehr als 10 Millionen Personen, die zur Haushaltebefragung Auskünfte erteilt haben.",
+            "de": "Laut Zensus 2022 waren insgesamt rund 34 Millionen Personen auskunftspflichtig - darunter gut 23 Millionen Personen, die als Eigentümer bzw. Eigentümerin in der Gebäude- und Wohnungszählung befragt wurden und mehr als 10 Millionen Personen, die zur Haushaltebefragung Auskünfte erteilt haben.",
             "en": "According to the 2022 census, approximately 34 million people were required to provide information—including more than 23 million property owners who were required to participate in the building and housing census, and more than 10 million people who provided information for the household survey."
         },
         "image": {
@@ -351,16 +351,16 @@
         },
         "type": "guess",
         "text": {
-            "de": "Beim Zensus 2022 konnte man Angaben zu Bildung und Erwerbstätigkeit auch online abgeben. Welcher Anteil der Haushalte hat online zurückgemeldet?",
-            "en": "For the 2022 Census, people could also submit information about their education and employment online. What percentage of households responded online?"
+            "de": "Beim Zensus 2022 konnte man Angaben zu Bildung und Erwerbstätigkeit auch online abgeben. Welcher Anteil der Personen hat online zurückgemeldet?",
+            "en": "For the 2022 Census, people could also submit information about their education and employment online. What percentage of people responded online?"
         },
         "answer": 73,
         "min_guess": 0,
         "max_guess": 100,
         "max_points": 10,
         "explanation": {
-            "de": "Laut Zensus 2022 wurden 73% der Meldungen zu Bildung und Erwerbstätigkeit über die Online-Fragebögen übermittelt.",
-            "en": "According to the 2022 census, 73% of reports on education and employment were submitted via online forms."
+            "de": "Im Zensus 2022 wurden 73% der Meldungen zu Bildung und Erwerbstätigkeit über die Online-Fragebögen übermittelt.",
+            "en": "In the 2022 census, 73% of reports on education and employment were submitted via online forms."
         },
         "image": {
             "de": "Zuhause_Privates_Büro_Gaming.png",
