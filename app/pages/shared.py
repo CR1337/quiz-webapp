@@ -1,6 +1,5 @@
 import os
 import streamlit as st
-import streamlit.components.v1 as components
 from app.question_model import Question
 from app.localization import Localization
 from app.state import QuizState
@@ -103,7 +102,7 @@ def render_progress():
     </div>
     """
 
-    components.html(full_html, height=100, scrolling=True)
+    st.iframe(full_html, height=100)
 
 
 def render_image(image: str, caption: str | None = None, directory: str = "images"):
