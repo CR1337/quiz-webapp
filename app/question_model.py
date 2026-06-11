@@ -159,15 +159,6 @@ class GuessQuestion(Question):
         self._initial_guess = (self._max_guess + self._min_guess) / 2
         self._decimal_places = self._get_decimal_places(answer) #self._get_decimal_places(self._answer)
         self._step = 10 ** -self._get_decimal_places(answer) #/ self.SLIDER_STEP_COUNT
-        print(f"{text=}")
-        print(f"{answer=}")
-        print(f"{self._get_float_digits(answer)=}")
-        print(f"{0.1 * self._get_float_digits(answer)=}")
-        print(f"{self._max_guess=}")
-        print(f"{self._min_guess=}")
-        print(f"{(self._max_guess - self._min_guess)=}")
-        print(f"{1.0 / ((self._max_guess - self._min_guess) / (0.1 ** self._get_float_digits(answer)))=}")
-        print("\n\n")
         if unit[Localization.language()] is not None:
             safe_unit = unit[Localization.language()].replace("%", "%%")
             self._format = f"%0.{self._decimal_places}f {safe_unit}"
