@@ -160,8 +160,8 @@
         },
         "type": "guess",
         "text": {
-            "de": "Wie hoch lag 2024 der Frauenanteil an den aktiv versicherten Pflegepersonen in der privaten häuslichen Pflege in Deutschland?",
-            "en": "What was the share of women among actively insured care providers in private home care in Germany in 2024?"
+            "de": "Wie hoch war 2024 der Anteil an Frauen, die nicht erwerbsmäßig Angehörige oder Bekannte in ihrer häuslichen Umgebung pflegen und dafür als pflegende Angehörige Beiträge zur Rentenversicherung erhalten?",
+            "en": "What was the proportion of women in 2024 who provided non-professional care to relatives or acquaintances in their home environment and, as family caregivers, received pension insurance contributions for doing so?"
         },
         "answer": 85.4,
         "min_guess": 40,
