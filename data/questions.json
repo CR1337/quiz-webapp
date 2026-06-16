@@ -29,7 +29,7 @@
         "coupled_question_indices": []
     },
     {
-        "index": 0,
+        "index": 1,
         "unit": {
             "de": "Kinder",
             "en": "Children"
@@ -58,7 +58,7 @@
         "coupled_question_indices": []
     },
     {
-        "index": 0,
+        "index": 2,
         "unit": {
             "de": "Jahre",
             "en": "Years"
@@ -77,8 +77,8 @@
             "en": "In 2024, women were on average 32.9 years old when they married for the first time."
         },
         "image": {
-            "de": "Szenarien_Quiz_2026_Zeichenfläche 1 Kopie 3.png",
-            "en": "Szenarien_Quiz_2026_Zeichenfläche 1 Kopie 3.png"
+            "de": "Szenarien_Quiz_2026_Zeichenfl\u00e4che 1 Kopie 3.png",
+            "en": "Szenarien_Quiz_2026_Zeichenfl\u00e4che 1 Kopie 3.png"
         },
         "image_caption": {
             "de": null,
@@ -87,7 +87,7 @@
         "coupled_question_indices": []
     },
     {
-        "index": 7,
+        "index": 3,
         "type": "multiple_choice",
         "text": {
             "de": "Welches Bundesland ist Spitzenreiter im \u00f6kologischen Landbau?",
@@ -129,7 +129,7 @@
         "coupled_question_indices": []
     },
     {
-        "index": 0,
+        "index": 4,
         "unit": {
             "de": "Eheschlie\u00dfungen",
             "en": "Marriages"
@@ -148,8 +148,8 @@
             "en": "In 2025, there were around 4.2 marriages for every 1,000 people."
         },
         "image": {
-            "de": "Szenarien_Quiz_2026_Zeichenfläche 1 Kopie 3.png",
-            "en": "Szenarien_Quiz_2026_Zeichenfläche 1 Kopie 3.png"
+            "de": "Szenarien_Quiz_2026_Zeichenfl\u00e4che 1 Kopie 3.png",
+            "en": "Szenarien_Quiz_2026_Zeichenfl\u00e4che 1 Kopie 3.png"
         },
         "image_caption": {
             "de": null,
@@ -158,7 +158,7 @@
         "coupled_question_indices": []
     },
     {
-        "index": 0,
+        "index": 5,
         "unit": {
             "de": "%",
             "en": "%"
@@ -177,8 +177,8 @@
             "en": "Driving school and driving license fees were 5.8% more expensive in 2024 compared to 2023."
         },
         "image": {
-            "de": "Verkehr_Mobilität2.png",
-            "en": "Verkehr_Mobilität2.png"
+            "de": "Verkehr_Mobilit\u00e4t2.png",
+            "en": "Verkehr_Mobilit\u00e4t2.png"
         },
         "image_caption": {
             "de": null,
@@ -187,7 +187,7 @@
         "coupled_question_indices": []
     },
     {
-        "index": 0,
+        "index": 6,
         "unit": {
             "de": "Milliarden Liter",
             "en": "Billion litres"
@@ -206,8 +206,8 @@
             "en": "7.7 billion liters of soft drinks such as cola, lemonade, juice spritzers and energy drinks were produced in Germany in 2024."
         },
         "image": {
-            "de": "Szenarien_Quiz_2026_Zeichenfläche 1 Kopie 5.png",
-            "en": "Szenarien_Quiz_2026_Zeichenfläche 1 Kopie 5.png"
+            "de": "Szenarien_Quiz_2026_Zeichenfl\u00e4che 1 Kopie 5.png",
+            "en": "Szenarien_Quiz_2026_Zeichenfl\u00e4che 1 Kopie 5.png"
         },
         "image_caption": {
             "de": null,
@@ -216,7 +216,7 @@
         "coupled_question_indices": []
     },
     {
-        "index": 0,
+        "index": 7,
         "unit": {
             "de": "%",
             "en": "%"
@@ -245,7 +245,7 @@
         "coupled_question_indices": []
     },
     {
-        "index": 0,
+        "index": 8,
         "unit": {
             "de": "Millionen Personen",
             "en": "Million people"
@@ -274,7 +274,7 @@
         "coupled_question_indices": []
     },
     {
-        "index": 0,
+        "index": 9,
         "unit": {
             "de": "Jahre",
             "en": "Years"
@@ -293,8 +293,8 @@
             "en": "In 2024 it was 23.9 years. However, women are slightly younger on average. \u202fWomen left home in 2023 at the age of 23.1. Men, on the other hand, were on average 24.6 years old."
         },
         "image": {
-            "de": "Szenarien_Quiz_2026_Zeichenfläche 1 Kopie 4.png",
-            "en": "Szenarien_Quiz_2026_Zeichenfläche 1 Kopie 4.png"
+            "de": "Szenarien_Quiz_2026_Zeichenfl\u00e4che 1 Kopie 4.png",
+            "en": "Szenarien_Quiz_2026_Zeichenfl\u00e4che 1 Kopie 4.png"
         },
         "image_caption": {
             "de": null,
@@ -303,7 +303,7 @@
         "coupled_question_indices": []
     },
     {
-        "index": 0,
+        "index": 10,
         "unit": {
             "de": "Liter",
             "en": "Litres"
@@ -322,8 +322,8 @@
             "en": "In 2022 it was around 126 liters of water per inhabitant per day. Daily water consumption per inhabitant has fallen by 18 liters since 1991."
         },
         "image": {
-            "de": "Szenarien_Quiz_2026_Zeichenfläche 1 Kopie 6.png",
-            "en": "Szenarien_Quiz_2026_Zeichenfläche 1 Kopie 6.png"
+            "de": "Szenarien_Quiz_2026_Zeichenfl\u00e4che 1 Kopie 6.png",
+            "en": "Szenarien_Quiz_2026_Zeichenfl\u00e4che 1 Kopie 6.png"
         },
         "image_caption": {
             "de": null,
@@ -332,7 +332,7 @@
         "coupled_question_indices": []
     },
     {
-        "index": 7,
+        "index": 11,
         "type": "multiple_choice",
         "text": {
             "de": "Welches Land/Staat ist Weltweiter Spitzenreiter bei der Repr\u00e4sentation von Frauen im nationalen Parlament?",
@@ -364,8 +364,8 @@
             "en": "According to the most recent data, the world leader in the representation of women is the East African state of Rwanda with a proportion of women of 63.8%.  Female MPs were also in the majority in Cuba (55.7%), Nicaragua (55%) and Mexico (50.2%)."
         },
         "image": {
-            "de": "Büro_Arbeit_Allgemeines.png",
-            "en": "Büro_Arbeit_Allgemeines.png"
+            "de": "B\u00fcro_Arbeit_Allgemeines.png",
+            "en": "B\u00fcro_Arbeit_Allgemeines.png"
         },
         "image_caption": {
             "de": null,
@@ -374,7 +374,7 @@
         "coupled_question_indices": []
     },
     {
-        "index": 0,
+        "index": 12,
         "unit": {
             "de": "Stunden",
             "en": "Hours"
@@ -393,8 +393,8 @@
             "en": "On average, 10 to 17 year olds spent 1 hour and 7 minutes per day playing video and computer games."
         },
         "image": {
-            "de": "Szenarien_Quiz_2026_Zeichenfläche 1 Kopie 7.png",
-            "en": "Szenarien_Quiz_2026_Zeichenfläche 1 Kopie 7.png"
+            "de": "Szenarien_Quiz_2026_Zeichenfl\u00e4che 1 Kopie 7.png",
+            "en": "Szenarien_Quiz_2026_Zeichenfl\u00e4che 1 Kopie 7.png"
         },
         "image_caption": {
             "de": null,
@@ -403,7 +403,7 @@
         "coupled_question_indices": []
     },
     {
-        "index": 0,
+        "index": 13,
         "unit": {
             "de": "Liter",
             "en": "Litres"
@@ -422,8 +422,8 @@
             "en": "Around 93 liters of sugary soft drinks per capita per year were produced in Germany in 2024?"
         },
         "image": {
-            "de": "Szenarien_Quiz_2026_Zeichenfläche 1 Kopie 5.png",
-            "en": "Szenarien_Quiz_2026_Zeichenfläche 1 Kopie 5.png"
+            "de": "Szenarien_Quiz_2026_Zeichenfl\u00e4che 1 Kopie 5.png",
+            "en": "Szenarien_Quiz_2026_Zeichenfl\u00e4che 1 Kopie 5.png"
         },
         "image_caption": {
             "de": null,
@@ -432,7 +432,7 @@
         "coupled_question_indices": []
     },
     {
-        "index": 0,
+        "index": 14,
         "unit": {
             "de": "Unternehmen",
             "en": "Companies"
@@ -461,7 +461,7 @@
         "coupled_question_indices": []
     },
     {
-        "index": 0,
+        "index": 15,
         "unit": {
             "de": "%",
             "en": "%"
@@ -480,8 +480,8 @@
             "en": "Around 77% of the population only speaks German at home."
         },
         "image": {
-            "de": "Szenarien_Quiz_2026_Zeichenfläche 1 Kopie 7.png",
-            "en": "Szenarien_Quiz_2026_Zeichenfläche 1 Kopie 7.png"
+            "de": "Szenarien_Quiz_2026_Zeichenfl\u00e4che 1 Kopie 7.png",
+            "en": "Szenarien_Quiz_2026_Zeichenfl\u00e4che 1 Kopie 7.png"
         },
         "image_caption": {
             "de": null,
@@ -490,7 +490,7 @@
         "coupled_question_indices": []
     },
     {
-        "index": 0,
+        "index": 16,
         "unit": {
             "de": "Jahre",
             "en": "Years"
@@ -509,8 +509,8 @@
             "en": "The average life expectancy for men is 78.5 years."
         },
         "image": {
-            "de": "Szenarien_Quiz_2026_Zeichenfläche 1 Kopie 5.png",
-            "en": "Szenarien_Quiz_2026_Zeichenfläche 1 Kopie 5.png"
+            "de": "Szenarien_Quiz_2026_Zeichenfl\u00e4che 1 Kopie 5.png",
+            "en": "Szenarien_Quiz_2026_Zeichenfl\u00e4che 1 Kopie 5.png"
         },
         "image_caption": {
             "de": null,
@@ -519,7 +519,7 @@
         "coupled_question_indices": []
     },
     {
-        "index": 0,
+        "index": 17,
         "unit": {
             "de": "Millionen Menschen",
             "en": "Million people"
@@ -538,8 +538,8 @@
             "en": "In 2025, the 22 German main airports counted around 207.2 million passengers."
         },
         "image": {
-            "de": "Szenarien_Quiz_2026_Zeichenfläche 1 Kopie 6.png",
-            "en": "Szenarien_Quiz_2026_Zeichenfläche 1 Kopie 6.png"
+            "de": "Szenarien_Quiz_2026_Zeichenfl\u00e4che 1 Kopie 6.png",
+            "en": "Szenarien_Quiz_2026_Zeichenfl\u00e4che 1 Kopie 6.png"
         },
         "image_caption": {
             "de": null,
@@ -548,7 +548,7 @@
         "coupled_question_indices": []
     },
     {
-        "index": 0,
+        "index": 18,
         "unit": {
             "de": "%",
             "en": "%"
@@ -567,8 +567,8 @@
             "en": "According to preliminary results, in 2025 one or one in six (16.4%) people killed in road traffic were traveling by bicycle."
         },
         "image": {
-            "de": "Szenarien_Quiz_2026_Zeichenfläche 1 Kopie 8.png",
-            "en": "Szenarien_Quiz_2026_Zeichenfläche 1 Kopie 8.png"
+            "de": "Szenarien_Quiz_2026_Zeichenfl\u00e4che 1 Kopie 8.png",
+            "en": "Szenarien_Quiz_2026_Zeichenfl\u00e4che 1 Kopie 8.png"
         },
         "image_caption": {
             "de": null,
@@ -577,7 +577,7 @@
         "coupled_question_indices": []
     },
     {
-        "index": 0,
+        "index": 19,
         "unit": {
             "de": "%",
             "en": "%"
@@ -606,7 +606,7 @@
         "coupled_question_indices": []
     },
     {
-        "index": 7,
+        "index": 20,
         "type": "multiple_choice",
         "text": {
             "de": "Auf welchem Platz befindet sich Deutschland bei der Repr\u00e4sentierung von Frauen im Bundestag?",
@@ -638,8 +638,8 @@
             "en": "Germany is currently in 58th place worldwide (LP21) with a proportion of women of 32.4%."
         },
         "image": {
-            "de": "Büro_Arbeit_Allgemeines.png",
-            "en": "Büro_Arbeit_Allgemeines.png"
+            "de": "B\u00fcro_Arbeit_Allgemeines.png",
+            "en": "B\u00fcro_Arbeit_Allgemeines.png"
         },
         "image_caption": {
             "de": null,
@@ -648,7 +648,7 @@
         "coupled_question_indices": []
     },
     {
-        "index": 0,
+        "index": 21,
         "unit": {
             "de": "TWh",
             "en": "TWh"
@@ -667,8 +667,8 @@
             "en": "Over the past 3.5 decades, gross wind power generation has increased from 0.0 terawatt hours (TWh) in 1990 to 138.9 TWh in 2024."
         },
         "image": {
-            "de": "Szenarien_Quiz_2026_Zeichenfläche 1 Kopie 6.png",
-            "en": "Szenarien_Quiz_2026_Zeichenfläche 1 Kopie 6.png"
+            "de": "Szenarien_Quiz_2026_Zeichenfl\u00e4che 1 Kopie 6.png",
+            "en": "Szenarien_Quiz_2026_Zeichenfl\u00e4che 1 Kopie 6.png"
         },
         "image_caption": {
             "de": null,
@@ -677,7 +677,7 @@
         "coupled_question_indices": []
     },
     {
-        "index": 0,
+        "index": 22,
         "unit": {
             "de": "Tausend Tonnen",
             "en": "Thousand metric tons"
@@ -696,8 +696,8 @@
             "en": "Around 124,900 tons of meat substitute products were produced in 2025, compared to 126,500 tons the year before."
         },
         "image": {
-            "de": "Älter.png",
-            "en": "Älter.png"
+            "de": "\u00c4lter.png",
+            "en": "\u00c4lter.png"
         },
         "image_caption": {
             "de": null,
@@ -706,7 +706,7 @@
         "coupled_question_indices": []
     },
     {
-        "index": 0,
+        "index": 23,
         "unit": {
             "de": "Stunden",
             "en": "Hours"
@@ -725,8 +725,8 @@
             "en": "On average, a person has 6 hours and 10 minutes of free time per day. On average, men have about half an hour more free time at 6:26 hours a day than women at 5:55 hours a day."
         },
         "image": {
-            "de": "Szenarien_Quiz_2026_Zeichenfläche 1 Kopie 3.png",
-            "en": "Szenarien_Quiz_2026_Zeichenfläche 1 Kopie 3.png"
+            "de": "Szenarien_Quiz_2026_Zeichenfl\u00e4che 1 Kopie 3.png",
+            "en": "Szenarien_Quiz_2026_Zeichenfl\u00e4che 1 Kopie 3.png"
         },
         "image_caption": {
             "de": null,
@@ -735,7 +735,7 @@
         "coupled_question_indices": []
     },
     {
-        "index": 7,
+        "index": 24,
         "type": "multiple_choice",
         "text": {
             "de": "Was ist die h\u00e4ufigste gesprochene Zweitsprache in privaten Haushalten in Deutschland?",
@@ -767,8 +767,8 @@
             "en": "Among the 15.5 million people who communicated primarily or exclusively in a language other than German at home, Turkish was the most frequently spoken language with a share of 14%. Russian (12%) and Arabic (9%) were also spoken comparatively frequently in households in this country."
         },
         "image": {
-            "de": "Szenarien_Quiz_2026_Zeichenfläche 1 Kopie 2.png",
-            "en": "Szenarien_Quiz_2026_Zeichenfläche 1 Kopie 2.png"
+            "de": "Szenarien_Quiz_2026_Zeichenfl\u00e4che 1 Kopie 2.png",
+            "en": "Szenarien_Quiz_2026_Zeichenfl\u00e4che 1 Kopie 2.png"
         },
         "image_caption": {
             "de": null,
@@ -777,7 +777,7 @@
         "coupled_question_indices": []
     },
     {
-        "index": 0,
+        "index": 25,
         "unit": {
             "de": "Jahre",
             "en": "Years"
@@ -796,8 +796,8 @@
             "en": "The average life expectancy for women is 83.2 years."
         },
         "image": {
-            "de": "Szenarien_Quiz_2026_Zeichenfläche 1 Kopie 17.png",
-            "en": "Szenarien_Quiz_2026_Zeichenfläche 1 Kopie 17.png"
+            "de": "Szenarien_Quiz_2026_Zeichenfl\u00e4che 1 Kopie 17.png",
+            "en": "Szenarien_Quiz_2026_Zeichenfl\u00e4che 1 Kopie 17.png"
         },
         "image_caption": {
             "de": null,
@@ -806,7 +806,7 @@
         "coupled_question_indices": []
     },
     {
-        "index": 0,
+        "index": 26,
         "unit": {
             "de": "%",
             "en": "%"
@@ -825,8 +825,8 @@
             "en": "The gender pension gap is 24.2%. The retirement income of women was on average more than a quarter lower than that of men."
         },
         "image": {
-            "de": "Szenarien_Quiz_2026_Zeichenfläche 1 Kopie 17.png",
-            "en": "Szenarien_Quiz_2026_Zeichenfläche 1 Kopie 17.png"
+            "de": "Szenarien_Quiz_2026_Zeichenfl\u00e4che 1 Kopie 17.png",
+            "en": "Szenarien_Quiz_2026_Zeichenfl\u00e4che 1 Kopie 17.png"
         },
         "image_caption": {
             "de": null,
@@ -835,7 +835,7 @@
         "coupled_question_indices": []
     },
     {
-        "index": 0,
+        "index": 27,
         "unit": {
             "de": "Milliarden Personen",
             "en": "Billion people"
@@ -854,8 +854,8 @@
             "en": "Passenger volumes remained relatively stable in 2025 at 11.3 billion passengers compared to the previous year."
         },
         "image": {
-            "de": "Verkehr_Mobilität.png",
-            "en": "Verkehr_Mobilität.png"
+            "de": "Verkehr_Mobilit\u00e4t.png",
+            "en": "Verkehr_Mobilit\u00e4t.png"
         },
         "image_caption": {
             "de": null,
