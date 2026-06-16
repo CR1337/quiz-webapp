@@ -3,12 +3,12 @@
         "index": 0,
         "unit": {
             "de": "%",
-            "en": "TODO"
+            "en": "%"
         },
         "type": "guess",
         "text": {
             "de": "Um wie viel Prozent hat sich die Fl\u00e4che der Bundesrepublik seit der Deutschen Einheit erh\u00f6ht?",
-            "en": "TODO"
+            "en": "By what percentage has the area of \u200b\u200bthe Federal Republic increased since German unification?"
         },
         "answer": 43.8,
         "min_guess": 0,
@@ -16,7 +16,7 @@
         "max_points": 10,
         "explanation": {
             "de": "Die Fl\u00e4che der Bundesrepublik hat sich seit der Deutschen Einheit um 43,8% erh\u00f6ht. Somit ist die Fl\u00e4che 357 595,99 km\u00b2 gro\u00df.",
-            "en": "TODO"
+            "en": "The area of \u200b\u200bthe Federal Republic has increased by 43.8% since German unification. The area is therefore 357,595.99 km\u00b2."
         },
         "image": {
             "de": "TODO",
@@ -37,7 +37,7 @@
         "type": "guess",
         "text": {
             "de": "Wie viele Kinder pro Frau wurden 2024 in Deutschland geboren?",
-            "en": "TODO"
+            "en": "How many children per woman were born in Germany in 2024?"
         },
         "answer": 1.35,
         "min_guess": 0,
@@ -45,7 +45,7 @@
         "max_points": 10,
         "explanation": {
             "de": "Heutzutage bekommen Frauen in Deutschland 1,35 Kinder.",
-            "en": "TODO"
+            "en": "Nowadays women in Germany have 1.35 children."
         },
         "image": {
             "de": "TODO",
@@ -66,7 +66,7 @@
         "type": "guess",
         "text": {
             "de": "Wie alt sind Frauen durchschnittlich bei ihrer ersten Heirat? ",
-            "en": "TODO"
+            "en": "How old are women on average when they get married for the first time?"
         },
         "answer": 32.9,
         "min_guess": 14,
@@ -74,7 +74,7 @@
         "max_points": 10,
         "explanation": {
             "de": "Im Jahr 2024 waren Frauen bei ihrer ersten Heirat im Schnitt 32,9 Jahre alt.",
-            "en": "TODO"
+            "en": "In 2024, women were on average 32.9 years old when they married for the first time."
         },
         "image": {
             "de": "TODO",
@@ -91,7 +91,7 @@
         "type": "multiple_choice",
         "text": {
             "de": "Welches Bundesland ist Spitzenreiter im \u00f6kologischen Landbau?",
-            "en": "TODO"
+            "en": "Which federal state is the leader in organic farming?"
         },
         "answers": {
             "de": [
@@ -101,10 +101,10 @@
                 "Bayern"
             ],
             "en": [
-                "TODO",
-                "TODO",
-                "TODO",
-                "TODO"
+                "Mecklenburg-Western Pomerania",
+                "Brandenburg",
+                "North Rhine-Westphalia",
+                "Bavaria"
             ]
         },
         "right_answer_index": 0,
@@ -116,7 +116,7 @@
         ],
         "explanation": {
             "de": "In Mecklenburg-Vorpommern arbeiteten von allen 4 750 landwirtschaftlichen Betrieben 24,2 % \u00f6kologisch, bzw. 1 150 Betriebe absolut. Somit arbeitet fast jeder Vierte landwirtschaftliche Betrieb nach \u00f6kologischen Standards.",
-            "en": "TODO"
+            "en": "In Mecklenburg-Western Pomerania, of all 4,750 agricultural businesses, 24.2% worked organically, or 1,150 farms in absolute terms. This means that almost one in four agricultural businesses works according to ecological standards."
         },
         "image": {
             "de": "TODO",
@@ -132,12 +132,12 @@
         "index": 0,
         "unit": {
             "de": "Eheschlie\u00dfungen",
-            "en": "TODO"
+            "en": "Marriages"
         },
         "type": "guess",
         "text": {
             "de": "Wie viele Eheschlie\u00dfungen wurde auf 1000 Personen 2025 vollzogen?",
-            "en": "TODO"
+            "en": "How many marriages were performed per 1000 people in 2025?"
         },
         "answer": 4.2,
         "min_guess": 0,
@@ -145,7 +145,7 @@
         "max_points": 10,
         "explanation": {
             "de": "2025 kamen auf 1 000 Personen etwa 4,2 Eheschlie\u00dfungen.",
-            "en": "TODO"
+            "en": "In 2025, there were around 4.2 marriages for every 1,000 people."
         },
         "image": {
             "de": "TODO",
@@ -161,12 +161,12 @@
         "index": 0,
         "unit": {
             "de": "%",
-            "en": "TODO"
+            "en": "%"
         },
         "type": "guess",
         "text": {
             "de": "Um welchen Prozentsatz ist die F\u00fchrerscheingeb\u00fchr vom Jahr 2023 gegen\u00fcber dem Jahr 2024 gestiegen? ",
-            "en": "TODO"
+            "en": "By what percentage has the driver's license fee increased in 2023 compared to 2024?"
         },
         "answer": 5.8,
         "min_guess": 0,
@@ -174,7 +174,7 @@
         "max_points": 10,
         "explanation": {
             "de": "Um 5,8 % teurer waren Fahrschule und F\u00fchrerscheingeb\u00fchr im Jahr 2024 gegen\u00fcber dem Jahr 2023.",
-            "en": "TODO"
+            "en": "Driving school and driving license fees were 5.8% more expensive in 2024 compared to 2023."
         },
         "image": {
             "de": "TODO",
@@ -195,7 +195,7 @@
         "type": "guess",
         "text": {
             "de": "Wie viel Liter Erfrischungsgetr\u00e4nke wie Cola, Limonade, Saftschorlen oder Energydrinks wurden im Jahr 2024 in Deutschland produziert?",
-            "en": "TODO"
+            "en": "How many liters of soft drinks such as cola, lemonade, juice spritzers or energy drinks were produced in Germany in 2024?"
         },
         "answer": 7.7,
         "min_guess": 0,
@@ -203,7 +203,7 @@
         "max_points": 10,
         "explanation": {
             "de": "7,7\u202fMilliarden\u202fLiter Erfrischungsgetr\u00e4nke wie Cola, Limonade, Saftschorlen oder Energydrinks wurden im Jahr 2024 in Deutschland produziert.",
-            "en": "TODO"
+            "en": "7.7 billion liters of soft drinks such as cola, lemonade, juice spritzers and energy drinks were produced in Germany in 2024."
         },
         "image": {
             "de": "TODO",
@@ -219,12 +219,12 @@
         "index": 0,
         "unit": {
             "de": "%",
-            "en": "TODO"
+            "en": "%"
         },
         "type": "guess",
         "text": {
             "de": "Wie gro\u00df ist der Gehaltsunterschied bei M\u00e4nnern und Frauen?",
-            "en": "TODO"
+            "en": "How big is the salary difference between men and women?"
         },
         "answer": 16,
         "min_guess": 0,
@@ -232,7 +232,7 @@
         "max_points": 10,
         "explanation": {
             "de": "Frauen haben im Jahr 2025 in Deutschland pro Stunde durchschnittlich 16\u202f% weniger verdient als M\u00e4nner.",
-            "en": "TODO"
+            "en": "In 2025, women in Germany will earn an average of 16% less per hour than men."
         },
         "image": {
             "de": "TODO",
@@ -253,7 +253,7 @@
         "type": "guess",
         "text": {
             "de": "Wie viele Personen mit Einwanderungsgeschichte lebten 2025 in Deutschland?",
-            "en": "TODO"
+            "en": "How many people with a history of immigration lived in Germany in 2025?"
         },
         "answer": 21.8,
         "min_guess": 0,
@@ -261,7 +261,7 @@
         "max_points": 10,
         "explanation": {
             "de": "Im Jahr 2025 lebten 21,8 Millionen Personen mit Einwanderungsgeschichte in Deutschland.",
-            "en": "TODO"
+            "en": "In 2025, 21.8 million people with a history of immigration lived in Germany."
         },
         "image": {
             "de": "TODO",
@@ -282,7 +282,7 @@
         "type": "guess",
         "text": {
             "de": "In welchem Alter verlassen junge Menschen durchschnittlich das Elternhaus? ",
-            "en": "TODO"
+            "en": "At what age do young people on average leave home?"
         },
         "answer": 23.9,
         "min_guess": 18,
@@ -290,7 +290,7 @@
         "max_points": 10,
         "explanation": {
             "de": "2024 lag es bei 23,9 Jahren. Allerdings sind Frauen durchschnittlich etwas j\u00fcnger. \u202fFrauen verlie\u00dfen das Elternhaus 2023 im Alter von 23,1 Jahren. M\u00e4nner waren hingegen durchschnittlich 24,6 Jahre alt.",
-            "en": "TODO"
+            "en": "In 2024 it was 23.9 years. However, women are slightly younger on average. \u202fWomen left home in 2023 at the age of 23.1. Men, on the other hand, were on average 24.6 years old."
         },
         "image": {
             "de": "TODO",
@@ -311,7 +311,7 @@
         "type": "guess",
         "text": {
             "de": "Wie viel Wasser verbraucht ein Einwohner in Deutschland am Tag?",
-            "en": "TODO"
+            "en": "How much water does a resident in Germany use per day?"
         },
         "answer": 126,
         "min_guess": 0,
@@ -319,7 +319,7 @@
         "max_points": 10,
         "explanation": {
             "de": "2022 waren es rund 126 l Wasser pro Einwohner am Tag. Der t\u00e4gliche Wasserverbrauch pro Einwohner ist seit 1991 um 18 Liter gesunken.",
-            "en": "TODO"
+            "en": "In 2022 it was around 126 liters of water per inhabitant per day. Daily water consumption per inhabitant has fallen by 18 liters since 1991."
         },
         "image": {
             "de": "TODO",
@@ -336,7 +336,7 @@
         "type": "multiple_choice",
         "text": {
             "de": "Welches Land/Staat ist Weltweiter Spitzenreiter bei der Repr\u00e4sentation von Frauen im nationalen Parlament?",
-            "en": "TODO"
+            "en": "Which country/state is the world leader in the representation of women in the national parliament?"
         },
         "answers": {
             "de": [
@@ -346,10 +346,10 @@
                 "Mexiko"
             ],
             "en": [
-                "TODO",
-                "TODO",
-                "TODO",
-                "TODO"
+                "Cuba",
+                "Nicaragua",
+                "Rwanda",
+                "Mexico"
             ]
         },
         "right_answer_index": 2,
@@ -361,7 +361,7 @@
         ],
         "explanation": {
             "de": "Weltweiter Spitzenreiter bei der Repr\u00e4sentation von Frauen ist laut den aktuellsten Daten der ostafrikanische Staat Ruanda mit einem Frauenanteil von 63,8 %.  In Kuba (55,7 %), Nicaragua (55 %) und Mexiko (50,2 %) waren die weiblichen Abgeordneten ebenfalls in der \u00dcberzahl.",
-            "en": "TODO"
+            "en": "According to the most recent data, the world leader in the representation of women is the East African state of Rwanda with a proportion of women of 63.8%.  Female MPs were also in the majority in Cuba (55.7%), Nicaragua (55%) and Mexico (50.2%)."
         },
         "image": {
             "de": "TODO",
@@ -382,7 +382,7 @@
         "type": "guess",
         "text": {
             "de": "Wie lange verbringen 10- bis 17- J\u00e4hrige am Tag mit Computer- und Videospielen?",
-            "en": "TODO"
+            "en": "How long do 10 to 17 year olds spend playing computer and video games a day?"
         },
         "answer": 1.1,
         "min_guess": 0,
@@ -390,7 +390,7 @@
         "max_points": 10,
         "explanation": {
             "de": "1 Stunde und 7 Minuten pro Tag wendeten 10- bis 17-J\u00e4hrige im Durchschnitt f\u00fcr Video- und Computerspiele auf.",
-            "en": "TODO"
+            "en": "On average, 10 to 17 year olds spent 1 hour and 7 minutes per day playing video and computer games."
         },
         "image": {
             "de": "TODO",
@@ -411,7 +411,7 @@
         "type": "guess",
         "text": {
             "de": "Wie viel Liter zuckerhaltige Erfrischungsgetr\u00e4nke wurden 2024 pro Kopf in Deutschland produziert?",
-            "en": "TODO"
+            "en": "How many liters of sugary soft drinks were produced per capita in Germany in 2024?"
         },
         "answer": 93,
         "min_guess": 0,
@@ -419,7 +419,7 @@
         "max_points": 10,
         "explanation": {
             "de": "Rund 93\u202fLiter pro Kopf pro Jahr zuckerhaltige Erfrischungsgetr\u00e4nke wurden 2024 in Deutschland produziert?",
-            "en": "TODO"
+            "en": "Around 93 liters of sugary soft drinks per capita per year were produced in Germany in 2024?"
         },
         "image": {
             "de": "TODO",
@@ -440,7 +440,7 @@
         "type": "guess",
         "text": {
             "de": "Wie viele Unternehmen stellen in Deutschland Fleischersatzprodukte her?",
-            "en": "TODO"
+            "en": "How many companies produce meat substitute products in Germany?"
         },
         "answer": 67,
         "min_guess": 0,
@@ -448,7 +448,7 @@
         "max_points": 10,
         "explanation": {
             "de": "Die Zahl der Unternehmen, die Fleischersatzprodukte in Deutschland herstellen, nimmt kontinuierlich zu. Zuletzt waren es 67 Unternehmen im Jahr 2025.",
-            "en": "TODO"
+            "en": "The number of companies producing meat substitute products in Germany is continually increasing. Most recently there were 67 companies in 2025."
         },
         "image": {
             "de": "TODO",
@@ -464,12 +464,12 @@
         "index": 0,
         "unit": {
             "de": "%",
-            "en": "TODO"
+            "en": "%"
         },
         "type": "guess",
         "text": {
             "de": "Wie hoch liegt der Schnitt der Bev\u00f6lkerung, die zu Hause ausschlie\u00dflich Deutsch sprechen?",
-            "en": "TODO"
+            "en": "What is the average number of people who only speak German at home?"
         },
         "answer": 77,
         "min_guess": 0,
@@ -477,7 +477,7 @@
         "max_points": 10,
         "explanation": {
             "de": "Rund 77% der Bev\u00f6lkerung spricht zu Hause ausschlie\u00dflich Deutsch.",
-            "en": "TODO"
+            "en": "Around 77% of the population only speaks German at home."
         },
         "image": {
             "de": "TODO",
@@ -498,7 +498,7 @@
         "type": "guess",
         "text": {
             "de": "Wie hoch ist die Lebenserwartung bei M\u00e4nnern?",
-            "en": "TODO"
+            "en": "What is the life expectancy for men?"
         },
         "answer": 78.5,
         "min_guess": 0,
@@ -506,7 +506,7 @@
         "max_points": 10,
         "explanation": {
             "de": "Die Lebenserwartung bei M\u00e4nnern liegt durchschnittlich bei 78,5 Jahren.",
-            "en": "TODO"
+            "en": "The average life expectancy for men is 78.5 years."
         },
         "image": {
             "de": "TODO",
@@ -527,7 +527,7 @@
         "type": "guess",
         "text": {
             "de": "Wie viele Menschen nutzten 2025 den Flugverkehr?",
-            "en": "TODO"
+            "en": "How many people will use air travel in 2025?"
         },
         "answer": 207.2,
         "min_guess": 0,
@@ -535,7 +535,7 @@
         "max_points": 10,
         "explanation": {
             "de": "Im Jahr 2025 haben die 22\u202fdeutschen Hauptverkehrsflugh\u00e4fen rund 207,2\u202fMillionen\u202fFlugg\u00e4ste gez\u00e4hlt.",
-            "en": "TODO"
+            "en": "In 2025, the 22 German main airports counted around 207.2 million passengers."
         },
         "image": {
             "de": "TODO",
@@ -551,12 +551,12 @@
         "index": 0,
         "unit": {
             "de": "%",
-            "en": "TODO"
+            "en": "%"
         },
         "type": "guess",
         "text": {
             "de": "Wie viel Prozent der get\u00f6teten Verkehrsteilnehmer bei Stra\u00dfenverkehrsunf\u00e4llen waren Fahrradfahrer?",
-            "en": "TODO"
+            "en": "What percentage of road users killed in road traffic accidents were cyclists?"
         },
         "answer": 16.4,
         "min_guess": 0,
@@ -564,7 +564,7 @@
         "max_points": 10,
         "explanation": {
             "de": "Im Jahr 2025 waren nach vorl\u00e4ufigen Ergebnissen jede oder jeder sechste (16,4\u202f%) im Stra\u00dfenverkehr Get\u00f6tete mit dem Fahrrad unterwegs.",
-            "en": "TODO"
+            "en": "According to preliminary results, in 2025 one or one in six (16.4%) people killed in road traffic were traveling by bicycle."
         },
         "image": {
             "de": "TODO",
@@ -580,12 +580,12 @@
         "index": 0,
         "unit": {
             "de": "%",
-            "en": "TODO"
+            "en": "%"
         },
         "type": "guess",
         "text": {
             "de": "Um wie viel Prozent ist die Bev\u00f6lkerungszahl Deutschlandweit von 1990 bis 2024 gestiegen?",
-            "en": "TODO"
+            "en": "By what percentage did the population increase across Germany from 1990 to 2024?"
         },
         "answer": 4.8,
         "min_guess": 0,
@@ -593,7 +593,7 @@
         "max_points": 10,
         "explanation": {
             "de": "Deutschlandweit ist die Bev\u00f6lkerungszahl von 1990 bis 2024 um 4,8% gestiegen.",
-            "en": "TODO"
+            "en": "Across Germany, the population increased by 4.8% from 1990 to 2024."
         },
         "image": {
             "de": "TODO",
@@ -610,7 +610,7 @@
         "type": "multiple_choice",
         "text": {
             "de": "Auf welchem Platz befindet sich Deutschland bei der Repr\u00e4sentierung von Frauen im Bundestag?",
-            "en": "TODO"
+            "en": "Where does Germany rank when it comes to the representation of women in the Bundestag?"
         },
         "answers": {
             "de": [
@@ -635,7 +635,7 @@
         ],
         "explanation": {
             "de": "Weltweit liegt Deutschland aktuell (LP21) auf Platz 58 mit einem Frauenanteil von 32,4 %.",
-            "en": "TODO"
+            "en": "Germany is currently in 58th place worldwide (LP21) with a proportion of women of 32.4%."
         },
         "image": {
             "de": "TODO",
@@ -651,12 +651,12 @@
         "index": 0,
         "unit": {
             "de": "TWh",
-            "en": "TODO"
+            "en": "TWh"
         },
         "type": "guess",
         "text": {
             "de": "Wie viele Terawattstunden wurden durch Windenergie im Jahr 2024 erzeugt?",
-            "en": "TODO"
+            "en": "How many terawatt hours were generated by wind energy in 2024?"
         },
         "answer": 138.9,
         "min_guess": 0,
@@ -664,7 +664,7 @@
         "max_points": 10,
         "explanation": {
             "de": "In den letzten 3,5 Jahrzehnten hat sich die Bruttostromerzeugung von Wind von 0,0 Terawattstunden (TWh) im Jahr 1990 auf 138,9 TWh im Jahr 2024 erh\u00f6ht.",
-            "en": "TODO"
+            "en": "Over the past 3.5 decades, gross wind power generation has increased from 0.0 terawatt hours (TWh) in 1990 to 138.9 TWh in 2024."
         },
         "image": {
             "de": "TODO",
@@ -685,7 +685,7 @@
         "type": "guess",
         "text": {
             "de": "Wie viel Tonnen Fleischersatzprodukte wurden 2025 produziert?",
-            "en": "TODO"
+            "en": "How many tons of meat substitute products were produced in 2025?"
         },
         "answer": 124900,
         "min_guess": 0,
@@ -693,7 +693,7 @@
         "max_points": 10,
         "explanation": {
             "de": "Rund 124\u202f900\u202fTonnen Fleischersatzprodukte wurden 2025 produziert, im Jahr zuvor waren es noch 126\u202f500\u202fTonnen.",
-            "en": "TODO"
+            "en": "Around 124,900 tons of meat substitute products were produced in 2025, compared to 126,500 tons the year before."
         },
         "image": {
             "de": "TODO",
@@ -714,7 +714,7 @@
         "type": "guess",
         "text": {
             "de": "Wie viele Stunden am Tag wendet eine Person f\u00fcr Freizeitaktivit\u00e4ten auf (z.B. f\u00fcr Hobbys oder sich mit Freunden zu treffen)?",
-            "en": "TODO"
+            "en": "How many hours a day does a person spend on leisure activities (e.g. hobbies or meeting friends)?"
         },
         "answer": 6.17,
         "min_guess": 0,
@@ -722,7 +722,7 @@
         "max_points": 10,
         "explanation": {
             "de": "Im Schnitt hat eine Person am Tag 6 Stunden und 10 Minuten Freizeit. M\u00e4nner haben im Schnitt mit 6:26 Std. etwa eine halbe Stunde mehr Freizeit als Frauen mit 5:55 Std. am Tag.",
-            "en": "TODO"
+            "en": "On average, a person has 6 hours and 10 minutes of free time per day. On average, men have about half an hour more free time at 6:26 hours a day than women at 5:55 hours a day."
         },
         "image": {
             "de": "TODO",
@@ -739,7 +739,7 @@
         "type": "multiple_choice",
         "text": {
             "de": "Was ist die h\u00e4ufigste gesprochene Zweitsprache in privaten Haushalten in Deutschland?",
-            "en": "TODO"
+            "en": "What is the most common second language spoken in private households in Germany?"
         },
         "answers": {
             "de": [
@@ -764,7 +764,7 @@
         ],
         "explanation": {
             "de": "Unter den 15,5\u202fMillionen Menschen, die sich zu Hause vorwiegend oder ausschlie\u00dflich in einer anderen Sprache als Deutsch verst\u00e4ndigten, war T\u00fcrkisch mit einem Anteil von 14\u202f% die am h\u00e4ufigsten gesprochene Sprache. Auch Russisch (12\u202f%) und Arabisch (9\u202f%) wurde in Haushalten hierzulande vergleichsweise h\u00e4ufig gesprochen.",
-            "en": "TODO"
+            "en": "Among the 15.5 million people who communicated primarily or exclusively in a language other than German at home, Turkish was the most frequently spoken language with a share of 14%. Russian (12%) and Arabic (9%) were also spoken comparatively frequently in households in this country."
         },
         "image": {
             "de": "TODO",
@@ -785,7 +785,7 @@
         "type": "guess",
         "text": {
             "de": "Wie hoch ist die Lebenserwartung bei Frauen?",
-            "en": "TODO"
+            "en": "What is the life expectancy of women?"
         },
         "answer": 83.2,
         "min_guess": 0,
@@ -793,7 +793,7 @@
         "max_points": 10,
         "explanation": {
             "de": "Die Lebenserwartung bei Frauen liegt durchschnittlich bei 83,2 Jahren.",
-            "en": "TODO"
+            "en": "The average life expectancy for women is 83.2 years."
         },
         "image": {
             "de": "TODO",
@@ -809,12 +809,12 @@
         "index": 0,
         "unit": {
             "de": "%",
-            "en": "TODO"
+            "en": "%"
         },
         "type": "guess",
         "text": {
             "de": "Wie gro\u00df war die Differenz zwischen den Alterseink\u00fcnfte von Frauen und M\u00e4nnern im Jahr 2025?",
-            "en": "TODO"
+            "en": "How big was the difference between the retirement income of women and men in 2025?"
         },
         "answer": 24.2,
         "min_guess": 0,
@@ -822,7 +822,7 @@
         "max_points": 10,
         "explanation": {
             "de": "Der Gender\u202fPension\u202fGap\u202flag bei 24,2\u202f%. Die Alterseink\u00fcnfte von Frauen waren demnach durchschnittlich mehr als ein Viertel niedriger als die von M\u00e4nnern.",
-            "en": "TODO"
+            "en": "The gender pension gap is 24.2%. The retirement income of women was on average more than a quarter lower than that of men."
         },
         "image": {
             "de": "TODO",
@@ -843,7 +843,7 @@
         "type": "guess",
         "text": {
             "de": "Wie hoch war insgesamt das Fahrgastaufkommen im Nah- und Fernverkehr im Jahr 2025?",
-            "en": "TODO"
+            "en": "What was the total number of passengers on local and long-distance transport in 2025?"
         },
         "answer": 11.3,
         "min_guess": 0,
@@ -851,7 +851,7 @@
         "max_points": 10,
         "explanation": {
             "de": "Das Fahrgastaufkommen blieb 2025 relativ stabil bei 11,3\u202fMilliarden Fahrg\u00e4sten im Vergleich zum vorherigen Jahr.",
-            "en": "TODO"
+            "en": "Passenger volumes remained relatively stable in 2025 at 11.3 billion passengers compared to the previous year."
         },
         "image": {
             "de": "TODO",
