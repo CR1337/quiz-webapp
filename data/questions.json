@@ -60,8 +60,8 @@
     {
         "index": 2,
         "unit": {
-            "de": "Prozent",
-            "en": "Percent"
+            "de": "%",
+            "en": "%"
         },
         "type": "guess",
         "text": {
@@ -147,8 +147,8 @@
     {
         "index": 5,
         "unit": {
-            "de": "Prozent",
-            "en": "Percent"
+            "de": "%",
+            "en": "%"
         },
         "type": "guess",
         "text": {
@@ -176,8 +176,8 @@
     {
         "index": 6,
         "unit": {
-            "de": "Prozent",
-            "en": "Percent"
+            "de": "%",
+            "en": "%"
         },
         "type": "guess",
         "text": {
@@ -232,8 +232,8 @@
     {
         "index": 8,
         "unit": {
-            "de": "Prozent",
-            "en": "Percent"
+            "de": "%",
+            "en": "%"
         },
         "type": "guess",
         "text": {
@@ -346,8 +346,8 @@
     {
         "index": 12,
         "unit": {
-            "de": "Prozent",
-            "en": "Percent"
+            "de": "%",
+            "en": "%"
         },
         "type": "guess",
         "text": {
@@ -375,8 +375,8 @@
     {
         "index": 13,
         "unit": {
-            "de": "Prozent",
-            "en": "Percent"
+            "de": "%",
+            "en": "%"
         },
         "type": "guess",
         "text": {
