@@ -42,10 +42,18 @@ del config["back_image_b64"]
 with open(os.path.join("data", "localization.json"), 'r') as f:
     localization = json.load(f)
 
+if config["intro_explanation"]["de"] == "":
+    localization["intro_explanation"]["de"] = None
+else:
+    localization["intro_explanation"]["de"] = config["intro"]["de"]
+
+if config["intro_explanation"]["en"] == "":
+    localization["intro_explanation"]["en"] = None
+else:
+    localization["intro_explanation"]["en"] = config["intro"]["en"]
+
 localization["intro"]["de"] = config["title"]["de"]
 localization["intro"]["en"] = config["title"]["en"]
-localization["intro_explanation"]["de"] = config["intro"]["de"]
-localization["intro_explanation"]["en"] = config["intro"]["en"]
 
 with open(os.path.join("data", "localization.json"), 'w') as f:
     json.dump(localization, f)
@@ -65,6 +73,10 @@ for filename in image_filenames:
 for question in questions:
     image_bytes = base64.b64decode(question["image_b64"])
     image_filename = os.path.join("images", "questions", question["image"]["de"])
+    if question["image_caption"]["de"] == "":
+        question["image_caption"]["de"] = None
+    if question["image_caption"]["en"] == "":
+        question["image_caption"]["en"] = None
     with open(image_filename, 'wb') as f:
         f.write(image_bytes)
 
