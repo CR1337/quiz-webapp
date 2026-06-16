@@ -94,5 +94,9 @@
     "intro": {
         "de": "Quiz - {number} Fragen zur Statistik",
         "en": "Quiz - {number} questions about statistics"
+    },
+    "intro_explanation": {
+        "de": "",
+        "en": ""
     }
 }
