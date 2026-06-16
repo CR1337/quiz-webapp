@@ -679,17 +679,17 @@
     {
         "index": 0,
         "unit": {
-            "de": "Tonnen",
-            "en": "Metric tons"
+            "de": "Tausend Tonnen",
+            "en": "Thousand metric tons"
         },
         "type": "guess",
         "text": {
             "de": "Wie viel Tonnen Fleischersatzprodukte wurden 2025 produziert?",
             "en": "How many tons of meat substitute products were produced in 2025?"
         },
-        "answer": 124900,
+        "answer": 124.9,
         "min_guess": 0,
-        "max_guess": 200000,
+        "max_guess": 200,
         "max_points": 10,
         "explanation": {
             "de": "Rund 124\u202f900\u202fTonnen Fleischersatzprodukte wurden 2025 produziert, im Jahr zuvor waren es noch 126\u202f500\u202fTonnen.",
