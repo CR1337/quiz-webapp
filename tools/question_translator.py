@@ -24,7 +24,7 @@ for q in tqdm(questions, desc="Translating", total=len(questions)):
 
     if q["type"] == "multiple_choice" and any(a == "TODO" for a in q["answers"]["en"]):
         for i in range(len(q["answers"]["en"])):
-            q["answwers"]["en"][i] = translator.translate(q["answers"]["de"][i])
+            q["answers"]["en"][i] = translator.translate(q["answers"]["de"][i])
 
 with open("data/questions.json", 'w') as f:
     json.dump(questions, f, indent=4)
