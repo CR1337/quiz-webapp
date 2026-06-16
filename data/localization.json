@@ -16,8 +16,8 @@
         "en": "Thank you for participating in the quiz."
     },
     "score_announcement": {
-        "de": "Sie haben {score} von {max_points} Punkte erreicht – das ist {predicate}.",
-        "en": "You scored {score} out of {max_points} points – that's {predicate}."
+        "de": "Sie haben {score} von {max_points} Punkte erreicht – das ist {predicate}. Wenn Sie mehr Daten suchen, besuchen Sie uns auf [www.destatis.de](https://www.destatis.de/DE/Home/_inhalt.html).",
+        "en": "You scored {score} out of {max_points} points – that's {predicate}. If you're looking for more data, visit us at [www.destatis.de](https://www.destatis.de/EN/Home/_node.html)."
     },
     "predicates": {
         "de": [
@@ -92,11 +92,7 @@
         "en": "No"
     },
     "intro": {
-        "de": "Quiz zum Zensus | {number} Fragen",
-        "en": "Census Quiz - {number} questions"
-    },
-    "intro_explanation": {
-        "de": "Beim Zensus wird die Zahl der Menschen, Gebäude und Wohnungen im Land erfasst. Bislang erfolgt dies europaweit alle 10 Jahre. Beim Zensus werden auch grundlegende Informationen zur Bildung und Erwerbstätigkeit der Bevölkerung abgefragt und auch einige Daten zur Wohnung (z.B. Heizungsart).\n\nFrüher wurden beim Zensus alle Haushalte befragt. Nach und nach werden mehr Daten aus Registern gezogen, um Haushalte zu entlasten. Ziel ist es, künftig einen sogenannten Registerzensus durchzuführen, bei dem nur sehr wenige Daten per Erhebung erfasst werden.\n\nDie nun folgenden Fragen beziehen sich auf den letzten Zensus, der 2022 durchgeführt wurde.",
-        "en": "The census records the number of people, buildings, and housing units in the country. So far, this has been done every 10 years across Europe. The census also collects basic information about the population’s education and employment status, as well as some data about housing (e.g., type of heating).\n\nIn the past, all households were surveyed during the census. Gradually, more data is being sourced from registers to reduce the burden on households. The goal is to eventually conduct a so-called register-based census, where only a very small amount of data is collected through surveys.\n\nThe following questions refer to the last census, which was conducted in 2022."
+        "de": "Quiz - {number} Fragen zur Statistik",
+        "en": "Quiz - {number} questions about statistics"
     }
 }
