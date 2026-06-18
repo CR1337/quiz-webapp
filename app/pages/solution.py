@@ -11,16 +11,11 @@ def render_solution(current_question: Question):
     st.header(current_question.text[Localization.language()])
 
     if isinstance(current_question, GuessQuestion):
-        if current_question.unit[Localization.language()] is not None:
-            safe_unit = current_question.unit[Localization.language()]
-        else:
-            safe_unit = ""
-
         st.subheader(
-            f"{Localization.get('your_answer')}: {st.session_state['answer']:.{current_question.decimal_places}f} {safe_unit}"
+            f"{Localization.get('your_answer')}: {current_question.render_number_with_unit(st.session_state['answer'])}"
         )
         st.subheader(
-            f"{Localization.get('correct_answer')}: {current_question.answer} {safe_unit}"
+            f"{Localization.get('correct_answer')}: {current_question.render_number_with_unit(current_question.answer)}"
         )
 
     elif isinstance(current_question, MultipleChoiceQuestion):
