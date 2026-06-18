@@ -160,8 +160,8 @@
         "max_guess": 100,
         "max_points": 10,
         "explanation": {
-            "de": "Die beim Zensus 2022 ermittelte Erwerbstätigenquote in Deutschland betrug 75,7%.",
-            "en": "The employment rate in Germany as determined by the 2022 census was 75.7%."
+            "de": "Die beim Zensus 2022 ermittelte Erwerbstätigenquote in Deutschland betrug 75,7 %.",
+            "en": "The employment rate in Germany as determined by the 2022 census was 75.7 %."
         },
         "image": {
             "de": "Wirtschaft_Unternehmen.png",
@@ -245,8 +245,8 @@
         "max_guess": 100,
         "max_points": 10,
         "explanation": {
-            "de": "Laut Zensus 2022 betrug der Anteil der Wohnungen mit Gasheizung in Deutschland 56%.",
-            "en": "According to the 2022 census, 56% of apartments in Germany used gas heating."
+            "de": "Laut Zensus 2022 betrug der Anteil der Wohnungen mit Gasheizung in Deutschland 56 %.",
+            "en": "According to the 2022 census, 56 % of apartments in Germany used gas heating."
         },
         "image": {
             "de": "Wohnung_Heizkörper.png",
@@ -359,8 +359,8 @@
         "max_guess": 100,
         "max_points": 10,
         "explanation": {
-            "de": "Im Zensus 2022 wurden 73% der Meldungen zu Bildung und Erwerbstätigkeit über die Online-Fragebögen übermittelt.",
-            "en": "In the 2022 census, 73% of reports on education and employment were submitted via online forms."
+            "de": "Im Zensus 2022 wurden 73 % der Meldungen zu Bildung und Erwerbstätigkeit über die Online-Fragebögen übermittelt.",
+            "en": "In the 2022 census, 73 % of reports on education and employment were submitted via online forms."
         },
         "image": {
             "de": "Zuhause_Privates_Büro_Gaming.png",
@@ -388,8 +388,8 @@
         "max_guess": 100,
         "max_points": 10,
         "explanation": {
-            "de": "Laut Zensus 2022 hatten 25% der Erwerbstätigen einen Hochschulabschluss.",
-            "en": "According to the 2022 census, 25% of employed people held a college degree."
+            "de": "Laut Zensus 2022 hatten 25 % der Erwerbstätigen einen Hochschulabschluss.",
+            "en": "According to the 2022 census, 25 % of employed people held a college degree."
         },
         "image": {
             "de": "Doktormütze.png",
