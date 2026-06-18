@@ -36,7 +36,7 @@
                         ]
                     }
                 },
-                "additionalProperties": false
+                "additionalProperties": true
             },
             "type": {
                 "type": "string",
@@ -59,7 +59,7 @@
                         "type": "string"
                     }
                 },
-                "additionalProperties": false
+                "additionalProperties": true
             },
             "explanation": {
                 "type": "object",
@@ -75,7 +75,7 @@
                         "type": "string"
                     }
                 },
-                "additionalProperties": false
+                "additionalProperties": true
             },
             "image": {
                 "type": "object",
@@ -91,7 +91,7 @@
                         "type": "string"
                     }
                 },
-                "additionalProperties": false
+                "additionalProperties": true
             },
             "image_caption": {
                 "type": "object",
@@ -113,7 +113,7 @@
                         ]
                     }
                 },
-                "additionalProperties": false
+                "additionalProperties": true
             },
             "answers": {
                 "type": "object",
@@ -135,13 +135,9 @@
                         }
                     }
                 },
-                "additionalProperties": false
+                "additionalProperties": true
             },
             "right_answer_index": {
-                "type": "integer",
-                "minimum": 0
-            },
-            "score": {
                 "type": "integer",
                 "minimum": 0
             },
@@ -177,8 +173,7 @@
                 "then": {
                     "required": [
                         "answers",
-                        "right_answer_index",
-                        "score"
+                        "right_answer_index"
                     ]
                 }
             },
@@ -199,6 +194,6 @@
                 }
             }
         ],
-        "additionalProperties": false
+        "additionalProperties": true
     }
 }
