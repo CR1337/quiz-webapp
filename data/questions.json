@@ -707,6 +707,7 @@
     },
     {
         "index": 23,
+        "is_hm_time": true,
         "unit": {
             "de": "Stunden",
             "en": "Hours"

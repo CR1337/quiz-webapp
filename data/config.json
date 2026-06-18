@@ -1,16 +1,12 @@
 {
-    "question_selection_method": "random",
+    "question_selection_method": "list",
     "group_coupled_questions": true,
     "shuffle_questions": true,
     "question_selection_methods": {
         "all": {},
         "list": {
             "question_indices": [
-                1,
-                3,
-                5,
-                7,
-                9
+                23
             ]
         },
         "random": {

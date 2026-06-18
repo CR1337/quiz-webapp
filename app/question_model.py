@@ -3,6 +3,7 @@ from abc import ABC, abstractmethod
 from typing import Any, Callable, Dict, List, Tuple, Optional
 from numbers import Number
 import random
+import math
 
 from app.localization import Localization
 
@@ -44,6 +45,8 @@ class Question(ABC):
                 parameters |= {"score_function": eval(question_dict["score_function"])}
             if "unit" in question_dict:
                 parameters |= {"unit": question_dict["unit"]}
+            if "is_hm_time" in question_dict:
+                parameters |= {"is_hm_time": question_dict["is_hm_time"]}
             return GuessQuestion(**parameters)
 
         elif question_type == "multiple_choice":
@@ -134,6 +137,7 @@ class GuessQuestion(Question):
     _max_points: int
     _decimal_places: int
     _unit: Dict[str, str | None]
+    _is_hm_time: bool
 
     def __init__(
         self,
@@ -149,6 +153,7 @@ class GuessQuestion(Question):
         explanation: Dict[str, str] | None = None,
         image: Dict[str, str] | None = None,
         image_caption: Dict[str, str] | None = None,
+        is_hm_time: Optional[bool] = None
     ):
         self._answer = answer
         self._min_guess, self._max_guess = self._compute_slider_range(answer)
@@ -175,16 +180,39 @@ class GuessQuestion(Question):
             coupled_question_indices=coupled_question_indices,
         )
         self._unit = unit
+        print(f"{is_hm_time=}")
+        self._is_hm_time = is_hm_time or False
 
     def render_number_with_unit(self, number: float) -> str:
-        string = f"{number:.{self._decimal_places}f}"
+        string = ""
 
-        if Localization.language() == "de":
-            string = string.replace(".", ",")
+        if self._is_hm_time:
+            fractional, hours = math.modf(number)
+            minutes = round(fractional * 60)
 
-        if self._unit[Localization.language()] is not None:
-            safe_unit = self._unit[Localization.language()]
-            string += f" {safe_unit}"
+            hours = int(hours)
+            minutes= int(minutes)
+
+            if minutes == 0:
+                if Localization.language() == "de":
+                    string = f"{hours} Stunden"
+                else:
+                    string = f"{hours} hours"
+            else:
+                if Localization.language() == "de":
+                    string = f"{hours} Stunden und {minutes} Minuten"
+                else:
+                    string = f"{hours} hours and {minutes} minutes"
+
+        else:
+            string = f"{number:.{self._decimal_places}f}"
+
+            if Localization.language() == "de":
+                string = string.replace(".", ",")
+
+            if self._unit[Localization.language()] is not None:
+                safe_unit = self._unit[Localization.language()]
+                string += f" {safe_unit}"
 
         return string
 
