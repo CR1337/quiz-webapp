@@ -181,6 +181,17 @@ class GuessQuestion(Question):
             return len(str(x).split(".")[-1])
         else:
             return 0
+    def render_number_with_unit(self, number: float) -> str:
+        string = f"{number:.{self._decimal_places}f}"
+
+        if Localization.language() == "de":
+            string = string.replace(".", ",")
+
+        if self._unit[Localization.language()] is not None:
+            safe_unit = self._unit[Localization.language()]
+            string += f" {safe_unit}"
+
+        return string
 
     def _compute_slider_range(self, answer: Number) -> Tuple[Number, Number]:
         range_half = answer / self.SLIDER_SCALE_FACTOR
