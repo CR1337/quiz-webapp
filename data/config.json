@@ -1,5 +1,5 @@
 {
-    "question_selection_method": "list",
+    "question_selection_method": "random",
     "group_coupled_questions": true,
     "shuffle_questions": true,
     "question_selection_methods": {
