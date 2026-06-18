@@ -15,8 +15,8 @@
         "max_guess": 100,
         "max_points": 10,
         "explanation": {
-            "de": "Die Fl\u00e4che der Bundesrepublik hat sich seit der Deutschen Einheit um 43,8% erh\u00f6ht. Somit ist die Fl\u00e4che 357 595,99 km\u00b2 gro\u00df.",
-            "en": "The area of \u200b\u200bthe Federal Republic has increased by 43.8% since German unification. The area is therefore 357,595.99 km\u00b2."
+            "de": "Die Fl\u00e4che der Bundesrepublik hat sich seit der Deutschen Einheit um 43,8 % erh\u00f6ht. Somit ist die Fl\u00e4che 357 595,99 km\u00b2 gro\u00df.",
+            "en": "The area of \u200b\u200bthe Federal Republic has increased by 43.8 % since German unification. The area is therefore 357,595.99 km\u00b2."
         },
         "image": {
             "de": "Park_Umwelt_Soziales.png",
@@ -116,7 +116,7 @@
         ],
         "explanation": {
             "de": "In Mecklenburg-Vorpommern arbeiteten von allen 4 750 landwirtschaftlichen Betrieben 24,2 % \u00f6kologisch, bzw. 1 150 Betriebe absolut. Somit arbeitet fast jeder Vierte landwirtschaftliche Betrieb nach \u00f6kologischen Standards.",
-            "en": "In Mecklenburg-Western Pomerania, of all 4,750 agricultural businesses, 24.2% worked organically, or 1,150 farms in absolute terms. This means that almost one in four agricultural businesses works according to ecological standards."
+            "en": "In Mecklenburg-Western Pomerania, of all 4,750 agricultural businesses, 24.2 % worked organically, or 1,150 farms in absolute terms. This means that almost one in four agricultural businesses works according to ecological standards."
         },
         "image": {
             "de": "Umwelt_Energie.png",
@@ -174,7 +174,7 @@
         "max_points": 10,
         "explanation": {
             "de": "Um 5,8 % teurer waren Fahrschule und F\u00fchrerscheingeb\u00fchr im Jahr 2024 gegen\u00fcber dem Jahr 2023.",
-            "en": "Driving school and driving license fees were 5.8% more expensive in 2024 compared to 2023."
+            "en": "Driving school and driving license fees were 5.8 % more expensive in 2024 compared to 2023."
         },
         "image": {
             "de": "Verkehr_Mobilit\u00e4t2.png",
@@ -231,8 +231,8 @@
         "max_guess": 100,
         "max_points": 10,
         "explanation": {
-            "de": "Frauen haben im Jahr 2025 in Deutschland pro Stunde durchschnittlich 16\u202f% weniger verdient als M\u00e4nner.",
-            "en": "In 2025, women in Germany will earn an average of 16% less per hour than men."
+            "de": "Frauen haben im Jahr 2025 in Deutschland pro Stunde durchschnittlich 16 % weniger verdient als M\u00e4nner.",
+            "en": "In 2025, women in Germany will earn an average of 16 % less per hour than men."
         },
         "image": {
             "de": "Wirtschaft_Unternehmen.png",
@@ -361,7 +361,7 @@
         ],
         "explanation": {
             "de": "Weltweiter Spitzenreiter bei der Repr\u00e4sentation von Frauen ist laut den aktuellsten Daten der ostafrikanische Staat Ruanda mit einem Frauenanteil von 63,8 %.  In Kuba (55,7 %), Nicaragua (55 %) und Mexiko (50,2 %) waren die weiblichen Abgeordneten ebenfalls in der \u00dcberzahl.",
-            "en": "According to the most recent data, the world leader in the representation of women is the East African state of Rwanda with a proportion of women of 63.8%.  Female MPs were also in the majority in Cuba (55.7%), Nicaragua (55%) and Mexico (50.2%)."
+            "en": "According to the most recent data, the world leader in the representation of women is the East African state of Rwanda with a proportion of women of 63.8 %.  Female MPs were also in the majority in Cuba (55.7 %), Nicaragua (55 %) and Mexico (50.2 %)."
         },
         "image": {
             "de": "B\u00fcro_Arbeit_Allgemeines.png",
@@ -476,8 +476,8 @@
         "max_guess": 100,
         "max_points": 10,
         "explanation": {
-            "de": "Rund 77% der Bev\u00f6lkerung spricht zu Hause ausschlie\u00dflich Deutsch.",
-            "en": "Around 77% of the population only speaks German at home."
+            "de": "Rund 77 % der Bev\u00f6lkerung spricht zu Hause ausschlie\u00dflich Deutsch.",
+            "en": "Around 77 % of the population only speaks German at home."
         },
         "image": {
             "de": "Szenarien_Quiz_2026_Zeichenfl\u00e4che 1 Kopie 7.png",
@@ -564,7 +564,7 @@
         "max_points": 10,
         "explanation": {
             "de": "Im Jahr 2025 waren nach vorl\u00e4ufigen Ergebnissen jede oder jeder sechste (16,4\u202f%) im Stra\u00dfenverkehr Get\u00f6tete mit dem Fahrrad unterwegs.",
-            "en": "According to preliminary results, in 2025 one or one in six (16.4%) people killed in road traffic were traveling by bicycle."
+            "en": "According to preliminary results, in 2025 one or one in six (16.4 %) people killed in road traffic were traveling by bicycle."
         },
         "image": {
             "de": "Szenarien_Quiz_2026_Zeichenfl\u00e4che 1 Kopie 8.png",
@@ -592,8 +592,8 @@
         "max_guess": 10,
         "max_points": 10,
         "explanation": {
-            "de": "Deutschlandweit ist die Bev\u00f6lkerungszahl von 1990 bis 2024 um 4,8% gestiegen.",
-            "en": "Across Germany, the population increased by 4.8% from 1990 to 2024."
+            "de": "Deutschlandweit ist die Bev\u00f6lkerungszahl von 1990 bis 2024 um 4,8 % gestiegen.",
+            "en": "Across Germany, the population increased by 4.8 % from 1990 to 2024."
         },
         "image": {
             "de": "Park_Umwelt_Soziales.png",
@@ -635,7 +635,7 @@
         ],
         "explanation": {
             "de": "Weltweit liegt Deutschland aktuell (LP21) auf Platz 58 mit einem Frauenanteil von 32,4 %.",
-            "en": "Germany is currently in 58th place worldwide (LP21) with a proportion of women of 32.4%."
+            "en": "Germany is currently in 58th place worldwide (LP21) with a proportion of women of 32.4 %."
         },
         "image": {
             "de": "B\u00fcro_Arbeit_Allgemeines.png",
@@ -765,7 +765,7 @@
         ],
         "explanation": {
             "de": "Unter den 15,5\u202fMillionen Menschen, die sich zu Hause vorwiegend oder ausschlie\u00dflich in einer anderen Sprache als Deutsch verst\u00e4ndigten, war T\u00fcrkisch mit einem Anteil von 14\u202f% die am h\u00e4ufigsten gesprochene Sprache. Auch Russisch (12\u202f%) und Arabisch (9\u202f%) wurde in Haushalten hierzulande vergleichsweise h\u00e4ufig gesprochen.",
-            "en": "Among the 15.5 million people who communicated primarily or exclusively in a language other than German at home, Turkish was the most frequently spoken language with a share of 14%. Russian (12%) and Arabic (9%) were also spoken comparatively frequently in households in this country."
+            "en": "Among the 15.5 million people who communicated primarily or exclusively in a language other than German at home, Turkish was the most frequently spoken language with a share of 14 %. Russian (12 %) and Arabic (9 %) were also spoken comparatively frequently in households in this country."
         },
         "image": {
             "de": "Szenarien_Quiz_2026_Zeichenfl\u00e4che 1 Kopie 2.png",
@@ -823,7 +823,7 @@
         "max_points": 10,
         "explanation": {
             "de": "Der Gender\u202fPension\u202fGap\u202flag bei 24,2\u202f%. Die Alterseink\u00fcnfte von Frauen waren demnach durchschnittlich mehr als ein Viertel niedriger als die von M\u00e4nnern.",
-            "en": "The gender pension gap is 24.2%. The retirement income of women was on average more than a quarter lower than that of men."
+            "en": "The gender pension gap is 24.2 %. The retirement income of women was on average more than a quarter lower than that of men."
         },
         "image": {
             "de": "Szenarien_Quiz_2026_Zeichenfl\u00e4che 1 Kopie 17.png",
