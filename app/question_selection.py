@@ -9,8 +9,8 @@ class QuestionSelector:
         cls, question_list: List[Dict[str, Any]]
     ) -> List[Dict[str, Any]]:
         method = Config.get("question_selection_method")
-        group_coupled_questions = Config("group_coupled_questions")
-        shuffle_questions = Config("shuffle_questions")
+        group_coupled_questions = Config.get("group_coupled_questions")
+        shuffle_questions = Config.get("shuffle_questions")
         match method:
             case "all":
                 question_list = cls._select_all_questions(

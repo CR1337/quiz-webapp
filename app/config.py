@@ -6,7 +6,7 @@ from typing import Any
 class Config:
 
     with open(os.path.join("data", "config.json"), "r") as f:
-        _config = json.load()
+        _config = json.load(f)
 
     @classmethod
     def get(cls, key: str) -> Any:
