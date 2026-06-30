@@ -3,36 +3,38 @@ import glob
 import json
 import streamlit as st
 from streamlit_scroll_to_top import scroll_to_here
-from app.question_model import Question
+# from app.question_model import Question
+from app.question_model.question_factory import QuestionFactory
+from app.question_model.question import Question
 from app.localization import Localization
 from app.validation import QuestionValidator
 from app.state import QuizState
 from app.question_selection import QuestionSelector
 
 
-def render_main() -> Question | None:
-    if st.session_state.get("language", None) is None:
-        st.session_state["language"] = "de"
-
+def configure_page():
+    # set favicon
     favicon_files = glob.glob(os.path.join("images", "favicon.*"))
-
     favicon_path = favicon_files[0] if favicon_files else None
 
+    # set page config
     st.set_page_config(
         page_title=Localization.get("quiz"),
         page_icon=favicon_path,
         layout="centered",
     )
 
+    # configure scroll to top
     if "scroll_to_top" not in st.session_state:
         st.session_state["scroll_to_top"] = False
 
     if st.session_state["scroll_to_top"]:
         scroll_to_here(0, key="top")
         st.session_state["scroll_to_top"] = False
-    st.write("")
-    st.write("")
 
+    # remove streamlit buttons
+    st.write("")
+    st.write("")
     st.markdown(
         r"""
         <style>
@@ -54,6 +56,8 @@ def render_main() -> Question | None:
         unsafe_allow_html=True,
     )
 
+
+def initialize_questions():
     question_filename: str = st.query_params.get("question_filename") or os.path.join(
         "data", "questions.json"
     )
@@ -74,8 +78,8 @@ def render_main() -> Question | None:
         question_list = QuestionSelector.select_questions(question_list, config)
 
         st.session_state["question_index"] = 0
-        st.session_state["questions"] = Question.many_from_dict(question_list)
-        st.session_state["max_points"] = Question.get_max_points(
+        st.session_state["questions"] = QuestionFactory.many_from_dict(question_list)
+        st.session_state["max_points"] = Question.get_max_points_for(
             st.session_state["questions"]
         )
         st.session_state["score"] = 0
@@ -86,3 +90,8 @@ def render_main() -> Question | None:
     current_question = st.session_state["questions"][st.session_state["question_index"]]
 
     return current_question
+
+
+def render_main() -> Question | None:
+    configure_page()
+    return initialize_questions()

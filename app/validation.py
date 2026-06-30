@@ -51,13 +51,6 @@ class QuestionValidator(JsonValidator):
                 return (False, f"English image for question #{idx} does not exist.")
 
             if question["type"] == "multiple_choice":
-                if len(question["answers"]["de"]) != len(question["answers"]["en"]):
-                    return (
-                        False,
-                        f"There are different amounts of answers for "
-                        f"question #{idx} for both languages.",
-                    )
-
                 if not isinstance(question["right_answer_index"], int):
                     return (
                         False,
@@ -72,11 +65,17 @@ class QuestionValidator(JsonValidator):
                         f"has to be greater of equal to zero.",
                     )
 
-                if question["right_answer_index"] > len(question["answers"]["de"]):
+                if question["right_answer_index"] > len(question["answers"]):
                     return (
                         False,
                         f"The right_answer_index for question #{idx} has "
                         f"to be less than the amount.",
+                    )
+
+                if len(question["scores"]) != len(question["answers"]):
+                    return (
+                        False,
+                        f"There must be as many scores as answers in question #{idx}."
                     )
 
             elif question["type"] == "guess":

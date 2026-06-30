@@ -1,5 +1,7 @@
 import streamlit as st
-from app.question_model import Question, GuessQuestion, MultipleChoiceQuestion
+from app.question_model.question import Question
+from app.question_model.guess_question import GuessQuestion
+from app.question_model.multiple_choice_question import MultipleChoiceQuestion
 from app.pages.shared import render_score, render_progress, scroll_to_top
 from app.localization import Localization
 from app.state import QuizState
@@ -21,11 +23,11 @@ def render_solution(current_question: Question):
     elif isinstance(current_question, MultipleChoiceQuestion):
         st.subheader(
             f":primary[{Localization.get('your_answer')}: "
-            f"{current_question.answers[Localization.language()][st.session_state['answer']]}]"
+            f"{current_question.answers[st.session_state['answer']][Localization.language()]}]"
         )
         st.subheader(
             f"{Localization.get('correct_answer')}: "
-            f"{current_question.answers[Localization.language()][current_question.right_answer_index]}"
+            f"{current_question.answers[current_question.right_answer_index][Localization.language()]}"
         )
 
     st.divider()

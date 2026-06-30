@@ -1,7 +1,7 @@
 import os
 import streamlit as st
 import streamlit.components.v1 as components
-from app.question_model import Question
+from app.question_model.question import Question
 from app.localization import Localization
 from app.state import QuizState
 from app.colors import Colors
@@ -25,7 +25,7 @@ def render_score(display_delta: bool = False):
 
         left_column.metric(
             label=f"{Localization.get('score_delta')} {index + 1}",
-            value=f"{st.session_state['last_score']}/{question.max_points}",
+            value=f"{st.session_state['last_score']}/{question.get_max_points()}",
         )
 
         right_column.metric(

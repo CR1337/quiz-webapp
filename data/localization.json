@@ -98,5 +98,17 @@
     "intro_explanation": {
         "de": "Weitere Erklärung",
         "en": "Further explanation"
+    },
+    "hours": {
+        "de": "Stunden",
+        "en": "Hours"
+    },
+    "minutes": {
+        "de": "Minuten",
+        "en": "minutes"
+    },
+    "and": {
+        "de": "und",
+        "en": "and"
     }
 }
