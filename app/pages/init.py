@@ -62,6 +62,7 @@ def render_buttons():
             type="primary"
         ):
             st.session_state["state"] = QuizState.QUESTION
+            st.session_state["slider_moved"] = False
             scroll_to_top()
             st.rerun()
 

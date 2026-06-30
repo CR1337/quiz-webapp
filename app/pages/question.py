@@ -33,6 +33,9 @@ def render_question(current_question: Question):
         render_question_image(current_question)
 
     if isinstance(current_question, GuessQuestion):
+        def slider_on_change():
+            st.session_state["slider_moved"] = True
+
         guess = st.slider(
             " ",
             min_value=float(current_question.min_guess),
@@ -41,9 +44,11 @@ def render_question(current_question: Question):
             step=float(current_question.step_size),
             format=current_question.format_,
             label_visibility="hidden",
+            on_change=slider_on_change
         )
         if st.button(
-            Localization.get("submit_guess"), use_container_width=True, type="primary"
+            Localization.get("submit_guess"), use_container_width=True, type="primary",
+            disabled=not st.session_state["slider_moved"]
         ):
             st.session_state["answer"] = guess
             scroll_to_top()

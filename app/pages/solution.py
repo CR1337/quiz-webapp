@@ -47,5 +47,6 @@ def render_solution(current_question: Question):
             st.session_state["state"] = QuizState.RESULT
         else:
             st.session_state["state"] = QuizState.QUESTION
+            st.session_state["slider_moved"] = False
         scroll_to_top()
         st.rerun()

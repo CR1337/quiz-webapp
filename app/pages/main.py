@@ -80,6 +80,7 @@ def initialize_questions():
         )
         st.session_state["score"] = 0
         st.session_state["state"] = QuizState.INIT
+        st.session_state["slider_moved"] = False
         st.session_state["answer"] = None
         st.session_state["last_score"] = None
 
