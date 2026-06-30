@@ -3,7 +3,6 @@ import glob
 import json
 import streamlit as st
 from streamlit_scroll_to_top import scroll_to_here
-# from app.question_model import Question
 from app.question_model.question_factory import QuestionFactory
 from app.question_model.question import Question
 from app.localization import Localization
@@ -72,10 +71,7 @@ def initialize_questions():
         with open(question_filename, "r") as file:
             question_list = json.load(file)
 
-        with open(os.path.join("data", "config.json"), "r") as file:
-            config = json.load(file)
-
-        question_list = QuestionSelector.select_questions(question_list, config)
+        question_list = QuestionSelector.select_questions(question_list)
 
         st.session_state["question_index"] = 0
         st.session_state["questions"] = QuestionFactory.many_from_dict(question_list)

@@ -1,29 +1,30 @@
 from random import choice, sample, shuffle
 from typing import Any, Dict, List
+from app.config import Config
 
 
 class QuestionSelector:
     @classmethod
     def select_questions(
-        cls, question_list: List[Dict[str, Any]], config: Dict[str, Any]
+        cls, question_list: List[Dict[str, Any]]
     ) -> List[Dict[str, Any]]:
-        method = config["question_selection_method"]
-        group_coupled_questions = config["group_coupled_questions"]
-        shuffle_questions = config["shuffle_questions"]
+        method = Config.get("question_selection_method")
+        group_coupled_questions = Config("group_coupled_questions")
+        shuffle_questions = Config("shuffle_questions")
         match method:
             case "all":
                 question_list = cls._select_all_questions(
                     question_list, group_coupled_questions
                 )
             case "list":
-                question_indices = config["question_selection_methods"][method][
+                question_indices = Config.get("question_selection_methods")[method][
                     "question_indices"
                 ]
                 question_list = cls._select_list_questions(
                     question_list, question_indices, group_coupled_questions
                 )
             case "random":
-                question_amount = config["question_selection_methods"][method][
+                question_amount = Config.get("question_selection_methods")[method][
                     "question_amount"
                 ]
                 question_list = cls._select_random_questions(
