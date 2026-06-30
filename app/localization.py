@@ -1,7 +1,6 @@
 import os
 import json
 import streamlit as st
-from numbers import Number
 from typing import Any, Dict
 
 
@@ -10,13 +9,17 @@ LocalizedPath = Dict[str, str]
 
 
 class Localization:
-    LOCALIZATION_FILENAME: str = os.path.join("data", "localization.json")
+    STATIC_LOCALIZATION_FILENAME: str = os.path.join("data", "static_localization.json")
+    DYNAMIC_LOCALIZATION_FILENAME: str = os.path.join("data", "dynamic_localization.json")
 
     if st.session_state.get("language", None) is None:
         st.session_state["language"] = "de"
 
-    with open(LOCALIZATION_FILENAME, "r", encoding="utf-8") as file:
+    with open(STATIC_LOCALIZATION_FILENAME, "r", encoding="utf-8") as file:
         _localization = json.load(file)
+
+    with open(DYNAMIC_LOCALIZATION_FILENAME, "r", encoding="utf-8") as file:
+        _localization |= json.load(file)
 
     @classmethod
     def get_for_language(cls, key: str, language: str) -> Any:

@@ -91,14 +91,6 @@
         "de": "Nein",
         "en": "No"
     },
-    "intro": {
-        "de": "Quiz - {number} Fragen",
-        "en": "Quiz - {number} questions"
-    },
-    "intro_explanation": {
-        "de": "Weitere Erklärung",
-        "en": "Further explanation"
-    },
     "hours": {
         "de": "Stunden",
         "en": "Hours"
