@@ -1,9 +1,27 @@
 import os
 from itertools import count
+import zipfile
 import streamlit as st
+from app.config import Config
 from app.pages.shared import render_image, scroll_to_top
 from app.localization import Localization
 from app.state import QuizState
+
+
+def render_importer():
+    if not Config.get("question_importer"):
+        return
+
+    file = st.file_uploader("Quizdatei hochladen", ".zip")
+    if file:
+        with zipfile.ZipFile(file, "r") as zip_file:
+            for filename in zip_file.namelist():
+                with zip_file.open(filename, "r") as in_file:
+                    with open(filename, "w") as out_file:
+                        out_file.write(in_file.read())
+
+        st.session_state.clear()
+        st.rerun()
 
 
 def render_title():
@@ -60,3 +78,4 @@ def render_init():
     st.divider()
     render_explanation()
     render_buttons()
+    render_importer()
