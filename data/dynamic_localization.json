@@ -6,5 +6,9 @@
     "intro_explanation": {
         "de": "Weitere Erklärung",
         "en": "Further explanation"
+    },
+    "thank_you": {
+        "de": "Danke für die Teilnahme am Quiz.",
+        "en": "Thank you for participating in the quiz."
     }
 }

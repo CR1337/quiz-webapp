@@ -11,10 +11,6 @@
         "de": "Schätzung abgeben",
         "en": "Submit guess"
     },
-    "thank_you": {
-        "de": "Danke für die Teilnahme am Quiz.",
-        "en": "Thank you for participating in the quiz."
-    },
     "score_announcement": {
         "de": "Sie haben {score} von {max_points} Punkte erreicht – das ist {predicate}.",
         "en": "You scored {score} out of {max_points} points – that's {predicate}."
