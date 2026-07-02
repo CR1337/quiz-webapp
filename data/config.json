@@ -1,5 +1,5 @@
 {
-    "question_selection_method": "all",
+    "question_selection_method": "random_set",
     "group_coupled_questions": true,
     "shuffle_questions": true,
     "question_importer": true,
@@ -12,6 +12,19 @@
         },
         "random": {
             "question_amount": 10
+        },
+        "random_set": {
+            "question_sets": [
+                [
+                    0, 1, 2, 3, 4
+                ],
+                [
+                    5, 6, 7, 8, 9
+                ]
+            ]
+        },
+        "exclude_list": {
+            "excluded_indices": [0]
         }
     }
 }
