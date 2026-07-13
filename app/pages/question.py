@@ -1,7 +1,6 @@
 import streamlit as st
 from numbers import Number
 from itertools import cycle
-# from app.question_model import Question, GuessQuestion, MultipleChoiceQuestion
 from app.question_model.question import Question
 from app.question_model.guess_question import GuessQuestion
 from app.question_model.multiple_choice_question import MultipleChoiceQuestion
