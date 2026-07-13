@@ -12,14 +12,16 @@ class Localization:
     STATIC_LOCALIZATION_FILENAME: str = os.path.join("data", "static_localization.json")
     DYNAMIC_LOCALIZATION_FILENAME: str = os.path.join("data", "dynamic_localization.json")
 
-    if st.session_state.get("language", None) is None:
-        st.session_state["language"] = "de"
+    @classmethod
+    def load(cls):
+        if st.session_state.get("language", None) is None:
+            st.session_state["language"] = "de"
 
-    with open(STATIC_LOCALIZATION_FILENAME, "r", encoding="utf-8") as file:
-        _localization = json.load(file)
+        with open(cls.STATIC_LOCALIZATION_FILENAME, "r", encoding="utf-8") as file:
+            cls._localization = json.load(file)
 
-    with open(DYNAMIC_LOCALIZATION_FILENAME, "r", encoding="utf-8") as file:
-        _localization |= json.load(file)
+        with open(cls.DYNAMIC_LOCALIZATION_FILENAME, "r", encoding="utf-8") as file:
+            cls._localization |= json.load(file)
 
     @classmethod
     def get_for_language(cls, key: str, language: str) -> Any:

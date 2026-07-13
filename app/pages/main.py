@@ -6,6 +6,7 @@ from streamlit_scroll_to_top import scroll_to_here
 from app.question_model.question_factory import QuestionFactory
 from app.question_model.question import Question
 from app.localization import Localization
+from app.config import Config
 from app.validation import QuestionValidator
 from app.state import QuizState
 from app.question_selection import QuestionSelector
@@ -90,5 +91,7 @@ def initialize_questions():
 
 
 def render_main() -> Question | None:
+    Localization.load()
+    Config.load()
     configure_page()
     return initialize_questions()

@@ -1,4 +1,5 @@
 import os
+import json
 from itertools import count
 import zipfile
 import streamlit as st
@@ -17,10 +18,18 @@ def render_importer():
         with zipfile.ZipFile(file, "r") as zip_file:
             for filename in zip_file.namelist():
                 with zip_file.open(filename, "r") as in_file:
-                    with open(filename, "w") as out_file:
+                    with open(filename, "wb") as out_file:
                         out_file.write(in_file.read())
 
+        with open(os.path.join("data", "config.json"), "r") as f:
+            config = json.load(f)
+        config["question_importer"] = True
+        with open(os.path.join("data", "config.json"), "w") as f:
+            json.dump(config, f)
+
         st.session_state.clear()
+        Localization.load()
+        Config.load()
         st.rerun()
 
 
