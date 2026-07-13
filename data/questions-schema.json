@@ -1,199 +1,170 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "type": "array",
-    "items": {
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/quiz.schema.json",
+  "title": "Quiz",
+  "type": "array",
+  "items": {
+    "oneOf": [
+      {
+        "title": "GuessQuestion",
         "type": "object",
         "required": [
-            "index",
-            "type",
-            "text",
-            "explanation",
-            "image",
-            "image_caption",
-            "coupled_question_indices"
+          "type",
+          "index",
+          "text",
+          "explanation",
+          "image",
+          "image_caption",
+          "coupled_question_indices",
+          "answer",
+          "min_guess",
+          "max_guess",
+          "min_scoring_guess",
+          "max_scoring_guess",
+          "max_points",
+          "unit",
+          "is_hm_time"
         ],
         "properties": {
-            "index": {
-                "type": "integer"
-            },
-            "unit": {
-                "type": "object",
-                "required": [
-                    "de",
-                    "en"
-                ],
-                "properties": {
-                    "de": {
-                        "type": [
-                            "string",
-                            "null"
-                        ]
-                    },
-                    "en": {
-                        "type": [
-                            "string",
-                            "null"
-                        ]
-                    }
-                },
-                "additionalProperties": true
-            },
-            "type": {
-                "type": "string",
-                "enum": [
-                    "multiple_choice",
-                    "guess"
-                ]
-            },
-            "text": {
-                "type": "object",
-                "required": [
-                    "de",
-                    "en"
-                ],
-                "properties": {
-                    "de": {
-                        "type": "string"
-                    },
-                    "en": {
-                        "type": "string"
-                    }
-                },
-                "additionalProperties": true
-            },
-            "explanation": {
-                "type": "object",
-                "required": [
-                    "de",
-                    "en"
-                ],
-                "properties": {
-                    "de": {
-                        "type": "string"
-                    },
-                    "en": {
-                        "type": "string"
-                    }
-                },
-                "additionalProperties": true
-            },
-            "image": {
-                "type": "object",
-                "required": [
-                    "de",
-                    "en"
-                ],
-                "properties": {
-                    "de": {
-                        "type": "string"
-                    },
-                    "en": {
-                        "type": "string"
-                    }
-                },
-                "additionalProperties": true
-            },
-            "image_caption": {
-                "type": "object",
-                "required": [
-                    "de",
-                    "en"
-                ],
-                "properties": {
-                    "de": {
-                        "type": [
-                            "string",
-                            "null"
-                        ]
-                    },
-                    "en": {
-                        "type": [
-                            "string",
-                            "null"
-                        ]
-                    }
-                },
-                "additionalProperties": true
-            },
-            "answers": {
-                "type": "object",
-                "required": [
-                    "de",
-                    "en"
-                ],
-                "properties": {
-                    "de": {
-                        "type": "array",
-                        "items": {
-                            "type": "string"
-                        }
-                    },
-                    "en": {
-                        "type": "array",
-                        "items": {
-                            "type": "string"
-                        }
-                    }
-                },
-                "additionalProperties": true
-            },
-            "right_answer_index": {
-                "type": "integer",
-                "minimum": 0
-            },
-            "answer": {
-                "type": "number"
-            },
-            "max_points": {
-                "type": "integer",
-                "minimum": 0
-            },
-            "min_guess": {
-                "type": "number"
-            },
-            "max_guess": {
-                "type": "number"
-            },
-            "coupled_question_indices": {
-                "type": "array",
-                "items": {
-                    "type": "integer"
-                }
-            }
+          "type": {
+            "const": "guess"
+          },
+          "index": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "text": {
+            "$ref": "#/$defs/i18nText"
+          },
+          "explanation": {
+            "$ref": "#/$defs/i18nText"
+          },
+          "image": {
+            "$ref": "#/$defs/i18nString"
+          },
+          "image_caption": {
+            "$ref": "#/$defs/i18nNullableString"
+          },
+          "coupled_question_indices": {
+            "type": "array",
+            "items": { "type": "integer" }
+          },
+          "answer": {
+            "type": "number"
+          },
+          "min_guess": {
+            "type": "number"
+          },
+          "max_guess": {
+            "type": "number"
+          },
+          "min_scoring_guess": {
+            "type": "number"
+          },
+          "max_scoring_guess": {
+            "type": "number"
+          },
+          "max_points": {
+            "type": "number"
+          },
+          "unit": {
+            "$ref": "#/$defs/i18nText"
+          },
+          "is_hm_time": {
+            "type": "boolean"
+          }
         },
-        "allOf": [
-            {
-                "if": {
-                    "properties": {
-                        "type": {
-                            "const": "multiple_choice"
-                        }
-                    }
-                },
-                "then": {
-                    "required": [
-                        "answers",
-                        "right_answer_index"
-                    ]
-                }
-            },
-            {
-                "if": {
-                    "properties": {
-                        "type": {
-                            "const": "guess"
-                        }
-                    }
-                },
-                "then": {
-                    "required": [
-                        "answer",
-                        "max_points",
-                        "unit"
-                    ]
-                }
-            }
+        "additionalProperties": false
+      },
+      {
+        "title": "MultipleChoiceQuestion",
+        "type": "object",
+        "required": [
+          "type",
+          "index",
+          "text",
+          "explanation",
+          "image",
+          "image_caption",
+          "coupled_question_indices",
+          "answers",
+          "scores",
+          "right_answer_index"
         ],
-        "additionalProperties": true
+        "properties": {
+          "type": {
+            "const": "multiple_choice"
+          },
+          "index": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "text": {
+            "$ref": "#/$defs/i18nText"
+          },
+          "explanation": {
+            "$ref": "#/$defs/i18nText"
+          },
+          "image": {
+            "$ref": "#/$defs/i18nString"
+          },
+          "image_caption": {
+            "$ref": "#/$defs/i18nNullableString"
+          },
+          "coupled_question_indices": {
+            "type": "array",
+            "items": { "type": "integer" }
+          },
+          "answers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/i18nText"
+            },
+            "minItems": 1
+          },
+          "scores": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "minItems": 1
+          },
+          "right_answer_index": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "additionalProperties": false
+      }
+    ]
+  },
+  "$defs": {
+    "i18nText": {
+      "type": "object",
+      "required": ["de", "en"],
+      "properties": {
+        "de": { "type": "string" },
+        "en": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "i18nString": {
+      "type": "object",
+      "required": ["de", "en"],
+      "properties": {
+        "de": { "type": "string" },
+        "en": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "i18nNullableString": {
+      "type": "object",
+      "required": ["de", "en"],
+      "properties": {
+        "de": { "type": ["string", "null"] },
+        "en": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
     }
+  }
 }

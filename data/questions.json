@@ -1,191 +1,46 @@
 [
     {
+        "type": "guess",
         "index": 0,
+        "text": {
+            "de": "Wie hoch ist der Mount Everest?",
+            "en": "How high is Mount Everest?"
+        },
+        "explanation": {
+            "de": "Der Mount Everest ist 8.848,86 Meter hoch.",
+            "en": "Mount Everest is 8,848.86 meters high."
+        },
+        "image": {
+            "de": "test.png",
+            "en": "test.png"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        },
+        "coupled_question_indices": [],
+        "answer": 8849,
+        "min_guess": 6000,
+        "max_guess": 10000,
+        "min_scoring_guess": 8000,
+        "max_scoring_guess": 9500,
+        "max_points": 10,
         "unit": {
             "de": "Meter",
             "en": "meters"
         },
-        "type": "guess",
-        "text": {
-            "de": "Wie hoch ist der Eiffelturm (einschließlich Antennen)?",
-            "en": "How tall is the Eiffel Tower (including antennas)?"
-        },
-        "answer": 330,
-        "min_guess": 200,
-        "max_guess": 500,
-        "max_points": 10,
-        "explanation": {
-            "de": "Der Eiffelturm ist 330 Meter hoch, einschließlich der Antennen. Ohne Antennen misst er 300 Meter.",
-            "en": "The Eiffel Tower is 330 meters tall, including antennas. Without antennas, it measures 300 meters."
-        },
-        "image": {
-            "de": "test.png",
-            "en": "test.png"
-        },
-        "image_caption": {
-            "de": null,
-            "en": null
-        },
-        "coupled_question_indices": []
+        "is_hm_time": false
     },
     {
+        "type": "multiple_choice",
         "index": 1,
-        "type": "multiple_choice",
-        "text": {
-            "de": "Welches ist das größte Organ des menschlichen Körpers?",
-            "en": "What is the largest organ of the human body?"
-        },
-        "answers": {
-            "de": [
-                "Leber",
-                "Haut",
-                "Lunge",
-                "Herz"
-            ],
-            "en": [
-                "Liver",
-                "Skin",
-                "Lungs",
-                "Heart"
-            ]
-        },
-        "right_answer_index": 1,
-        "score": 10,
-        "explanation": {
-            "de": "Die Haut ist das größte Organ des menschlichen Körpers und macht etwa 16% des Körpergewichts aus.",
-            "en": "The skin is the largest organ of the human body and accounts for about 16% of body weight."
-        },
-        "image": {
-            "de": "test.png",
-            "en": "test.png"
-        },
-        "image_caption": {
-            "de": null,
-            "en": null
-        },
-        "coupled_question_indices": []
-    },
-    {
-        "index": 2,
-        "unit": {
-            "de": "km/h",
-            "en": "km/h"
-        },
-        "type": "guess",
-        "text": {
-            "de": "Wie schnell kann ein Gepard maximal laufen?",
-            "en": "What is the maximum speed a cheetah can run?"
-        },
-        "answer": 120,
-        "min_guess": 50,
-        "max_guess": 150,
-        "max_points": 10,
-        "explanation": {
-            "de": "Ein Gepard kann Geschwindigkeiten von bis zu 120 km/h erreichen und ist damit das schnellste Landtier der Welt.",
-            "en": "A cheetah can reach speeds of up to 120 km/h, making it the fastest land animal in the world."
-        },
-        "image": {
-            "de": "test.png",
-            "en": "test.png"
-        },
-        "image_caption": {
-            "de": null,
-            "en": null
-        },
-        "coupled_question_indices": []
-    },
-    {
-        "index": 3,
-        "type": "multiple_choice",
-        "text": {
-            "de": "Wer komponierte die 'Kleine Nachtmusik'?",
-            "en": "Who composed 'Eine kleine Nachtmusik'?"
-        },
-        "answers": {
-            "de": [
-                "Ludwig van Beethoven",
-                "Wolfgang Amadeus Mozart",
-                "Johann Sebastian Bach",
-                "Franz Schubert"
-            ],
-            "en": [
-                "Ludwig van Beethoven",
-                "Wolfgang Amadeus Mozart",
-                "Johann Sebastian Bach",
-                "Franz Schubert"
-            ]
-        },
-        "right_answer_index": 1,
-        "score": 10,
-        "explanation": {
-            "de": "Wolfgang Amadeus Mozart komponierte 'Eine kleine Nachtmusik' im Jahr 1787. Es ist eines seiner bekanntesten Werke.",
-            "en": "Wolfgang Amadeus Mozart composed 'Eine kleine Nachtmusik' in 1787. It is one of his most famous works."
-        },
-        "image": {
-            "de": "test.png",
-            "en": "test.png"
-        },
-        "image_caption": {
-            "de": null,
-            "en": null
-        },
-        "coupled_question_indices": []
-    },
-    {
-        "index": 4,
-        "unit": {
-            "de": "Grad Celsius",
-            "en": "degrees Celsius"
-        },
-        "type": "guess",
-        "text": {
-            "de": "Bei welcher Temperatur kocht Wasser auf Meereshöhe?",
-            "en": "At what temperature does water boil at sea level?"
-        },
-        "answer": 100,
-        "min_guess": 80,
-        "max_guess": 120,
-        "max_points": 10,
-        "explanation": {
-            "de": "Wasser siedet bei normalem Luftdruck auf Meereshöhe bei 100 Grad Celsius (212 Grad Fahrenheit).",
-            "en": "Water boils at normal atmospheric pressure at sea level at 100 degrees Celsius (212 degrees Fahrenheit)."
-        },
-        "image": {
-            "de": "test.png",
-            "en": "test.png"
-        },
-        "image_caption": {
-            "de": null,
-            "en": null
-        },
-        "coupled_question_indices": []
-    },
-    {
-        "index": 5,
-        "type": "multiple_choice",
         "text": {
             "de": "Welcher Planet ist der Sonne am nächsten?",
             "en": "Which planet is closest to the Sun?"
         },
-        "answers": {
-            "de": [
-                "Venus",
-                "Merkur",
-                "Mars",
-                "Erde"
-            ],
-            "en": [
-                "Venus",
-                "Mercury",
-                "Mars",
-                "Earth"
-            ]
-        },
-        "right_answer_index": 1,
-        "score": 10,
         "explanation": {
-            "de": "Merkur ist der sonnennächste Planet in unserem Sonnensystem mit einer durchschnittlichen Entfernung von etwa 58 Millionen Kilometern.",
-            "en": "Mercury is the closest planet to the Sun in our solar system with an average distance of about 58 million kilometers."
+            "de": "Merkur ist der sonnennächste Planet im Sonnensystem.",
+            "en": "Mercury is the closest planet to the Sun in the solar system."
         },
         "image": {
             "de": "test.png",
@@ -195,129 +50,180 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": []
+        "coupled_question_indices": [],
+        "answers": [
+            {"de": "Venus", "en": "Venus"},
+            {"de": "Merkur", "en": "Mercury"},
+            {"de": "Mars", "en": "Mars"},
+            {"de": "Jupiter", "en": "Jupiter"}
+        ],
+        "scores": [1, 10, 0, 0],
+        "right_answer_index": 1
     },
     {
+        "type": "guess",
+        "index": 2,
+        "text": {
+            "de": "Wie viele Kilometer lang ist der Amazonas-Fluss ungefähr?",
+            "en": "How many kilometers long is the Amazon River approximately?"
+        },
+        "explanation": {
+            "de": "Der Amazonas ist etwa 6.400 Kilometer lang.",
+            "en": "The Amazon River is about 6,400 kilometers long."
+        },
+        "image": {
+            "de": "test.png",
+            "en": "test.png"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        },
+        "coupled_question_indices": [],
+        "answer": 6400,
+        "min_guess": 3000,
+        "max_guess": 9000,
+        "min_scoring_guess": 5500,
+        "max_scoring_guess": 7000,
+        "max_points": 10,
+        "unit": {
+            "de": "Kilometer",
+            "en": "kilometers"
+        },
+        "is_hm_time": false
+    },
+    {
+        "type": "multiple_choice",
+        "index": 3,
+        "text": {
+            "de": "Welches Tier ist das größte lebende Landtier?",
+            "en": "Which animal is the largest living land animal?"
+        },
+        "explanation": {
+            "de": "Der Afrikanische Elefant ist das größte lebende Landtier.",
+            "en": "The African elephant is the largest living land animal."
+        },
+        "image": {
+            "de": "test.png",
+            "en": "test.png"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        },
+        "coupled_question_indices": [],
+        "answers": [
+            {"de": "Giraffe", "en": "Giraffe"},
+            {"de": "Afrikanischer Elefant", "en": "African elephant"},
+            {"de": "Nashorn", "en": "Rhinoceros"},
+            {"de": "Nilpferd", "en": "Hippopotamus"}
+        ],
+        "scores": [0, 10, 1, 1],
+        "right_answer_index": 1
+    },
+    {
+        "type": "guess",
+        "index": 4,
+        "text": {
+            "de": "Wie viele Einwohner hat Berlin ungefähr?",
+            "en": "How many inhabitants does Berlin have approximately?"
+        },
+        "explanation": {
+            "de": "Berlin hat etwa 3,7 Millionen Einwohner.",
+            "en": "Berlin has about 3.7 million inhabitants."
+        },
+        "image": {
+            "de": "test.png",
+            "en": "test.png"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        },
+        "coupled_question_indices": [],
+        "answer": 3700000,
+        "min_guess": 2000000,
+        "max_guess": 6000000,
+        "min_scoring_guess": 3300000,
+        "max_scoring_guess": 4100000,
+        "max_points": 10,
+        "unit": {
+            "de": "Einwohner",
+            "en": "inhabitants"
+        },
+        "is_hm_time": false
+    },
+    {
+        "type": "multiple_choice",
+        "index": 5,
+        "text": {
+            "de": "Welche Sprache hat die meisten Muttersprachler weltweit?",
+            "en": "Which language has the most native speakers worldwide?"
+        },
+        "explanation": {
+            "de": "Chinesisch (Mandarin) hat die meisten Muttersprachler.",
+            "en": "Chinese (Mandarin) has the most native speakers."
+        },
+        "image": {
+            "de": "test.png",
+            "en": "test.png"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        },
+        "coupled_question_indices": [],
+        "answers": [
+            {"de": "Englisch", "en": "English"},
+            {"de": "Spanisch", "en": "Spanish"},
+            {"de": "Mandarin", "en": "Mandarin"},
+            {"de": "Hindi", "en": "Hindi"}
+        ],
+        "scores": [1, 1, 10, 1],
+        "right_answer_index": 2
+    },
+    {
+        "type": "guess",
         "index": 6,
-        "unit": {
-            "de": "Knochen",
-            "en": "bones"
-        },
-        "type": "guess",
         "text": {
-            "de": "Wie viele Knochen hat ein erwachsener Mensch?",
-            "en": "How many bones does an adult human have?"
+            "de": "Wie hoch ist der Eiffelturm ohne Antennen?",
+            "en": "How tall is the Eiffel Tower without antennas?"
         },
-        "answer": 206,
+        "explanation": {
+            "de": "Der Eiffelturm ist ohne Antennen 300 Meter hoch.",
+            "en": "The Eiffel Tower is 300 meters tall without antennas."
+        },
+        "image": {
+            "de": "test.png",
+            "en": "test.png"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        },
+        "coupled_question_indices": [],
+        "answer": 300,
         "min_guess": 150,
-        "max_guess": 300,
+        "max_guess": 450,
+        "min_scoring_guess": 250,
+        "max_scoring_guess": 350,
         "max_points": 10,
-        "explanation": {
-            "de": "Ein erwachsener Mensch hat 206 Knochen. Babys werden mit etwa 270 Knochen geboren, aber viele verwachsen während des Wachstums.",
-            "en": "An adult human has 206 bones. Babies are born with about 270 bones, but many fuse together during growth."
-        },
-        "image": {
-            "de": "test.png",
-            "en": "test.png"
-        },
-        "image_caption": {
-            "de": null,
-            "en": null
-        },
-        "coupled_question_indices": []
-    },
-    {
-        "index": 7,
-        "type": "multiple_choice",
-        "text": {
-            "de": "Welche Farbe entsteht, wenn man Rot und Gelb mischt?",
-            "en": "What color is created when you mix red and yellow?"
-        },
-        "answers": {
-            "de": [
-                "Lila",
-                "Orange",
-                "Grün",
-                "Braun"
-            ],
-            "en": [
-                "Purple",
-                "Orange",
-                "Green",
-                "Brown"
-            ]
-        },
-        "right_answer_index": 1,
-        "score": 10,
-        "explanation": {
-            "de": "Wenn man die Primärfarben Rot und Gelb mischt, entsteht die Sekundärfarbe Orange.",
-            "en": "When you mix the primary colors red and yellow, you get the secondary color orange."
-        },
-        "image": {
-            "de": "test.png",
-            "en": "test.png"
-        },
-        "image_caption": {
-            "de": null,
-            "en": null
-        },
-        "coupled_question_indices": []
-    },
-    {
-        "index": 8,
         "unit": {
-            "de": "Tage",
-            "en": "days"
+            "de": "Meter",
+            "en": "meters"
         },
-        "type": "guess",
-        "text": {
-            "de": "Wie lange dauert es, bis die Erde einmal um die Sonne kreist?",
-            "en": "How long does it take for the Earth to orbit the Sun once?"
-        },
-        "answer": 365.25,
-        "min_guess": 350,
-        "max_guess": 380,
-        "max_points": 10,
-        "explanation": {
-            "de": "Die Erde braucht etwa 365,25 Tage für eine vollständige Umkreisung der Sonne. Der zusätzliche Vierteltag führt zu Schaltjahren.",
-            "en": "The Earth takes about 365.25 days to complete one orbit around the Sun. The extra quarter day leads to leap years."
-        },
-        "image": {
-            "de": "test.png",
-            "en": "test.png"
-        },
-        "image_caption": {
-            "de": null,
-            "en": null
-        },
-        "coupled_question_indices": []
+        "is_hm_time": false
     },
     {
-        "index": 9,
         "type": "multiple_choice",
+        "index": 7,
         "text": {
-            "de": "Welches Gas macht den größten Teil der Erdatmosphäre aus?",
-            "en": "Which gas makes up the largest part of Earth's atmosphere?"
+            "de": "Welches Gas ist am häufigsten in der Erdatmosphäre?",
+            "en": "Which gas is most abundant in Earth's atmosphere?"
         },
-        "answers": {
-            "de": [
-                "Sauerstoff",
-                "Stickstoff",
-                "Kohlendioxid",
-                "Argon"
-            ],
-            "en": [
-                "Oxygen",
-                "Nitrogen",
-                "Carbon dioxide",
-                "Argon"
-            ]
-        },
-        "right_answer_index": 1,
-        "score": 10,
         "explanation": {
-            "de": "Stickstoff macht etwa 78% der Erdatmosphäre aus, gefolgt von Sauerstoff mit etwa 21%.",
-            "en": "Nitrogen makes up about 78% of Earth's atmosphere, followed by oxygen at about 21%."
+            "de": "Stickstoff macht etwa 78% der Erdatmosphäre aus.",
+            "en": "Nitrogen makes up about 78% of Earth's atmosphere."
         },
         "image": {
             "de": "test.png",
@@ -327,6 +233,75 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": []
+        "coupled_question_indices": [],
+        "answers": [
+            {"de": "Sauerstoff", "en": "Oxygen"},
+            {"de": "Stickstoff", "en": "Nitrogen"},
+            {"de": "Kohlendioxid", "en": "Carbon dioxide"},
+            {"de": "Argon", "en": "Argon"}
+        ],
+        "scores": [1, 10, 0, 0],
+        "right_answer_index": 1
+    },
+    {
+        "type": "guess",
+        "index": 8,
+        "text": {
+            "de": "Wie viele Planeten hat unser Sonnensystem?",
+            "en": "How many planets are in our solar system?"
+        },
+        "explanation": {
+            "de": "Unser Sonnensystem hat 8 Planeten.",
+            "en": "Our solar system has 8 planets."
+        },
+        "image": {
+            "de": "test.png",
+            "en": "test.png"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        },
+        "coupled_question_indices": [],
+        "answer": 8,
+        "min_guess": 3,
+        "max_guess": 12,
+        "min_scoring_guess": 6,
+        "max_scoring_guess": 10,
+        "max_points": 10,
+        "unit": {
+            "de": "Planeten",
+            "en": "planets"
+        },
+        "is_hm_time": false
+    },
+    {
+        "type": "multiple_choice",
+        "index": 9,
+        "text": {
+            "de": "Wer malte die Mona Lisa?",
+            "en": "Who painted the Mona Lisa?"
+        },
+        "explanation": {
+            "de": "Leonardo da Vinci malte die Mona Lisa.",
+            "en": "Leonardo da Vinci painted the Mona Lisa."
+        },
+        "image": {
+            "de": "test.png",
+            "en": "test.png"
+        },
+        "image_caption": {
+            "de": null,
+            "en": null
+        },
+        "coupled_question_indices": [],
+        "answers": [
+            {"de": "Vincent van Gogh", "en": "Vincent van Gogh"},
+            {"de": "Pablo Picasso", "en": "Pablo Picasso"},
+            {"de": "Leonardo da Vinci", "en": "Leonardo da Vinci"},
+            {"de": "Michelangelo", "en": "Michelangelo"}
+        ],
+        "scores": [0, 0, 10, 0],
+        "right_answer_index": 2
     }
 ]
