@@ -1,8 +1,9 @@
 import os
 import json
-from typing import Dict, Tuple
+from typing import Tuple, Dict
 
 Color = Tuple[int, int, int]
+
 
 class Colors:
     COLORS_FILENAME: str = os.path.join("data", "colors.json")
@@ -12,4 +13,3 @@ class Colors:
     @classmethod
     def get(cls, key: str) -> Color:
         return cls._colors[key]
-

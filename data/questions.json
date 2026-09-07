@@ -2,6 +2,7 @@
     {
         "index": 0,
         "type": "multiple_choice",
+        "index": 1,
         "text": {
             "de": "Was ist das Basisregister?",
             "en": "What is the Basisregister?"
@@ -39,6 +40,7 @@
     {
         "index": 1,
         "type": "multiple_choice",
+        "index": 3,
         "text": {
             "de": "Was bekommen Unternehmen durch das Basisregister?",
             "en": "What do companies receive through the Basisregister?"
@@ -76,6 +78,7 @@
     {
         "index": 2,
         "type": "multiple_choice",
+        "index": 5,
         "text": {
             "de": "Was ist das Hauptziel des Basisregisters für Unternehmen?",
             "en": "What is the main goal of the Basisregister for companies?"

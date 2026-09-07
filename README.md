@@ -2,7 +2,7 @@
 
 A small web application for a quiz containing multiple choice and number guessing question based on streamlit.
 
-You can test it out [here](https://destatis-quiz-basisregister-2025.streamlit.app/).
+You can test it out [here](https://quiz-webapp.streamlit.app/).
 
 ## Installation
 
@@ -79,7 +79,7 @@ Depending on the `type` each JSON object has to have a different set of fields. 
 |`max_guess`                |`"guess"`          |The maximal possible value to guess.                                                                                         |no       |
 |`unit`                     |`"guess"`          |The unit to display.                                                                                                         |yes      |
 
-The fields `text`, `explanation`, `image`, `image_caption` and `answers` are localized. That means they contain a German and an English version of the value. 
+The fields `text`, `explanation`, `image`, `image_caption` and `answers` are localized. That means they contain a German and an English version of the value.
 
 Instead of this:
 ```json
@@ -111,7 +111,7 @@ You can change what questions are used by editing the file `data/config.json`. Y
 |Method          |Description                                              |Parameter         |Parameter description                                                                                                                                                                                  |
 |----------------|---------------------------------------------------------|------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |`"all"`         |Use all questions.                                       |no parameter      |                                                                                                                                                                                                       |
-|`"list"`        |Use a fix set of questions.                              |`question_indices`|A list of indices into the list of questions.                                                                                                                                                          |                                                                    
+|`"list"`        |Use a fix set of questions.                              |`question_indices`|A list of indices into the list of questions.                                                                                                                                                          |
 |`"random"`      |Use a random set of questions.                           |`question_amount` |The amount of questions to randomly select.                                                                                                                                                            |
 
 Here is an example:

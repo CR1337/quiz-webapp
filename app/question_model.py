@@ -1,8 +1,9 @@
 from __future__ import annotations
 from abc import ABC, abstractmethod
-from typing import Any, Callable, Dict, List, Tuple
+from typing import Any, Callable, Dict, List, Tuple, Optional
 from numbers import Number
 import random
+import math
 
 from app.localization import Localization
 
@@ -44,13 +45,18 @@ class Question(ABC):
                 parameters |= {"score_function": eval(question_dict["score_function"])}
             if "unit" in question_dict:
                 parameters |= {"unit": question_dict["unit"]}
+            if "is_hm_time" in question_dict:
+                parameters |= {"is_hm_time": question_dict["is_hm_time"]}
             return GuessQuestion(**parameters)
 
         elif question_type == "multiple_choice":
             parameters |= {"answers": question_dict["answers"]}
             parameters |= {"right_answer_index": question_dict["right_answer_index"]}
-            if "score" in question_dict:
-                parameters |= {"score": question_dict["score"]}
+            if "score" in question_dict or "scores" in question_dict:
+                parameters |= {
+                    "score": question_dict.get("score"),
+                    "scores": question_dict.get("scores"),
+                }
             return MultipleChoiceQuestion(**parameters)
 
         else:
@@ -67,7 +73,10 @@ class Question(ABC):
             if isinstance(q, GuessQuestion):
                 score += q.max_points
             elif isinstance(q, MultipleChoiceQuestion):
-                score += q.score
+                if q.score is None:
+                    score += max(q.scores)
+                else:
+                    score += q.score
         return score
 
     def __init__(
@@ -128,6 +137,7 @@ class GuessQuestion(Question):
     _max_points: int
     _decimal_places: int
     _unit: Dict[str, str | None]
+    _is_hm_time: bool
 
     def __init__(
         self,
@@ -143,6 +153,7 @@ class GuessQuestion(Question):
         explanation: Dict[str, str] | None = None,
         image: Dict[str, str] | None = None,
         image_caption: Dict[str, str] | None = None,
+        is_hm_time: Optional[bool] = None
     ):
         self._answer = answer
         self._min_guess, self._max_guess = self._compute_slider_range(answer)
@@ -169,6 +180,41 @@ class GuessQuestion(Question):
             coupled_question_indices=coupled_question_indices,
         )
         self._unit = unit
+        print(f"{is_hm_time=}")
+        self._is_hm_time = is_hm_time or False
+
+    def render_number_with_unit(self, number: float) -> str:
+        string = ""
+
+        if self._is_hm_time:
+            fractional, hours = math.modf(number)
+            minutes = round(fractional * 60)
+
+            hours = int(hours)
+            minutes= int(minutes)
+
+            if minutes == 0:
+                if Localization.language() == "de":
+                    string = f"{hours} Stunden"
+                else:
+                    string = f"{hours} hours"
+            else:
+                if Localization.language() == "de":
+                    string = f"{hours} Stunden und {minutes} Minuten"
+                else:
+                    string = f"{hours} hours and {minutes} minutes"
+
+        else:
+            string = f"{number:.{self._decimal_places}f}"
+
+            if Localization.language() == "de":
+                string = string.replace(".", ",")
+
+            if self._unit[Localization.language()] is not None:
+                safe_unit = self._unit[Localization.language()]
+                string += f" {safe_unit}"
+
+        return string
 
     def _compute_slider_range(self, answer: Number) -> Tuple[Number, Number]:
         range_half = answer / self.SLIDER_SCALE_FACTOR
@@ -235,6 +281,7 @@ class MultipleChoiceQuestion(Question):
     _answers: Dict[str, List[str]]
     _right_answer_index: int
     _score: int
+    _scores: Optional[List[int]]
 
     def __init__(
         self,
@@ -244,15 +291,17 @@ class MultipleChoiceQuestion(Question):
         coupled_question_indices: List[int],
         *,
         score: int = 10,
+        scores: Optional[List[int]],
         explanation: Dict[str, str] | None = None,
         image: Dict[str, str] | None = None,
         image_caption: Dict[str, str] | None = None,
     ):
-        self._answers, self._right_answer_index = self._shuffle_answers(
-            answers, right_answer_index
+        self._answers, self._right_answer_index, self._scores = self._shuffle_answers(
+            answers, right_answer_index, scores
         )
 
         self._score = score
+
         super().__init__(
             text,
             explanation=explanation,
@@ -262,8 +311,11 @@ class MultipleChoiceQuestion(Question):
         )
 
     def _shuffle_answers(
-        self, answers: Dict[str, List[str]], right_answer_index: int
-    ) -> Tuple[Dict[str, List[str]], int]:
+        self,
+        answers: Dict[str, List[str]],
+        right_answer_index: int,
+        scores: Optional[List[int]],
+    ) -> Tuple[Dict[str, List[str]], int, Optional[List[int]]]:
         first_key = list(answers.keys())[0]
         permutation = list(range(len(answers[first_key])))
         random.shuffle(permutation)
@@ -272,10 +324,16 @@ class MultipleChoiceQuestion(Question):
         for language in answers.keys():
             shuffled_answers |= {language: [answers[language][i] for i in permutation]}
 
-        return shuffled_answers, permutation.index(right_answer_index)
+        shuffled_scores = None
+        if scores is not None:
+            shuffled_scores = [scores[i] for i in permutation]
+
+        return shuffled_answers, permutation.index(right_answer_index), shuffled_scores
 
     def check(self, answer: int) -> int:
-        if answer == self._right_answer_index:
+        if self._scores:
+            return self._scores[answer]
+        elif answer == self._right_answer_index:
             return self._score
         else:
             return 0
@@ -293,5 +351,12 @@ class MultipleChoiceQuestion(Question):
         return self._score
 
     @property
+    def scores(self) -> List[int]:
+        assert self._scores
+        return self._scores
+
+    @property
     def max_points(self) -> int:
+        if self._score is None:
+            return max(self.scores)
         return self._score
