@@ -2,7 +2,7 @@
     "question_selection_method": "random_set",
     "group_coupled_questions": true,
     "shuffle_questions": true,
-    "question_importer": true,
+    "question_importer": false,
     "question_selection_methods": {
         "all": {},
         "list": {
