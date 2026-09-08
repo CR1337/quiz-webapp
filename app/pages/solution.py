@@ -23,11 +23,11 @@ def render_solution(current_question: Question):
     elif isinstance(current_question, MultipleChoiceQuestion):
         st.subheader(
             f":primary[{Localization.get('your_answer')}: "
-            f"{current_question.answers[st.session_state['answer']][Localization.language()]}]"
+            f"{current_question.answers[Localization.language()][st.session_state['answer']]}]"
         )
         st.subheader(
             f"{Localization.get('correct_answer')}: "
-            f"{current_question.answers[current_question.right_answer_index][Localization.language()]}"
+            f"{current_question.answers[Localization.language()][current_question.right_answer_index]}"
         )
 
     st.divider()
