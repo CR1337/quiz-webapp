@@ -21,6 +21,7 @@
             ]
         },
         "right_answer_index": 2,
+        "score": 10,
         "explanation": {
             "de": "Das Basisregister ist ein zentrales Register, das Stammdaten von Unternehmen b\u00fcndelt.",
             "en": "The Basisregister is a central register that consolidates master data of companies."
@@ -33,13 +34,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "scores": [
-            0,
-            0,
-            10,
-            0
-        ]
+        "coupled_question_indices": []
     },
     {
         "index": 1,
@@ -63,6 +58,7 @@
             ]
         },
         "right_answer_index": 1,
+        "score": 10,
         "explanation": {
             "de": "Das Basisregister vergibt eine bundeseinheitliche Wirtschaftsnummer an Unternehmen.",
             "en": "The Basisregister issues a nationwide uniform business number to companies."
@@ -75,13 +71,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "scores": [
-            0,
-            10,
-            0,
-            0
-        ]
+        "coupled_question_indices": []
     },
     {
         "index": 2,
@@ -105,6 +95,7 @@
             ]
         },
         "right_answer_index": 1,
+        "score": 10,
         "explanation": {
             "de": "Das Basisregister soll eine einheitliche Datenbasis schaffen, um B\u00fcrokratie abzubauen.",
             "en": "The Basisregister aims to create a uniform data basis to reduce bureaucracy."
@@ -117,13 +108,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "scores": [
-            0,
-            10,
-            0,
-            0
-        ]
+        "coupled_question_indices": []
     },
     {
         "index": 3,
@@ -147,6 +132,7 @@
             ]
         },
         "right_answer_index": 2,
+        "score": 10,
         "explanation": {
             "de": "Im Basisregister werden Stammdaten und Identifikationsnummern von Unternehmen gespeichert.",
             "en": "The Basisregister stores master data and identification numbers of companies."
@@ -159,13 +145,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "scores": [
-            0,
-            0,
-            10,
-            0
-        ]
+        "coupled_question_indices": []
     },
     {
         "index": 4,
@@ -194,9 +174,6 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": 65,
-        "max_scoring_guess": 160
+        "coupled_question_indices": []
     }
 ]
