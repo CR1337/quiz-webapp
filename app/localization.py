@@ -22,3 +22,17 @@ class Localization:
     @classmethod
     def language(cls) -> str:
         return st.session_state["language"]
+
+    @classmethod
+    def flag(cls, language: str) -> str:
+        return {
+            "de": "🇩🇪",
+            "en": "🇬🇧"
+        }[language]
+
+    @classmethod
+    def other_language(cls) -> str:
+        return {
+            "de": "en",
+            "en": "de"
+        }[cls.language()]

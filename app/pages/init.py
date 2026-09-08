@@ -38,11 +38,16 @@ def render_init():
             st.rerun()
 
     with right_column:
-        if st.session_state["language"] == "de":
-            if st.button("", icon="🇬🇧", use_container_width=True):
-                st.session_state["language"] = "en"
-                st.rerun()
-        else:
-            if st.button("", icon="🇩🇪", use_container_width=True):
-                st.session_state["language"] = "de"
-                st.rerun()
+        if st.button(Localization.flag(Localization.other_language()), use_container_width=True):
+            st.session_state["language"] = Localization.other_language()
+            st.rerun()
+
+
+def render_init():
+    render_title()
+    st.divider()
+    render_images()
+    st.divider()
+    render_explanation()
+    render_buttons()
+    render_importer()

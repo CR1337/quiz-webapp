@@ -86,3 +86,10 @@ def render_main() -> Question | None:
     current_question = st.session_state["questions"][st.session_state["question_index"]]
 
     return current_question
+
+
+def render_main() -> Question | None:
+    Localization.load()
+    Config.load()
+    configure_page()
+    return initialize_questions()

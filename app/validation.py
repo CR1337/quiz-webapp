@@ -79,6 +79,12 @@ class QuestionValidator(JsonValidator):
                         f"to be less than the amount.",
                     )
 
+                if len(question["scores"]) != len(question["answers"]["de"]):
+                    return (
+                        False,
+                        f"There must be as many scores as answers in question #{idx}."
+                    )
+
             elif question["type"] == "guess":
                 pass
 
