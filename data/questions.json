@@ -35,11 +35,11 @@
         "type": "multiple_choice",
         "index": 1,
         "text": {
-            "de": "Welcher Planet ist der Sonne am nächsten?",
+            "de": "Welcher Planet ist der Sonne am n\u00e4chsten?",
             "en": "Which planet is closest to the Sun?"
         },
         "explanation": {
-            "de": "Merkur ist der sonnennächste Planet im Sonnensystem.",
+            "de": "Merkur ist der sonnenn\u00e4chste Planet im Sonnensystem.",
             "en": "Mercury is the closest planet to the Sun in the solar system."
         },
         "image": {
@@ -51,20 +51,33 @@
             "en": null
         },
         "coupled_question_indices": [],
-        "answers": [
-            {"de": "Venus", "en": "Venus"},
-            {"de": "Merkur", "en": "Mercury"},
-            {"de": "Mars", "en": "Mars"},
-            {"de": "Jupiter", "en": "Jupiter"}
+        "answers": {
+            "de": [
+                "Venus",
+                "Merkur",
+                "Mars",
+                "Jupiter"
+            ],
+            "en": [
+                "Venus",
+                "Mercury",
+                "Mars",
+                "Jupiter"
+            ]
+        },
+        "scores": [
+            1,
+            10,
+            0,
+            0
         ],
-        "scores": [1, 10, 0, 0],
         "right_answer_index": 1
     },
     {
         "type": "guess",
         "index": 2,
         "text": {
-            "de": "Wie viele Kilometer lang ist der Amazonas-Fluss ungefähr?",
+            "de": "Wie viele Kilometer lang ist der Amazonas-Fluss ungef\u00e4hr?",
             "en": "How many kilometers long is the Amazon River approximately?"
         },
         "explanation": {
@@ -96,11 +109,11 @@
         "type": "multiple_choice",
         "index": 3,
         "text": {
-            "de": "Welches Tier ist das größte lebende Landtier?",
+            "de": "Welches Tier ist das gr\u00f6\u00dfte lebende Landtier?",
             "en": "Which animal is the largest living land animal?"
         },
         "explanation": {
-            "de": "Der Afrikanische Elefant ist das größte lebende Landtier.",
+            "de": "Der Afrikanische Elefant ist das gr\u00f6\u00dfte lebende Landtier.",
             "en": "The African elephant is the largest living land animal."
         },
         "image": {
@@ -112,20 +125,33 @@
             "en": null
         },
         "coupled_question_indices": [],
-        "answers": [
-            {"de": "Giraffe", "en": "Giraffe"},
-            {"de": "Afrikanischer Elefant", "en": "African elephant"},
-            {"de": "Nashorn", "en": "Rhinoceros"},
-            {"de": "Nilpferd", "en": "Hippopotamus"}
+        "answers": {
+            "de": [
+                "Giraffe",
+                "Afrikanischer Elefant",
+                "Nashorn",
+                "Nilpferd"
+            ],
+            "en": [
+                "Giraffe",
+                "African elephant",
+                "Rhinoceros",
+                "Hippopotamus"
+            ]
+        },
+        "scores": [
+            0,
+            10,
+            1,
+            1
         ],
-        "scores": [0, 10, 1, 1],
         "right_answer_index": 1
     },
     {
         "type": "guess",
         "index": 4,
         "text": {
-            "de": "Wie viele Einwohner hat Berlin ungefähr?",
+            "de": "Wie viele Einwohner hat Berlin ungef\u00e4hr?",
             "en": "How many inhabitants does Berlin have approximately?"
         },
         "explanation": {
@@ -173,13 +199,26 @@
             "en": null
         },
         "coupled_question_indices": [],
-        "answers": [
-            {"de": "Englisch", "en": "English"},
-            {"de": "Spanisch", "en": "Spanish"},
-            {"de": "Mandarin", "en": "Mandarin"},
-            {"de": "Hindi", "en": "Hindi"}
+        "answers": {
+            "de": [
+                "Englisch",
+                "Spanisch",
+                "Mandarin",
+                "Hindi"
+            ],
+            "en": [
+                "English",
+                "Spanish",
+                "Mandarin",
+                "Hindi"
+            ]
+        },
+        "scores": [
+            1,
+            1,
+            10,
+            1
         ],
-        "scores": [1, 1, 10, 1],
         "right_answer_index": 2
     },
     {
@@ -218,11 +257,11 @@
         "type": "multiple_choice",
         "index": 7,
         "text": {
-            "de": "Welches Gas ist am häufigsten in der Erdatmosphäre?",
+            "de": "Welches Gas ist am h\u00e4ufigsten in der Erdatmosph\u00e4re?",
             "en": "Which gas is most abundant in Earth's atmosphere?"
         },
         "explanation": {
-            "de": "Stickstoff macht etwa 78% der Erdatmosphäre aus.",
+            "de": "Stickstoff macht etwa 78% der Erdatmosph\u00e4re aus.",
             "en": "Nitrogen makes up about 78% of Earth's atmosphere."
         },
         "image": {
@@ -234,13 +273,26 @@
             "en": null
         },
         "coupled_question_indices": [],
-        "answers": [
-            {"de": "Sauerstoff", "en": "Oxygen"},
-            {"de": "Stickstoff", "en": "Nitrogen"},
-            {"de": "Kohlendioxid", "en": "Carbon dioxide"},
-            {"de": "Argon", "en": "Argon"}
+        "answers": {
+            "de": [
+                "Sauerstoff",
+                "Stickstoff",
+                "Kohlendioxid",
+                "Argon"
+            ],
+            "en": [
+                "Oxygen",
+                "Nitrogen",
+                "Carbon dioxide",
+                "Argon"
+            ]
+        },
+        "scores": [
+            1,
+            10,
+            0,
+            0
         ],
-        "scores": [1, 10, 0, 0],
         "right_answer_index": 1
     },
     {
@@ -295,13 +347,26 @@
             "en": null
         },
         "coupled_question_indices": [],
-        "answers": [
-            {"de": "Vincent van Gogh", "en": "Vincent van Gogh"},
-            {"de": "Pablo Picasso", "en": "Pablo Picasso"},
-            {"de": "Leonardo da Vinci", "en": "Leonardo da Vinci"},
-            {"de": "Michelangelo", "en": "Michelangelo"}
+        "answers": {
+            "de": [
+                "Vincent van Gogh",
+                "Pablo Picasso",
+                "Leonardo da Vinci",
+                "Michelangelo"
+            ],
+            "en": [
+                "Vincent van Gogh",
+                "Pablo Picasso",
+                "Leonardo da Vinci",
+                "Michelangelo"
+            ]
+        },
+        "scores": [
+            0,
+            0,
+            10,
+            0
         ],
-        "scores": [0, 0, 10, 0],
         "right_answer_index": 2
     }
 ]
