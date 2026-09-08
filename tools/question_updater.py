@@ -32,11 +32,12 @@ for q in qs:
             del q["score"]
 
         assert "answers" in q
-        answers_ = copy.deepcopy(q["answers"])
-        q["answers"] = {"de": [], "en": []}
-        for i in range(4):
-            q["answers"]["de"].append(answers_[i]["de"])
-            q["answers"]["en"].append(answers_[i]["en"])
+        if "de" not in q["answers"]:
+            answers_ = copy.deepcopy(q["answers"])
+            q["answers"] = {"de": [], "en": []}
+            for i in range(4):
+                q["answers"]["de"].append(answers_[i]["de"])
+                q["answers"]["en"].append(answers_[i]["en"])
 
 with open("data/questions.json", "w", encoding="utf-8") as file:
     json.dump(qs, file, indent=4)
