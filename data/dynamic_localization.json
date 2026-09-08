@@ -1,0 +1,14 @@
+{
+    "intro": {
+        "de": "Zensus Quiz - {number} Fragen",
+        "en": "Zensus Quiz - {number} questions"
+    },
+    "intro_explanation": {
+        "de": "",
+        "en": ""
+    },
+    "thank_you": {
+        "de": "Danke für die Teilnahme am Quiz.",
+        "en": "Thank you for participating in the quiz."
+    }
+}

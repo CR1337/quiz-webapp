@@ -26,10 +26,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": 5,
-        "max_scoring_guess": 18
+        "coupled_question_indices": []
     },
     {
         "index": 1,
@@ -58,10 +55,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": 55,
-        "max_scoring_guess": 150
+        "coupled_question_indices": []
     },
     {
         "index": 2,
@@ -90,10 +84,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": 41,
-        "max_scoring_guess": 91
+        "coupled_question_indices": []
     },
     {
         "index": 3,
@@ -122,10 +113,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": -3.0,
-        "max_scoring_guess": 5.0
+        "coupled_question_indices": []
     },
     {
         "index": 4,
@@ -154,10 +142,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": 62.0,
-        "max_scoring_guess": 122.0
+        "coupled_question_indices": []
     },
     {
         "index": 5,
@@ -186,10 +171,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": 37.0,
-        "max_scoring_guess": 87.0
+        "coupled_question_indices": []
     },
     {
         "index": 6,
@@ -218,10 +200,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": 5.0,
-        "max_scoring_guess": 25.0
+        "coupled_question_indices": []
     },
     {
         "index": 7,
@@ -292,10 +271,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": 28,
-        "max_scoring_guess": 78
+        "coupled_question_indices": []
     },
     {
         "index": 9,
@@ -366,10 +342,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": 6.0,
-        "max_scoring_guess": 13.0
+        "coupled_question_indices": []
     },
     {
         "index": 11,
@@ -398,10 +371,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": 22,
-        "max_scoring_guess": 67
+        "coupled_question_indices": []
     },
     {
         "index": 12,
@@ -430,10 +400,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": 36,
-        "max_scoring_guess": 86
+        "coupled_question_indices": []
     },
     {
         "index": 13,
@@ -462,10 +429,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": 12,
-        "max_scoring_guess": 62
+        "coupled_question_indices": []
     },
     {
         "index": 14,
@@ -494,9 +458,6 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": 11.0,
-        "max_scoring_guess": 34.0
+        "coupled_question_indices": []
     }
 ]

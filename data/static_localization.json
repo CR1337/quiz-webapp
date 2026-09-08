@@ -1,0 +1,102 @@
+{
+    "start_quiz": {
+        "de": "Quiz starten",
+        "en": "Start quiz"
+    },
+    "quiz": {
+        "de": "Quiz",
+        "en": "Quiz"
+    },
+    "submit_guess": {
+        "de": "Schätzung abgeben",
+        "en": "Submit guess"
+    },
+    "score_announcement": {
+        "de": "Sie haben {score} von {max_points} Punkte erreicht – das ist {predicate}.",
+        "en": "You scored {score} out of {max_points} points – that's {predicate}."
+    },
+    "predicates": {
+        "de": [
+            "ein Anfang, auf dem man aufbauen kann",
+            "ein solider Versuch",
+            "eine solide Leistung",
+            "ein starkes Ergebnis",
+            "ein ausgezeichnetes Ergebnis"
+        ],
+        "en": [
+            "a start to build on",
+            "a solid try",
+            "a solid achievement",
+            "a strong result",
+            "an excellent result"
+        ]
+    },
+    "score_delta": {
+        "de": "Punkte für Frage",
+        "en": "Score for question"
+    },
+    "back_to_home": {
+        "de": "Zurück zur Startseite",
+        "en": "Back to startpage"
+    },
+    "your_score": {
+        "de": "Ihr Punktestand bisher",
+        "en": "Your score so far"
+    },
+    "your_new_score": {
+        "de": "Neuer Punktestand",
+        "en": "Your new score"
+    },
+    "score_for_question": {
+        "de": "Punkte für Frage",
+        "en": "Score for Question"
+    },
+    "question": {
+        "de": "Frage",
+        "en": "Question"
+    },
+    "show_image": {
+        "de": "Bild anzeigen",
+        "en": "Show image"
+    },
+    "your_answer": {
+        "de": "Ihre Antwort",
+        "en": "Your answer"
+    },
+    "correct_answer": {
+        "de": "Richtige Antwort",
+        "en": "Correct answer"
+    },
+    "explanation": {
+        "de": "Erklärung",
+        "en": "Explanation"
+    },
+    "next": {
+        "de": "Weiter",
+        "en": "Next"
+    },
+    "really_stop": {
+        "de": "Wollen Sie das Quiz wirklich abbrechen?",
+        "en": "Do you really want to stop the Quiz?"
+    },
+    "yes": {
+        "de": "Ja",
+        "en": "Yes"
+    },
+    "no": {
+        "de": "Nein",
+        "en": "No"
+    },
+    "hours": {
+        "de": "Stunden",
+        "en": "Hours"
+    },
+    "minutes": {
+        "de": "Minuten",
+        "en": "minutes"
+    },
+    "and": {
+        "de": "und",
+        "en": "and"
+    }
+}
