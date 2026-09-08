@@ -51,20 +51,24 @@
             "en": null
         },
         "coupled_question_indices": [],
-        "answers": {
-            "de": [
-                "Venus",
-                "Merkur",
-                "Mars",
-                "Jupiter"
-            ],
-            "en": [
-                "Venus",
-                "Mercury",
-                "Mars",
-                "Jupiter"
-            ]
-        },
+        "answers": [
+            {
+                "de": "Venus",
+                "en": "Venus"
+            },
+            {
+                "de": "Merkur",
+                "en": "Mercury"
+            },
+            {
+                "de": "Mars",
+                "en": "Mars"
+            },
+            {
+                "de": "Jupiter",
+                "en": "Jupiter"
+            }
+        ],
         "scores": [
             1,
             10,
@@ -125,20 +129,24 @@
             "en": null
         },
         "coupled_question_indices": [],
-        "answers": {
-            "de": [
-                "Giraffe",
-                "Afrikanischer Elefant",
-                "Nashorn",
-                "Nilpferd"
-            ],
-            "en": [
-                "Giraffe",
-                "African elephant",
-                "Rhinoceros",
-                "Hippopotamus"
-            ]
-        },
+        "answers": [
+            {
+                "de": "Giraffe",
+                "en": "Giraffe"
+            },
+            {
+                "de": "Afrikanischer Elefant",
+                "en": "African elephant"
+            },
+            {
+                "de": "Nashorn",
+                "en": "Rhinoceros"
+            },
+            {
+                "de": "Nilpferd",
+                "en": "Hippopotamus"
+            }
+        ],
         "scores": [
             0,
             10,
@@ -199,20 +207,24 @@
             "en": null
         },
         "coupled_question_indices": [],
-        "answers": {
-            "de": [
-                "Englisch",
-                "Spanisch",
-                "Mandarin",
-                "Hindi"
-            ],
-            "en": [
-                "English",
-                "Spanish",
-                "Mandarin",
-                "Hindi"
-            ]
-        },
+        "answers": [
+            {
+                "de": "Englisch",
+                "en": "English"
+            },
+            {
+                "de": "Spanisch",
+                "en": "Spanish"
+            },
+            {
+                "de": "Mandarin",
+                "en": "Mandarin"
+            },
+            {
+                "de": "Hindi",
+                "en": "Hindi"
+            }
+        ],
         "scores": [
             1,
             1,
@@ -273,20 +285,24 @@
             "en": null
         },
         "coupled_question_indices": [],
-        "answers": {
-            "de": [
-                "Sauerstoff",
-                "Stickstoff",
-                "Kohlendioxid",
-                "Argon"
-            ],
-            "en": [
-                "Oxygen",
-                "Nitrogen",
-                "Carbon dioxide",
-                "Argon"
-            ]
-        },
+        "answers": [
+            {
+                "de": "Sauerstoff",
+                "en": "Oxygen"
+            },
+            {
+                "de": "Stickstoff",
+                "en": "Nitrogen"
+            },
+            {
+                "de": "Kohlendioxid",
+                "en": "Carbon dioxide"
+            },
+            {
+                "de": "Argon",
+                "en": "Argon"
+            }
+        ],
         "scores": [
             1,
             10,
@@ -347,20 +363,24 @@
             "en": null
         },
         "coupled_question_indices": [],
-        "answers": {
-            "de": [
-                "Vincent van Gogh",
-                "Pablo Picasso",
-                "Leonardo da Vinci",
-                "Michelangelo"
-            ],
-            "en": [
-                "Vincent van Gogh",
-                "Pablo Picasso",
-                "Leonardo da Vinci",
-                "Michelangelo"
-            ]
-        },
+        "answers": [
+            {
+                "de": "Vincent van Gogh",
+                "en": "Vincent van Gogh"
+            },
+            {
+                "de": "Pablo Picasso",
+                "en": "Pablo Picasso"
+            },
+            {
+                "de": "Leonardo da Vinci",
+                "en": "Leonardo da Vinci"
+            },
+            {
+                "de": "Michelangelo",
+                "en": "Michelangelo"
+            }
+        ],
         "scores": [
             0,
             0,
