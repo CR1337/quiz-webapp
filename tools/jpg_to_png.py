@@ -13,7 +13,7 @@ if not in_filename.endswith(".jpg") and not in_filename.endswith(".jpeg"):
     print("You must specify a jpg file!", file=sys.stderr)
     exit(1)
 
-out_filename = ".".join(in_filename.split(".")[:-1])
+out_filename = f"{in_filename.split('.')[0]}.png"
 
 image = Image.open(in_filename)
 image.save(out_filename)
