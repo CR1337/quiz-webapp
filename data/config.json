@@ -1,5 +1,5 @@
 {
-    "question_selection_method": "random_set",
+    "question_selection_method": "random",
     "group_coupled_questions": true,
     "shuffle_questions": true,
     "question_importer": false,
