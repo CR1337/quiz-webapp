@@ -56,10 +56,20 @@ def render_question(current_question: Question):
     elif isinstance(current_question, MultipleChoiceQuestion):
         columns = st.columns(2)
         for answer_index, (answer, column) in enumerate(
-            zip(current_question.answers, cycle(columns))
+            zip(current_question.answers[Localization.language()], cycle(columns))
         ):
             with column:
-                if st.button(answer[Localization.language()], use_container_width=True, type="primary"):
+                if st.button(answer, use_container_width=True, type="primary"):
                     st.session_state["answer"] = answer_index
                     scroll_to_top()
                     check_answer(current_question, answer_index)
+
+
+        # for answer_index, (answer, column) in enumerate(
+        #     zip(current_question.answers, cycle(columns))
+        # ):
+        #     with column:
+        #         if st.button(answer[Localization.language()], use_container_width=True, type="primary"):
+        #             st.session_state["answer"] = answer_index
+        #             scroll_to_top()
+        #             check_answer(current_question, answer_index)
