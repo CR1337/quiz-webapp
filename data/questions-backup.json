@@ -21,6 +21,7 @@
             ]
         },
         "right_answer_index": 0,
+        "score": 10,
         "explanation": {
             "de": "In Hamburg lag bei der letzten Wahl der Frauenanteil mit 48,8 % an den Mandaten im Landesparlament am h\u00f6chsten.",
             "en": "In Hamburg, the share of women in the mandates of the state parliament was highest at 48.8 % in the last election."
@@ -33,13 +34,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "scores": [
-            10,
-            0,
-            0,
-            0
-        ]
+        "coupled_question_indices": []
     },
     {
         "index": 1,
@@ -68,10 +63,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": 37.0,
-        "max_scoring_guess": 62.0
+        "coupled_question_indices": []
     },
     {
         "index": 2,
@@ -100,10 +92,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": 8.0,
-        "max_scoring_guess": 35.0
+        "coupled_question_indices": []
     },
     {
         "index": 3,
@@ -132,10 +121,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": 9,
-        "max_scoring_guess": 20
+        "coupled_question_indices": []
     },
     {
         "index": 4,
@@ -164,10 +150,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": 24.0,
-        "max_scoring_guess": 49.0
+        "coupled_question_indices": []
     },
     {
         "index": 5,
@@ -196,10 +179,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": 62.0,
-        "max_scoring_guess": 87.0
+        "coupled_question_indices": []
     },
     {
         "index": 6,
@@ -223,6 +203,7 @@
             ]
         },
         "right_answer_index": 1,
+        "score": 10,
         "explanation": {
             "de": "Die durchschnittliche Lebenserwartung liegt bei Frauen mit 83,2 Jahren deutlich \u00fcber der von M\u00e4nnern mit 78,5 Jahren.",
             "en": "The average life expectancy for women is 83.2 years, significantly higher than for men at 78.5 years."
@@ -235,12 +216,6 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "scores": [
-            0,
-            10,
-            0,
-            0
-        ]
+        "coupled_question_indices": []
     }
 ]
