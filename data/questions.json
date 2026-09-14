@@ -224,8 +224,8 @@
         },
         "right_answer_index": 1,
         "explanation": {
-            "de": "Die durchschnittliche Lebenserwartung liegt bei Frauen mit 83,2 Jahren deutlich \u00fcber der von M\u00e4nnern mit 78,5 Jahren.",
-            "en": "The average life expectancy for women is 83.2 years, significantly higher than for men at 78.5 years."
+            "de": "Die durchschnittliche Lebenserwartung lag 2023 bei Frauen mit 83,2 Jahren deutlich \u00fcber der von M\u00e4nnern mit 78,5 Jahren.",
+            "en": "In 2023 the average life expectancy for women was 83.2 years, significantly higher than for men at 78.5 years."
         },
         "image": {
             "de": "q6.png",
