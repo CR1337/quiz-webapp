@@ -1,14 +1,27 @@
 import os
 import json
 import streamlit as st
-from typing import Any
+from typing import Any, Dict
+
+
+LocalizedText = Dict[str, str]
+LocalizedPath = Dict[str, str]
 
 
 class Localization:
-    LOCALIZATION_FILENAME: str = os.path.join("data", "localization.json")
+    STATIC_LOCALIZATION_FILENAME: str = os.path.join("data", "static_localization.json")
+    DYNAMIC_LOCALIZATION_FILENAME: str = os.path.join("data", "dynamic_localization.json")
 
-    with open(LOCALIZATION_FILENAME, "r", encoding="utf-8") as file:
-        _localization = json.load(file)
+    @classmethod
+    def load(cls):
+        if st.session_state.get("language", None) is None:
+            st.session_state["language"] = "de"
+
+        with open(cls.STATIC_LOCALIZATION_FILENAME, "r", encoding="utf-8") as file:
+            cls._localization = json.load(file)
+
+        with open(cls.DYNAMIC_LOCALIZATION_FILENAME, "r", encoding="utf-8") as file:
+            cls._localization |= json.load(file)
 
     @classmethod
     def get_for_language(cls, key: str, language: str) -> Any:
@@ -22,3 +35,17 @@ class Localization:
     @classmethod
     def language(cls) -> str:
         return st.session_state["language"]
+
+    @classmethod
+    def flag(cls, language: str) -> str:
+        return {
+            "de": "🇩🇪",
+            "en": "🇬🇧"
+        }[language]
+
+    @classmethod
+    def other_language(cls) -> str:
+        return {
+            "de": "en",
+            "en": "de"
+        }[cls.language()]

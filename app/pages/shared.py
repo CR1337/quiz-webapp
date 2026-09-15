@@ -1,10 +1,9 @@
 import os
 import streamlit as st
-import streamlit.components.v1 as components
-from app.question_model import Question
+from app.question_model.question import Question
 from app.localization import Localization
 from app.state import QuizState
-from app.colors import BLUE, GRAY, GREEN
+from app.colors import Colors
 
 
 BADGE_HTML_FILENAME: str = os.path.join("app", "html", "badge.html.template")
@@ -25,7 +24,7 @@ def render_score(display_delta: bool = False):
 
         left_column.metric(
             label=f"{Localization.get('score_delta')} {index + 1}",
-            value=f"{st.session_state['last_score']}/{question.max_points}",
+            value=f"{st.session_state['last_score']}/{question.get_max_points()}",
         )
 
         right_column.metric(
@@ -48,13 +47,13 @@ def render_progress():
     badges_html = ""
     for idx in range(question_amount):
         if idx < index:
-            icon, color = "check", GREEN
+            icon, color = "check", Colors.get('green')
         elif idx == index and st.session_state["state"] == QuizState.QUESTION:
-            icon, color = "arrow_downward", BLUE
+            icon, color = "arrow_downward", Colors.get('blue')
         elif idx == index and st.session_state["state"] == QuizState.SOLUTION:
-            icon, color = "check", GREEN
+            icon, color = "check", Colors.get('green')
         else:
-            icon, color = "more_horiz", GRAY
+            icon, color = "more_horiz", Colors.get('gray')
         r, g, b = color
 
         badges_html += f"""
@@ -103,7 +102,7 @@ def render_progress():
     </div>
     """
 
-    components.html(full_html, height=100, scrolling=True)
+    st.iframe(full_html, height=100)
 
 
 def render_image(image: str, caption: str | None = None, directory: str = "images"):
