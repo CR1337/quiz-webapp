@@ -11,13 +11,9 @@
         "de": "Schätzung abgeben",
         "en": "Submit guess"
     },
-    "thank_you": {
-        "de": "Danke für die Teilnahme am Quiz.",
-        "en": "Thank you for participating in the quiz."
-    },
     "score_announcement": {
-        "de": "Sie haben {score} von {max_points} Punkte erreicht – das ist {predicate}. Wenn Sie mehr Daten suchen, besuchen Sie uns auf [www.destatis.de](https://www.destatis.de/DE/Home/_inhalt.html).",
-        "en": "You scored {score} out of {max_points} points – that's {predicate}. If you're looking for more data, visit us at [www.destatis.de](https://www.destatis.de/EN/Home/_node.html)."
+        "de": "Sie haben {score} von {max_points} Punkte erreicht – das ist {predicate}.",
+        "en": "You scored {score} out of {max_points} points – that's {predicate}."
     },
     "predicates": {
         "de": [
@@ -91,8 +87,16 @@
         "de": "Nein",
         "en": "No"
     },
-    "intro": {
-        "de": "Quiz - {number} Fragen zur Statistik",
-        "en": "Quiz - {number} questions about statistics"
+    "hours": {
+        "de": "Stunden",
+        "en": "Hours"
+    },
+    "minutes": {
+        "de": "Minuten",
+        "en": "minutes"
+    },
+    "and": {
+        "de": "und",
+        "en": "and"
     }
 }

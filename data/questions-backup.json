@@ -26,10 +26,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": 22,
-        "max_scoring_guess": 72
+        "coupled_question_indices": []
     },
     {
         "index": 1,
@@ -58,10 +55,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": 0.0,
-        "max_scoring_guess": 2.0
+        "coupled_question_indices": []
     },
     {
         "index": 2,
@@ -92,10 +86,7 @@
         },
         "coupled_question_indices": [
             3
-        ],
-        "is_hm_time": false,
-        "min_scoring_guess": 25.0,
-        "max_scoring_guess": 36.0
+        ]
     },
     {
         "index": 3,
@@ -126,10 +117,7 @@
         },
         "coupled_question_indices": [
             2
-        ],
-        "is_hm_time": false,
-        "min_scoring_guess": 26.0,
-        "max_scoring_guess": 37.0
+        ]
     },
     {
         "index": 4,
@@ -153,6 +141,7 @@
             ]
         },
         "right_answer_index": 0,
+        "score": 10,
         "explanation": {
             "de": "In Mecklenburg-Vorpommern arbeiteten 2023 rund 24% der 4750 landwirtschaftlichen Betriebe nach \u00f6kologischen Standards. ([Quelle](https://www.destatis.de/DE/Themen/Branchen-Unternehmen/Landwirtschaft-Forstwirtschaft-Fischerei/Landwirtschaftliche-Betriebe/Tabellen/oekologischer-landbau-bundeslaender.html))",
             "en": "In Mecklenburg-Vorpommern, around 24% of the 4750 agricultural businesses operated according to organic standards in 2023. ([Source](https://www.destatis.de/DE/Themen/Branchen-Unternehmen/Landwirtschaft-Forstwirtschaft-Fischerei/Landwirtschaftliche-Betriebe/Tabellen/oekologischer-landbau-bundeslaender.htm)l)"
@@ -165,13 +154,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "scores": [
-            10,
-            0,
-            0,
-            0
-        ]
+        "coupled_question_indices": []
     },
     {
         "index": 5,
@@ -200,10 +183,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": 20.0,
-        "max_scoring_guess": 26.0
+        "coupled_question_indices": []
     },
     {
         "index": 6,
@@ -232,10 +212,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": -7.0,
-        "max_scoring_guess": 8.0
+        "coupled_question_indices": []
     },
     {
         "index": 7,
@@ -264,10 +241,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": 63,
-        "max_scoring_guess": 213
+        "coupled_question_indices": []
     },
     {
         "index": 8,
@@ -291,6 +265,7 @@
             ]
         },
         "right_answer_index": 1,
+        "score": 10,
         "explanation": {
             "de": "Ruanda hat mit 63,8 % den h\u00f6chsten Frauenanteil im Parlament. ([Quelle](https://www.destatis.de/DE/Themen/Laender-Regionen/Internationales/Thema/allgemeines-regionales/frauenanteil-parlamente.html))",
             "en": "Rwanda has the highest proportion of women in parliament at 63.8%. ([Source](https://www.destatis.de/DE/Themen/Laender-Regionen/Internationales/Thema/allgemeines-regionales/frauenanteil-parlamente.html))"
@@ -305,12 +280,6 @@
         },
         "coupled_question_indices": [
             9
-        ],
-        "scores": [
-            0,
-            10,
-            0,
-            0
         ]
     },
     {
@@ -342,10 +311,7 @@
         },
         "coupled_question_indices": [
             8
-        ],
-        "is_hm_time": false,
-        "min_scoring_guess": 16.0,
-        "max_scoring_guess": 41.0
+        ]
     },
     {
         "index": 10,
@@ -374,10 +340,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": -6.0,
-        "max_scoring_guess": 4.0
+        "coupled_question_indices": []
     },
     {
         "index": 11,
@@ -406,10 +369,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": 59,
-        "max_scoring_guess": 309
+        "coupled_question_indices": []
     },
     {
         "index": 12,
@@ -438,10 +398,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": 1.0,
-        "max_scoring_guess": 11.0
+        "coupled_question_indices": []
     },
     {
         "index": 13,
@@ -465,6 +422,7 @@
             ]
         },
         "right_answer_index": 0,
+        "score": 10,
         "explanation": {
             "de": "Den gr\u00f6\u00dften realen Umsatzzuwachs im Jahr 2024 gegen\u00fcber dem Vorjahr verzeichnete der Bereich Information und Kommunikation mit einem Anstieg von +2,7 %. ([Quelle](https://www.destatis.de/DE/Presse/Pressemitteilungen/2025/03/PD25_082_474.html))",
             "en": "The largest real increase in turnover in 2024 compared to the previous year was recorded in the Information and Communication sector with an increase of +2.7%. ([Source](https://www.destatis.de/DE/Presse/Pressemitteilungen/2025/03/PD25_082_474.)html)"
@@ -477,13 +435,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "scores": [
-            10,
-            0,
-            0,
-            0
-        ]
+        "coupled_question_indices": []
     },
     {
         "index": 14,
@@ -512,10 +464,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": 2.0,
-        "max_scoring_guess": 9.0
+        "coupled_question_indices": []
     },
     {
         "index": 15,
@@ -539,6 +488,7 @@
             ]
         },
         "right_answer_index": 0,
+        "score": 10,
         "explanation": {
             "de": "Im Jahr 2024 waren die Vereinigten Staaten Deutschlands wichtigster Handelspartner. ([Quelle](https://www.destatis.de/DE/Themen/Wirtschaft/Aussenhandel/handelspartner-jahr.html))",
             "en": "In 2024, the United States was Germany's most important trading partner. ([Source](https://www.destatis.de/DE/Themen/Wirtschaft/Aussenhandel/handelspartner-jahr.html))"
@@ -551,13 +501,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "scores": [
-            10,
-            0,
-            0,
-            0
-        ]
+        "coupled_question_indices": []
     },
     {
         "index": 16,
@@ -581,6 +525,7 @@
             ]
         },
         "right_answer_index": 0,
+        "score": 10,
         "explanation": {
             "de": "Kraftwagen/-teile waren im Jahr 2024 mit 262,8 Milliarden Euro Deutschlands wichtigstes Exportgut. ([Quelle](https://www.destatis.de/DE/Themen/Wirtschaft/Aussenhandel/handelswaren-jahr.html))",
             "en": "Motor vehicles and motor vehicle parts were Germany's most important export goods in 2024, with 262.8 billion euros. ([Source](https://www.destatis.de/DE/Themen/Wirtschaft/Aussenhandel/handelswaren-jahr.ht)ml)"
@@ -593,13 +538,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "scores": [
-            10,
-            0,
-            0,
-            0
-        ]
+        "coupled_question_indices": []
     },
     {
         "index": 171,
@@ -628,10 +567,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": 1.0,
-        "max_scoring_guess": 4.0
+        "coupled_question_indices": []
     },
     {
         "index": 18,
@@ -660,10 +596,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": 18.0,
-        "max_scoring_guess": 35.0
+        "coupled_question_indices": []
     },
     {
         "index": 19,
@@ -692,10 +625,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": 33,
-        "max_scoring_guess": 153
+        "coupled_question_indices": []
     },
     {
         "index": 20,
@@ -724,10 +654,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": 1.0,
-        "max_scoring_guess": 9.0
+        "coupled_question_indices": []
     },
     {
         "index": 21,
@@ -756,10 +683,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": 46,
-        "max_scoring_guess": 96
+        "coupled_question_indices": []
     },
     {
         "index": 22,
@@ -788,10 +712,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": 25.0,
-        "max_scoring_guess": 125.0
+        "coupled_question_indices": []
     },
     {
         "index": 23,
@@ -820,10 +741,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": 3.0,
-        "max_scoring_guess": 8.0
+        "coupled_question_indices": []
     },
     {
         "index": 24,
@@ -847,6 +765,7 @@
             ]
         },
         "right_answer_index": 2,
+        "score": 10,
         "explanation": {
             "de": "Unter den 15,6 Millionen Menschen, die sich 2023 zu Hause vorwiegend oder ausschlie\u00dflich in einer anderen Sprache als Deutsch verst\u00e4ndigten, war T\u00fcrkisch mit einem Anteil von 14 % die am h\u00e4ufigsten gesprochene Sprache. ([Quelle](https://www.destatis.de/DE/Presse/Pressemitteilungen/Zahl-der-Woche/2025/PD25_08_p002.html))",
             "en": "Among the 15.6 million people who mainly or exclusively communicated in a language other than German at home in 2023, Turkish was the most commonly spoken language with a share of 14%. ([Source](https://www.destatis.de/DE/Presse/Pressemitteilungen/Zahl-der-Woche/2025/PD25_08_p002.html))"
@@ -859,13 +778,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "scores": [
-            0,
-            0,
-            10,
-            0
-        ]
+        "coupled_question_indices": []
     },
     {
         "index": 25,
@@ -894,10 +807,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": 8,
-        "max_scoring_guess": 23
+        "coupled_question_indices": []
     },
     {
         "index": 26,
@@ -926,10 +836,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": 16.0,
-        "max_scoring_guess": 66.0
+        "coupled_question_indices": []
     },
     {
         "index": 27,
@@ -960,10 +867,7 @@
         },
         "coupled_question_indices": [
             28
-        ],
-        "is_hm_time": false,
-        "min_scoring_guess": 71.0,
-        "max_scoring_guess": 91.0
+        ]
     },
     {
         "index": 28,
@@ -994,10 +898,7 @@
         },
         "coupled_question_indices": [
             27
-        ],
-        "is_hm_time": false,
-        "min_scoring_guess": 69.0,
-        "max_scoring_guess": 89.0
+        ]
     },
     {
         "index": 29,
@@ -1026,10 +927,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": 10.0,
-        "max_scoring_guess": 35.0
+        "coupled_question_indices": []
     },
     {
         "index": 30,
@@ -1058,10 +956,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": 13,
-        "max_scoring_guess": 43
+        "coupled_question_indices": []
     },
     {
         "index": 31,
@@ -1090,10 +985,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": 99.0,
-        "max_scoring_guess": 349.0
+        "coupled_question_indices": []
     },
     {
         "index": 32,
@@ -1122,10 +1014,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": 42,
-        "max_scoring_guess": 92
+        "coupled_question_indices": []
     },
     {
         "index": 33,
@@ -1154,10 +1043,7 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": 14,
-        "max_scoring_guess": 39
+        "coupled_question_indices": []
     },
     {
         "index": 34,
@@ -1186,9 +1072,6 @@
             "de": null,
             "en": null
         },
-        "coupled_question_indices": [],
-        "is_hm_time": false,
-        "min_scoring_guess": 44,
-        "max_scoring_guess": 89
+        "coupled_question_indices": []
     }
 ]
