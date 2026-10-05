@@ -177,8 +177,8 @@
         },
         "type": "guess",
         "text": {
-            "de": "Wie hoch war 2024 der Anteil an Frauen, die nicht erwerbsm\u00e4\u00dfig Angeh\u00f6rige oder Bekannte in ihrer h\u00e4uslichen Umgebung pflegen und daf\u00fcr als pflegende Angeh\u00f6rige Beitr\u00e4ge zur Rentenversicherung erhalten?",
-            "en": "What was the proportion of women in 2024 who provided non-professional care to relatives or acquaintances in their home environment and, as family caregivers, received pension insurance contributions for doing so?"
+            "de": "Wie hoch war 2024 der Anteil an Frauen im Vergleich zu Männern, die nicht erwerbsmäßig Angehörige oder Bekannte in ihrer häuslichen Umgebung pflegen und dafür als pflegende Angehörige Beiträge zur Rentenversicherung erhalten?",
+            "en": "What was the proportion of women compared with men in 2024 who provide non-professional care to relatives or acquaintances in their home environment and receive contributions to the statutory pension insurance scheme for doing so as family caregivers?"
         },
         "answer": 85.4,
         "min_guess": 40,
