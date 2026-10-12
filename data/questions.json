@@ -10,13 +10,13 @@
             "de": [
                 "Ein digitales Telefonbuch",
                 "Ein neues Steuerregister",
-                "Ein zentrales Register f\u00fcr Unternehmensstammdaten",
+                "Ein zentrales Register f\u00fcr Unternehmensbasisdaten",
                 "Ein Firmenverzeichnis f\u00fcr Start-ups"
             ],
             "en": [
                 "A digital phonebook",
                 "A new tax register",
-                "A central register for company master data",
+                "A central register for basic business data",
                 "A company directory for start-ups"
             ]
         },
@@ -57,7 +57,7 @@
             ],
             "en": [
                 "A trade number",
-                "A nationwide uniform business number",
+                "A unique nationwide business identifier",
                 "A grant approval",
                 "A business pass"
             ]
@@ -99,7 +99,7 @@
             ],
             "en": [
                 "Control of companies",
-                "Uniform data basis for reducing bureaucracy",
+                "A uniform data basis for reducing administrative red tape",
                 "Collection of corporate taxes",
                 "Export promotion"
             ]
@@ -136,13 +136,13 @@
             "de": [
                 "Telefonnummern der Gesch\u00e4ftsf\u00fchrung",
                 "Urkunden und Vertr\u00e4ge",
-                "Stammdaten und Identifikationsnummern",
+                "Unternehmensstammdaten, Identifikatoren und Metadaten",
                 "Produktkataloge"
             ],
             "en": [
                 "Phone numbers of management",
                 "Certificates and contracts",
-                "Master data and identification numbers",
+                "Business master data, identifiers and metadata",
                 "Product catalogs"
             ]
         },
