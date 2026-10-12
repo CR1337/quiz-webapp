@@ -213,8 +213,8 @@
         },
         "type": "guess",
         "text": {
-            "de": "Um wie viel Prozent hat sich die Bev\u00f6lkerungszahl in Deutschland in den letzten 30 Jahren (1995-2025) ver\u00e4ndert?",
-            "en": "By what percentage has the population of Germany changed over the past 30 years (1995\u20132025)?"
+            "de": "Um wie viel Prozent hat sich die Bev\u00f6lkerungszahl in Deutschland in den letzten 30 Jahren (1995–2025) ver\u00e4ndert?",
+            "en": "By what percentage has the population of Germany changed over the past 30 years (1995–2025)?"
         },
         "answer": 2.0,
         "min_guess": -15.0,
@@ -885,7 +885,7 @@
         "type": "guess",
         "index": 27,
         "text": {
-            "de": "Wie hoch war 2025 der Anteil der 16-74-J\u00e4hrigen, der soziale Medien aktiv nutzt?",
+            "de": "Wie hoch war 2025 der Anteil der 16–74-J\u00e4hrigen, der soziale Medien aktiv nutzt?",
             "en": "What percentage of the population aged 16 to 74 actively used social media in 2025?"
         },
         "explanation": {
