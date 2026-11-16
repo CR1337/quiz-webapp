@@ -26,7 +26,8 @@ def render_question(current_question: Question):
     render_score()
     render_progress()
 
-    st.subheader(current_question.text[Localization.language()])
+    with st.container(key="question_text"):
+        st.subheader(current_question.text[Localization.language()])
 
     if current_question.image:
         render_question_image(current_question)
@@ -54,15 +55,16 @@ def render_question(current_question: Question):
             check_answer(current_question, guess)
 
     elif isinstance(current_question, MultipleChoiceQuestion):
-        columns = st.columns(2)
-        for answer_index, (answer, column) in enumerate(
-            zip(current_question.answers[Localization.language()], cycle(columns))
-        ):
-            with column:
-                if st.button(answer, use_container_width=True, type="primary"):
-                    st.session_state["answer"] = answer_index
-                    scroll_to_top()
-                    check_answer(current_question, answer_index)
+        with st.container(key="answer_buttons"):
+            columns = st.columns(2)
+            for answer_index, (answer, column) in enumerate(
+                zip(current_question.answers[Localization.language()], cycle(columns))
+            ):
+                with column:
+                    if st.button(answer, use_container_width=True, type="primary"):
+                        st.session_state["answer"] = answer_index
+                        scroll_to_top()
+                        check_answer(current_question, answer_index)
 
 
         # for answer_index, (answer, column) in enumerate(
