@@ -110,11 +110,14 @@ def render_image(image: str, caption: str | None = None, directory: str = "image
 
 
 def render_question_image(question: Question):
-    render_image(
-        question.image[Localization.language()],
-        question.image_caption[Localization.language()],
-        os.path.join("images", "questions"),
-    )
+    # narrow centered column keeps question images small (columns stack on mobile)
+    _, center_column, _ = st.columns([1, 3, 1])
+    with center_column:
+        render_image(
+            question.image[Localization.language()],
+            question.image_caption[Localization.language()],
+            os.path.join("images", "questions"),
+        )
 
 
 def render_back_to_home_button():

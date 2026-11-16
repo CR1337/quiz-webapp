@@ -51,6 +51,40 @@ def configure_page():
             color: yellow;
             font-weight: bold;
         }
+        /* larger question text and answer buttons (containers keyed in question.py) */
+        .st-key-question_text h3 {
+            font-size: 1.75rem;
+        }
+        .st-key-answer_buttons button,
+        .st-key-answer_buttons button p {
+            font-size: 1.2rem;
+        }
+        /* enlarge sliders: track = parent of thumb, thumb = parent of range input */
+        div[data-testid="stSlider"] div:has(> div > div > input[type="range"]) {
+            padding-left: 0.875rem;
+            padding-right: 0.875rem;
+        }
+        div[data-testid="stSlider"] div:has(> div > input[type="range"]) {
+            padding-top: 1.75rem;
+            padding-bottom: 1.75rem;
+            cursor: pointer;
+        }
+        div[data-testid="stSlider"] div:has(> div > input[type="range"]) > div:first-child {
+            height: 0.6rem;
+            border-radius: 0.3rem;
+        }
+        div[data-testid="stSlider"] div:has(> input[type="range"]) {
+            width: 1.75rem;
+            height: 1.75rem;
+            cursor: pointer;
+        }
+        div[data-testid="stSliderThumbValue"] {
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+        div[data-testid="stSliderTickBar"] {
+            font-size: 1rem;
+        }
         </style>
         """,
         unsafe_allow_html=True,
